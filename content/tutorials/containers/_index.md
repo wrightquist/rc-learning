@@ -4,7 +4,6 @@ title: "Introduction to Building and Deploying Containers"
 summary: "How to containerize our apps with Docker and maintain them with GitHub."
 authors: [cag]
 categories: ["Containers","Docker", "R", "Shiny", "App Development"]
-tags: ["containers","r","shiny","app-development"]
 weight: 250
 ---
 

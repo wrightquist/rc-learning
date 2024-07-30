@@ -4,7 +4,6 @@ title: The NVIDIA RAPIDS Library
 summary: "Accelerate your data science pipeline with RAPIDS on NVIDIA GPUs"
 authors: [rs]
 categories: ["Python","GPU","HPC"]
-tags: [python, gpu, hpc]
 weight: 180
 ---
 

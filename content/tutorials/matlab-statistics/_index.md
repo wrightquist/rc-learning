@@ -4,7 +4,6 @@ title: "Statistical Methods with MATLAB"
 summary: "Using statistical methods with MATLAB&trade;"
 authors: [uvarc]
 categories: ["Matlab", "Data Analytics"]
-tags: [matlab, data]
 weight: 230
 notes: matlab-statistics
 ---

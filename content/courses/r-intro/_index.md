@@ -3,7 +3,6 @@ date: "2020-11-17"
 title: "Introduction to R"
 summary: "This short course introduces the basics of the R statistical computing language and the RStudio environment."
 authors: []
-tags: ["programming","r"]
 categories: ["Programming","R"]
 weight: 1
 ---

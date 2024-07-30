@@ -4,7 +4,6 @@ title: "Biopython"
 summary: "An introduction to using the Biopython package to develop Python scripts for bioinformatics analysis."
 authors: ["khs"]
 categories: ["Python", "Bioinformatics"]
-tags: [python,bioinformatics]
 weight: 520
 ---
 

@@ -4,7 +4,6 @@ title: "Introduction to Programming in MPI"
 summary: "The basics of parallel programming with MPI."
 authors: [kah]
 categories: ["HPC","Programming","MPI","Parallel Computing"]
-tags: ["mpi","programming","parallel-programming","hpc"]
 weight: 1
 ---
 

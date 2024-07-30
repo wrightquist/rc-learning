@@ -4,7 +4,6 @@ title: "Programming in MATLAB"
 summary: "An introduction to programming in MATLAB"
 authors: [uvarc]
 categories: ["MATLAB", "Programming"]
-tags: [matlab, programming]
 weight: 1
 ---
 

@@ -8,15 +8,17 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <div class="filter" style="margin-bottom:2em;">
         <p>
-            <a href="#" data-filter="*" class="current"><button class="btn btn-warning active">All Tutorials</button></a>
-            {{ range $name, $taxonomy := where .Site.Taxonomies.tags ".Page.Section" "tutorials" }}
-            <a href="#" data-filter=".{{ lower $name }}"><button class="btn btn-info">{{ $name | humanize }}</button></a>
+            <a href="#" data-filter="*" class="current"><button class="btn btn-info active">All</button></a>
+            {{$section := .Section}}
+            {{ range where .Site.Taxonomies.categories ".Page.Section" $section }}
+            <a href="#" data-filter=".{{ anchorize .Page.Title }}"><button class="btn btn-info">{{ .Page.Title }}</button></a>
             {{ end }}
         </p>
     </div>
     <div class="page-list">
         {{ range .Pages }}
-        <div class = "{{with .Params.tags}}{{ lower (delimit . " ") }}{{end}}">
+        {{ $categories := apply .Params.categories "anchorize" "." }}
+        <div class = "{{ with $categories }}{{ delimit . " " }}{{end}}">
             <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
             <div class="article-style">
                 {{ if .Params.summary }}

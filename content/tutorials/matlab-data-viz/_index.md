@@ -4,7 +4,6 @@ title: "MATLAB Data Processing and Visualization"
 summary: "This tutorial is an introduction to basic data analysis and visualization in MATLAB&trade;."
 authors: [cag]
 categories: ["MATLAB","Data Analytics"]
-tags: [matlab,data]
 weight: 250
 ---
 

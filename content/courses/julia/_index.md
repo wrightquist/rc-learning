@@ -3,7 +3,6 @@ date: "2023-12-11"
 title: "Programming in Julia"
 summary: "Introduction to programming in Julia.  Experience programming in some other language is helpful but not required."
 authors: []
-tags: ["programming","julia"]
 categories: ["Programming","Julia"]
 weight: 1
 ---

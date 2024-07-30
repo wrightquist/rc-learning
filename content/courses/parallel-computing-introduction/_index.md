@@ -4,7 +4,6 @@ title: "Introduction to Parallel Programming"
 summary: "Introduction to Parallel Programming"
 authors: [kah]
 categories: ["Programming","Parallel Computing","Fortran","C/C++"]
-tags: ["parallel-programming","programming","fortran","c/c++"]
 weight: 1
 ---
 

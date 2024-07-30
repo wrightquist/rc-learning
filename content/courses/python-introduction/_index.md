@@ -4,7 +4,6 @@ title: "Programming in Python"
 summary: "This short course is an introduction to the Python programming language for beginners.  No previous experience with programming is required."
 authors: [kah]
 categories: ["Programming","Python"]
-tags: ["programming","python"]
 weight: 1
 ---
 

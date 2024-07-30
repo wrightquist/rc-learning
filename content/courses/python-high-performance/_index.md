@@ -4,7 +4,6 @@ title: "High Performance Programming in Python"
 summary: "Techniques to speed up inefficient Python code"
 authors: []
 categories: ["Programming","Python"]
-tags: ["programming","python"]
 weight: 1
 ---
 

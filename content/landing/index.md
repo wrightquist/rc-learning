@@ -11,6 +11,6 @@ For a list of upcoming workshops, please see our [page](https://www.rc.virginia.
 
 ## [Short courses](/courses) are longer and more in-depth than tutorials or workshops.
 
-<br>
+---
 
 {{< categories >}}

@@ -4,7 +4,6 @@ title: "OMERO Hands-On Tutorial"
 summary: "Getting started with the OMERO image database."
 authors: [cag]
 categories: ["Image Processing","Omero"]
-tags: [imaging,omero]
 draft: true
 weight: 450
 url_dataset: data/omero-workshop-images.zip

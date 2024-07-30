@@ -4,7 +4,6 @@ title: "Using Bioinformatics Tools on Rivanna"
 summary: "This tutorial is an introduction to using several popular bioinformatics tools on Rivanna."
 authors: [gka]
 categories: ["HPC","Bioinformatics"]
-tags: [hpc,bioinformatics]
 weight: 500
 url_slides: slides/bioinfo-tools-riv
 ---

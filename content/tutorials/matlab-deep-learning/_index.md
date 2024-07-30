@@ -4,7 +4,6 @@ title: "Deep Learning with MATLAB"
 summary: "This hands-on tutorial will show you how to classify images with a pretrained neural network, modify a pretrained network to classify images into new specified classes, and build a neural network from scratch."
 authors: [cag]
 categories: ["MATLAB","Machine Learning","Deep Learning"]
-tags: [matlab,ml,dl]
 weight: 350
 notes: matlab-deep-learning
 url_slides: slides/matlab-deep-learning/DeepLearning_Matlab.pptx

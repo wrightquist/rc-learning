@@ -3,7 +3,6 @@ date: "2022-10-27"
 title: "Scientific Image Processing with Python OpenCV"
 summary: "An introduction to scientific image processing with the Python OpenCV package. Topics include splitting and merging of color channels, morphological filters, image thresholding and segmentation."
 author: [khs]
-tags: [imaging,python]
 categories: ["Image Processing","Python"]
 weight: 1
 ---

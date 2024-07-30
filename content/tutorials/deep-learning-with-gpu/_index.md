@@ -4,7 +4,6 @@ title: "Deep Learning with GPUs on Rivanna"
 summary: "This hands-on workshop provides an overview of neural networks with a focus on GPUs. Example codes will be provided in both Tensorflow and Pytorch and how to use them on Rivanna."
 authors: [as,jmh]
 categories: ["GPU","Machine Learning","Python","Deep Learning"]
-tags: [python,gpu,ml,dl]
 weight: 300
 #notes: matlab-deep-learning
 url_slides: slides/deep-learning-with-gpu/DL_with_GPU.pptx

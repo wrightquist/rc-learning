@@ -4,7 +4,6 @@ title: "Introduction to Shiny"
 summary: "An introduction to creating Web apps with R and Shiny."
 authors: [cag]
 categories: ["R","Shiny", "App Development"]
-tags: ["r","shiny","app-development"]
 weight: 1
 ---
 

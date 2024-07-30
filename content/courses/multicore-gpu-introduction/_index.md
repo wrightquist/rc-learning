@@ -4,7 +4,6 @@ title: "Introduction to Shared Memory Programming"
 summary: "An introduction to parallel programming using shared memory, including some GPU."
 authors: [kah]
 categories: ["HPC", "Parallel Computing","OpenMP", "GPU" ]
-tags: ["programming", "parallel-programming"]
 weight: 1
 ---
 

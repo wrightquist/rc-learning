@@ -4,7 +4,6 @@ title: "Optimization Techniques in MATLAB"
 summary: "This workshop introduces applied optimization in the MATLAB environment, focusing on using the Optimization Toolbox™ and the Global Optimization Toolbox™."
 authors: [teh]
 categories: ["HPC", "MATLAB" ]
-tags: [matlab, hpc]
 weight: 260
 notes: matlab-optimization
 ---

@@ -4,7 +4,6 @@ title: "Programming in C++"
 summary: "This short course is an introduction to programming in C++.  Experience programming in some other language is helpful but not required." 
 authors: [kah]
 categories: ["Programming","C++"]
-tags: [programming, c++]
 weight: 1
 ---
 
