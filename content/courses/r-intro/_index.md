@@ -7,7 +7,7 @@ categories: ["Programming","R"]
 weight: 1
 ---
 
-<p class="lead"> We will introduce the R statistical computing environment as well as RStudio. We will cover very basic functionality, including variables, functions, importing data, and the fundamentals of inspecting data frame objects. The course assumes little to no experience with statistical computing or R.</p>
+We will introduce the R statistical computing environment as well as RStudio. We will cover very basic functionality, including variables, functions, importing data, and the fundamentals of inspecting data frame objects. The course assumes little to no experience with statistical computing or R.
 
 ```{r, echo=FALSE, message=FALSE, eval=TRUE, warning=FALSE}
 library(knitr)
@@ -165,7 +165,7 @@ The data we're going to look at is cleaned up version of a gene expression datas
 1. **Raise or lower their expression in response to growth rate**. Growth-rate dependent expression patterns can tell us a lot about cell cycle control, and how the cell responds to stress. The authors found that expression of >25% of all yeast genes is linearly correlated with growth rate, independent of the limiting nutrient. They also found that the subset of negatively growth-correlated genes is enriched for peroxisomal functions, and positively correlated genes mainly encode ribosomal functions. 
 2. **Respond differently when different nutrients are being limited**. If you see particular genes that respond very differently when a nutrient is sharply restricted, these genes might be involved in the transport or metabolism of that specific nutrient.
 
-You can download the cleaned up version of the data at [the link above](data.html). The file is called [**brauer2007_tidy.csv**](data/brauer2007_tidy.csv). Later on we'll actually start with the original raw data (minimally processed) and manipulate it so that we can make it more amenable for analysis. 
+You can download the cleaned up version of the data [**brauer2007_tidy.csv**](data/brauer2007_tidy.csv). Later on we'll actually start with the original raw data (minimally processed) and manipulate it so that we can make it more amenable for analysis. 
 
 ## Reading in data
 
@@ -270,7 +270,7 @@ We might be interested in the average expression of genes with a particular biol
 **EXERCISE `r .ex``r .ex=.ex+1`**
 
 1. What's the standard deviation expression (hint: get help on the `sd` function with `?sd`).
-1. What's the range of rate represented in the data? (hint: `range()`).
+2. What's the range of rate represented in the data? (hint: `range()`).
 
 ----
 
