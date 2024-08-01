@@ -17,7 +17,7 @@ else:  #optional
 
 As for the _for_ loop, colons and indentations are required.  The optional _else_ clause is executed if and only if the conditional becomes False, which for a while loop is normal termination.
 
-{{< code-snippet >}}
+```
 x=-20
 y=-10
 while x<0 and y<0:
@@ -25,7 +25,7 @@ while x<0 and y<0:
     y=y+1
     z=0
 print(x,y,z)
-{{< /code-snippet >}}
+```
 
 **Exercise**
 

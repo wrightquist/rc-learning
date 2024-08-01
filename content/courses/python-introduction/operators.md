@@ -45,12 +45,12 @@ from __future__ import division, print_function
 
 Type or paste into your choice of Spyder's interpreter pane or a JupyterLab cell the following assignments.
 
-{{< code-snippet >}}
+```
 x=17.
 Xs=11.
 num_1=10
 num_2=14
-{{< /code-snippet >}}
+```
 
 Type the following lines one at a time and examine the results. In JupyterLab each line must be in its own cell. In the Spyder interpreter pane it will evaluate each line when you go to the next one.
 

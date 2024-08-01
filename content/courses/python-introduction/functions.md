@@ -24,7 +24,7 @@ The keyword is `def` (define) followed by the name of the function.  The functio
 
 Examples 
 
-{{< code-snippet >}}
+```
 def sum_vals(x,y,z):
     """Computes the sum of its input values"""
     return x+y+z
@@ -37,7 +37,7 @@ def make_list(x,y,z):
 def sum_diff(x,y):
     """Returns the sum and difference of two values"""
     return x+y,x-y
-{{< /code-snippet >}}
+```
 
 Notice the use of tuple packing in the third example.  An equally valid, but not commonly used, last line could be `return (x+y,x-y)`.
 

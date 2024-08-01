@@ -38,9 +38,9 @@ for x in range(-10,11):
 
 List comprehensions may be nested.
 
-{{< code-snippet >}}
+```
 list_2d = [[i+j for j in range(1,6)] for i in range(10,16)]
-{{< /code-snippet >}}
+```
 
 Observe the ordering in the previous example.  The inner loop is _first_.
 

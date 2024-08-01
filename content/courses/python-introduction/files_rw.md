@@ -62,14 +62,16 @@ When we have completed this loop x will contain the values from the first column
 **Exercises**
 
 Read the following file and store the values into two lists x and y.  You may choose any name for the file but make the file extension be `.csv`.  Print the values for the 4th row after reading in the data.
-{{< code-snippet >}}
+
+```
 x,y
 11.3,14.6
 9.2,7.56
 10.9,8.1
 4.8,12.8
 15.7,9.9
-{{< /code-snippet >}}
+```
+
 Make sure there is no blank line at the beginning of the data file.
 
 {{< code lang="python" >}}

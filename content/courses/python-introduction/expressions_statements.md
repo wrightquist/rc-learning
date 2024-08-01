@@ -40,7 +40,7 @@ All comparison operators have the same precedence relative to each other.  All c
 
 Examine the results of the following:
 
-{{< code-snippet >}}
+```
 a=11.; b=9.; c=45.; n=3
 print(a > b)
 print(a < b and c==n)
@@ -49,7 +49,7 @@ print(a > b or c==n and a < b)
 print((a > b or c==n) and a < b)
 is_greater=a > b
 print(is_greater,type(is_greater))
-{{< /code-snippet >}}
+```
 
 ## Statements
 

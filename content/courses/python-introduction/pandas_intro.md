@@ -54,11 +54,11 @@ The DataFrame is a _mutable_ type.
 
 We can create a DataFrame by passing a dictionary. Consider a simple grade-book example.
 
-{{< code-snippet >}}
+```
 grade_book=pd.DataFrame({"Name":["Jim Dandy","Betty Boop","Minnie Moocher",
                                  "Joe Friday","Teddy Salad"],
                          "Year":[2,4,1,2,3],"Grade":[85.4,91.7,73.2,82.3,98.5]})
-{{< /code-snippet >}}
+```
 
 ```python
 print(grade_book)

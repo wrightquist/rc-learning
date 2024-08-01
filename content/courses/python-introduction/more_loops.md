@@ -83,20 +83,20 @@ for i in range(5):
 
 In nested loops, if we need to recompute something we often need to reinitialize a variable.  Examine the difference between
 
-{{< code-snippet >}}
+```
 s=0.
 for i in range(10):
     for j in range(15):
         s=s+i+j
 print(s)
-{{< /code-snippet >}}
+```
 
 and 
 
-{{< code-snippet >}}
+```
 for i in range(10):
     s=0 
     for j in range(10):
         s=s+i+j
 print(s)
-{{< /code-snippet >}}
+```

@@ -55,7 +55,11 @@ Inspect the runscript before running an image!
 1. (Optional) Cache
     
     The default cache directory is `~/.apptainer`. If you are an active container user it can quickly fill up your home. You can change it to scratch:
-    {{< code-snippet >}}export APPTAINER_CACHEDIR=/scratch/$USER/.apptainer{{< /code-snippet >}}
+
+    ```
+    export APPTAINER_CACHEDIR=/scratch/$USER/.apptainer
+    ```
+   
     Otherwise, remember to clean up periodically.
 2. We have suppressed certain output from the `apptainer` command. To see the complete output, type `\apptainer`.
 3. Load the Apptainer module: `module load apptainer`
@@ -201,34 +205,37 @@ For this application the package manager will take care of all the dependencies.
 
 In `%post` specify the actual commands to be executed (as if you were to type them on the command line).
 
-{{< code-snippet >}}Bootstrap: docker
+```
+Bootstrap: docker
 From: ubuntu:22.04
 
 %post
     apt-get install fortune cowsay lolcat
-{{< /code-snippet >}}
+```
 
 Save this file as `lolcow.def` and run `apptainer build lolcow.sif lolcow.def`. Does it work?
 
 We need to update our package list. Let's modify our definition file and build again.
 
-{{< code-snippet >}}Bootstrap: docker
+```
+Bootstrap: docker
 From: ubuntu:22.04
 
 %post
     apt-get update
     apt-get install fortune cowsay lolcat
-{{< /code-snippet >}}
+```
 
 This time it still failed due to the prompt for confirmation. To pass "yes" automatically, add `-y`.
 
-{{< code-snippet >}}Bootstrap: docker
+```
+Bootstrap: docker
 From: ubuntu:22.04
 
 %post
     apt-get update
     apt-get install -y fortune cowsay lolcat
-{{< /code-snippet >}}
+```
 
 This finally works.
 
@@ -252,7 +259,8 @@ But it only returns a shell prompt where `fortune`, `cowsay`, `lolcat` don't see
 
 This is equivalent to `export PATH=/usr/games:${PATH}` but it is preserved at runtime. In doing so we can execute `fortune`, `cowsay`, and `lolcat` directly without specifying the full path.
 
-{{< code-snippet >}}Bootstrap: docker
+```
+Bootstrap: docker
 From: ubuntu:22.04
 
 %post
@@ -262,11 +270,12 @@ From: ubuntu:22.04
 %environment
     export PATH=/usr/games:${PATH}
     export LC_ALL=C
-{{< /code-snippet >}}
+```
 
 ### Use `%runscript` to set default command
 
-{{< code-snippet >}}Bootstrap: docker
+```
+Bootstrap: docker
 From: ubuntu:22.04
 
 %post
@@ -279,7 +288,7 @@ From: ubuntu:22.04
 
 %runscript
     fortune | cowsay | lolcat
-{{< /code-snippet >}}
+```
 
 Save this as `lolcow_0.def`, which will be the basis for comparison.
 
@@ -291,7 +300,8 @@ While our container is functional, there is room for improvement. We shall look 
 
 Package managers usually leave behind some cache files after installation that can be safely removed. Depending on your application, they can easily accumulate up to several GBs.
 
-{{< code-snippet >}}Bootstrap: docker
+```
+Bootstrap: docker
 From: ubuntu:22.04
 
 %post
@@ -305,7 +315,7 @@ From: ubuntu:22.04
 
 %runscript
     fortune | cowsay | lolcat
-{{< /code-snippet >}}
+```
 
 Save this as `lolcow_1.def`.
 
@@ -313,7 +323,8 @@ Save this as `lolcow_1.def`.
 
 The `apt` package manager often recommends related packages that are not really necessary. To disable recommendation, use `--no-install-recommends`.
 
-{{< code-snippet >}}Bootstrap: docker
+```
+Bootstrap: docker
 From: ubuntu:22.04
 
 %post
@@ -327,7 +338,7 @@ From: ubuntu:22.04
 
 %runscript
     fortune | cowsay | lolcat
-{{< /code-snippet >}}
+```
 
 Save this as `lolcow_2.def`.
 

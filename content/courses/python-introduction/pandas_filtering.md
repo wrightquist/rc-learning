@@ -13,7 +13,7 @@ Pandas can easily handle this task.  Conventionally, we use the IEEE Not A Numbe
 
 To check for missing data in our `student_grades` dataframe we can use `isna()` and `notna()`, both of which are Boolean functions so will return True or False. 
 
-{{< code-snippet >}}
+```
 dates=["2000-01-01 00:00:00","2000-01-02 00:00:00",
        "2000-01-03 00:00:00","2000-01-04 00:00:00",
        "2000-01-05 00:00:00","2000-01-06 00:00:00"]
@@ -21,7 +21,7 @@ weather=pd.DataFrame({"Minimum Temp":[-5.87,np.nan,-4.58,-6.40,-5.50,-3.29],
                       "Maximum Temp":[8.79,np.nan,5.10,2.68,6.18,4.50],
                       "Cloud Cover":[3,5,3,2,3,5]},
                       index=dates)
-{{< /code-snippet >}}
+```
 
 ```python
 >>>weather.isna()
