@@ -10,4 +10,4 @@ notes: hpc-intro
 
 UVA's primary resource for high-performance computing provides a platform for computationally-intensive research across a variety of disciplines. 
 
-{{< figure src="/tutorials/hpc-intro/img/rivanna_racks.png" caption="UVA's HPC cluster" >}}
+![](img/rivanna_racks.png "UVA's HPC cluster")
