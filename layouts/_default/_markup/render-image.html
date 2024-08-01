@@ -1,0 +1,18 @@
+{{ $src := .Destination }}
+{{ $width := ""}}
+{{ with partial "util_not_external" (dict "src" $src) }}
+    {{ $arr := split $src "?" }}
+    {{ $src = index $arr 0 }}
+    {{ $width = index $arr 1 }}
+{{ end }}
+{{ with partial "util_resolve_url" (dict "page" .Page "src" $src) }}
+    {{ $src = . }}
+{{ end }}
+
+<figure>
+    <img src="{{ $src }}"
+         {{ with .Text }} alt="{{ . }}"{{ end }}
+         {{ with $width }} width="{{ . }}"{{ end }}
+    >
+    {{ with .Title }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

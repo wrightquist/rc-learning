@@ -1,0 +1,10 @@
+{{ $src := .Destination }}
+{{ with partial "util_resolve_url" (dict "page" .Page "src" $src) }}
+    {{ $src = . }}
+{{ end }}
+
+{{/* A Hugo Markdown render hook to parse links, opening external links in new tabs. */}}
+<a href="{{ $src | safeURL }}"
+   {{ with .Title}} title="{{ . }}"{{ end }}
+   {{ with not (partial "util_not_external" (dict "src" $src)) }} target="_blank" rel="noopener"{{ end }}
+>{{ .Text | safeHTML }}</a>

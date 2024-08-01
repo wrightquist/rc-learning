@@ -1,0 +1,16 @@
+{{ $src := .src }}
+{{ $file := .page.File }}
+{{ with partial "util_not_external" (dict "src" $src) }}
+    {{ $src = replace $src ".md" "" }}
+    {{ if hasPrefix $src "/" }}
+        {{ $src = replace $src "/static/" "/" }}
+        {{ $src = replace $src "/content/" "/" }}
+        {{ $src = replace $src "/assets/" "/" }}
+    {{ else if hasPrefix $src "#" }}
+    {{ else }}
+        {{ with $file }}
+            {{ $src = print "/" (replace .Dir "\\" "/") $src }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ return $src }}

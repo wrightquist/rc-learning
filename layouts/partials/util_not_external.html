@@ -1,0 +1,1 @@
+{{ return not (or (hasPrefix .src "https:") (hasPrefix .src "http:") (hasPrefix .src "localhost:") (hasPrefix .src "file:") (hasPrefix .src "data:") (hasPrefix .src "mailto:")) }}
