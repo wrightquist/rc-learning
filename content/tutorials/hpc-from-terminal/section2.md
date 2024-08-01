@@ -20,7 +20,7 @@ Directories that are stored within another directory are _subdirectories_ of the
 
 Both files and directories have “metadata” associated with them such as name, timestamps, and permissions.
 
-The names of Unix files and directories should contain _no spaces_. 
+The names of Unix files and directories should contain _no spaces_.
 ```bash
 $ls 
 
@@ -245,29 +245,29 @@ $ls
 ```
 
 Q1: What is the full path of your home directory?
-<details><summary>Solution</summary>
 
+{{< spoiler text="Solution" >}}
 ```bash
 $cd ~
 $pwd
 ```
-</details>
+{{</ spoiler >}}
 
 
 Q2: Delete the `sub_dir` folder.
-<details><summary>Solution</summary>
 
+{{< spoiler text="Solution" >}}
 ```bash
 $rmdir ~/test_dir/sub_dir
 ```
-</details>
+{{</ spoiler >}}
 
 Q3: Copy the directory
 `/share/resources/tutorials/rivanna-cl/shakespeare` into your home directory.
-<details><summary>Solution</summary>
 
+{{< spoiler text="Solution" >}}
 ```bash
 $cp -r /share/resources/tutorials/rivanna-cl/shakespeare ~
 ```
-</details>
+{{</ spoiler >}}
 

@@ -332,7 +332,7 @@ The output of man is often called the _manpage_ of that command.
 
 Q1: Create a directory called `newdir`.  Navigate to it.  Make the new file `mynewfile` and save it with `^d`. Use nano or another editor of your preference and type a line or two of text.
 
-<details><summary>Solution</summary>
+{{< spoiler text="Solution" >}}
 
 ```bash
 $mkdir newdir
@@ -340,11 +340,11 @@ $cd newdir
 $cat > mynewfile
 nano mynefile
 ```
-</details>
+{{</ spoiler >}}
 
 Q2: View the content of the `mynewfile` using `more`. Rename `mynewfile` to `the_file`. Copy `the_file` to `old_file`. List the files in long format.
 
-<details><summary>Solution</summary>
+{{< spoiler text="Solution" >}}
 
 ```bash
 $more mynewfile
@@ -352,4 +352,4 @@ $mv mynewfile the_file
 $cp the_file old_file
 $ls -l
 ```
-</details>
+{{</ spoiler >}}

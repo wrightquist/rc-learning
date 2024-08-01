@@ -168,9 +168,7 @@ for k,v in record.items():
     print (k,v)
 ```
 
-<details>
-<summary>Output</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 Count 88
 RetMax 20
@@ -182,8 +180,7 @@ TranslationSet [{'From': 'Homo sapiens[Orgn]', 'To': '"Homo sapiens"[Organism]'}
 TranslationStack [{'Term': '"Homo sapiens"[Organism]', 'Field': 'Organism', 'Count': '1423829', 'Explode': 'Y'}, {'Term': 'pax6[Gene]', 'Field': 'Gene', 'Count': '2621', 'Explode': 'N'}, 'AND']
 QueryTranslation "Homo sapiens"[Organism] AND pax6[Gene]
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 The search results are returned as a [dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) and we can retrieve the list of unique IDs that match our query via `record["IdList"]`.
 
@@ -239,9 +236,7 @@ for seq_id in record["IdList"]:
         gbfile.write(result.rstrip()+"\n")
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 Count 106
 RetMax 5
@@ -264,8 +259,7 @@ Saving to file: HsPax6-1844139631-nucleotide.gb
 Saving to file: HsPax6-1844139629-nucleotide.gb
 Done
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 Note that the `record['IdList']` may not represent all the records. Remember that the  `record['WebEnv']` and `record['QueryKey']` entries provide access to the search history on the remote server.  So we can use these instead of the `record['IdList']` to get all records.
 ```
@@ -275,9 +269,7 @@ handle = Entrez.efetch(db="protein", rettype="fasta", retmode="text", webenv=rec
 
 **Exercise:** Find and download the top 10 FASTA EST nucleotide sequences for the mouse (Mus Musculus) TP53 tumor suppressor. **Hint:** look up the EST database descriptor in [this table](https://www.ncbi.nlm.nih.gov/books/NBK25497/table/chapter2.T._entrez_unique_identifiers_ui/?report=objectonly).
 
-<details>
-<summary>Solution:</summary>
-
+{{< spoiler text="Solution" >}}
 ```python
 handle = Entrez.esearch(db="nucest", term = ["Mus musculus[Orgn] AND tp53[Gene]"], retmax=10, usehistory="y")
 record = Entrez.read(handle)
@@ -299,9 +291,7 @@ for seq_id in record["IdList"]:
         # append fasta entry
         fastafile.write(result.rstrip()+"\n")
 ```        
-</details>
-
-<br>
+{{</ spoiler >}}
 
 ## Retrieve Protein Records from the ExPASy Database
 
@@ -326,9 +316,7 @@ print (record.organism)
 print (record.sequence[:10]) # string
 ``` 
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 CHS3_BROFI
 394
@@ -337,9 +325,7 @@ Reviewed
 Bromheadia finlaysoniana (Orchid).
 MAPAMEEIRQ
 ```
-</details>
-
-<br>
+{{</ spoiler >}}
 
 The return type of `SwissProt.read()` is a [Bio.SwissProt.Record](https://biopython.org/docs/1.75/api/Bio.SwissProt.html) object. In the above example we're printing only a subset of its fields.  The `record.sequence` field is a string, but it can easily be converted into a [Bio.Seq](#sequence-objects) object.
 
@@ -360,9 +346,7 @@ print (record.rules)
 print (record.matrix)
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 ASN_GLYCOSYLATION
 PATTERN
@@ -370,8 +354,7 @@ N-{P}-[ST]-{P}.
 []
 []
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 The return type of `Prosite.read()` is a [Bio.ExPASy.Prosite.Record](https://biopython.org/docs/1.75/api/Bio.ExPASy.Prosite.html) object.
 **Note:** Use the `Bio.ExPASy.Prosite.parse()` function to parse files containing multiple records.
@@ -386,9 +369,8 @@ record = Prodoc.read(handle)
 ```
 
 **Exercise:** Retrieve the SwissProt records for proteins with the following IDs: "O23729", "O23730", "O23731". Try to use list comprehension to create a list containing the records for all retrieved proteins.
-<details>
-<summary>Solution</summary>
 
+{{< spoiler text="Output" >}}
 ```python
 from Bio import ExPASy,SwissProt
 
@@ -402,8 +384,7 @@ for record in records:
     print(repr(record.organism))
     print(record.sequence[:20],"\n")
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 Learn more about [SwissProt](http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec%3Aexpasy_swissprot).
 
@@ -441,9 +422,7 @@ for r in results:
     print (r)
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 Number of matches: 4
 {'sequence_ac': 'P26367', 'sequence_id': 'PAX6_HUMAN', 'sequence_db': 'sp', 'start': 4, 'stop': 130, 'signature_ac': 'PS51057', 'signature_id': 'PAIRED_2', 'score': '64.941', 'level': '0'}
@@ -451,8 +430,7 @@ Number of matches: 4
 {'sequence_ac': 'P26367', 'sequence_id': 'PAX6_HUMAN', 'sequence_db': 'sp', 'start': 208, 'stop': 268, 'signature_ac': 'PS50071', 'signature_id': 'HOMEOBOX_2', 'score': '20.164', 'level': '0'}
 {'sequence_ac': 'P26367', 'sequence_id': 'PAX6_HUMAN', 'sequence_db': 'sp', 'start': 243, 'stop': 266, 'signature_ac': 'PS00027', 'signature_id': 'HOMEOBOX_1', 'level_tag': '(0)'}
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 You see that each item `r` represents a dictionary describing a specific match.
 
@@ -487,9 +465,7 @@ print ("AC count:", my_dna.count("AC"))
 print ("AA count:", Seq("AAAA").count("AA")) # non-overlapping
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 ATGAGTACACTATAGA
 5
@@ -499,8 +475,7 @@ A count: 7
 AC count: 2
 AA count: 2
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 Note the return of `-1` if no sequence match was found.
 
@@ -521,9 +496,7 @@ my_peptide = my_dna.translate()
 print ("Peptide:", my_peptide)
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 original:        ATGAGTACACTATAGA
 complement:      TACTCATGTGATATCT
@@ -531,8 +504,7 @@ rev complement:  TCTATAGTGTACTCAT
 RNA: AUGAGUACACUAUAGA
 Peptide: MSTL*
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 Like Strings, Seq objects are immutable; this means that the sequence is read-only and cannot be modified in place. However, you can convert a `Seq` object into a `MutableSeq` object that allows you to manipulate the sequence after object initialization.
 
@@ -544,23 +516,18 @@ print (my_dna)
 print (mutable_dna)
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 ATGAGTACACTATAGA
 ATAAGTACACTATAGA
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 Note that the sequence is zero-indexed: the first nucleotide has index 0, the second has index 1, and so forth. So in this example we're changing the third nucleotide (index 2, G->A).
 
 **Exercise:** Create a `Seq` object with a DNA nucleotide sequence of your choice. Find the first putative start codon (ATG), replace each "C" with a "G", and transcribe and translate the original as well as the modified sequence. **Hint:** As an intermediary step, convert `Seq` object to a string and use a string method for replacement.
 
-<details>
-<summary>Solution:</summary>
-
+{{< spoiler text="Output" >}}
 ```python
 from Bio.Seq import Seq
 
@@ -579,8 +546,7 @@ print ("DNA (modified):", mod_seq)
 print ("Peptide (original):", peptide)
 print ("Peptide (modified):", mod_peptide)
 ```
-</details> 
-<br>
+{{</ spoiler >}}
 
 ## Handling Sequence Records
 
@@ -610,9 +576,7 @@ print(record)
 
 The above code example is in the __seqrecord.py__ script.
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 ID: YP_025292.1
 Name: HokC
@@ -620,8 +584,7 @@ Description: toxic membrane protein, small
 Number of features: 0
 Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF')
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 ## Sequence File Operations
 
@@ -647,17 +610,14 @@ for entry in fastalist:
 
 **Exercise:** Filter the list of records to only include sequences with less than 300 amino acids.
 
-<details>
-<summary>Solution</summary>
-
+{{< spoiler text="Solution" >}}
 ```python
 # filter list of records
 sublist = [e for e in fastalist if len(e.seq) < 300]
 print (f"Total number of sequences: {len(fastalist)}")
 print (f"Number of sequences (<300 aa): {len(sublist)}")
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 **Convert Genbank to Fasta File**
 
@@ -728,9 +688,7 @@ print ("Alignment length:", alignment.get_alignment_length())
 print (alignment,"\n")
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 Alignment with 8 rows and 867 columns
 MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDMAHKGHSGVNQL...PWV NP_524628.2
@@ -742,8 +700,7 @@ MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDMAHKGHSGVNQL...PWV NP_524628.2
 ----MPQKEY-Y----N-----RATWESGVASMMQNSHSGVNQL...--- NP_571379.1
 ----MPQKEY-H----N-----QPTWESGVASMMQNSHSGVNQL...--- NP_571716.1
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 **Update identifier**
 ```python
@@ -753,9 +710,7 @@ for idx,line in enumerate(alignment):
 print (alignment)
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 Alignment with 8 rows and 867 columns
 MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDMAHKGHSGVNQL...PWV H.sapiens:NP_524628.2
@@ -767,8 +722,7 @@ MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDMAHKGHSGVNQL...PWV H.sapiens:NP_524628.2
 ----MPQKEY-Y----N-----RATWESGVASMMQNSHSGVNQL...--- D.melanogaster:NP_571379.1
 ----MPQKEY-H----N-----QPTWESGVASMMQNSHSGVNQL...--- D.melanogaster:NP_571716.1
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 **Slicing and joining**
 ```python
@@ -778,9 +732,7 @@ subset = alignment[:6,:50]
 print (subset)
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 Alignment with 6 rows and 50 columns
 MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDMAHKGHSGVNQLGGVFVG H.sapiens:NP_524628.2
@@ -790,8 +742,7 @@ MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDMAHKGHSGVNQLGGVFVG H.sapiens:NP_524628.2
 ---------------------------------MQNSHSGVNQLGGVFVN D.rerio:AAH36957.1
 --------------------------------MMQNSHSGVNQLGGVFVN D.rerio:XP_029701655.1
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 Let's join two alignment blocks:
 ```python
@@ -799,9 +750,7 @@ edited = alignment[:,:50] + alignment[:,500:]
 print (edited)
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 Alignment with 8 rows and 417 columns
 MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDMAHKGHSGVNQL...PWV H.sapiens:NP_524628.2
@@ -813,8 +762,7 @@ MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDMAHKGHSGVNQL...PWV H.sapiens:NP_524628.2
 ----MPQKEY-Y----N-----RATWESGVASMMQNSHSGVNQL...--- D.melanogaster:NP_571379.1
 ----MPQKEY-H----N-----QPTWESGVASMMQNSHSGVNQL...--- D.melanogaster:NP_571716.1
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 **Exporting to other alignment file formats**
 ```python
@@ -827,9 +775,7 @@ print ("Formatted Alignment:")
 print (format(alignment, "clustal"))
 ```
 
-<details>
-<summary>Output:</summary>
-
+{{< spoiler text="Output" >}}
 ```bash
 Formatted Alignment:
 CLUSTAL X (1.81) multiple sequence alignment
@@ -843,8 +789,7 @@ D.rerio:XP_029701655.1              --------------------------------MMQNSHSGVNQL
 D.melanogaster:NP_571379.1          ----MPQKEY-Y----N-----RATWESGVASMMQNSHSGVNQLGGVFVN
 D.melanogaster:NP_571716.1          ----MPQKEY-H----N-----QPTWESGVASMMQNSHSGVNQLGGVFVN
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 **Exercise:**
 Find the first alignment block that shows no gaps across all 8 aligned sequences.
@@ -852,9 +797,7 @@ Find the first alignment block that shows no gaps across all 8 aligned sequences
 2. Save the block as a new clustal formatted text file.
 3. From that block, extract the D. rerio (zebrafish) sequences and print the two sequences
 
-<details>
-<summary>Solution:</summary>
-
+{{< spoiler text="Output" >}}
 ```python
 from Bio import AlignIO
 
@@ -896,8 +839,7 @@ with open("Pax6-multispec-block1.aln", "w") as outputfile:
 zebrafish_lines = block1[4:6,:]
 print (zebrafish_lines)
 ```
-</details>
-<br>
+{{</ spoiler >}}
 
 # Resources
 

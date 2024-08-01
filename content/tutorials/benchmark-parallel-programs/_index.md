@@ -15,13 +15,11 @@ True or false:
 2. "I can save SU by using more cores/GPUs, since my job will run faster."
 3. "I should request all cores/GPUs on a node."
 
-<details><summary>Show answer</summary>
-1. Not guaranteed. <br>
-2. False! <br>
-3. Depends.
-</details>
-
-<br>
+{{< spoiler text="show answer" >}}
+   1. Not guaranteed. <br>
+   2. False! <br>
+   3. Depends.
+{{</ spoiler  >}}
 
 New HPC users may implicitly assume that these statements are true and request resources that are not well utilized. The disadvantages are:
 
@@ -80,25 +78,23 @@ As $N\rightarrow\infty$, $s\rightarrow 1/(1-p)$. This is the theoretical speedup
 
 **Exercise:** a) Find the maximum speedup if 99%, 90%, 50%, 10%, and 0% of the program is parallelizable. b) For $N=100$, what is the relative SU in each case?
 
-<details><summary>Show answer</summary>
+{{< spoiler text="show answer" >}}
 a) 100, 10, 2, 1.11, 1.
 
 b) First calculate the actual speedup (not the theoretical limit): 50.25, 9.17, 1.98, 1.11, 1.<br>
 Relative SU: 1.99, 10.9, 50.5, 90.1, 100.<br>
 
 Notice how the wasted SU increases dramatically.
-</details>
-<br>
+{{</ spoiler  >}}
 
 **Exercise:** What is the theoretical limit in relative SU?
 $$\lim_{N\rightarrow\infty} \frac{SU}{SU_1}$$
 Hint: Consider cases $s<N$ and $s=N$ separately.
 
-<details><summary>Show answer</summary>
+{{< spoiler text="show answer" >}}
 For perfect scaling, the relative SU is equal to 1 for all values of N.<br>
 Otherwise, no limit/undefined/goes to infinity.
-</details>
-<br>
+{{</ spoiler >}}
 
 # Tools
 
@@ -340,10 +336,9 @@ Notice the plateau beyond $N=6$, which implies that you should not request more 
 
 **Exercise:** Deduce the parallel portion $p$ of this program using Amdahl's Law.
 
-<details><summary>Show answer</summary>
+{{< spoiler text="show answer" >}}
 Using $s=3.49$ as the theoretical speedup limit, $p=1-1/s=0.71$.
-</details>
-<br>
+{{</ spoiler >}}
 
 The performance of K80 vs RTX 2080Ti is compared below. On a single GPU device, the latter is 30% faster.
 
@@ -355,13 +350,14 @@ A complete machine learning benchmark would involve such parameters as batch siz
 
 **Exercise:** Revisit the true-or-false questions at the beginning of this tutorial and answer them in your own words.
 
-**Exercise:** A user performed a benchmark on the `standard` partition and determined that a serial job would take 10 days to complete and that the theoretical speedup limit is 4. The entire project involves 1,000 such jobs. Assume that all 1,000 jobs can start running immediately. (The `standard` partition has a walltime limit of 7 days. No job extensions can be granted.)<br>
+**Exercise:** A user performed a benchmark on the `standard` partition and determined that a serial job would take 10 days to complete and that the theoretical speedup limit is 4. The entire project involves 1,000 such jobs. Assume that all 1,000 jobs can start running immediately. (The `standard` partition has a walltime limit of 7 days. No job extensions can be granted.)
+
 a) What is the minimum amount of SU needed to finish the entire project?<br>
-b) The user has a deadline of 3 days. How many cores should the user request per job? How many extra SU will need to be spent compared to the minimum in a)?<br>
+b) The user has a deadline of 3 days. How many cores should the user request per job? How many extra SU will need to be spent compared to the minimum in a)?  
 c) Suppose the user did not perform the benchmark and just randomly decided to use 20 cores per job. How much time and how many SU will the user spend for this project? Compare your answer with b).<br>
 d) Repeat b) but this time the deadline is in 50 hours.
 
-<details><summary>Show answer</summary>
+{{< spoiler text="show answer" >}}
 a) Since each job could not finish within the 7-day limit using 1 core, we need to find the smallest $N$ such that $t\le7$ days. On one hand, the restriction is
 $$s=\frac{t_1}{t}\ge \frac{10}{7};$$
 on the other hand, we know $s_{\max}=1/(1-p) = 4$ so $p=0.75$ and that
@@ -375,8 +371,6 @@ $$s= \frac{1}{0.25+\frac{0.75}{2}} = 1.6$$
 and
 $$t= t_1/s = 10\times24/1.6 = 150\ \mathrm{hours}$$
 or 6 days and 6 hours. Hence, each job takes $Nt=2\times 150=300$ SU and the entire project needs 300k SU.
-
-<br>
 
 b) Using the derivation in a) we find
 $$N \ge \frac{0.75}{\frac{3}{10}-0.25} = 15.$$
@@ -394,7 +388,6 @@ Each job costs $20\times69=1.38$k SU and the entire project needs 1.38M SU. Comp
 <br>
 
 d) Unfortunately, the user will not be able to meet the deadline, since even with an infinite amount of cores each job would take $10\times24/4=60$ hours.
+{{</ spoiler >}}
 
-</details>
-<br>
 The moral of this exercise is two-fold: do your benchmark and plan ahead!

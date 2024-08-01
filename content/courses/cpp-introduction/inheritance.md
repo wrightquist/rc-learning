@@ -86,7 +86,7 @@ The Parent constructor cannot be used to set the new member `age`, so a mutator 
     {{< spoiler text="Example solution" >}}
     {{< code lang="c++" >}}
     [](/content/courses/cpp-introduction/solns/inherit_chain.cxx)
-{{</ code >}}
+    {{</ code >}}
     {{< /spoiler >}}
 
 2. Create a constructor for Animal that sets the name, food, foodQuantity, and vocalization.  Pass it through to the descendant classes and in each one, add the attributes new to that class.  Remove functions made unnecessary by the constructor.  Optionally implement the `using` syntax in the Antelope class.  Depending on your compiler version, you may need to add a flag `-std=c++11` or equivalent.

@@ -323,10 +323,8 @@ The following script, `Omero_info.py` establishes a connection to the OMERO data
 
 (Click on the black triangle next to **View** to take a look at the script.)
 
-<details>
-<summary>View <code>Omero_Info.py</code> script</summary>
-
-{{< highlight python "linenos=table,linenostart=1" >}}
+{{< spoiler text="Omero_Info.py" >}}
+```python
 #@ String (label="Omero User") username
 #@ String (label="Omero Password", style="password") password
 #@ String (label="Omero Server", value="omero.hpc.virginia.edu") server
@@ -349,7 +347,6 @@ from omero.gateway.exception import DSAccessException
 from omero.gateway.exception import DSOutOfServiceException
 from omero.gateway.facility import BrowseFacility
 from omero.log import SimpleLogger
-
 
 def connect(group_id, username, password, server, port):    
     """Omero Connect with credentials and simpleLogger"""
@@ -480,9 +477,9 @@ show_as_table("My Groups", groups, order=['Id', 'Name'])
 all_data,_,datasets = get_projects_datasets(gateway)
 show_as_table("Projects and Datasets - Group: %s" % current_group, all_data, order=['Group Id', 'Dataset Id', 'Dataset Name', 'Project Name', 'Project Id'])
 
-gateway.disconnect()	
-{{< /highlight >}}
-</details>
+gateway.disconnect()
+```
+{{</ spoiler >}}
 
 
 ---
@@ -587,11 +584,9 @@ Let's look at an example:
 2. Click on the `blobs.gif` image.  In the general tab, you will see three entries under the `Key-Value` group. (You may have to click on the triangle next to the label to expand the tab and see it).
 
 The values displayed are not particular meaningful, but they illustrate the concept. You can create and modify annotations interactively through the OMERO client.  In addition, you can manipulate key-value pairs (as well as other annotation categories) through Fiji scripts.
-   
-<details>
-<summary>View <code>Omero_Map_Annotation.py</code> script</summary>
 
-{{< highlight python "linenos=table" >}}
+{{< spoiler text="Omero_Map_Annotation.py" >}}
+```python
 #@ String (label="Omero User") username
 #@ String (label="Omero Password", style="password") password
 #@ String (label="Omero Server", value="omero.hpc.virginia.edu") server
@@ -681,9 +676,8 @@ result = create_map_annotation(ctx, annotation, target_id, target_type=target_ty
 print "Annotation %s exported to Omero." % annotation
 
 gateway.disconnect()
-{{< /highlight >}}
-
-</details>
+```
+{{</ spoiler >}}
 
 ---
 
@@ -725,10 +719,8 @@ To test this and see the process in action we will process a set of four images 
 
 5. After the script ru has completed, go to the OMERO webclient and open the Project that you had chosen to collect the output.  Look for the `binary segmentation masks`, the attached `Results.csv` files and the new `Key-Value Pairs` annotations for each image.
 
-<details>
-<summary>View <code>Omero_Processing_Nuclei.py</code> script</summary>
-
-{{< highlight python "linenos=table" >}}
+{{< spoiler text="Omero_Processing_Nuclei.py" >}}
+```python
 #@ String (label="Omero User") username
 #@ String (label="Omero Password", style="password") password
 #@ String (label="Omero Server", value="omero.hpc.virginia.edu") server
@@ -1033,8 +1025,8 @@ shutil.rmtree(tmp_dir)
 gateway.disconnect()	
 print "Done.\n"
 
-{{< /highlight >}}
-</details>
+```
+{{</ spoiler >}}
 
 ---
 

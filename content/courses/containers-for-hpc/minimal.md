@@ -49,11 +49,11 @@ pip install --no-cache-dir ...
 ## Exercise: QIIME 2
 QIIME 2 is a popular bioinformatics software. Can you suggest any potential improvement to the [Dockerfile](https://github.com/qiime2/vm-playbooks/blob/0fda9dce42802596756986e2f80c38437872c66e/docker/Dockerfile)? 
 
-<details><summary>Answer</summary>
+{{< spoiler text="Answer" >}}
 
 With our [Dockerfile](https://github.com/uvarc/rivanna-docker/blob/master/qiime2/2020.8/Dockerfile), we managed to reduce the image size by half.
 
-</details>
+{{</ spoiler >}}
 
 ---
 
@@ -104,17 +104,17 @@ LightGBM is a gradient boosting framework that uses tree based learning algorith
 
 1. Examine the [official Dockerfile](https://github.com/microsoft/LightGBM/blob/master/docker/gpu/dockerfile.gpu). Can you identify any problems?
 
-    <details><summary>Answer</summary>
+    {{< spoiler text="Answer" >}}
 
     - `nvidia/cuda:cudnn-devel` as [base image](https://hub.docker.com/r/nvidia/cuda/tags)  (>1 GB)
     - Clean up in separate `RUN` statements
 
-    </details>
+    {{</ spoiler >}}
     <br>
 
 2. Let's try to build an image of the command line interface (CLI) alone. Copy the Dockerfile. Remove the Tini, Conda, Jupyter sections and everything related to python/conda. Build the image and note the image size.
 
-    <details><summary>Answer</summary>
+    {{< spoiler text="Answer" >}}
     
     ```dockerfile
     FROM nvidia/cuda:8.0-cudnn5-devel
@@ -195,7 +195,7 @@ LightGBM is a gradient boosting framework that uses tree based learning algorith
 
     2.24 GB
 
-    </details>
+    {{</ spoiler >}}
     <br>
 
 3. Rewrite the Dockerfile using a multi-stage build based on [OpenCL](https://hub.docker.com/r/nvidia/cuda/tags).
@@ -217,7 +217,7 @@ LightGBM is a gradient boosting framework that uses tree based learning algorith
         - Remember to copy from the build stage
     - Build the image and compare the image size with step 2.
 
-    <details><summary>Answer</summary>
+    {{< spoiler text="Answer" >}}
 
     ```dockerfile
     FROM nvidia/opencl:devel AS build
@@ -264,7 +264,7 @@ LightGBM is a gradient boosting framework that uses tree based learning algorith
 
     374 MB (84% reduction)
 
-    </details>
+    {{</ spoiler >}}
     <br>
 
 4. Challenge: Verify that the two containers have the same performance on Rivanna's GPU node. Follow the [tutorial example](https://lightgbm.readthedocs.io/en/latest/GPU-Tutorial.html#dataset-preparation). Run the same job without using GPU. How much faster is it with GPU?
@@ -330,7 +330,7 @@ This exercise illustrates how we can cherry-pick files from the package manager 
 
 3. Having identified the necessary files to copy, add a second stage `FROM scratch` to your Dockerfile. Only `COPY` what's necessary. Build and compare image sizes.
 
-    <details><summary>Answer</summary>
+    {{< spoiler text="Answer" >}}
 
     ```dockerfile
     FROM ubuntu:16.04 AS build
@@ -357,7 +357,7 @@ This exercise illustrates how we can cherry-pick files from the package manager 
     ```
 
     The image size comparison is 130 MB vs 4 MB, a 97% reduction.
-    </details>
+    {{</ spoiler >}}
 
 ## Exercise: (Trick) Question
 
@@ -372,7 +372,7 @@ COPY --from=build /etc/OpenCL/vendors/nvidia.icd /etc/OpenCL/vendors/nvidia.icd
 
 Build the image and compare image sizes.
 
-<details><summary>Answer</summary>
+{{< spoiler text="Answer" >}}
 
 ```dockerfile
 FROM nvidia/opencl:devel AS build
@@ -434,7 +434,7 @@ ENTRYPOINT ["/lightgbm"]
 
 The image size is merely **10.7 MB**, 99.5% smaller than what we started with. There is no loss in functionality or performance.
 
-</details>
+{{</ spoiler >}}
 
 We submitted a [pull request](https://github.com/microsoft/LightGBM/pull/3408) that has been [merged](https://github.com/microsoft/LightGBM/tree/master/docker/gpu).
 
@@ -508,7 +508,7 @@ where $A_{mk}, B_{kn}, C_{mn}$ are matrices and $\alpha, \beta$ are constants. F
 
 6. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
 
-    <details><summary>Answer</summary>
+    {{< spoiler text="Answer" >}}
 
     ```dockerfile
     FROM gcc:10.2 AS build
@@ -545,12 +545,12 @@ where $A_{mk}, B_{kn}, C_{mn}$ are matrices and $\alpha, \beta$ are constants. F
 
     1.29 GB vs 42.9 MB (97% reduction).
 
-    </details>
+    {{</ spoiler >}}
     <br>
 
 7. Re-compile the code with static linking by adding a `-static` flag. In the production stage simply copy the binary. Compare image sizes.
 
-    <details><summary>Answer</summary>
+    {{< spoiler text="Answer" >}}
 
     ```dockerfile
     FROM gcc:10.2 AS build
@@ -568,7 +568,7 @@ where $A_{mk}, B_{kn}, C_{mn}$ are matrices and $\alpha, \beta$ are constants. F
 
     26.6 MB (98% reduction).
 
-    </details>
+    {{</ spoiler >}}
 
 This exercise illustrates that it is easier to build a minimal container of a static binary.
 
@@ -628,7 +628,7 @@ LibTorch is the C++ frontend of PyTorch. This exercise is based on the ["Writing
 
 6. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
 
-    <details><summary>Answer</summary>
+    {{< spoiler text="Answer" >}}
 
     ```dockerfile
     FROM gcc:10.2 AS build
@@ -679,7 +679,7 @@ LibTorch is the C++ frontend of PyTorch. This exercise is based on the ["Writing
 
     1.98 GB for build stage vs 314 MB for production stage (85% reduction).
 
-    </details>
+    {{</ spoiler >}}
     <br>
 
 7. Challenge: The above image cannot make use of GPU. Build an image for GPU. Hints:
