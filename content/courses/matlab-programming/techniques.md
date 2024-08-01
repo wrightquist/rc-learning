@@ -16,7 +16,7 @@ The section is a review of the basic programming constructs presented in the
 
 ## Decision Branching
 
-{{< figure src="/courses/matlab-programming/branching1.png"  >}}
+![](img/branching1.png)
 
 **[Exercise: Using if-elseif-else](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=14&lesson=3&section=6)**
 
@@ -28,7 +28,7 @@ The section is a review of the basic programming constructs presented in the
 
 **[Video: For Loops](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=14&lesson=5&section=2)**
 
-{{< figure src="/courses/matlab-programming/forLoop1.png"  >}}
+![](img/forLoop1.png)
 
 **[Exercise: Looping Through a Vector](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=14&lesson=5&section=6)**
 
@@ -37,8 +37,8 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 **[Slide: The while-Loop Construction](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=14&lesson=6&section=3)**
 
-{{< figure src="/courses/matlab-programming/whileLoop1.png"  >}}
-{{< figure src="/courses/matlab-programming/whileLoop2.png"  >}}
+![](img/whileLoop1.png)
+![](img/whileLoop2.png)
 
 **[Exercise: Finding eps](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=14&lesson=6&section=7)**
 
@@ -46,7 +46,7 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 **[Slide: Creating and Calling Functions](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=15&lesson=2&section=1)**
 
-{{< figure src="/courses/matlab-programming/function1.png"  >}}
+![](img/function1.png)
 
 **[Exercise: Create and Call a Function](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=15&lesson=2&section=4)**
 
@@ -54,11 +54,11 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 **Calling Function Files**
 
-{{< figure src="/courses/matlab-programming/function2.png"  >}}
+![](img/function2.png)
 
 **[Exercise: Compare Using a Tolerance](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=15&lesson=3&section=5)**
 
-{{< figure src="/courses/matlab-programming/function3.png"  >}}
+![](img/function3.png)
 
 # Storing Heterogeneous Data
 
@@ -125,7 +125,7 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 ## Applying Scalar Functions to Arrays
 
-{{< figure src="/courses/matlab-programming/cellfun1.png"  >}}
+![](img/cellfun1.png)
 
 **[Video: Applying Scalar Functions to Arrays](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=3&lesson=4&section=2)**
 
@@ -158,9 +158,9 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 ## Vectorization
 
-{{< figure src="/courses/matlab-programming/vectorization1.png"  >}}
+![](img/vectorization1.png)
 
-{{< figure src="/courses/matlab-programming/vectorization2.png"  >}}
+![](img/vectorization2.png)
 
 ## Copy-on-write with Function Parameters
 
@@ -172,7 +172,7 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 ## Nested Functions
 
-{{< figure src="/courses/matlab-programming/nestedFunction1.png"  >}}
+![](img/nestedFunction1.png)
 
 **[Slide: Nested Functions](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=4&lesson=8&section=2)**
 
@@ -230,29 +230,29 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 ## Restricting Access Using Private Functions
 
-{{< figure src="/courses/matlab-programming/privateFunction1.png"  >}}
+![](img/privateFunction1.png)
 
 **[Slide: Making Functions Private](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=6&lesson=2&section=2)**
 
-{{< figure src="/courses/matlab-programming/privateFunction2.png"  >}}
+![](img/privateFunction2.png)
 
 
 ## Writing Local Functions
 
-{{< figure src="/courses/matlab-programming/localFunction1.png"  >}}
-{{< figure src="/courses/matlab-programming/localFunction2.png"  >}}
-{{< figure src="/courses/matlab-programming/localFunction3.png"  >}}
+![](img/localFunction1.png)
+![](img/localFunction2.png)
+![](img/localFunction3.png)
 
 ## Comparison of Functions
 
-{{< figure src="/courses/matlab-programming/compareFunction1.png"  >}}
+![](img/compareFunction1.png)
 
 **[Exercise: Create Local Functions](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=6&lesson=3&section=4)**
 
 ## Validating Function Inputs
 
-{{< figure src="/courses/matlab-programming/validateInput1.png"  >}}
-{{< figure src="/courses/matlab-programming/validateInput2.png"  >}}
+![](img/validateInput1.png)
+![](img/validateInput2.png)
 
 **[Quiz](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=6&lesson=5&section=4)**
 
@@ -264,28 +264,28 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 ## What is a Test
 
-{{< figure src="/courses/matlab-programming/test1.png"  >}}
+![](img/test1.png)
 
 **[Slide: Elements of a Test](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=7&lesson=2&section=1)**
 
 ### "is" Functions
 
-{{< figure src="/courses/matlab-programming/isFunction.png"  >}}
+![](img/isFunction.png)
 
 **[Exercise: isequal Versus ==](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=7&lesson=2&section=3)**
 
 ### Test Response
-{{< figure src="/courses/matlab-programming/assertFunction.png"  >}}
+![](img/assertFunction.png)
 
 **[Exercise: assert](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=7&lesson=2&section=5)**
 
 ## Writing and Running a Test Script
 
-{{< figure src="/courses/matlab-programming/testScript1.png"  >}}
+![](img/testScript1.png)
 
 ### Writing a Test Script
 
-{{< figure src="/courses/matlab-programming/testScript2.png"  >}}
+![](img/testScript2.png)
 
 **[Exercise: Write a Test Script](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=7&lesson=3&section=3)**
 
@@ -301,7 +301,7 @@ To use a for loop, you need to know in advance how many iterations are required.
 # Utilizing Development Tools
 
 ## Developing and Maintaining Code
-{{< figure src="/courses/matlab-programming/devTools1.png"  >}}
+![](img/devTools1.png)
 
 ## Folder Reports
 
@@ -312,7 +312,7 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 ## Code Analyzer
 
-{{< figure src="/courses/matlab-programming/codeAnalyzer1.png"  >}}
+![](img/codeAnalyzer1.png)
 
 **[Slide: Suppressing and Fixing Code Analyzer Warnings](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=8&lesson=4&section=2)**
 
@@ -320,19 +320,19 @@ To use a for loop, you need to know in advance how many iterations are required.
 
 ## Debugging Runtime Errors
 
-{{< figure src="/courses/matlab-programming/debugRun1.png"  >}}
+![](img/debugRun1.png)
 
 **[Slide: Debugging Run-Time Errors](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=8&lesson=5&section=3)**
 
 
 ## Measuring Performance
 
-{{< figure src="/courses/matlab-programming/performance1.png"  >}}
+![](img/performance1.png)
 
 **[Slide: Tic and Toc](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=8&lesson=6&section=2)**
 
 ## Finding Bottlenecks
 
-{{< figure src="/courses/matlab-programming/bottleneck1.png"  >}}
+![](img/bottleneck1.png)
 
 **[Video: The MATLAB Profiler](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlpr#chapter=8&lesson=7&section=2)**

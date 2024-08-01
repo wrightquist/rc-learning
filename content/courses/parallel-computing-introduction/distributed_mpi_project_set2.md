@@ -10,13 +10,19 @@ A "token ring" is a circular messaging system.  Think of a relay, with a message
 
 #### Example Solutions
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/ring.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/ring.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/ring.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/ring.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/ring.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/ring.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 5
@@ -35,14 +41,22 @@ Each tasks sends its rank to its partner.  Each task receives the partner's rank
 Hints: do not overwrite the receiver's rank.  As always, Python programmers should take care that NumPy arrays are declared with the correct type.
 
 #### Example Solutions
+
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/send_recv_rank.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/send_recv_rank.cxx)
+{{</ code >}}
 {{< /spoiler >}}
+
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/send_recv_rank.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/send_recv_rank.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/send_recv_rank.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/send_recv_rank.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 6
@@ -53,22 +67,34 @@ Starting from the stub for your language, complete the send and receive calls.
 
 #### Starting Codes
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/manager_worker_stub.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/codes/manager_worker_stub.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/manager_worker_stub.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/manager_worker_stub.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/manager_worker.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/manager_worker.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 #### Example Solutions
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/manager_worker.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/manager_worker.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/manager_worker.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/manager_worker.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/manager_worker.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/manager_worker.py)
+{{</ code >}}
 {{< /spoiler >}}

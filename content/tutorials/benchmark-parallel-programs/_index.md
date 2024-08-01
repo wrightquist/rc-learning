@@ -198,7 +198,7 @@ Don't get excited about the apparent superlinear scaling ($s>N$ for $N=4,8$) - i
 
 The speedup is plotted below. Notice the perfect scaling up to $N=8$. The scaling performance worsens beyond 8 cores and drastically beyond 16. This does not mean 8 is the magic number to use for all Gaussian jobs - it only applies to calculations of a similar nature.
 
-{{< figure src="gaussian.png" width="600px" >}}
+![](img/gaussian.png?600)
 
 **Exercise:** Does this obey Amdahl's Law? Why or why not?
 
@@ -317,7 +317,7 @@ Results on a K80 GPU:
 
 The speedup is plotted below. Notice how the deviation from perfect scaling (light diagonal line) increases with $N$.
 
-{{< figure src="ddp_k80.png" width="400px" >}}
+![](img/ddp_k80.png?400)
 
 The same benchmark was performed on RTX 2080Ti:
 
@@ -336,7 +336,7 @@ The same benchmark was performed on RTX 2080Ti:
 
 Notice the plateau beyond $N=6$, which implies that you should not request more than 6 GPU devices for this particular task. (A good balance between speed and SU effectiveness may be $2\le N \le 4$.)
 
-{{< figure src="ddp_rtx.png" width="400px" >}}
+![](img/ddp_rtx.png?400)
 
 **Exercise:** Deduce the parallel portion $p$ of this program using Amdahl's Law.
 
@@ -347,7 +347,7 @@ Using $s=3.49$ as the theoretical speedup limit, $p=1-1/s=0.71$.
 
 The performance of K80 vs RTX 2080Ti is compared below. On a single GPU device, the latter is 30% faster.
 
-{{< figure src="k80_rtx.png" width="400px" >}}
+![](img/k80_rtx.png?400)
 
 ### Remarks
 

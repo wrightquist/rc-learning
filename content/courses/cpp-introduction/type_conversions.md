@@ -22,7 +22,9 @@ The rules for numerical type conversions may result in some surprises.  For exam
 This can result in loss of precision or even seemingly-bizarre results, such as when a signed int is converted to an unsigned int.
 
 To illustrate:
-{{< code file="/courses/cpp-introduction/codes/conversions.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/conversions.cxx)
+{{</ code >}}
 
 The result on a Unix system with g++ is
 ```no-highlight
@@ -53,7 +55,9 @@ d=(double) f;
 
 The same phenomena apply as for implicit conversions when one numeric type is converted to another. 
 
-{{< code file="/courses/cpp-introduction/codes/casts.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/casts.cxx)
+{{</ code >}}
 
 The result on a Unix system with g++ is
 ```no-highlights
@@ -71,9 +75,9 @@ d=double(f);
 
 All these conversions are called **C style casts**.  They are very permissive.
 This is not a problem for ordinary numeric variables as long as the programmer understands the rules.  It can become a problem when converting from one _pointer_ type to another.  
-We will discuss this in more detail when we talk about [pointers](/courses/cpp-introduction/pointers_mem).
+We will discuss this in more detail when we talk about [pointers](pointers_mem).
 
-Newer **C++ style casts** look like [templates](/courses/cpp-introduction/polymorphism).
+Newer **C++ style casts** look like [templates](polymorphism).
 
 The _static_ cast is most widely used and behaves similarly to the C-style casts.
 ```c++
@@ -94,7 +98,7 @@ In this example we have included the line
 using namespace std;
 ```
 for convenience.  We will discuss namespaces in when we talk about 
-[scope](/course/cpp-introduction/scope).  In short, it makes the _standard_ namespace the default, so that we may omit in before keywords such as `cout` and `string`.
+[scope](scope).  In short, it makes the _standard_ namespace the default, so that we may omit in before keywords such as `cout` and `string`.
 
 ```c++
 #include <iostream>
@@ -118,7 +122,7 @@ int main() {
     ss2>>iage;
 }
 ```
-This may make more sense once we understand file [input/output](/courses/cpp-introduction/file_io).
+This may make more sense once we understand file [input/output](file_io).
 
 #### C++11 String Conversions
 

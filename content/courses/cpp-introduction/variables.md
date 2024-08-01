@@ -58,7 +58,9 @@ The C++ standard does not specify the number of bits in an integer, only the _mi
 
 The programmer can use the `sizeof` function to determine the actual size of a type on the system in use.  It returns a result in bytes.  On most computing platforms, the `int` and `long` are the same (32 bits or 4 bytes).
 
-{{< code file="/courses/cpp-introduction/codes/ints.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/ints.cxx)
+{{</ code >}}
 
 The output for this code on an Intel-based Linux computer using the g++ compiler was
 ```no-highlight
@@ -94,7 +96,9 @@ As for integers, the C++ standard specifies only _minimum_ ranges.  On nearly al
 
 C++ specifies a `long double` type but requires only that it be at least equivalent to double.
 
-{{< code file="/courses/cpp-introduction/codes/floats.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/floats.cxx)
+{{</ code >}}
 
 The output of the above program on the same Intel-based Linux computer with g++ was
 ```no-highlight

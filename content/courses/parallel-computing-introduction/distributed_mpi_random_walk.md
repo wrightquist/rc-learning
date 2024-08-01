@@ -24,15 +24,21 @@ This algorithm has the properties that:
 Download the serial code for your language of choice.  Compile it (if appropriate), then run a test case.
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/random_walk.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/codes/random_walk.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/random_walk.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/random_walk.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/random_walk.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/random_walk.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 Using the mpi1 program in your language as an example, add the lines to run this code with MPI.  In your print statement make the first output value be the rank.

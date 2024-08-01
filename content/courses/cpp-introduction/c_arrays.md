@@ -48,7 +48,9 @@ Curly braces are required.
 
 Example:
 
-{{< code-download file="/courses/cpp-introduction/codes/simple_array.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/simple_array.cxx)
+{{</ code >}}
 
 Elements not explicitly initialized will be set to 0.
 Try it: In the above program, change the initialization to
@@ -104,6 +106,8 @@ In your program:
 Declare a real array of rank 2 (two dimensions) and allocate it with new.  Allocate the array and set each element to the sum of its row and column indices.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/c_arrays.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/c_arrays.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 

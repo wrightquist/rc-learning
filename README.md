@@ -2,9 +2,9 @@ i[![Build Status](https://travis-ci.com/uvarc/rc-website.svg?branch=master)](htt
 
 # UVA Research Learning & Workshop Website
 
-| Staging URL   | Production URL |
-| ------------- | ------------- |
-| https://staging.learning.rc.virginia.edu | https://www.learning.rc.virginia.edu  |
+| Staging URL                              | Production URL                       |
+|------------------------------------------|--------------------------------------|
+| https://staging.learning.rc.virginia.edu | https://www.learning.rc.virginia.edu |
 
   * [Developing](#developing)
      * [Using Gitpod](#using-gitpod)

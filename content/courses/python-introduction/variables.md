@@ -8,7 +8,7 @@ Variables in a computer program are not quite like mathematical variables.  They
 
 Names of variables are chosen by the programmer.  Python is case-sensitive, so `myVariable` is not the same as `Myvariable` which in turn is not the same as `MyVariable`.  With some exceptions, however, the programmer should avoid assigning names that differ only by case since human readers can overlook such differences.
 
-Variable names must use only letters of the Latin alphabet, digits, or underscores.  A variable name must begin with a letter or underscore.  Special symbols other than the underscore are not allowed.  By convention, variable names beginning with underscores are regarded as "special" and are reserved for certain circumstances, such as internal variables in [classes](/courses/python-introduction/classes).  Names surrounded by double underscores (sometimes called "dunders") generally are used by internal Python operations. 
+Variable names must use only letters of the Latin alphabet, digits, or underscores.  A variable name must begin with a letter or underscore.  Special symbols other than the underscore are not allowed.  By convention, variable names beginning with underscores are regarded as "special" and are reserved for certain circumstances, such as internal variables in [classes](classes).  Names surrounded by double underscores (sometimes called "dunders") generally are used by internal Python operations. 
 
 ## Python Types
 

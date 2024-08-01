@@ -16,7 +16,7 @@ cleansing and processing, as well as data visualization. This tutorial will cove
 ## Downloading the Data
 
 Throughout the tutorial we will be working with data from the National Health and Nutrition
-Examination Survey (NHANES). Download [nhanes_matlab.xlsx](/data/nhanes_matlab.xlsx).
+Examination Survey (NHANES). Download [nhanes_matlab.xlsx](data/nhanes_matlab.xlsx).
 
 ## Data Import
 
@@ -116,7 +116,7 @@ data_all = readall(ds);
 
 Suppose you have an unstructured data file like the one below.
 
-{{< figure src="/tutorials/matlab-data-viz/matlab-dataviz-1.png" >}}
+![](img/matlab-dataviz-1.png)
 
 MATLAB is unable to read
 data automatically if each line doesn't have the same number of columns. We can use MATLAB's lower-level file import functions to read irregular data.
@@ -161,7 +161,7 @@ data).
 `textscan` requires you to specify the format of your data in the variable `formatSpec`.
 Below is a `formatSpec` for some example data.
 
-{{< figure src="/tutorials/matlab-data-viz/matlab-dataviz-2.png" >}}
+![](img/matlab-dataviz-2.png)
 
 ```matlab
 % This dataset is part of your installation of MATLAB!
@@ -348,7 +348,7 @@ newdata = convertvars(data, @iscell, 'categorical');
 ### Data Visualization
 
 We will be looking at different examples of data visualization in MATLAB using a live script.
-Please download the script from this [link](/files/Data_Visualization_Matlab.mlx).
+Please download the script from this [link](data/Data_Visualization_Matlab.mlx).
 
 #### `plot` and Modifying Plot Line Properties
 

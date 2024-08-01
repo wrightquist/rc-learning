@@ -94,5 +94,7 @@ The categories are as follows:
 Using whichever unit system you prefer, write some code to assign the weight and height, compute the number, and determine its classification.  Assign your own weight and height.  Try a few others.  Use an online calculator to check your results.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/simple_bmi.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/simple_bmi.py)
+{{</ code >}}
 {{< /spoiler >}}

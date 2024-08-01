@@ -31,7 +31,7 @@ $$ \sigma (n) + \phi (n)/p + \kappa (n,p) $$
 Therefore we can express the speedup as
 $$ \psi(n,p) = \frac{\sigma(n)+\phi(n)}{\sigma(n)+\phi(n)/p+\kappa(n,p)} $$
 
-{{< figure src="/courses/parallel-computing-introduction/img/parallel_speedup.png" caption="As the number of processes grows, overhead also grows and can become dominant." >}}
+![](img/parallel_speedup.png "As the number of processes grows, overhead also grows and can become dominant.")
 
 This simple formula shows that we would achieve the maximum possible speedup if $\sigma(n)$ and $\kappa(n,p)$ are negligible compared to $\phi(n)$.  In that case we obtain the approximation
 $$ \psi(n,p)\approx \frac{\phi(n)}{\phi(n)/p} = p $$
@@ -88,7 +88,7 @@ $$ \psi \le \frac{1}{0.05+0.95/8} = 5.92 $$
 $$ \epsilon = \frac{t_{seq}}{8t_{seq}/5.92} = 0.74 $$
 $$ \psi_{inf} = \frac{1}{.05} = 20 $$
 
-{{< figure src="/courses/parallel-computing-introduction/img/strong_speedup.png" caption="Speedup is very sensitive to the fraction of the program that can be parallelized." >}}
+![](img/strong_speedup.png "Speedup is very sensitive to the fraction of the program that can be parallelized.")
 
 ## Scalability
 
@@ -122,6 +122,6 @@ $$ \epsilon = \frac{S}{p} = \frac{f}{p}+1-f $$
 This expression ignores real-world complications such as communication and
 other system overhead, but it provides a guide for understanding weak scaling.  In the case of $p \to \infty$, $\epsilon \to 1-f$.  Therefore, as for Amdahl's law, the sequential fraction will limit the speedup and efficiency possible.  However, for weak scaling, lesser parallelization can still produce acceptable efficiencies.
 
-{{< figure src="/courses/parallel-computing-introduction/img/weak_speedup.png" caption="Speedup for weak scaling." >}}
+![](img/weak_speedup.png "Speedup for weak scaling.")
 
 Weak scaling allows a much larger workload to be run in the same time.  A significant portion of scientific and engineering problems require a large to very large workload for problems of interest to be solved.  For example, fluid dynamics is modeled better at higher numerical resolutions, but each computational cell adds to the problem size.  Many problems, such as weather models, could not be solved at all at the resolution of interest without weak scaling.

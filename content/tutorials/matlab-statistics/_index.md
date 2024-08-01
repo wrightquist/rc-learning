@@ -16,193 +16,166 @@ Participants must have a Mathworks account in order to access their online train
 
 MATLAB is an integrated technical computing environment from the MathWorks that combines array-based numeric computation, advanced graphics and visualization, and a high-level programming language. Separately licensed toolboxes provide additional domain-specific functionality.
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats" target="_blank"><font size="3">Matlab Academy: Statistical Methods with Matlab<font/></a>**
-
-**<a href="https://www.mathworks.com/help/stats/index.html" target="_blank"><font size="3">Documentation: Statistics and Machine Learning Toolbox (help page)<font/></a>**
-
-**<a href="https://www.mathworks.com/products/statistics.html" target="_blank"><font size="3">Documentation: Statistics and Machine Learning Toolbox (product page)<font/></a>**
-<br/>
-<br/>
-
+* [Matlab Academy: Statistical Methods with Matlab](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats)
+* [Documentation: Statistics and Machine Learning Toolbox (help page)](https://www.mathworks.com/help/stats/index.html)
+* [Documentation: Statistics and Machine Learning Toolbox (product page)](https://www.mathworks.com/products/statistics.html)
 
 ## Course Overview
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=1&lesson=1&section=1" target="_blank"><font size="3">Video: Statistical Methods with Matlab<font/></a>**
+* [Video: Statistical Methods with Matlab](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=1&lesson=1&section=1)
 
 ## Exploring Data
 
 ### Visualizing Data Sets
-{{< figure src="exploreData1.png"  >}}
 
-{{< figure src="exploreData2.png"  >}}
+![](img/exploreData1.png)
+![](img/exploreData2.png)
 
-**<a href="https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.primitive.histogram.html" target="_blank"><font size="3">Documentation: &nbsp; <u>histogram</u> <font/></a>**  &nbsp; &nbsp; **<a href="https://www.mathworks.com/help/stats/boxplot.html" target="_blank"> <strong>  <font size="3">  <u>boxplot</u> </strong><font/> </a>**   &nbsp; &nbsp;   **<a href="https://www.mathworks.com/help/matlab/ref/scatter.html" target="_blank"> <strong>  <font size="3"><u>scatter</u> </strong><font/> </a>**
+Documentation:  
+* [histogram](https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.primitive.histogram.html)  
+* [boxplot](https://www.mathworks.com/help/stats/boxplot.html)  
+* [scatter](https://www.mathworks.com/help/matlab/ref/scatter.html)
 
-<br/>
 ### Measures of Centrality and Spread
-{{< figure src="centrality1.png"  >}}
-{{< figure src="centrality2.png"  >}}
-{{< figure src="centrality3.png"  >}}
 
-**<a href="https://www.mathworks.com/help/matlab/ref/mean.html" target="_blank"> <strong>  <font size="3">Documentation: &nbsp; <u>mean</u> </strong> <font/></a>** &nbsp; &nbsp; **<a href="https://www.mathworks.com/help/matlab/ref/median.html" target="_blank"> <strong>  <font size="3"><u>median</u> </strong> <font/></a>** &nbsp; &nbsp;
-**<a href="https://www.mathworks.com/help/matlab/ref/mode.html" target="_blank"><font size="3"> <u>mode</u><font/> </a>** &nbsp; &nbsp; **<a href="https://www.mathworks.com/help/stats/trimmean.html" target="_blank"> <strong>  <font size="3"><u>trimmean</u> </strong> <font/></a>**
+![](img/centrality1.png)
+![](img/centrality2.png)
+![](img/centrality3.png)
 
-<br/>
+Documentation:  
+* [mean](https://www.mathworks.com/help/matlab/ref/mean.html)  
+* [median](https://www.mathworks.com/help/matlab/ref/median.html)  
+* [mode](https://www.mathworks.com/help/matlab/ref/mode.html)  
+* [trimmean](https://www.mathworks.com/help/stats/trimmean.html)
 
-{{< figure src="spread1.png"  >}}
-{{< figure src="spread2.png"  >}}
-{{< figure src="spread3.png"  >}}
+![](img/spread1.png)
+![](img/spread2.png)
+![](img/spread3.png)
 
-**<a href="https://www.mathworks.com/help/matlab/ref/std.html" target="_blank">  <font size="3">Documentation: &nbsp; <u>std</u> <font/> </a>** &nbsp; &nbsp;  **<a href="https://www.mathworks.com/help/stats/prob.normaldistribution.iqr.html" target="_blank"> <font size="3"> <u>iqr</u> <font/></a>**
-**<a href="https://www.mathworks.com/help/stats/range.html" target="_blank"><font size="3"> &nbsp; &nbsp; <u>range</u><font/> </a>** &nbsp; &nbsp; **<a href="https://www.mathworks.com/help/matlab/ref/var.html" target="_blank"> <font size="3"><strong> <u>var</u> </strong> <font/></a>**
-
-
-<br/>
-
-
+Documentation: 
+* [iqr](https://www.mathworks.com/help/stats/prob.normaldistribution.iqr.html)
+* [range](https://www.mathworks.com/help/stats/range.html)
+* [var](https://www.mathworks.com/help/matlab/ref/var.html)
 
 ### Distributions
-{{< figure src="distribution3.png"  >}}
-{{< figure src="spread4.png"  >}}
 
-<br/>
-{{< figure src="distribution1.png"  >}}
-{{< figure src="distribution2.png"  >}}
+![](img/distribution3.png)
+![](img/spread4.png)
+![](img/distribution1.png)
+![](img/distribution2.png)
 
-**<a href="https://www.mathworks.com/help/stats/normpdf.html" target="_blank"><font size="3">Documentation: &nbsp; <u>normpdf</u> <font/> </a>** &nbsp; &nbsp; **<a href="https://www.mathworks.com/help/stats/unifpdf.html" target="_blank"> <strong><font size="3"> <u>unifpdf</u><font/> </strong> </a>** &nbsp; &nbsp; **<a href="https://www.mathworks.com/help/matlab/ref/randn.html" target="_blank"><font size="3"> <u>randn</u> <font/></a>** &nbsp; &nbsp; **<a href="https://www.mathworks.com/help/matlab/ref/rand.html" target="_blank"> <strong> <font size="3"><u>rand</u><font/> </strong> </a>**
+Documentation: 
+* [unifpdf](https://www.mathworks.com/help/stats/unifpdf.html)
+* [randn](https://www.mathworks.com/help/matlab/ref/randn.html)
+* [rand](https://www.mathworks.com/help/matlab/ref/rand.html)
 
 ### Summary
-{{< figure src="summary1.png"  >}}
 
-
-<br/>
-{{< figure src="summary2.png"  >}}
-
-
-<br/>
-
-{{< figure src="summary3.png"  >}}
-
-
-
-<br/>
+![](img/summary1.png)
+![](img/summary2.png)
+![](img/summary3.png)
 
 ## Fitting a Curve to Data
 
 ### Linear Regression
-{{< figure src="regression1.png"  >}}
-{{< figure src="regression2.png"  >}}
-{{< figure src="regression4.png"  >}}
-{{< figure src="regression3.png"  >}}
 
-**<a href="https://www.mathworks.com/help/curvefit/fit.html" target="_blank"> <font size="3"> Documentation: &nbsp; <u>fit</u> <font/></a>**
+![](img/regression1.png)
+![](img/regression2.png)
+![](img/regression4.png)
+![](img/regression3.png)
 
- <br/>
+* [Documentation](https://www.mathworks.com/help/curvefit/fit.html)
 
 ### Evaluating Goodness of Fit
-{{< figure src="regression5.png"  >}}
-{{< figure src="regression6.png"  >}}
-{{< figure src="regression7.png"  >}}
-
-<br/>
+![](img/regression5.png)
+![](img/regression6.png)
+![](img/regression7.png)
 
 ### Nonlinear Regression
-{{< figure src="regression8.png"  >}}
-{{< figure src="regression9.png"  >}}
-{{< figure src="regression10.png"  >}}
+![](img/regression8.png)
+![](img/regression9.png)
+![](img/regression10.png)
 
 ### Summary
-{{< figure src="summary4.png"  >}}
-{{< figure src="summary5.png"  >}}
-{{< figure src="summary6.png"  >}}
+![](img/summary4.png)
+![](img/summary5.png)
+![](img/summary6.png)
 
 ## Interpolating Data
 
 ### Linear Interpolation
-{{< figure src="interp1.png"  >}}
-{{< figure src="interp2.png"  >}}
-{{< figure src="interp3.png"  >}}
-{{< figure src="interp4.png"  >}}
-{{< figure src="interp5.png"  >}}
-{{< figure src="interp6.png"  >}}
+![](img/interp1.png)
+![](img/interp2.png)
+![](img/interp3.png)
+![](img/interp4.png)
+![](img/interp5.png)
+![](img/interp6.png)
 
 ### Nonlinear Interpolation
 
-{{< figure src="interp7.png"  >}}
-{{< figure src="interp8.png"  >}}
-{{< figure src="interp9.png"  >}}
+![](img/interp7.png)
+![](img/interp8.png)
+![](img/interp9.png)
 
-**<a href="https://www.mathworks.com/help/matlab/ref/interp1.html" target="_blank"> <font size="3"> Documentation: &nbsp; <u>interp1</u> <font/> </a>**
-
- <br/>
+[Documentation](https://www.mathworks.com/help/matlab/ref/interp1.html)
 
 ### Summary
-{{< figure src="summary7.png"  >}}
-{{< figure src="summary8.png"  >}}
+![](img/summary7.png)
+![](img/summary8.png)
 
 ## Additional Resources
 
-{{< figure src="additionalRes1.png"  >}}
+![](img/additionalRes1.png)
 
-<br/>
-**<a href="https://www.mathworks.com/matlabcentral/" target="_blank"><u>MATLAB Central</u></a>** &nbsp; &nbsp; **<a href="https://www.mathworks.com/support.html" target="_blank"> <strong><font size="3"> <u>MathWorks Support</u><font/> </strong> </a>** 
-
-<br/>
+* [MATLAB Central](https://www.mathworks.com/matlabcentral/)
+* [MathWorks Support](https://www.mathworks.com/support.html)
 
 ## Exercises
 
 ### Visualizing Data sets
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=1&section=2" target="_blank">Exercise: Visualize Height and Weight Data</a>**
+* [Exercise: Visualize Height and Weight Data](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=1&section=2)
 
 ### Measure of Centrality and Spread
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=2&section=2" target="_blank">Exercise: Find the Mean and Median</a>**
-
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=2&section=4" target="_blank">Exercise: Find the Standard Deviation and IQR</a>**
+* [Exercise: Find the Mean and Median](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=2&section=2)
+* [Exercise: Find the Standard Deviation and IQR](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=2&section=4)
 
 ### Distributions
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=3&section=3" target="_blank">Exercise: Fit and Plot a Normal Distribution</a>**
-
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=3&section=4" target="_blank">Exercise: Generating Random Numbers</a>**
+* [Exercise: Fit and Plot a Normal Distribution](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=3&section=3)
+* [Exercise: Generating Random Numbers](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=3&section=4)
 
 ### Review: Exploring Data
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=4&section=2" target="_blank">Exercise: Earthquakes</a>**
+* [Exercise: Earthquakes](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=2&lesson=4&section=2)
 
 ### Linear Regression
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=1&section=3" target="_blank">Exercise: Fit a Line to Data</a>**
-
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=1&section=5" target="_blank">Exercise: Fit a Polynomial to Data</a>**
+* [Exercise: Fit a Line to Data](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=1&section=3)
+* [Exercise: Fit a Polynomial to Data](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=1&section=5)
 
 ### Evaluating the Goodness of Fit
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=2&section=2" target="_blank">Exercise: Evaluate and Improve the Fit</a>**
+* [Exercise: Evaluate and Improve the Fit](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=2&section=2)
 
-
-<br/>
-<br/>
 ### Nonlinear Regression
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=3&section=2" target="_blank">Exercise: Fit a Nonlinear Model</a>**
+* [Exercise: Fit a Nonlinear Model](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=3&section=2)
 
 ### Review: Fitting a Curve to Data
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=4&section=2" target="_blank">Exercise: Temperature Fluctuations</a>**
+* [Exercise: Temperature Fluctuations](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=3&lesson=4&section=2)
 
 ### Linear Interpolation
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=4&lesson=1&section=2" target="_blank">Exercise: Fill in Missing Data</a>**
-
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=4&lesson=1&section=3" target="_blank">Exercise: Resample Data</a>**
+* [Exercise: Fill in Missing Data](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=4&lesson=1&section=2) 
+* [Exercise: Resample Data](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=4&lesson=1&section=3)
 
 ### Nonlinear Interpolation
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=4&lesson=2&section=2" target="_blank">Exercise: Resample Data with Different Interpolation Methods</a>**
+* [Exercise: Resample Data with Different Interpolation Methods](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=4&lesson=2&section=2)
 
 ### Review: Interpolation
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=4&lesson=3&section=2" target="_blank">Exercise: Stock Prices</a>**
-
+* [Exercise: Stock Prices](https://matlabacademy.mathworks.com/R2019b/portal.html?course=stats#chapter=4&lesson=3&section=2)

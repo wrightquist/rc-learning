@@ -58,7 +58,9 @@ real, dimension(:) :: A   ! in sub
 Though the dimensions need not be known for assumed-shape arrays, the rank must match.
 
 **Example**
-{{< code-download file="courses/fortran-introduction/codes/pass_arrays.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/pass_arrays.f90)
+{{</ code >}}
 
 ### Allocating Arrays in a Subprogram
 
@@ -69,7 +71,9 @@ In the example below, no value is assigned initially. Most compilers will initia
 **Exercise**
 Run the program as is. Correct the lack of initialization in the subroutine.
 
-{{< code-download file="/courses/fortran-introduction/codes/pass_alloc.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/pass_alloc.f90)
+{{</ code >}}
 
 ### Local Arrays in Subprograms
 

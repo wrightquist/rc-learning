@@ -13,7 +13,7 @@ w[i,j] = u[i-1,j] + u[i+1,j] + u[i,j-1] + u[i,j+1])
 ```
 You may notice that the "updated" value at a given point is just the average of its neighbors.  Boundary values must be provided for appropriate values of $i$ and $j$; in our previous study of halos, we used $i=0$, $i=nr+1$, $j=0$, and $j=nc+1$ for the boundary values, with the solution defined for $i=1..nr$, $j=1..nc$.
 
-{{< figure src="/courses/parallel-computing-introduction/img/grid.png" caption="Grid for the Jacobi method" >}}
+![](img/grid.png "Grid for the Jacobi method")
 
 Before we begin, we must determine the tolerance $\epsilon$ for an acceptable solution. We make a sweep through the grid, computing the new values $w$ at each grid point.  We compare all these values to the old value at the same point. If 
 

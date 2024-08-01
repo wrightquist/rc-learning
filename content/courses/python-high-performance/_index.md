@@ -16,27 +16,28 @@ For this tutorial, it is assumed that you have experience with programming in Py
 * [Serial Optimization:](serial-optimization) Replacing inefficient code constructs with more efficient ones (single process).
 * [Multiprocessing:](multiprocessing) Executing multiple processes on a single computer (shared memory).
 * [Distributed Parallelization:](distributed-parallelization) Executing multiple processes across multiple computers (distributed memory, HPC cluster).
-* [GPU Acceleration:](gpu-acceleration) A minimal introduction to programming for a GPU with Python.
+* [GPU Acceleration:](gpu_acceleration) A minimal introduction to programming for a GPU with Python.
 
 - - -
 
 ## Setup
 
-To follow along for the [Serial Optimization](#serial-optimization-strategies) and [Multiprocessing](#multiprocessing) examples, you can execute the code examples on your own computer or on UVA's high-performance computing cluster.  Examples described in the last section, [Distributed Parallelization](#distributed-parallelization), are best executed on UVA's high-performance computing platform.
+To follow along for the [Serial Optimization](serial-optimization) and [Multiprocessing](multiprocessing) examples, you can execute the code examples on your own computer or on UVA's high-performance computing cluster.  Examples described in the last section, [Distributed Parallelization](distributed-parallelization), are best executed on UVA's high-performance computing platform.
 
-If you are using your local computer, we recommend the Anaconda distribution (<a href="https://www.anaconda.com/distribution/" target="balnk_">download</a>) to run the code examples. Anaconda provides multiple Python versions, an integrated development environment (IDE) with editor and profiler, Jupyter notebooks, and an easy-to-use package environment manager.
+If you are using your local computer, we recommend the Anaconda distribution ([download](https://www.anaconda.com/distribution/)) to run the code examples. Anaconda provides multiple Python versions, an integrated development environment (IDE) with editor and profiler, Jupyter notebooks, and an easy-to-use package environment manager.
 
 **If you are using UVA HPC, follow these steps to verify that your account is active:**
 
 ### Check your Access to UVA HPC
 
-1. In your web browser, go to <a href="https://fastx.hpc.virginia.edu" target="_blank">fastx.hpc.virginia.edu</a>.  This takes you to our FastX web portal that lets you launch a remote desktop environment on a frontend.  If you are off Grounds, you must be connected through the UVA Anywhere VPN client.
+1. In your web browser, go to [fastx.hpc.virginia.edu](https://fastx.hpc.virginia.edu).  This takes you to our FastX web portal that lets you launch a remote desktop environment on a frontend.  If you are off Grounds, you must be connected through the UVA Anywhere VPN client.
 
-2. Log in with your UVA credentials and start a MATE session.  You can find a more detailed description of the FastX login procedure <a href="https://www.rc.virginia.edu/userinfo/rivanna/logintools/fastx/" target="_blank">here</a>.
-  * **User name:** Your UVA computing id (e.g. mst3k; don't enter your entire email address)
-  * **Password:** Your UVA Netbadge password 
+2. Log in with your UVA credentials and start a MATE session.  You can find a more detailed description of the FastX login procedure [here](https://www.rc.virginia.edu/userinfo/rivanna/logintools/fastx/).
+   * **User name:** Your UVA computing id (e.g. mst3k; don't enter your entire email address)
+   * **Password:** Your UVA Netbadge password
 
 3. Starting Spyder (Anaconda's IDE): Open a terminal window and type
+
 ```
 module load anaconda
 python -V

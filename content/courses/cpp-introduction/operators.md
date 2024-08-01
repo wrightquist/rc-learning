@@ -42,7 +42,9 @@ $$  n-floor(n/m) x m $$
 It is mathematically well-defined for negative integers, but the results for such arguments are not generally what most programmers expect.  
 
 Example:
-{{< code-download file="/courses/cpp-introduction/codes/testmod.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/testmod.cxx)
+{{</ code >}}
 
 ## Assignment Operators
 
@@ -74,7 +76,9 @@ i++;
 i--;
 ```
 Beware when assigning the result of an increment or decrement to another variable.  The "prefix" increment/decrement operators shown here first add or subtract, then change the value of the variable.  They are exactly equivalent to `i+=1` and `i-=1` respectively. The "post" operators `i++` and `i--` do not change the value of the variable before incrementing or decrementing.
-{{< code file="/courses/cpp-introduction/codes/incdec.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/incdec.cxx)
+{{</ code >}}
 ```no-highlight
  i is: 3
  j is: 2
@@ -84,7 +88,9 @@ Beware when assigning the result of an increment or decrement to another variabl
 
 **Exercise**
 Run the following program.  Modify the values of the different variables and see what happens.
-{{< code-download file="/courses/cpp-introduction/codes/expressions.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/expressions.cxx)
+{{</ code >}}
 
 ## Conditional Operators
 
@@ -137,7 +143,9 @@ Like arithmetic operators, conditional operators have a precedence ordering.
 
 **Exercise**
 Experiment with different values for the variables in this code.
-{{< code-download file="/courses/cpp-introduction/codes/conditional_operators.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/conditional_operators.cxx)
+{{</ code >}}
 
 ## Bitwise Operators
 

@@ -263,16 +263,14 @@ $ docker images | grep lolcow | sort -nk 2 | awk '{print $1, $2, $NF}'
 <user>/lolcow    3      45.9MB
 ```
 
-<style scoped>table { font-size: 65%; }</style>
-
-| Version | Description | Reduction (MB) | % |
-|---|---|---:|---:|
-|0  |(Basis of comparison) | - | - |
-|0.5|Clean up in separate `RUN`  | 0 | 0 |
-|1  |Clean up in same `RUN`      |40 | 19 |
-|-  |Install only what's needed  |13 | 6 |
-|2  |Combination of previous two |53 | 26 |
-|3  |Alpine base image           |161| 78 |
+| Version | Description                 | Reduction (MB) |   % |
+|---------|-----------------------------|---------------:|----:|
+| 0       | (Basis of comparison)       |              - |   - |
+| 0.5     | Clean up in separate `RUN`  |              0 |   0 |
+| 1       | Clean up in same `RUN`      |             40 |  19 |
+| -       | Install only what's needed  |             13 |   6 |
+| 2       | Combination of previous two |             53 |  26 |
+| 3       | Alpine base image           |            161 |  78 |
 
 Reference: [_Best practices for writing Dockerfiles_](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
@@ -344,14 +342,14 @@ Hints:
 - If you encounter a Docker statement that you have not used before, first check the official documentation for best practices.
 - A comprehensive list of dependencies may be lacking. Some developers may not specify any at all. You will have to rely on a combination of experience, error message, and web search. (Most likely all of the above.)
 - Especially for Python packages, versions may be too permissive or too restrictive such that, in either case, future installation of the application will fail. (I have encountered both.) Tweak the versions until it works.
-- The next step is "multi-stage build" which is covered in the [Minimal Containers](/workshops/minimal-containers) workshop. There you will learn how to distinguish between buildtime versus runtime dependencies and separate them out.
+- The next step is "multi-stage build" which is covered in the [Minimal Containers](/content/courses/containers-for-hpc/minimal.md) workshop. There you will learn how to distinguish between buildtime versus runtime dependencies and separate them out.
 
 ## Clean Up
 
 If you build containers often, you can run out of disk space quickly. To clean up:
 
 1. Run `docker rmi <IMAGE_ID>` to remove a specific image.
-1. Run `docker system prune` to clean up cache. (This will not affect images that are tagged.)
+2. Run `docker system prune` to clean up cache. (This will not affect images that are tagged.)
 
     ```bash
     $ docker system prune

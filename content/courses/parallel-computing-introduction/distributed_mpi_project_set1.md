@@ -12,7 +12,7 @@ A very inefficient way to compute $\pi$ is to use a Monte Carlo method. In this 
 
  Note that the formula is the same if one considers only the upper right quadrant of the figure.
 
- {{< figure src="/courses/parallel-computing-introduction/img/MCPi.png" caption="Monte Carlo computation of pi." >}}
+ ![](img/MCPi.png "Monte Carlo computation of pi.")
 
  Fortran programmers: you may wish to extract the random module from mpirandomwalk.f90 into a separate file random.f90, since it is used frequently.  Remember that modules must be compiled before any program units that USE them.
 
@@ -20,24 +20,36 @@ Try to write the serial code before peeking at the examples.
 
 #### Serial Codes
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/montecarlo_pi.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/codes/montecarlo_pi.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/montecarlo_pi.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/montecarlo_pi.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/montecarlo_pi.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/montecarlo_pi.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 #### Example Solutions
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 2
@@ -52,34 +64,46 @@ where
 $$ \Delta x_i = x_{i+1}-x_i $$
 The larger the number of trapezoids, the more accurate our approximation to the integral will be.  Typically $\Delta x_i$ is a constant usually represented by $h$, but that is not a requirement.
 
-{{< figure src="/courses/parallel-computing-introduction/img/trapezoid_rule.png" caption="Illustration of the trapezoid rule." >}}
+![](img/trapezoid_rule.png "Illustration of the trapezoid rule.")
 
 It should be clear that the trapezoid rule is very easy to parallelize.  The interval on the independent variable should be split up among the ranks.  Each rank then carries out the summation over its part.  The complete integral is the sume of all ranks' results.
 
 Starting from the serial code in your language of choice, parallelize the trapezoid rule.  Only rank 0 should read the input data; then it should broadcast appropriately to the other processes.   Test for four processes.  Note that the integral of the sine from 0 to $\pi$ has an exact value of 2, making it a good test case.
 
-C++ and Fortran programmers: if you are not familiar with passing subprogram names as dummy variables, refer to our courses for [Fortran](/courses/fortran_introduction/subprogram_args) or [C++](/courses/cpp_introduction/subprogram_args).
+C++ and Fortran programmers: if you are not familiar with passing subprogram names as dummy variables, refer to our courses for [Fortran](/content/courses/fortran-introduction/subprogram_args.md) or [C++](/content/courses/cpp-introduction/subprogram_args.md).
 
 #### Serial Codes
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/trap.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/codes/trap.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/trap.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/trap.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/trap.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/trap.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 #### Example Solutions
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpitrap.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpitrap.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpitrap.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpitrap.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpitrap.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpitrap.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 3
@@ -99,26 +123,38 @@ $$ -10\pi \le x \le 10\pi\ ,\ -10\pi \le y \le 10\pi $$
 
 Generate a list of N random values for each of x and y over the above range. For testing you can use N=100000 for compiled languages and N=10000 for Python. Be sure to measure the time. Use appropriate MPI gathers to obtain not just the maximum value of $z$ from each process, but the corresponding $x$ and $y$ values.  Remember that gather collects items in strict rank order. Use one or more built-ins for your language (maxloc for Fortran, np.argmax for Python) or loops (C/C++) to find the $x$, $y$, and $z$ for the maximum.
 
-{{< figure src="/courses/parallel-computing-introduction/img/find_max_function.png" caption="Find the maximum of this jagged function." >}}
+![](img/find_max_function.png "Find the maximum of this jagged function.")
 
 #### Serial Codes
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/find_max.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/codes/find_max.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/find_max.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/find_max.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/find_max.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/find_max.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 #### Example Solutions
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpifind_max.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpifind_max.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpifind_max.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpifind_max.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpifind_max.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpifind_max.py)
+{{</ code >}}
 {{< /spoiler >}}

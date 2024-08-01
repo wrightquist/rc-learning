@@ -6,7 +6,7 @@ weight: 54
 
 A _container_ is a data structure that can store a group of items, which typically are related and are individually accessed by standard methods.  By this definition a simple array can be considered a container, though some strict computer-science definitions disallow a data structure with a fixed size from the category.  C++ containers generally permit resizing of the data structure by inserting or deleting elements or even by clearing all elements.
 
-C++ implements most containers as _templates_.  Templates are an implementation of _generic programming_.  In generic programming, algorithms are expressed in a way that can apply to more than one type.  Templates can be _functions_ or _classes_ and, for C++14 and later, variables.  We will cover classes [later](/courses/cpp-introduction/classes) but in brief, a class is a data structure that encompasses related variables and the procedures that operate on them.  We can declare variables whose type is the class; this is called _instantiation_ and each variable is an _instance_ of the class.  We then access the variables and procedures through the name of the variable.  For a template class, we pass through a type for the variable as a parameter when it is declared.
+C++ implements most containers as _templates_.  Templates are an implementation of _generic programming_.  In generic programming, algorithms are expressed in a way that can apply to more than one type.  Templates can be _functions_ or _classes_ and, for C++14 and later, variables.  We will cover classes [later](classes) but in brief, a class is a data structure that encompasses related variables and the procedures that operate on them.  We can declare variables whose type is the class; this is called _instantiation_ and each variable is an _instance_ of the class.  We then access the variables and procedures through the name of the variable.  For a template class, we pass through a type for the variable as a parameter when it is declared.
 ```c++
   myTemplateClass<float>  myfloat;
   myTemplateClass<double> mydouble;
@@ -27,7 +27,7 @@ int main() {
     std::cout<<"Hello World\n";
 }
 ```
-A few examples we have seen so far have employed the shortcut `using`, which we will discuss when we study [scope](/courses/cpp-introduction/scope), but although common practice, often it is best to avoid it.
+A few examples we have seen so far have employed the shortcut `using`, which we will discuss when we study [scope](scope), but although common practice, often it is best to avoid it.
 ```c++
 #include <iostream>
 using namespace std;
@@ -46,7 +46,9 @@ Several templated containers are available in the standard library.
 
 The array container "wraps" C-style fixed-size arrays.  Unlike a bare array, the container carries metadata, including the array size and other descriptive elements.  It also does not "decay" to a pointer when passed to a function, meaning that it doesn't "forget" the metadata within the function.
 
-{{< code file="/courses/cpp-introduction/codes/std_array.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/cpp-introduction/codes/std_array.cxx)
+{{</ code >}}
 
 A standard array is a sequence and we can use a range-based `for` loop with it.  Note also the peculiar declaration of the loop variable in the three-element loop; this is required because the array container defines its size and index variables to be of an _unsigned_ int of type `size_type`. Strictly speaking, it should always be used for loop variables for standard containers, since they are defined internally that way.  The intention was to allow for very large array sizes without overflowing a loop variable.  A standard `int` or `long` will nearly always work, and the compiler will not complain, but best practice is to make the loop variable match the internal definition.  The `size_type` depends on the vector template so would have to be declared `std::vector<float>::size_type`; a shortcut that is safe, yet less wordy, is to use `std::size_t`.
 ```c++
@@ -64,7 +66,9 @@ The vector container is similar to the array. It represents a one-dimensional or
 But unlike arrays, vectors are dynamic.  It's possible to enlarge and shrink them.
 
 Initializing vectors:
-{{< code-download file="/courses/cpp-introduction/codes/std_vector.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/std_vector.cxx)
+{{</ code >}}
 
 Many operations are defined for a vector.  These are some of the most commonly used:
 
@@ -97,8 +101,10 @@ Insert is a bit tricky.  It has several forms but the simplest is `<vec>.insert(
 You may use an integer for appropriate loop variables, but remember that `size_type` is more correct.  You may also use `using namespace std` if you wish.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/vector.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/vector.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
-The sample uses `endl` (output an end-of-line character) rather than `\n`.  There is a slight difference between the two which we will discuss [later](/courses/content/cpp-introduction/console_io).
+The sample uses `endl` (output an end-of-line character) rather than `\n`.  There is a slight difference between the two which we will discuss [later](console_io).
 

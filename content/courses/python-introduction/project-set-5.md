@@ -9,7 +9,7 @@ Classes.
 
 ## Project 19
 
-Download the file [vabirds.csv](/data/vabirds.csv). 
+Download the file [vabirds.csv](data/vabirds.csv). 
 
 a) Use Pandas to read the file and capture the header information. Use the header to create of list of years.  Convert to a numpy array of floats.
 
@@ -22,7 +22,9 @@ d) Add one or two methods to your Bird class that compute the maximum, minimum, 
 e) Read the name of a bird from the command line or from user input (your choice).  Print a summary of the statistics to the console and produce a plot of observations versus years.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_5/birds.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_5/birds.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 20
@@ -33,7 +35,7 @@ Write a program that reads a file with the following format:each line consists o
 - Append (not extend) this list to a movies list.  This gives you a two-dimensional list (each element is itself a list).  Use your two lists to print the information in a nicer format.  
 Each line should be printed as<Actor> has appeared in the following movies: <movies>  You should use your two lists to construct the above string.  Use join to rejoin the movies list into a string.  
 Use either a format string or concatenation to create the message string.
-- Read the name of the input file from the command line.  Use [movies.txt](/data/movies.txt) as your example input file.
+- Read the name of the input file from the command line.  Use [movies.txt](data/movies.txt) as your example input file.
    - Modify your code to define a class Actor whose attributes are
      1. name
      2. filmography 
@@ -57,22 +59,26 @@ If it is not, first create an empty set, then immediately update the set with th
 Be sure to use appropriate functions rather than monolithic code throughout this project.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_5/movies.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_5/movies.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 21
 
 1. Write a Fraction class that implements a representation of a fraction, where each instance consists of a numerator and a denominator. Overload addition, subtraction, and multiplication for this class.  Write a dunder to format each fraction in the form
-```no-highlight
-5/7
-```
-For your first attempt it is not necessary to reduce the fraction, i.e. it is acceptable to have fractions like 6/8. Be sure to check for division by zero in your `__truediv__` method.
+    ```no-highlight
+    5/7
+    ```
+    For your first attempt it is not necessary to reduce the fraction, i.e. it is acceptable to have fractions like 6/8. Be sure to check for division by zero in your `__truediv__` method.
 
 2. Add a reduce method that finds the [least common multiple](https://en.wikipedia.org/wiki/Least_common_multiple) to obtain the lowest common denominator and reduce the fraction.
 
 3. Use `NaN` to represent division by zero and `isnan` to check for it.
 
-{{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_5/fractions.py" lang="python" >}}
-{{< /spoiler >}}
+    {{< spoiler text="Example solution" >}}
+    {{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_5/fractions.py)
+{{</ code >}}
+    {{< /spoiler >}}
 

@@ -19,7 +19,9 @@ Write a program that:
 Fahrenheit, printing each value in degrees C and F.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_1/temperature_list.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_1/temperature_list.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 2
@@ -34,7 +36,9 @@ for the Fahrenheit equivalents.
 on the same line, but does it by indexing into the two lists.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_1/temperature_loop.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_1/temperature_loop.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 3
@@ -46,7 +50,9 @@ Write a program that:
 3. Creates a list of temperatures in degrees Fahrenheit which are greater than zero but for which the corresponding temperature in Celsius is less than zero. Print the elements of this last list.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_1/temperature_cond_loop.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_1/temperature_cond_loop.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 4
@@ -61,10 +67,12 @@ The Collatz conjecture is that the sequence will always reach 1. No exceptions h
 **A.** Write a program that will find and print the stopping time for the first N positive integers. Count the starting number itself as one of the steps. Print a table of N and stopping time.
 Test your program for N=30 and N=50.
 
-**B.** Modify your program to print the starting number, its stopping time, and the maximum value of the sequence of numbers. **Hint:** If you use a list you will be able to use the len() and max() intrinsic (built-in) functions. Confirm that you get the same stopping numbers as before. Note: the example solution uses some capabilities of [printing](/courses/python-introduction/formatted_io) in Python 3 that we have not yet encountered, in order to make the output neater and easier to read.  Do not worry about aligning your results at this point.
+**B.** Modify your program to print the starting number, its stopping time, and the maximum value of the sequence of numbers. **Hint:** If you use a list you will be able to use the len() and max() intrinsic (built-in) functions. Confirm that you get the same stopping numbers as before. Note: the example solution uses some capabilities of [printing](formatted_io) in Python 3 that we have not yet encountered, in order to make the output neater and easier to read.  Do not worry about aligning your results at this point.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_1/collatz.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_1/collatz.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 5
@@ -83,5 +91,7 @@ That is two (regular, not “smart”) double quotes with nothing between them, 
 The only widely used base greater than 10 is hexadecimal (base 16). Print a table of 0 to 32 as hexadecimal numbers.  Play with formatting to produce a nice table (use spaces, dashes, and the like).  The solution demonstrates controlling the appearance of printed output with format strings.  Take a look back when you have studied formatted output.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_1/base_convert.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_1/base_convert.py)
+{{</ code >}}
 {{< /spoiler >}}

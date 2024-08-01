@@ -40,7 +40,9 @@ To set a value of an environment variable, type (for `bash`)
 
 A group of shell commands can be placed into a file and then _sourced_.  When a file is sourced, the commands are executed as if they had been typed at the command line in the current shell.  For example, if several environment variables needed to be set over and over again, they could be collected into a file such as this simple script called `envs.sh`:
 
-{{< code-download file="/tutorials/unix-tutorial/snippets/envs.sh" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/unix-tutorial/snippets/envs.sh)
+{{</ code >}}
 
 ## Exercise 6A
 

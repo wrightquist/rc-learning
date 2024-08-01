@@ -13,7 +13,7 @@ A variety of workarounds to the GIL exist.  For instance, Python 3 provides the 
 
 ### The Process Class
 
-In most cases, it is better to just start another Python process.  The `multiprocessing` package handles this and manages communication among the processes.  For the purpose of this tutorial we will experiment with a few different multiprocessing approaches. A detailed description can be found on the official <a href="https://docs.python.org/3/library/multiprocessing.html" target="_blank">Multiprocessing website</a>.
+In most cases, it is better to just start another Python process.  The `multiprocessing` package handles this and manages communication among the processes.  For the purpose of this tutorial we will experiment with a few different multiprocessing approaches. A detailed description can be found on the official [Multiprocessing website](https://docs.python.org/3/library/multiprocessing.html).
 
 One difference between true threads and a Multiprocessing process is that threads directly share memory and processes do not.
 
@@ -90,7 +90,9 @@ if __name__ == "__main__":
 ```
 The map method accommodates only one argument to the function.  For Python 3.3 and later, `starmap` is available for multiple arguments.  An efficient way to generate the required iterator of tuples is to use the [zip()](https://docs.python.org/3/library/functions.html?highlight=zip%20function#zip) function.
 
-{{< code-download file="/courses/python-high-performance/codes/mpstarmap.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/mpstarmap.py)
+{{</ code >}}
 
 Another set of functions is `apply` and `apply_async`.  The difference between the apply group and map/map_async is that apply returns the result from only one element of the pool.  Like `starmap`, apply supports multiple arguments, but there is no starmap_async so if we need a nonblocking routine equivalent, we should use apply_async.  We will need to collect the results ourselves.
 
@@ -114,7 +116,9 @@ Here is a more realistic example.  Let’s parallelize our Monte Carlo pi solver
 Map requires an iterator for its second argument. We will manually divide the total number of "data throws" into chunks of roughly equal size on each process and store the result into a list _myNumPoints_. The Pool map method will then distribute the elements of the list, one to each cpu.  This is called **load balancing** in parallel computing terms.  Maximum efficiency generally occurs when each process performs approximately the same quantity of work.
 We also do not hard-code the number of processes, but will set an environment variable `NUM_PROCS` outside to select the core count. 
 
-{{% code-download file="/courses/python-high-performance/codes/MonteCarloPiMC.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/MonteCarloPiMC.py)
+{{</ code >}}
 
 #### Running on a Local Computer
 
@@ -150,7 +154,9 @@ For those who have access to a high-performance computing cluster such as UVA's 
 
 In order to execute our program on designated compute node(s), we need to write a simple bash script that defines the compute resources we need.  We call this our job script.  For our example, the job script `pimc.sh` looks like this:
 
-{{% code-download file="/courses/python-high-performance/codes/pimc.sh" lang="bash" %}}
+{{< code lang="bash" >}}
+    [](/content/courses/python-high-performance/codes/pimc.sh)
+{{</ code >}}
 
 You can view this script in a text editor on an HPC frontend.  If you are connected through a FastX Mate session, go to the menu **Applications** -> **Accessories** --> **Pluma Text Editor**.
 
@@ -201,7 +207,7 @@ When we run the exercise with 10^9 points we may obtain results like these (on o
 
 If we plot time versus number of cores we obtain the following graph.  The orange line is ideal scaling, where the total time is the serial time divided by the number of cores used.  The blue line shows the actual runtime and speedup achieved.
 
-{{< figure src="/courses/python-high-performance/mp-scaling.png" caption="Scaling performance for the Multiprocessing Monte Carlo Pi example." >}}
+![](img/mp-scaling.png "Scaling performance for the Multiprocessing Monte Carlo Pi example.")
 
 Our actual scaling in this case is quite close to perfect.  This has a lot to do with our problem; the amount of time taken is mostly proportional to the number of throws to be calculated.  Not all problems scale this well.
 

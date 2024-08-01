@@ -13,7 +13,9 @@ All symbols beginning, but not ending, in two underscores are not accessible thr
 
 Example: 
 
-{{< code-download file="/courses/python-introduction/scripts/mymodule_private.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/mymodule_private.py)
+{{</ code >}}
 
 This makes a difference. 
 
@@ -37,7 +39,9 @@ print(ac.x,ac.y)
 
 To handle "private" or even just "implementation" variables we use methods.  Accessors ("getters") get the value and return it.  Mutators ("setters") change the value.
 
-{{< code-download file="/courses/python-introduction/scripts/privateclass.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/privateclass.py)
+{{</ code >}}
 
 ## Inheritance: New Classes from Old
 
@@ -79,5 +83,7 @@ class Child(Parent):
 
 Suppose we wish to develop code for an employee class when we already have a Person class.  Person defines general data such as name and address. The additional attributes for Employee will be the employee's salary and ID number.
 
-{{< code-download file="/courses/python-introduction/scripts/person_module.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/person_module.py)
+{{</ code >}}
 

@@ -60,7 +60,9 @@ END DO
 ```
 
 **Example**
-{{< code-download file="/courses/fortran-introduction/codes/while_demo.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/while_demo.f90)
+{{</ code >}}
 
 ## Exiting Early and Skipping Statements
 
@@ -122,5 +124,7 @@ Reading a file of unknown length.  This is _not_ how we usually read a file, sin
   - Experiment with different values for the variables.  Start with L=50, M=25, w=9., z=13.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/loops.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/loops.f90)
+{{</ code >}}
 {{< /spoiler >}}

@@ -92,7 +92,9 @@ If your input files will always be of known length this isn’t necessary (or ef
 
 **Example**
 
-{{< code file="/courses/fortran-introduction/codes/fileio.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/fileio.f90)
+{{</ code >}}
 
 QUIZ
 
@@ -108,5 +110,7 @@ I need to wait until the line has been successfully read before I count it. Cons
 Read the mydata.txt file but don't assume you know how long it is.  Inquire whether it is present, then read it through just to count the number of lines.  Rewind the file to read the data.  
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/rewind.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/rewind.f90)
+{{</ code >}}
 {{< /spoiler >}}

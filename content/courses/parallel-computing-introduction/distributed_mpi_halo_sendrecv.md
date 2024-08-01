@@ -60,14 +60,20 @@ _Hint_
 Set up the neighbors for each rank ("up" and "down" or "left" and "right") before doing any transfers.
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpi_halo_exchange.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpi_halo_exchange.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpi_halo_exchange.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpi_halo_exchange.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpi_halo_exchange.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpi_halo_exchange.py)
+{{</ code >}}
 {{< /spoiler >}}
 

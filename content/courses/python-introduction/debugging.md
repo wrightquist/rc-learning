@@ -4,7 +4,7 @@ title: "Debugging Existing Code"
 weight: 260
 ---
 
-Let's try a more challenging debugging example. Download the file [dow_buggy.py](/courses/python-introduction/scripts/dow_buggy.py) and the document [Day_of_the_Week.pdf](/courses/python-introduction/data/Day_of_the_Week.pdf). The document describes an algorithm to find the day of the week for any date in the Gregorian calendar between the years 1400 and 2599. The algorithm is straightforward but has many steps, and also requires that we remind ourselves how to obtain a remainder from a division. In Python we use the modulo operator, represented by `%`; thus `7%3` is 1. Our code hard-codes in days of the week rather than obtaining input from the user, so to change the date you will have to edit the source file. 
+Let's try a more challenging debugging example. Download the file [dow_buggy.py](scripts/dow_buggy.py) and the document [Day_of_the_Week.pdf](data/Day_of_the_Week.pdf). The document describes an algorithm to find the day of the week for any date in the Gregorian calendar between the years 1400 and 2599. The algorithm is straightforward but has many steps, and also requires that we remind ourselves how to obtain a remainder from a division. In Python we use the modulo operator, represented by `%`; thus `7%3` is 1. Our code hard-codes in days of the week rather than obtaining input from the user, so to change the date you will have to edit the source file. 
 Our first date is 30 May 2016. The code computes this to be a Thursday when it should have been a Monday. We don't know where to start, so we'll start at the beginning.
 
 Spyder, or another IDE such as VSCode, may be a better choice than Jupyter for this project, since its built-in debugger and Variable Explorer view can be quite useful.  If you wish to use JupyterLab, install the `ipykernel` or `xeus-python` kernel, according to the [documentation](https://jupyterlab.readthedocs.io/en/stable/user/debugger.html).  If using ipykernel, make sure it is at least Version 6.0. 
@@ -14,11 +14,11 @@ Most debuggers use instructions like _Next_, _Step In_, _Step Return_ or _Step_O
 
 In Spyder, click the blue "Play" icon to start debugging.  Set a breakpoint by clicking on the line number.  Note that some Spyder versions on some platforms, such as 5.1.5 on Linux, may not advance properly.  Upgrading (or, if necessary, downgrading) should solve that problem.  Stop debugging with the blue square icon.  The blue double arrow is "Continue," the arc over a dot is "Next," the down arrow over a dot is "Step In," and the up arrow over a dot is "Step Return."
 
-{{< figure src="/courses/python-introduction/imgs/Spyder_debug.png" >}}
+![](imgs/Spyder_debug.png)
 
 In a debugger-enabled JupyterLab, first paste the function into a cell, and the main body into another cell.  At the right of the top ribbon, click on the "bug" icon next to the kernel name so that it turns orange. Also expand the "bug" icon on the right-hand sidebar to open views of the equivalent of the Variable Explorer.  Then breakpoints may be set by clicking on a line.  In JupyterLab with an appropriate kernel, the functions to move through the code are the icons above the "Callstack" pane on the right-hand "debug" sidebar.  Hovering over the icons shows which is which. They are very similar to the corresponding Spyder icons.
 
-{{< figure src="/courses/python-introduction/imgs/Jupyter_debug.png" >}}
+![](imgs/Jupyter_debug.png)
 
 We will set a breakpoint at the line
 ```python
@@ -75,5 +75,7 @@ July 4, 1776
 It's easy to find day of the week calculators online, but test against two of them to make sure all the methods agree. You can try your own birthdate as well.
 
 {{< spoiler text="Corrected dow.py" >}}
-{{< code-download file="/courses/python-introduction/exercises/dow.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/dow.py)
+{{</ code >}}
 {{< /spoiler >}}

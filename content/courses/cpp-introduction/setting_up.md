@@ -28,7 +28,7 @@ _NVIDIA HPC SDK_
 Download and install the [package](https://developer.nvidia.com/nvidia-hpc-sdk-downloads).  If your distribution is not supported with a package, you may have t
 o download the tarball and set paths appropriately.
 
-To use a different compiler with Geany, from the `Build` menu choose `Set Build Commands`. To use a different compiler with Geany, from the `Build` menu choose `Set Build Commands`.  See the chapter on [building](/courses/cpp-introduction/building) your codes for compiler names and some options.
+To use a different compiler with Geany, from the `Build` menu choose `Set Build Commands`. To use a different compiler with Geany, from the `Build` menu choose `Set Build Commands`.  See the chapter on [building](building) your codes for compiler names and some options.
 
 ### IDEs for Mac and Windows
 
@@ -44,7 +44,7 @@ Download the Mac version from [Intel](https://www.intel.com/content/www/us/en/de
 
 The NVIDIA HPC SDK is not available for Macs.
 
-Geany can be installed from its [homepage](www.geany.org).  Other options, such as VSCode, can be installed similarly.
+Geany can be installed from its [homepage](https://www.geany.org).  Other options, such as VSCode, can be installed similarly.
 
 ### Windows
 
@@ -60,10 +60,10 @@ A drawback to both Cygwin and the WSL is portability of executables.  Cygwin exe
 WSL executables only run on the WSL.  For standalone, native binaries a good choice is _MingGW_.  MinGW is derived from Cygwin.
 
 MinGW provides a free distribution of gcc/g++/gfortran.  The standard MinGW distribution is updated fairly rarely and generates only 32-bit executables.  We will describe [MinGW-w64](https://www.mingw-w64.org/), a fork of the original project.
-{{< figure src="/courses/cpp-introduction/img/MinGW1.png" width=500px >}}
+![](img/MinGW1.png?500)
 
 MinGW-w64 can be installed beginning from the [MSYS2](https://www.msys2.org/) project.  MSYS2 provides a significant subset of the Cygwin tools.  Download and install it.
-{{< figure src="/courses/cpp-introduction/img/MSYS2.png" width=500px >}}
+![](img/MSYS2.png?500)
 Once it has been installed, follow the [instructions](https://www.msys2.org/) to open a command-line tool, update the distribution, then install the compilers and tools. 
 
 A discussion of installing MinGW-64 compilers for use with VSCode has been posted by Microsoft [here](https://code.visualstudio.com/docs/cpp/config-mingw). 
@@ -79,9 +79,9 @@ Download and install the package when it is available.
 To use any of these compilers through an IDE, they must be added to the Path environment variable.  You must use the path you chose for the installation.  The default is C:\msys64\mingw64\bin for the compilers.
 
 Control Panel->System and Security->Advanced system settings->Environment Variables
-{{< figure src="/courses/cpp-introduction/img/WindowsEV.png" width=412px >}}
+![](/content/courses/fortran-introduction/img/WindowsEV.png?412)
 Once you open Path, click New to add to the Path
-{{< figure src="/courses/cpp-introduction/img/WindowsPath.png" width=500px >}}
+![](img/WindowsPath.png?500)
 
 To test that you have successfully updated your path, open a `cmd` window and type
 ```
@@ -97,24 +97,27 @@ g++: fatal error: no input files
 We will show Geany and VSCode on Windows.  Both look similar on the other platforms.  
 
 Open Geany (or VSCode).  Type in the following
-{{< code file="courses/cpp-introduction/codes/hello.cxx" lang=no-highlight >}}
+{{< code lang="no-highlight" >}}
+    [](/content/courses/cpp-introduction/codes/hello.cxx)
+{{</ code >}}
 
-{{< figure src="/courses/cpp-introduction/img/Geany1.png" width=500px  >}}
+![](img/Geany1.png?500)
+
 Syntax coloring will not be enabled until the file is saved with a file extension that corresponds to the language.  Save this file as `hello.cxx`.  The coloring will appear.
-{{< figure src="/courses/cpp-introduction/img/Geany2.png" width=500px >}}
+![](img/Geany2.png?500)
 
 The appearance is similar in VSCode.
-{{< figure src="/courses/cpp-introduction/img/VSCode.png" width=500px >}}
+![](img/VSCode.png?500)
 
 In Geany, click the `Build` icon (a brick wall).  A message confirming a successful compilation should be printed.
 
-{{< figure src="/courses/cpp-introduction/img/Geany3.png" width=500px >}}
+![](img/Geany3.png?500)
 
 Now click the `Execute` button.  A new window will open and the message will be printed.
 
-{{< figure src="/courses/cpp-introduction/img/Geany4.png" width=500px caption="Executing the Hello World program" >}}
+![](img/Geany4.png?500 "Executing the Hello World program")
 
 ### Build Commands in Geany
 
 If you wish to use a different compiler suite from the default GCC with Geany, or if you need to change the compiling or linking commands for any other reason, you can modify the build commands through the Build->Set Build Commands dialogue.
-{{< figure src="/courses/cpp-introduction/img/GeanyBuildTools.png" width=500px caption="Edit the build commands Geany will use" >}}
+![](img/GeanyBuildTools.png?500 "Edit the build commands Geany will use")

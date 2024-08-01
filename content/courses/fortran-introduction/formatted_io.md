@@ -169,11 +169,13 @@ Non-advancing IO _must_ be formatted
 
 1. Examine this example code:
 
-{{< spoiler text="A variety of formatting examples" >}}
-{{< code file="courses/fortran-introduction/codes/formats.f90" lang="fortran" >}}
-{{< /spoiler >}}
-
-Make sure you understand all the formats. Correct unattractive outputs.  Experiment with changing the formats.
+    {{< spoiler text="A variety of formatting examples" >}}
+    {{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/formats.f90)
+{{</ code >}}
+    {{< /spoiler >}}
+    
+    Make sure you understand all the formats. Correct unattractive outputs.  Experiment with changing the formats.
 
 2. Write a program that computes pi using a trig identity such as `pi=4*atan(1)`.
    * Use kind to switch between real and double precision
@@ -182,12 +184,14 @@ Make sure you understand all the formats. Correct unattractive outputs.  Experim
      * E format
      * Scientific notation
      * Scientific notation with 8 decimal places
-Repeat for double precision.
 
-{{< spoiler text="Solution with variable strings." >}}
-{{< code file="courses/fortran-introduction/solns/print_pi.f90" lang="fortran" >}}
-{{< /spoiler >}}
-
+    Repeat for double precision.
+    
+    {{< spoiler text="Solution with variable strings." >}}
+    {{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/print_pi.f90)
+{{</ code >}}
+    {{< /spoiler >}}
 
 3. In an “infinite” while loop:
  Request an integer from the user with non-advancing input/output, e.g.
@@ -197,6 +201,8 @@ Repeat for double precision.
 If the integer is 1, print "zebra".  If it is 2, print "kangaroo".  If it is anything else other than zero, print "not found".  If it is 0, exit the loop. This requires only a simple change to a previous program.
 
 {{< spoiler text="Solution with variable strings." >}}
-{{< code file="courses/fortran-introduction/solns/non_advance.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/non_advance.f90)
+{{</ code >}}
 {{< /spoiler >}}
 

@@ -11,7 +11,9 @@ _Polymorphism_ means literally "having many forms."  In computer science, it is 
 A particular type of polymorphism is _subtype polymorphism_.  We can define a function in a subclass that has the same name as in the base class, but which applies to instances of the subclass.   This is _overriding_ the method.  
 
 **Example**
-{{< code-download file="/courses/python-introduction/scripts/zoo.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/zoo.py)
+{{</ code >}}
 
 Notice that in this code the base class throws a `NotImplementedError` if it is invoked with an instance of Animal.  In our code, the Animal class is not intended to be used to create instances, and we do not have a base implementation of `speak`, so we make sure to warn the user of our class.
 
@@ -52,7 +54,9 @@ $$
 
 To implement addition we will use the `__add__` dunder.  This dunder will take `self` as its first argument, another instance of Point as its second, and it must return another instance of the class Point, so we invoke the constructor in the dunder.
 
-{{< code-download file="/courses/python-introduction/scripts/points.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/points.py)
+{{</ code >}}
 
 We could similarly define subtraction with `__sub__`.
 
@@ -60,12 +64,16 @@ We could similarly define subtraction with `__sub__`.
 
 Implement subtraction for points using the rule $x_1-x_2$, $y_1-y_2$, $z_1-z_2).
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/points.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/points.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 We'd like to be able to print a Point object in the standard mathematical format $(x,y,z)$.  To allow `print` to handle our class we overload the `__str__` dunder.  The `__str__` dunder is used by `str`, `print`, and `format`.  
 
-{{< code-download file="/courses/python-introduction/scripts/points_printer.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/points_printer.py)
+{{</ code >}}
 
 There are many other dunders we can use in our classes.  Multiplication and division don't make sense for points, but they can be defined with `__mul__` and `__truediv__` respectively.
 

@@ -92,7 +92,9 @@ if __name__=="__main__:"
 
 Example
 
-{{< code-download file="/courses/python-introduction/scripts/rooter.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/rooter.py)
+{{</ code >}}
 
 **Exercise**
 

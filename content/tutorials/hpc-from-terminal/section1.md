@@ -58,15 +58,15 @@ The command-line secure shell is not the only option for accessing the HPC syste
 **Open OnDemand** (OOD)
 
 Open OnDemand is a Web-based interface to the system. It provides a graphical file-management interface and access to several popular applications running on the compute nodes. A simple terminal that opens on a loginnode is also provided.
-See the introduction in our basic [tutorial](/tutorials/rivanna-intro/connecting_to_rivanna/connecting_ood).
+See the introduction in our basic [tutorial](/content/tutorials/hpc-intro/connecting_to_the_system.md).
 
 **FastX**
 
-FastX is a Web-based graphical interface to a loginnode. It is also covered in the [introduction](/tutorials/rivanna-intro/connecting_to_rivanna/connecting_fastx).
+FastX is a Web-based graphical interface to a loginnode. It is also covered in the [introduction](/content/tutorials/hpc-intro/connecting_to_the_system.md#fastx).
 
 **MobaXterm** (Windows)
 
-MobaXterm combines an ssh client, a _sftp_ client for file transfers, and an X11 server into a single bundle. More details are available at our [Website](https://www.rc.virginia.edu/userinfo/rivanna/logintools/mobaxterm/) or in the [introduction](/tutorials/rivanna-intro/files/file_moba).
+MobaXterm combines an ssh client, a _sftp_ client for file transfers, and an X11 server into a single bundle. More details are available at our [Website](https://www.rc.virginia.edu/userinfo/rivanna/logintools/mobaxterm/) or in the [introduction](/content/tutorials/hpc-intro/files.md#transferring-with-graphical-clients-windows---mobaxterm).
 
 ## Running Shell Commands
 

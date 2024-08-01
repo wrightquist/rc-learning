@@ -4,7 +4,7 @@ title: "Project 5"
 weight: 84
 ---
 
-Download the file [vabirds.csv](/data/vabirds.csv).
+Download the file [vabirds.csv](data/vabirds.csv).
 1. Create a struct birdData in files birdData.h and birdData.cxx. 
 2. Write the following functions, implemented in birdDat.cxx. 
   * Write a `stats` procedure that takes only an instance of the struct and returns the mean and standard deviation of the observations for that instance. Hint: one way to return multiple items in C++ is to use a vector.
@@ -32,7 +32,13 @@ ElegantTrogon
 For this project you can require an exact match of the species name.  (Note that no spaces are allowed and words are separated by capitalization; we would have to do more sophisticated string handling if we were to allow spaces and variations in capitalization.)
 
 {{< spoiler text="Sample solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/birdstruct/birdData.h" lang="c++" >}}
-{{< code-download file="/courses/cpp-introduction/solns/birdstruct/birdData.cxx" lang="c++" >}}
-{{< code-download file="/courses/cpp-introduction/solns/birdstruct/birdstats.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/birdstruct/birdData.h)
+{{</ code >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/birdstruct/birdData.cxx)
+{{</ code >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/birdstruct/birdstats.cxx)
+{{</ code >}}
 {{< /spoiler >}}

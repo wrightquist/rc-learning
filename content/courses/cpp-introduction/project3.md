@@ -4,7 +4,7 @@ title: "Project 3"
 weight: 65
 ---
 
-Using the [cpi.csv](/data/cpi.csv) data, write a program that will read from the command line the name of a file. Read this file into your program.  Request a year on the command line.  Optionally request from the user on the command line an amount. Check that you have enough command line input. Stop with a message if you don’t have enough command line values.
+Using the [cpi.csv](data/cpi.csv) data, write a program that will read from the command line the name of a file. Read this file into your program.  Request a year on the command line.  Optionally request from the user on the command line an amount. Check that you have enough command line input. Stop with a message if you don’t have enough command line values.
 
 Once the data have been read, check that the requested year is in range.
 
@@ -20,5 +20,7 @@ Compute the inflation rate for the data and print with the corresponding year to
  a comma-separated file.  Use any plotting package with which you are familiar (Excel, Matlab, Python, R, etc.) to plot the data.
 
 {{< spoiler text="Sample solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/inflation.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/inflation.cxx)
+{{</ code >}}
 {{< /spoiler >}}

@@ -96,20 +96,24 @@ x0=0.0
 **Exercises**
 
 1. Write a program that creates a file mydata.txt containing four rows consisting of
-```
-1, 2, 3
-4, 5, 6
-7, 8, 9
-10, 11, 12
-```
-Close the file, then open it again.  Read the data back.  Write a loop to add 1 to each value and print each row to the console.
-
-{{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/reopen.f90" lang="fortran" >}}
-{{< /spoiler >}}
+    ```
+    1, 2, 3
+    4, 5, 6
+    7, 8, 9
+    10, 11, 12
+    ```
+    Close the file, then open it again.  Read the data back.  Write a loop to add 1 to each value and print each row to the console.
+    
+    {{< spoiler text="Example Solution" >}}
+    {{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/reopen.f90)
+{{</ code >}}
+    {{< /spoiler >}}
 
 2. Write a program that reads the `params` namelist and prints the variables to the console.  Create the paramlist.txt file and test your program.
 
-{{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/nlist.f90" lang="fortran" >}}
-{{< /spoiler >}}
+    {{< spoiler text="Example Solution" >}}
+    {{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/nlist.f90)
+{{</ code >}}
+    {{< /spoiler >}}

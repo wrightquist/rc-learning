@@ -14,30 +14,30 @@ The sending process is said to _post_ a send when a communication is initiated. 
 
 A requirement of the MPI standard, that all implementations must honor, is that message order is preserved.  Messages must be received in the order in which they are sent.  
 
-{{< figure src="/courses/parallel-computing-introduction/img/message_passing.png" caption="Point to point communication." >}}
+![](img/message_passing.png "Point to point communication.")
 
 The requirement of matching postings and messages lead to an important difference between global communications and point-to-point communications: the latter can _deadlock_.  A deadlock occurs when one process attempts to send a message to another process that is not ready to receive it.  The sender will wait indefinitely even though the receiver will never reach a state of readiness, causing the entire program to come to a halt.  A program that might deadlock is said to be **unsafe**.
 
 Deadlock can also occur because the message is "misaddressed" so that the receive routine is not able to match it to anything it is expecting.  This most frequently occurs due to differing tags, so programmers must be careful when setting tags to values other than zero.
 
-{{< figure src="/courses/parallel-computing-introduction/img/deadlock.png" caption="Deadlock occurs when the destination process is not able to receive the message."  >}}
+![](img/deadlock.png "Deadlock occurs when the destination process is not able to receive the message.")
 
 It is important for MPI programmers to keep in mind that each process is running as an _independent_ executable, each of which is generally called a _task_.  MPI library invocations handle communications among these tasks, but the tasks are otherwise uncoordinated.  It is the responsibility of the programmer to ensure that each rank is provided the information it requires, and to manage the communications.
 
 Let us consider a two-task program that will exchange some data.  We might first think of a pattern such as the following:
 
-{{< figure src="/courses/parallel-computing-introduction/img/unsafe.png" caption="Potentially unsafe communication pattern." >}}
+![](img/unsafe.png "Potentially unsafe communication pattern.")
 
 Depending on the behavior of the sends and the particulars of the MPI implementation, this may work, but it is not guaranteed to work; if both processes wait in the send state, they will never post the required receive.  Thus this is generally unsafe.
 
 Now consider another pattern:
 
-{{< figure src="/courses/parallel-computing-introduction/img/maylock.png" caption="Possible deadlock." >}}
+![](img/maylock.png "Possible deadlock.")
 
 Both processes post a receive. What happens next depends on whether the receive will wait for the corresponding send (i.e. it will _block_) or whether it will continue on until it receives a signal to complete the receive (i.e. it is _nonblocking_).  If the receive blocks then this pattern is certain to deadlock.
 
 Finally we look at the following:
 
-{{< figure src="/courses/parallel-computing-introduction/img/safe.png" caption="Successful exchange." >}}
+![](img/safe.png "Successful exchange.")
 
 This should work regardless of the behavior of the sends and receives, so this pattern is _safe_.

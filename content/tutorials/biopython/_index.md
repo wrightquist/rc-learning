@@ -15,7 +15,7 @@ From the [official Biopython project website](https://biopython.org):
 
 This workshop assumes a working knowledge of the Python programming language and basic understanding of the concepts of online DNA and Protein sequence repositories.
 
-Introductions to Python can be found [here](/courses/programming_python_scientists_engineers/python-interpreter/) and [here](/courses/python_introduction/).
+Introductions to Python can be found [here](/content/courses/python-introduction).
 
 ---
 
@@ -46,7 +46,7 @@ Once you have installed Anaconda, start the Navigator application:
 
 You should see a workspace similar to the screenshot, with several options for working environments, some of which are not installed. We will use `Spyder` which should already be installed. If not, click the button to install the package.
 
-![AnacondaNavigator](/tutorials/biopython/anaconda-navigator.png)
+![AnacondaNavigator](img/anaconda-navigator.png)
 
 ## Spyder
 
@@ -55,7 +55,7 @@ Now we will switch to Spyder. Spyder is an Integrated Development Environment, o
 1. To start it, return to the `Anaconda Navigator` and click on the `Spyder` tile. It may take a while to open (watch the lower left of the Navigator).
 2. Once it starts, you will see a layout with an editor pane on the left, an explorer pane at the top right, and an iPython console on the lower right. This arrangement can be customized but we will use the default for our examples. Type code into the editor. The explorer window can show files, variable values, and other useful information. The iPython console is a frontend to the Python interpreter itself. It is comparable to a cell in JupyterLab.
 
-![AnacondaNavigator](/tutorials/biopython/anaconda-spyder.png)
+![AnacondaNavigator](img/anaconda-spyder.png)
 
 ## Installation of the Biopython package
 
@@ -102,17 +102,17 @@ The `Bio` package provides a large number of subpackages providing specific func
 
 The following table shows an excerpt of that list relevant for this workshop.
 
-| Subpackages/Classes | Purpose |
-| - | - |
-| [Bio.Entrez](https://biopython.org/docs/1.75/api/Bio.Entrez.html) | Functions to retrieve Entrez records and associated data |
-| [Bio.ExPASy](https://biopython.org/docs/1.78/api/Bio.ExPASy.html) | Tools to access data hosted on the ExPASy protein databases |
-| [Bio.SwissProt](https://biopython.org/docs/1.78/api/Bio.SwissProt.html) | Tools to work with the sprotXX.dat file from SwissProt |
-| [Bio.Seq](https://biopython.org/docs/1.78/api/Bio.Seq.html?highlight=seq#module-Bio.Seq) | Sequence datastructure (immutable=read-only) |
-| [Bio.MutableSeq](https://biopython.org/docs/1.78/api/Bio.Seq.html?highlight=mutableseq#Bio.Seq.MutableSeq) | Sequence datastructure (mutable=modifiable |
-| [Bio.SeqRecord](https://biopython.org/docs/1.78/api/Bio.SeqRecord.html?highlight=seqrecord#module-Bio.SeqRecord) | Datastucture for Seq object plus enriched information |
-| [Bio.SeqIO](https://biopython.org/docs/1.78/api/Bio.SeqIO.html?highlight=seqio#module-Bio.SeqIO) | Read/write sequences (various file formats )|
-| [Bio.AlignIO](https://biopython.org/docs/1.78/api/Bio.AlignIO.html) | A new multiple sequence Alignment Input/Output interface for BioPython 1.46 and later |
-| [Bio.Align.MultipleSeqAlignment](https://biopython.org/docs/1.78/api/Bio.Align.html?highlight=mult#Bio.Align.MultipleSeqAlignment) | Tools for Code for working with sequence alignments |
+| Subpackages/Classes                                                                                                                | Purpose                                                                               |
+|------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| [Bio.Entrez](https://biopython.org/docs/1.75/api/Bio.Entrez.html)                                                                  | Functions to retrieve Entrez records and associated data                              |
+| [Bio.ExPASy](https://biopython.org/docs/1.78/api/Bio.ExPASy.html)                                                                  | Tools to access data hosted on the ExPASy protein databases                           |
+| [Bio.SwissProt](https://biopython.org/docs/1.78/api/Bio.SwissProt.html)                                                            | Tools to work with the sprotXX.dat file from SwissProt                                |
+| [Bio.Seq](https://biopython.org/docs/1.78/api/Bio.Seq.html?highlight=seq#module-Bio.Seq)                                           | Sequence datastructure (immutable=read-only)                                          |
+| [Bio.MutableSeq](https://biopython.org/docs/1.78/api/Bio.Seq.html?highlight=mutableseq#Bio.Seq.MutableSeq)                         | Sequence datastructure (mutable=modifiable                                            |
+| [Bio.SeqRecord](https://biopython.org/docs/1.78/api/Bio.SeqRecord.html?highlight=seqrecord#module-Bio.SeqRecord)                   | Datastucture for Seq object plus enriched information                                 |
+| [Bio.SeqIO](https://biopython.org/docs/1.78/api/Bio.SeqIO.html?highlight=seqio#module-Bio.SeqIO)                                   | Read/write sequences (various file formats )                                          |
+| [Bio.AlignIO](https://biopython.org/docs/1.78/api/Bio.AlignIO.html)                                                                | A new multiple sequence Alignment Input/Output interface for BioPython 1.46 and later |
+| [Bio.Align.MultipleSeqAlignment](https://biopython.org/docs/1.78/api/Bio.Align.html?highlight=mult#Bio.Align.MultipleSeqAlignment) | Tools for Code for working with sequence alignments                                   |
 
 ---
 
@@ -585,7 +585,7 @@ print ("Peptide (modified):", mod_peptide)
 ## Handling Sequence Records
 
 The [SeqRecord](https://biopython.org/wiki/SeqRecord) class provides the following fields:
-* `.seq`: a sequence (as a [Seq](#seq) object)
+* `.seq`: a sequence (as a [Seq](#sequence-objects) object)
 * `.id`: the identifier, e.g. an accession number (String)
 * `.name`: can be just the accession number or the locus name (String)
 * `.description`: self-explanatory (String)
@@ -595,7 +595,7 @@ The [SeqRecord](https://biopython.org/wiki/SeqRecord) class provides the followi
 * `.dbxref`: list of database cross-references
 
 
-So it is used to wrap around a [Seq](#seq) object with richer information. We can manually create a `SeqRecord` object like this:
+So it is used to wrap around a [Seq](#sequence-objects) object with richer information. We can manually create a `SeqRecord` object like this:
 ```python
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
@@ -625,7 +625,7 @@ Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF')
 
 ## Sequence File Operations
 
-The [Bio.SeqIO](https://biopython.org/wiki/SeqIO) class provides simple tools to read and write a variety of sequence file formats (including multiple sequence alignments). It operates exclusively on [SeqRecord](#seqrecord) objects.
+The [Bio.SeqIO](https://biopython.org/wiki/SeqIO) class provides simple tools to read and write a variety of sequence file formats (including multiple sequence alignments). It operates exclusively on [SeqRecord](https://biopython.org/wiki/SeqRecord) objects.
 
 **Read Fasta File**
 ```python

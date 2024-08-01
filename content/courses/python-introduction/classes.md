@@ -40,7 +40,9 @@ As for modules, any variables defined outside of and above the methods are _glob
 
 Example:  
 
-{{< code-download file="/courses/python-introduction/scripts/mymodule.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/mymodule.py)
+{{</ code >}}
 
 The first line defines the class name.  The next line is the docstring.  After that we define and initialize a variable that is global to the class.  The first method is the constructor.  The ultimate class constructor is always named `__init__` (two underscores).  The first argument to init, and to all methods in Python, is the _instance variable_.  The next two arguments to the constructor are actually passed from the caller.  They are used to initialize the two attributes `x` and `y`.  Notice that `self.x` and `x` are completely different variables; similarly for `self.y` and `y`.
 
@@ -129,4 +131,4 @@ The pickle module is built into Python but it is limited.  It cannot handle seve
 ```python
 import dill as pickle
 ```
-Dill is not included in the base Anaconda but can be installed through [conda](/courses/python-introduction/package_managers).
+Dill is not included in the base Anaconda but can be installed through [conda](package_managers).

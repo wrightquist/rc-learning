@@ -76,12 +76,14 @@ z=4.*myfunc(var1,var2,var3)
 ```
 As for subroutines, the names of the actual arguments need not be the same as those of the dummies, but the number and type must match.
 
-Because functions have a type, they must be _declared_ like a variable in any program unit that invokes them.  Better yet, use an [interface](courses/fortran-introduction/subprogram_args).
+Because functions have a type, they must be _declared_ like a variable in any program unit that invokes them.  Better yet, use an [interface](subprogram_args).
 
 Subroutines have no return type and cannot be declared.
 
 **Example**
-{{< code-download file="/courses/fortran-introduction/codes/subprogs.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/subprogs.f90)
+{{</ code >}}
 
 #### Renaming Function Results 
 
@@ -91,7 +93,7 @@ We can return it in a different variable with the RESULT clause.
 FUNCTION summit(x,y) RESULT(s)
 ```
 This is especially useful for recursive functions; it is required in this case until the F2008 standard, and not all compilers support F2008 in full yet.
-When using RESULT we declare the type of the name of the RESULT rather than the name of the function.  The caller must still declare the function, however (or use an [interface](/courses/fortran-introduction/interfaces)).
+When using RESULT we declare the type of the name of the RESULT rather than the name of the function.  The caller must still declare the function, however (or use an [interface](interfaces)).
 
 **Example**
 ```fortran
@@ -117,6 +119,8 @@ Write a function to evaluate f(x) for any given real (scalar) value of x and cal
 Print the values and the corresponding function evaluation to a comma-separated-values (CSV) file.  Use software such as Excel, Python, Matlab, or anything else you know to plot the result.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/func.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/func.f90)
+{{</ code >}}
 {{< /spoiler >}}
 

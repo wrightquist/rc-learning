@@ -4,12 +4,12 @@ title: "Project 5"
 weight: 74
 ---
 
-Download the file [vabirds.csv](/data/vabirds.csv).
+Download the file [vabirds.csv](data/vabirds.csv).
 1. Create the derived type bird_data in a module bird_dat as illustrated in the example.  This is still a type; we do not need a class for this exercise. 
 2. Add the following procedures to the constructor already written.
    * Write a `stats` procedure that takes only an instance of the type and returns the mean and standard deviation of the observations for that instance.
    * Write a minmax procedure that takes an instance of the type and the array of years and returns the maximum observed, the minimum observed, and the years for maximum and minimum.  You may use the maxval, minval, maxloc, and minloc intrinsics.
-   * Write a main program that uses your module and also uses the sorters module that you can download ([sorters.f90](/courses/fortran-introduction/solns/sorters.f90)). This implements bubblesort.  Bubblesort is simple and slow but is more than sufficient for this exercise.  Note that the subprogram is destructive, i.e. it overwrites the array to be sorted, so make a copy if you don’t want that.
+   * Write a main program that uses your module and also uses the sorters module that you can download ([sorters.f90](solns/sorters.f90)). This implements bubblesort.  Bubblesort is simple and slow but is more than sufficient for this exercise.  Note that the subprogram is destructive, i.e. it overwrites the array to be sorted, so make a copy if you don’t want that.
 
 Remember to write an explicit interface for each subprogram in this “main” file.  Do not use CONTAINS. Read the file name from the command line.   First of all you will need to count the number of lines in the file.  Write a function count_lines that does this and returns the number.  It is up to you whether you pass it the number of header/footer lines.
 Count_lines can check for the existence of the file and return 0 if it is not found.
@@ -36,9 +36,13 @@ ElegantTrogon
 
 For this project you can require an exact match of the species name.  (Note that no spaces are allowed and words are separated by capitalization; we would have to do more sophisticated string handling if we were to allow spaces and variations in capitalization.)
 
-In addition to the sorters.f90 module mentioned above, the sample solution uses the [file_utils](/courses/fortran-introduction/solns/file_utils.f90) module that collects some useful file-related subprograms, including the count_lines function.
+In addition to the sorters.f90 module mentioned above, the sample solution uses the [file_utils](solns/file_utils.f90) module that collects some useful file-related subprograms, including the count_lines function.
 
 {{< spoiler text="Sample solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/bird_dat.f90" lang="fortran" >}}
-{{< code-download file="/courses/fortran-introduction/solns/bird_obs.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/bird_dat.f90)
+{{</ code >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/bird_obs.f90)
+{{</ code >}}
 {{< /spoiler >}}

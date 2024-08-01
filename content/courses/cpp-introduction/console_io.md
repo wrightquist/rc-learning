@@ -50,7 +50,9 @@ The insertion operator will not print anything other than exactly what it is tol
 The special symbol "\n" represents the "newline" character.  This terminates the current line and advances to the next line.  Cout, cerr, and clog  will not add a newline character unless told to do so.  Newline is just another character, so it is accumulated in the usual output buffer for the stream.  The `endl` manipulator also inserts a newline, but in addition it flushes the output buffer.  
 
 C++ also supports the C `printf` function.  The `<cstdio>` header provides it.
-{{< code file="/courses/cpp-introduction/codes/out_printf.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/out_printf.cxx)
+{{</ code >}}
 More details are available at references such as [this](https://www.cplusplus.com/reference/cstdio/printf/).
 
 #### Input
@@ -68,7 +70,9 @@ It will wait indefinitely until all variables specified are entered.  If the inp
 **Exercise**
 
 Try different input values for this code.  Try entering floats or words.
-{{< code-download file="/courses/cpp-introduction/codes/read_cin.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/read_cin.cxx)
+{{</ code >}}
 
 ## Formatted Input/Output
 
@@ -105,21 +109,25 @@ These manipulators stay in effect in a given output stream until cancelled.
 * `setbase(n)` //Output in base `n` (options are 8, 10, or 16, or 0 which reverts to the default of decimal).
 
 **Example**
-{{< code-download file="/courses/cpp-introduction/codes/out_manip.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/out_manip.cxx)
+{{</ code >}}
 
 A more complete list of manipulators is [here](https://www.cplusplus.com/reference/library/manipulators/).
 
 **Exercises**
 
 1. Write a program that computes pi using a trig identity such `asp=4\*atan(1)`. Remember
-* #include <cmath>
-* Using double precision, print pi in
-  * Scientific notation
-  * Scientific notation with 8 decimal places
+   * #include <cmath>
+     * Using double precision, print pi in
+       * Scientific notation
+       * Scientific notation with 8 decimal places
 
-{{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/print_pi.cxx" lang="c++" >}}
-{{< /spoiler >}}
+   {{< spoiler text="Example Solution" >}}
+   {{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/print_pi.cxx)
+{{</ code >}}
+   {{< /spoiler >}}
 
 2. In an “infinite” while loop:
 
@@ -130,5 +138,7 @@ Request an integer from the user without advancing to a new line, e.g.
 If the integer is 1, print “zebra”.  If it is 2, print “kangaroo”.  If it is anything else except for zero, print “not found”.  If it is 0, exit the loop.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/kangaroo.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/kangaroo.cxx)
+{{</ code >}}
 {{< /spoiler >}}

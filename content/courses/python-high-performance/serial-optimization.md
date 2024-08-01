@@ -52,7 +52,9 @@ The result is a _generator object_.  This can save both memory and time.
 
 **Example**
 The following code tests the speed of map, list comprehension, and loop.
-{{% code-download file="/courses/python-high-performance/codes/replace_forloop_comp.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/replace_forloop_comp.py)
+{{</ code >}}
 
 The result on one particular system:
 ```python
@@ -67,10 +69,14 @@ NumPy provides a large library of functions on NumPy arrays that take the place 
 
 **Exercise:** 
 Nested for loops are **very inefficient** (`loops.py`)
-{{% code-download file="/courses/python-high-performance/codes/loops.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/loops.py)
+{{</ code >}}
 
 Eliminating for loops is **much faster** (`aops.py`)
-{{% code-download file="/courses/python-high-performance/codes/aops.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/aops.py)
+{{</ code >}}
 
 **Results** with Python 3.6.9 on one particular system:
 
@@ -93,7 +99,9 @@ u[1:-1,1:-1]=0.25*(u[2:,1:-1]+u[:-2,1:-1]+u[1:-1,2:]+u[1:-1,:-2]
 
 **Example**
 Our "dummy" function is a ufunc, so we can run a trial with little modification to the previous code.  The "setup" code is not timed by timeit.
-{{% code-download file="/courses/python-high-performance/codes/replace_forloop.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/replace_forloop.py)
+{{</ code >}}
 
 The difference is remarkable.  Remember that times for different runs may vary somewhat even on the same system, but the basic result will be similar.
 ```
@@ -105,8 +113,8 @@ Time for numpy 0.0885
 
 **More Information**
 
-* <a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions" target="_blank">List comprehensions</a>
-* <a href="https://docs.python.org/3/library/itertools.html?highlight=map%20reduce" target="_blank">map/reduce/itertools</a>
+* [List comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
+* [map/reduce/itertools](https://docs.python.org/3/library/itertools.html?highlight=map%20reduce)
 
 ### Avoid Copying
 

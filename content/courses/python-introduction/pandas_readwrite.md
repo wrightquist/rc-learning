@@ -108,11 +108,11 @@ ds.to_netcdf("newdata.nc")
 ```
 
 **Exercise**
-Download the [weather.csv](/data/weather.csv) file.
+Download the [weather.csv](data/weather.csv) file.
 Read the data into a dataframe.  Summarize the data.  Look at the first 20 lines.  Print the columns.  Change the names of "Data.Temperature.Avg Temp",
 "Data.Temperature.Max Temp" and "Data.Temperature.Min Temp" to "Data.AvgTemp", "Data.MaxTemp", and "Data.MinTemp" respectively.  Print the mean of the average temperature.
 
 {{< spoiler text="Example Solution, zipped Jupyter notebook" >}}
-[pandas_weather_ex1.zip](/courses/python-introduction/exercises/pandas_weather_ex1.zip)
+[pandas_weather_ex1.zip](exercises/pandas_weather_ex1.zip)
 {{< /spoiler >}}
 

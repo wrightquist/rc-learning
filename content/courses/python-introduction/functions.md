@@ -87,7 +87,9 @@ BMI = (Weight in Kilograms / (Height in Meters x Height in Meters))
 Write another function that takes a BMI value and returns the category (Underweight, Normal, Overweight, Obese I-III) as an integer. Use a data structure to convert the integer to a message.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/user_bmi_function.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/user_bmi_function.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Early Returns

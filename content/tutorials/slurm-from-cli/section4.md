@@ -36,7 +36,7 @@ Most HPC sites, including UVa's, restrict the memory and time allowed to process
 2. Short development jobs,
 3. "Computational steering" in which a program runs for an interval, then the output is examined and parameters may be adjusted.
 
-For most of these cases, we strongly recommend the use of the Open OnDemand [Interactive Applications](/tutorials/rivanna-intro/interactive_apps/interactive/).  Jupyterlab is available to run notebooks.  Rstudio and Matlab Desktop are also available to run through this interface.  For more general work, including command-line options, the Desktop is usually the best option. It provides a basic terminal, but also access to other applications should they be needed.
+For most of these cases, we strongly recommend the use of the Open OnDemand [Interactive Applications](/content/tutorials/hpc-intro/interactive_apps.md).  Jupyterlab is available to run notebooks.  Rstudio and Matlab Desktop are also available to run through this interface.  For more general work, including command-line options, the Desktop is usually the best option. It provides a basic terminal, but also access to other applications should they be needed.
 
 For general-purpose interactive work with graphics, please use the Open OnDemand Desktop.  The X11 service that Linux uses for graphics is very slow over a network.  Even with a fast connection between two systems, the Desktop will perform better since the X11 server process and the programs that use it are running on the same computer.
 
@@ -58,11 +58,11 @@ Never issue an sbatch command from within an interactive job (including OOD jobs
 
 One of the advantages of using a high-performance cluster is the ability to use many cores and/or nodes at once.  This is called _parallelism_.  There are three main types of parallelism.
 
-You should understand whether your program can make use of more than one core or node before you request multiple cores and/or nodes. Special programming is required to enable these capabilities.  Asking for multiple cores or nodes that your program cannot use will result in idle cores and wasted SUs, since you are charged for each core-hour. The [`seff`](/tutorials/slurm-from-cli/section3/#seff) command can help with this.
+You should understand whether your program can make use of more than one core or node before you request multiple cores and/or nodes. Special programming is required to enable these capabilities.  Asking for multiple cores or nodes that your program cannot use will result in idle cores and wasted SUs, since you are charged for each core-hour. The [`seff`](section3#seff) command can help with this.
 
 ### High Throughput Serial Parallelism
 
-High throughput parallelism is when many identical jobs are run at once, each on a single core.  Examples can include Monte-Carlo methods, parameter searches, image processing on many related images, some areas of bioinformatics, and many others.  For most cases of this type of parallelism, the best Slurm option is a [job array](/tutorials/slurm-from-cli/section4/#job-arrays).
+High throughput parallelism is when many identical jobs are run at once, each on a single core.  Examples can include Monte-Carlo methods, parameter searches, image processing on many related images, some areas of bioinformatics, and many others.  For most cases of this type of parallelism, the best Slurm option is a [job array](section4#job-arrays).
 
 When planning a high-throughput project, it is important to keep in mind that if the individual jobs are very short, less than roughly 15-30 minutes each, it is very inefficient to run each one separately, whether you do this manually or through an array.  In this case you should group your jobs and run multiple instances within the same job script.  Please [contact us](https://www.rc.virginia.edu/form/support-request/) if you would like assistance setting this up.
 
@@ -71,18 +71,24 @@ When planning a high-throughput project, it is important to keep in mind that if
 Shared-memory programs can use multiple cores but they must be physically located on the _same_ node.  The appropriate Slurm option in this case is `-c` (equivalent to `cpus-per-task`).  Shared memory programs use _threading_ of one form or another.  
 
 Example Slurm script for a threaded program:
-{{< code-download file="/tutorials/slurm-from-cli/scripts/multicore.slurm" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/slurm-from-cli/scripts/multicore.slurm)
+{{</ code >}}
 
 ### Multinode (MPI)
 
 In this type of parallelism, each process runs independently and communicates with others through a library, the most widely-used of which is MPI.  Distributed memory programs can run on single or multiple nodes and often can run on hundreds or even thousands of cores.  For distributed-memory programs you can use the `-N` option to request a number of nodes, along with `ntasks-per-node` to schedule a number of processes on each of those nodes.
 
-{{< code-download file="/tutorials/slurm-from-cli/scripts/multinode.slurm" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/slurm-from-cli/scripts/multinode.slurm)
+{{</ code >}}
 
 ### Hybrid MPI plus Threading
 Some codes can run with distributed-memory processes, each of which can run in threaded mode.  For this, request `--ntasks-per-node=NT` and `cpus-per-task=NC`, keeping in mind that the total number of cores requested on each node is then $NT \times NC$.
 
-{{< code-download file="/tutorials/slurm-from-cli/scripts/hybrid.slurm" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/slurm-from-cli/scripts/hybrid.slurm)
+{{</ code >}}
 
 ## Job Arrays
 
@@ -131,7 +137,9 @@ python myscript.py myinput.${SLURM_ARRAY_TASK_ID}.in}
 The script should be prepared to request resources for _one_ instance of your program.
 
 Complete example array job script:
-{{< code-download file="/tutorials/slurm-from-cli/scripts/array.slurm" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/slurm-from-cli/scripts/array.slurm)
+{{</ code >}}
 
 To cancel an entire array, cancel the global ID
 ```bash

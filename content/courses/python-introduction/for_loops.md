@@ -65,7 +65,9 @@ Modify your loop to print the first N integers.  Be sure that N is set to a valu
 Write a loop that will sum the first N integers.  Hint: you will need a variable called an <em>accumulator</em> whose value is assigned outside the loop to 0.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/sum_to_N.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/sum_to_N.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 #### Other Iterables

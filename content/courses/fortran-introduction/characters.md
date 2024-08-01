@@ -25,7 +25,9 @@ Even extended ASCII accommodates far too few characters to accommodate more than
 **Example** 
 from the gfortran [documentation](https://gcc.gnu.org/onlinedocs/gcc-4.9.4/gfortran/SELECTED_005fCHAR_005fKIND.html). It may compile only with gfortran.
 
-{{< code file="courses/fortran-introduction/codes/iso.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/iso.f90)
+{{</ code >}}
 
 ## Fixed-Length Strings
 
@@ -53,14 +55,14 @@ The string must be allocated in the executable code before it is used.
    allocate(character(len=num_chars) :: string)
 ```
 
-Allocatable arrays of allocatable strings are possible, but will require creating a [derived type](/courses/fortran-introduction/derived_types).
+Allocatable arrays of allocatable strings are possible, but will require creating a [derived type](derived_types).
 
 An allocatable string may be deallocated if necessary with the usual `DEALLOCATE` intrinsic.
 ```fortran
 DEALLOCATE(str)
 ```
 
-Prior to Fortran 2003, the standard defined a module `iso_varying_string`.  Most compilers available now support the 2003 standard so will offer the standard variable string, but the iso_varying_string module provides a number of functions so may still be worthwhile.  We will discuss standardized modules [later](courses/fortran-introduction/standard_modules).
+Prior to Fortran 2003, the standard defined a module `iso_varying_string`.  Most compilers available now support the 2003 standard so will offer the standard variable string, but the iso_varying_string module provides a number of functions so may still be worthwhile.  We will discuss standardized modules [later](intrinsic_modules).
 
 ## Substrings
 
@@ -101,7 +103,7 @@ Hello world          today
 
 ### String Length
 A useful string function, especially for variable-length strings, is `LEN(S)`.
-A fixed-length string will always occupy the specified number of characters. The default is to left-justify non-blank characters in the field.  This can be modified with [intrinsics](courses/fortran-introduction/character_intrinsics).
+A fixed-length string will always occupy the specified number of characters. The default is to left-justify non-blank characters in the field.  This can be modified with [intrinsics](character_intrinsics).
 
 **Exercises**
 * Declare character variables large enough to hold the indicated strings.  Make full_title at least 5 characters longer than you think necessary.
@@ -118,5 +120,7 @@ print *,full_title(2:4)
    2. Make the strings variable sized.  Use the `len` function.
 
 {{< spoiler text="Solution with variable strings." >}}
-{{< code file="courses/fortran-introduction/solns/var_strings.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/var_strings.f90)
+{{</ code >}}
 {{< /spoiler >}}

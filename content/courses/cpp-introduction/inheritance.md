@@ -27,7 +27,9 @@ The `access-mode` specifier for the base class affects how the members of that c
 
 **Example**
 
-{{< code-download file="/courses/cpp-introduction/codes/inheritance.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/inheritance.cxx)
+{{</ code >}}
 
 Notice that an antelope _is-a_ animal and a reptile _is-a_ animal, but an antelope is *not* a reptile.  So derived classes do not need to have a direct relationship with one another aside from their inheritance.
 
@@ -55,7 +57,9 @@ C(Mammal) --> D(Antelope)
 
 Constructors, destructors, and friend classes are not inherited from the base class by derived classes.  We can still create constructors, and the derived class can invoke the parent constructor.
 
-{{< code-download file="/courses/cpp-introduction/codes/child_constructor.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/child_constructor.cxx)
+{{</ code >}}
 
 In this example, the child inherits the `getName` accessor from the parent.
 But `age` does not refer back to the parent, since that variable occurs only in the child, so it must be explicitly declared.
@@ -79,15 +83,19 @@ The Parent constructor cannot be used to set the new member `age`, so a mutator 
 
 1. Add a new class Mammal as sketched above.  Derive Antelope from that. Add an attribute `scaleColor` to the Reptile class.
 
-{{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/inherit_chain.cxx" lang="c++" >}}
-{{< /spoiler >}}
+    {{< spoiler text="Example solution" >}}
+    {{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/inherit_chain.cxx)
+{{</ code >}}
+    {{< /spoiler >}}
 
 2. Create a constructor for Animal that sets the name, food, foodQuantity, and vocalization.  Pass it through to the descendant classes and in each one, add the attributes new to that class.  Remove functions made unnecessary by the constructor.  Optionally implement the `using` syntax in the Antelope class.  Depending on your compiler version, you may need to add a flag `-std=c++11` or equivalent.
 
-{{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/constructor_chain.cxx" lang="c++" >}}
-{{< /spoiler >}}
+    {{< spoiler text="Example solution" >}}
+    {{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/constructor_chain.cxx)
+{{</ code >}}
+    {{< /spoiler >}}
 
 *Extra Exercises*
 Clean up the solution to Example 2 by declaring attributes private or protected and implementing all required accessors and mutators.  

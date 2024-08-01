@@ -24,7 +24,9 @@ After the shebang, we can add some shell commands.
 
 Here is a simple example of a script that clears the screen, pauses for three seconds, then displays a quote from a Website.
 
-{{< code-download file="/tutorials/bash-scripting/scripts/qod.sh" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/bash-scripting/scripts/qod.sh)
+{{</ code >}}
 
 If you have downloaded the file onto a Linux system, you can run it directly.  Otherwise, either transfer it to your intended system or copy and paste it into a plain text file named `qod.sh`. 
 

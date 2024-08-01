@@ -96,7 +96,9 @@ integer                 :: day
 
 Pulling the array indexing capabilities all together we have a complete program:
 
-{{< code-download file="/courses/fortran-introduction/codes/arrayinds.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/arrayinds.f90)
+{{</ code >}}
 
 This code contains some features, such as string concatenation, that we will study later.
 
@@ -107,5 +109,7 @@ This code contains some features, such as string concatenation, that we will stu
  - 2 Make all arrays that should be the same size as `temps` allocatable, leaving temps static.  Allocate all to the size and shape of the `temps` array.  For convenience you may introduce an integer that represents the size of `temps`.  This way we can accommodate data for a leap year by changing just the size of `temps`.	
 
 {{< spoiler text="Example Solution" >}}
-{{< code file="courses/fortran-introduction/solns/arrayinds.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/arrayinds.f90)
+{{</ code >}}
 {{< /spoiler >}}

@@ -154,7 +154,7 @@ In newer Linux systems, most commands have a `--help` option
 ```bash
 % wc --help
 ```
-However, `man` sends output through a [pager](/tutorials/unix-tutorials/unix_tutorial_2), whereas --help prints directly to the console.
+However, `man` sends output through a [pager](unix_tutorial_2), whereas --help prints directly to the console.
 
 Another useful command,
 ```

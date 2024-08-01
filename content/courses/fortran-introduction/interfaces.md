@@ -4,7 +4,7 @@ title: "Interfaces"
 weight: 62
 ---
 
-If your subprogram is not in a [module](/courses/fortran-introduction/modules) you should provide an INTERFACE.
+If your subprogram is not in a [module](modules) you should provide an INTERFACE.
 The INTERFACE is equivalent to the _prototype_ of some other languages.
 Interfaces enable the compiler to check that the _number_ and _type_ of the argument list in invocations agrees with the declared parameter list.
 Interfaces are non-executable and should be placed with (or immediately following) variable declarations.

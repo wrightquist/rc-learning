@@ -34,5 +34,7 @@ Test your program first with your own birthdate. Then test with the following da
 Try to write and test your own program before peeking at the sample solution.
 
 {{< spoiler text="Sample solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/day_of_week.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/day_of_week.f90)
+{{</ code >}}
 {{< /spoiler >}}

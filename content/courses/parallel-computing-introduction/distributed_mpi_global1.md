@@ -12,7 +12,7 @@ In one-to-many collective communications, one process, generally called the _roo
 
 In a broadcast, the root process sends the same data to every other process.  It is not required, but it is usual to make process 0 the root, since that is the only one guaranteed to be present.  The buffer may be an array but all elements of the array are sent to every other process in the communicator group.
 
-{{< figure src="/courses/parallel-computing-introduction/img/broadcast.png" caption="Broadcast" >}}
+![](img/broadcast.png "Broadcast")
 
 ### C++ 
 
@@ -23,7 +23,9 @@ int MPI_Bcast (void *buffer, int ncount, MPI_Datatype datatype, int root, MPI_Co
 In this prototype, `buffer` is the variable holding the data, `ncount` is the number of _items_ (not bytes) sent, `MPI_Datatype` is a struct defined in `mpi.h`, and `MPI_Comm` is also a struct defined in `mpi.h`.
 
 {{< spoiler text="C++ Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/bcast.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/codes/bcast.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Fortran
@@ -37,7 +39,9 @@ call MPI_Bcast(vals, ncount, MPI_TYPE, root, MPI_COMM_WORLD, err)
 The argument `vals` can be of any primitive type that corresponds to a supported MPI_TYPE.
 
 {{< spoiler text="Fortran Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/bcast.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/bcast.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Python
@@ -49,14 +53,16 @@ comm.Bcast([sendvals,MPI.TYPE], root=0)  #NumPy array
 The pickled version does not use `MPI.TYPE` because a pickled object is a binary stream and mpi4py handles the data description passed to MPI.  In the NumPy version we may specify the type, although it is optional because a Ndarray is aware of its type.  The array and type should be a list.
 
 {{< spoiler text="Python Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/bcast.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/bcast.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Scatter
 
 A `scatter` breaks up an array and sends one part to each process, with root keeping its own part.  The simplest function distributes the same `ncount` of the array to each process.  The sections are distributed from the first element in rank order.  If root=0 this means that it sends itself the first _ncount_ elements and sends the next _ncount_ elements to process 1, the _ncount_ after that to process 2, and so forth.  If root is not zero, that process sends the first _ncount_ to rank 0 and so on, sends the rank-appropriate section to itself, then sends to the next until all processes in the communicator group have received data. For a simple Scatter, the number of elements of the "send buffer" should be divisible by _ncount_.
 
-{{< figure src="/courses/parallel-computing-introduction/img/scatter.png" caption="Scatter" >}}
+![](img/scatter.png "Scatter")
 
 In the  _root_ process, the send buffer must contain all the data to be distributed, so it is larger than receive buffer by a factor of $ncount \times nprocs$.
 
@@ -67,7 +73,9 @@ int MPI_Scatter(void *sendbuffer, int ncount, MPI_Datatype datatype, void *recvb
 ```
 
 {{< spoiler text="C++ Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/scatter.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/codes/scatter.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Fortran 
@@ -77,7 +85,9 @@ call MPI_Scatter(vals,ncount,MPI_TYPE,rvals,ncount,MPI_TYPE,root,MPI_COMM_WORLD,
 ```
 
 {{< spoiler text="Fortran Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/scatter.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/scatter.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 #### Python 
@@ -88,7 +98,9 @@ comm.Scatter([sendvals,MPI.DOUBLE],[recvals,MPI.DOUBLE,root=0)
 ```
 
 {{< spoiler text="Python Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/scatter.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/scatter.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### More General Scattering
@@ -103,7 +115,9 @@ int MPI_Scatterv(void *sendbuf, int *sendcounts, int *displs, MPI_Datatype sendt
 ```
 
 {{< spoiler text="C++ Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/scatterv.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/codes/scatterv.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 #### Fortran
@@ -112,7 +126,9 @@ call MPI_SCATTERV(sendbuf, sendcounts, displs, sendtype, recvbuf, recvcounts, re
 ```
 
 {{< spoiler text="Fortran Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/scatterv.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/scatterv.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 #### Python
@@ -122,6 +138,8 @@ comm.Scatterv([sendbuf,sendcounts,displs,MPI.TYPE],recvbuf)
 Unlike many other mpi4py procedures, the MPI.TYPE may often be required for correct data transmission.
 
 {{< spoiler text="Python Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/scatter.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/scatter.py)
+{{</ code >}}
 {{< /spoiler >}}
 

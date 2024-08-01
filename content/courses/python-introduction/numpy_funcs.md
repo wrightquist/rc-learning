@@ -138,10 +138,12 @@ s=V.sum()
 
 **Exercise**
 
-Download the [bodyfat.csv](/data/bodyfat.csv) file.  The weight is the third column and the height is the fourth column (in units of pounds and inches).  Write a program that contains a ufunc for converting pounds to kg and another to convert inches to meters.  Write a ufunc to compute BMI from metric height and weight.  Read the bodyfat.csv file and use the ufuncs appropriately to create a new array of the BMI values.  Look up the NumPy functions to print the mean and standard deviation of the values as well as the maximum and minimum values.
+Download the [bodyfat.csv](data/bodyfat.csv) file.  The weight is the third column and the height is the fourth column (in units of pounds and inches).  Write a program that contains a ufunc for converting pounds to kg and another to convert inches to meters.  Write a ufunc to compute BMI from metric height and weight.  Read the bodyfat.csv file and use the ufuncs appropriately to create a new array of the BMI values.  Look up the NumPy functions to print the mean and standard deviation of the values as well as the maximum and minimum values.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/bmi_code.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/bmi_code.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Resources

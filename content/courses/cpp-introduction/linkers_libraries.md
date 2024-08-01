@@ -85,7 +85,7 @@ Our discussion of building your code has assumed the use of a command line on Un
 We will use Geany for our example; more sophisticated IDEs have more capabilities, but Geany illustrates the basic functions.
 Using Microsoft tools such as Visual Studio or VSCode on Windows may be desirable if you will need to link to Microsoft or other vendor-provided libraries.
 
-We have three files in our project, [example.cxx](/courses/cpp-introduction/compiler_example/example.cxx), [adder.cxx](/courses/cpp-introduction/compiler_example/adder.cxx) and [adder.h](/courses/cpp-introduction/compiler_example/adder.h).  The main program is `example.cxx`.  It needs `adder.cxx` to create the executable.  We must open the two files in Geany.  Then we must compile (not build) each one separately.  Once we have successfully compiled both files, we open a terminal window (cmd.exe on Windows).  We navigate to the folder where the files are located and type 
+We have three files in our project, [example.cxx](compiler_example/example.cxx), [adder.cxx](compiler_example/adder.cxx) and [adder.h](compiler_example/adder.h).  The main program is `example.cxx`.  It needs `adder.cxx` to create the executable.  We must open the two files in Geany.  Then we must compile (not build) each one separately.  Once we have successfully compiled both files, we open a terminal window (cmd.exe on Windows).  We navigate to the folder where the files are located and type 
 ```
 g++ -o example example.o adder.o
 ```
@@ -94,8 +94,8 @@ Notice that we name the executable the same as the main program, minus the file 
 You can run the executable either from the command line (`./example` may be required for Linux) or through the Geany execute menu or gears icon.  
 If Geany is to run a multi-file executable then the main program file must be selected as the current file as well as match the name of the executable.
 
-{{< figure src="/courses/cpp-introduction/img/Geany5.png" width=500px caption="Executing the example program" >}}
+![](img/Geany5.png?500 "Executing the example program")
 
 The file ending in `.h` is called a _header file_. The best practice in C++ is to separate the _interface_ into a header file and the _implementation_ into the source file. We will discuss this, as well as the preprocessor commands, when we cover functions.
 
-This process becomes increasingly cumbersome as projects grow in number and complexity of files.  The most common way to manage projects is through the [make](courses/cpp-introduction/make.md) utility, which we will examine next.
+This process becomes increasingly cumbersome as projects grow in number and complexity of files.  The most common way to manage projects is through the [make](make) utility, which we will examine next.

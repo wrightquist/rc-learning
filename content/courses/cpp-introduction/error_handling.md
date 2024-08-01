@@ -89,7 +89,9 @@ try {
 Assemble the example snippets into a working program.
 
 {{< spoiler text="Example" >}}
-{{< code-download file="/courses/cpp-introduction/solns/exceptions.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/exceptions.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Assert
@@ -139,5 +141,7 @@ The `CHAR_BIT` macro is in the C `limits.h` header.
 Run the following code as is on your platform. Change the number of bits to make the assertion pass or fail.
 
 {{< spoiler text="Example" >}}
-{{< code-download file="/courses/cpp-introduction/codes/static_assert.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/static_assert.cxx)
+{{</ code >}}
 {{< /spoiler >}}

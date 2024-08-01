@@ -141,7 +141,9 @@ end interface
 ```
 
 {{< spoiler text="Full example of passing a subprogram as a dummy variable" >}}
-{{< code-download file="/courses/fortran-introduction/codes/trap.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/trap.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 **Exercise**
@@ -153,5 +155,7 @@ Use intent and implicit none.  Remember that implicit none must be declared in e
 You may use arrays to represent the points.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/euclid.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/euclid.f90)
+{{</ code >}}
 {{< /spoiler >}}

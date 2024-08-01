@@ -35,4 +35,4 @@ Unzip the file you downloaded and work from that folder.
 ## Matlab Parallel Computing on Rivanna
 
 Please see also our documentation for using MATLAB in parallel on Rivanna.
- **<a href="https://www.rc.virginia.edu/userinfo/rivanna/software/matlab/" target="_blank">https://www.rc.virginia.edu/userinfo/rivanna/software/matlab/</a>**
+ **[https://www.rc.virginia.edu/userinfo/rivanna/software/matlab/](https://www.rc.virginia.edu/userinfo/rivanna/software/matlab/)**

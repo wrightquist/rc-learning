@@ -109,9 +109,13 @@ Be careful with the period ("dot") notation for column names, since if one happe
 
 Without an assignment, the `columns` attribute holds the names of the columns.
 
-{{< code file="/courses/python-introduction/scripts/weather_df.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/weather_df.py)
+{{</ code >}}
 
-{{< code file="/courses/python-introduction/scripts/weather_df.out" lang="no-highlight" >}}
+{{< code lang="no-highlight" >}}
+    [](/content/courses/python-introduction/scripts/weather_df.out)
+{{</ code >}}
 
 This range syntax for the row range is _not_ inclusive, as is usual for Python.
 
@@ -143,6 +147,8 @@ iris=sn.load_dataset('iris')
 Describe the dataset. Print the column names. Iterate through the indexes and print the corresponding value of the species name for indexes 0 to 30 inclusive.  Print the mean petal length.  Print the series data for row 90.  Make a new dataframe that contains only the petal length, petal width, and species. Summarize the new dataframe.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/iris.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/iris.py)
+{{</ code >}}
 {{< /spoiler >}}
 

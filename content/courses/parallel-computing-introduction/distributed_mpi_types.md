@@ -10,7 +10,7 @@ MPI also provides a general type that enables programmer-defined datatypes. Unli
 
 While more general derived MPI datatypes are available, one of the most commonly used is the `MPI_TYPE_VECTOR`. This creates a group of elements of size _blocklength_ separated by a constant interval, called the _stride_, in memory. Examples would be generating a type for columns in a row-major-oriented language, or rows in a column-major-oriented language.  
 
-{{< figure src="/courses/parallel-computing-introduction/img/mpi_vector_type.png" caption="Layout in memory for vector type. In this example, the blocklength is 4, the stride is 6, and the count is 3." >}}
+![](img/mpi_vector_type.png "Layout in memory for vector type. In this example, the blocklength is 4, the stride is 6, and the count is 3.")
 
 C++
 ```c++

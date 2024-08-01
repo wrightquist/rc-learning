@@ -24,11 +24,11 @@ The activities of the CPU's electronics are synchronized by a system clock; each
 speeds require denser electronic components.
 For decades, improvements in computing performance were a result of ever-increasing clock speeds.  This followed two "laws" (both of which were actually observational):  Moore's law, which states that the density of the electronic components of the CPU would double every 18 to 24 months; and Dennard scaling, which posited that even as the components shrank, their power consumption per unit area remained constant.  
 
-{{< figure src="/courses/parallel-computing-introduction/img/Moores_Law.jpg" caption="Copyright 2015 A. Ostendorf and K. König, published by De Gruyter.  Licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License." height=720 width=563 >}}
+![](img/Moores_Law.jpg?563 "Copyright 2015 A. Ostendorf and K. König, published by De Gruyter.  Licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License.")
 
 Moore's law is currently still approximately valid, though its end is in sight; but Dennard scaling broke down around 2005.  Further significant increases in clock speed would make it impossible to cool the chips adequately.  Manufacturers responded by keeping clock speeds nearly constant, but dividing their still-denser CPUs into separate execution units, usually called _cores_.  Because of this history there is still some inconsistency over what is called a "CPU" and what is called a "core."  Generally, cores are subunits of a CPU, but sometimes, especially in contexts such as the _Slurm_ resource manager, a core is called a CPU.  Programmers should try not to become confused by this.
 
-{{< figure src="/courses/parallel-computing-introduction/img/Dennard_Scaling.png" >}}
+![](img/Dennard_Scaling.png)
 
 Most consumer computers have only one CPU, but many high-end servers have multiple CPUs, with each CPU representing several cores.  The CPU is physically plugged into a socket on the motherboard, so these CPU units may be referred to as "sockets."  Each CPU will have
 its own pathway to memory, disk, and so forth.  
@@ -37,7 +37,7 @@ Computers can be connected to one another through some kind of _network_.  The b
 called a _node_.  Ethernet can be used for the interconnect, but Ethernet is a relatively slow network.  The time required for a message to be sent from one computer to another is the _latency_, whereas the amount of data that can be sent per unit time is the _bandwidth_.  Ethernet generally has fairly good bandwidth but quite high latency.  Since fast communication between nodes is important in a
 high-performance cluster, interconnects with much lower latency and higher bandwidth are generally provided for these systems, usually along with Ethernet for routine communication.  The most widely used of these fast networks is InfiniBand, now owned by NVIDIA.  
 
-{{< figure src="/courses/parallel-computing-introduction/img/Frontera.jpg" height=720 width=563 caption="A portion of a large computing cluster." >}}
+![](img/Frontera.jpg?563 "A portion of a large computing cluster.")
 
 ## Adapting to a Parallel Environment
 

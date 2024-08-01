@@ -60,13 +60,19 @@ Add a status query to the exchange code to find the source, tag, and any error. 
 Although the status data structure can also return the item count, if the receiver does not know the number or size of the message, we recommend invoking `MPI_PROBE`, which allows the receiving process to determine the specifics of the message without actually receiving it. It can then set up an appropriate MPI_Recv.
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/send_recv_stat.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/codes/send_recv_stat.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/send_recv_stat.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/send_recv_stat.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/send_recv_stat.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/send_recv_stat.py)
+{{</ code >}}
 {{< /spoiler >}}

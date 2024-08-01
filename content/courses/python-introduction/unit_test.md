@@ -19,7 +19,9 @@ PyTest is easy to install and simple to use.  To implement our tests, we write f
 **Example**
 This is a very simple example from the PyTest [documentation](https://docs.pytest.org/en/7.1.x/getting-started.html)
 
-{{< code-download file="/courses/python-introduction/scripts/test_example.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/test_example.py)
+{{</ code >}}
 
 #### PyTest in Spyder or other IDEs, or Command-Line
 
@@ -39,7 +41,9 @@ pytest /Users/myid/Python/scripts/test_example.py
 ```
 Pytest allows, but does not require, the programmer to set up  multiple testing functions in a class. Another example from their documentation:
  
-{{< code-download file="/courses/python-introduction/scripts/test_class.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/test_class.py)
+{{</ code >}}
 
 The name of the class must begin with `Test`.  The tests are run by specifying the module name at the command line.
 
@@ -72,7 +76,9 @@ def func2(x,y):
 ```
 We have two functions we wish to test.  Testbook will require us to use the PyTest _fixtures_ feature mentioned above, so that we can access both functions through the `tb` object set up by PyTest. 
 
-{{< code file="/courses/python-introduction/scripts/testnb.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/testnb.py)
+{{</ code >}}
 
 We would run this as for other PyTest files with
 ```python
@@ -98,7 +104,9 @@ print(days[day_number])
 Use this to write a unit test for the DoW function. You will need to parameterize the test. See the [documentation](https://docs.pytest.org/en/6.2.x/parametrize.html) for a more detailed explanation of parameterization.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/test_dow.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/test_dow.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Test-Driven Development

@@ -50,7 +50,9 @@ When we invoke the procedure we do _not_ explicitly pass the instance argument.
 If it does not need to be passed at all (for the equivalent of a _class method_ in other languages), the NOPASS attribute can be added, as discussed below.
 
 Filling out the procedures gives us
-{{< code-download file="/courses/fortran-introduction/codes/class_module.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/class_module.f90)
+{{</ code >}}
 
 There is no reserved word in Fortran for the class instance variable.  Some authors use "self" as is conventional in Python.  Others use "this" to imitate C++ and Java.  Others prefer their own conventions.
 

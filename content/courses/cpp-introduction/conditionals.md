@@ -27,7 +27,9 @@ Only one branch will be executed.  Once any Boolean is determined to be true, th
 
 **Exercise**
 Experiment with various truth values for bool1 and bool2.
-{{< code-download file="/courses/cpp-introduction/codes/if_demo.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/if_demo.cxx)
+{{</ code >}}
 
 ## The ? Operator
 
@@ -77,7 +79,9 @@ switch (expression) {
 `default` is for the action, if any, to be taken if the expression does not evaluate to any of the options available.
 
 Example:
-{{< code file="/courses/cpp-introduction/codes/switch.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/switch.cxx)
+{{</ code >}}
 
 Exercise:
 
@@ -99,5 +103,7 @@ Hint: if a variable is already a logical it is not necessary to test it against 
 Hint: a loss or tie is not a win.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/nfc.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/nfc.cxx)
+{{</ code >}}
 {{< /spoiler >}}

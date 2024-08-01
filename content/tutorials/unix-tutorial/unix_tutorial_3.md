@@ -97,7 +97,9 @@ will give the same result as above, but quicker and cleaner. To find out how man
 Using pipes, print all lines of list1 and list2 containing the letter 'p', sort the result, and print to a file sorted_plist.txt.  Hint: from `grep --help` find an option to print only the line, omitting the file name.
 
 {{< spoiler text="Solution" >}}
-{{< code file="/tutorials/unix-tutorial/snippets/ex3b.txt" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/unix-tutorial/snippets/ex3b.txt)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Summary

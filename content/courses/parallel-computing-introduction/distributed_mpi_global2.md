@@ -10,7 +10,7 @@ In many-to-one collective communications, all processes in the communicator grou
 
 A gather is the inverse of a scatter.  Each process sends _ncount_ items to root, which assembles them in rank order.  The buffer in the root process must be large enough to accommodate all the data.  As for a scatter, the MPI_Datatype is specified twice but must be the same each time. Note that `ncount` is the number of items sent per process, not the total.
 
-{{< figure src="/courses/parallel-computing-introduction/img/gather.png" caption="Gather" >}}
+![](img/gather.png "Gather")
 
 ### C++ 
 
@@ -20,7 +20,9 @@ int MPI_Gather(void *sendbuffer,int ncount,MPI_Datatype datatype,void *recvbuffe
 ```
 
 {{< spoiler text="C++ Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/gather.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/codes/gather.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Fortran
@@ -34,7 +36,9 @@ call MPI_Gather(vars, ncount, MPI_TYPE, all_vars, ncount, MPI_TYPE, root, MPI_CO
 ```
 
 {{< spoiler text="Fortran Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/gather.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/gather.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Python
@@ -46,7 +50,9 @@ comm.Gather([data,MPI.TYPE],[all_data,MPI.TYPE], root=0)
 ```
 
 {{< spoiler text="Python Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/gather.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/gather.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 
@@ -60,7 +66,9 @@ int MPI_Gatherv(void *sendbuf, int sendcount, MPI_Datatype sendtype, void *recvb
 ```
 
 {{< spoiler text="C++ Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/gatherv.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/codes/gatherv.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Fortran
@@ -69,7 +77,9 @@ call MPI_GATHERV(sendbuf, sendcount, sendtype, recvbuf, recvcounts, displs, recv
 ```
 
 {{< spoiler text="Fortran Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/gatherv.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/gatherv.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Python
@@ -80,5 +90,7 @@ comm.Gatherv([sendbuf,[sendcounts,displ,MPI.TYPE],recvbuf)
 As for comm.Scatterv, the MPI.TYPE is generally required.
 
 {{< spoiler text="Python Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/gatherv.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/gatherv.py)
+{{</ code >}}
 {{< /spoiler >}}

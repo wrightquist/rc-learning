@@ -129,6 +129,8 @@ Use this file to test your program.
 
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/bird_reader.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/bird_reader.f90)
+{{</ code >}}
 {{< /spoiler >}}
 

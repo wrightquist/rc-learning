@@ -10,7 +10,7 @@ url_slides: slides/matlab-deep-learning/DeepLearning_Matlab.pptx
 url_code: scripts/matlab-deep-learning/DeepLearning_Matlab.zip
 ---
 
-{{< figure library=true src=matlab-logo.png width=30% height=30% >}}
+![](img/matlab-logo.png?200)
 
 If you are using MATLAB on your desktop computer, make sure you have the **Deep Learning Toolbox** and
 **Deep Learning Toolbox Model for AlexNet Network** installed. You can go to the **Add-On Explorer** to install
@@ -64,7 +64,7 @@ Optionally, you can also view the image.
 imshow(img)
 ```
 
-{{< figure src=/tutorials/matlab-deep-learning/matlab-schnauzer.png >}}
+![](img/matlab-schnauzer.png)
 
 ### 3. Resize the image
 
@@ -82,7 +82,7 @@ imgSize = size(img)
 img = imresize('img', [227 227]);
 imshow(img)
 ```
-{{< figure src=/tutorials/matlab-deep-learning/matlab-schnauzer-resized.png >}}
+![](img/matlab-schnauzer-resized.png)
 
 ### 4. Classify the image
 
@@ -125,7 +125,7 @@ We can preview the first image in our datastore `imds`.
 imshow(preview(imds))
 ```
 
-{{< figure src=/tutorials/matlab-deep-learning/matlab-flower.png >}}
+![](img/matlab-flower.png)
 
 We can also inspect the labels of our images by extracting the `Labels`.
 
@@ -236,7 +236,7 @@ flwrnet = trainNetwork(train, layers, options);
 
 It will take several minutes to train the network.
 
-{{< figure src=/tutorials/matlab-deep-learning/matlab-training-progress.png >}}
+![](img/matlab-training-progress.png)
 
 ### 6. Evaluating performance
 
@@ -267,7 +267,7 @@ We can also create a **Confusion Matrix Chart**, which shows us the number of co
 confusionchart(actual,preds)
 ```
 
-{{< figure src=/tutorials/matlab-deep-learning/matlab-confusion-matrix.png >}}
+![](img/matlab-confusion-matrix.png)
 
 ### 7. Improving Performance
 
@@ -293,7 +293,7 @@ In some cases it may make more sense to train a network from scratch. This is pa
 
 In this example we will train a neural network to classify images of numerical digits. This uses images built into the MATLAB Deep Learning Toolbox.
 
-{{< figure src=/tutorials/matlab-deep-learning/matlab-digits.png >}}
+![](img/matlab-digits.png)
 
 ### 1. Create an image datastore
 

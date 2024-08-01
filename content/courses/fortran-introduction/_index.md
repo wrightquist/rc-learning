@@ -21,6 +21,6 @@ It is important to keep in mind that computers for which the first languages wer
 
 Fortran is still very widely used in many scientific and engineering disciplines. Mechanical engineering, chemistry and chemical engineering, and environmental sciences, particularly atmospheric sciences and oceanography, make significant use of Fortran.  Features of modern Fortran make it very well suited to numerically-intensive programming.  Due to both legacy codes and ongoing development, many scientific programmers must be able to use both C/C++ and Fortran.
 
-{{< figure src="/courses/fortran-introduction/img/Cray-1.jpg" width=500px caption="The first Cray-1 supercomputer had 1 80-MHz core and a maximum of about 8MB of main memory." >}}
+![](img/Cray-1.jpg?500 "The first Cray-1 supercomputer had 1 80-MHz core and a maximum of about 8MB of main memory.")
 
 The best way to learn a programming language is to use it.  We strongly urge you to attempt the exercises and projects to practice your coding skills.

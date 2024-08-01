@@ -11,12 +11,12 @@ char letter;
 
 A `char` is unsigned.  C++ supports the `signed char` type but it is not as commonly used.  Since a signed char is effectively an 8-bit integer, it can be used in arithmetical expressions and some programmers who must write for devices with limited memory use the `char` type to save space.  A signed char can also be promoted to int consistently. 
 
-Another use of `char` is to act as a `byte` type since C, and older C++, do not support `byte`.  Newer C++ standards (from C++17) and compilers that support them offer a type `std::byte`, but this is defined in terms of `unsigned char` and is a [class](/courses/cpp-introduction/classes), not a primitive type.
+Another use of `char` is to act as a `byte` type since C, and older C++, do not support `byte`.  Newer C++ standards (from C++17) and compilers that support them offer a type `std::byte`, but this is defined in terms of `unsigned char` and is a [class](classes), not a primitive type.
 Byte types or their equivalents offer direct access to memory, which is organized by bytes.
 
 ### C-Style Strings
 
-C-style strings are actually [arrays](/courses/cpp-introduction/arrays_vecs) of individual characters.  They must be declared with a fixed size, or allocated.
+C-style strings are actually [arrays](c_arrays) of individual characters.  They must be declared with a fixed size, or allocated.
 ```c++
    char cstr[8];
 
@@ -58,7 +58,9 @@ Individual characters may be addressed using bracket notation.  Each character i
 ```
 
 Example:
-{{< code-download file="/courses/cpp-introduction/codes/cstr.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/cstr.cxx)
+{{</ code >}}
 
 In the above code, pay attention to the lines
 ```c++
@@ -83,16 +85,18 @@ The size of `greeting` was doubled (not counting null terminators) even though i
 The result is a _buffer overflow_.  
 
 To see what can happen, compile and run the following code
-{{< code-download file="/courses/cpp-introduction/codes/buffer_oflow.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/buffer_oflow.cxx)
+{{</ code >}}
 
 Type in a short username (any string), then type `Eleventy` as your password. It should work as expected.  Now try typing a username that is longer than 10 characters and see what happens.
 
 If using C-style strings and functions, guard against this by using
 
-|    Function    |      Operation    |   Usage     |
-|--------------|-------------------|-------------|
-|   strncpy      |  copy str2 to str1, max n bytes of str2 |  strncpy(str1,str2,n)  |
-|   strncat      |  concatenate str2 to str1, max n bytes of str2|  strncat(str1,str2,n)  |
+| Function | Operation                                     | Usage                |
+|----------|-----------------------------------------------|----------------------|
+| strncpy  | copy str2 to str1, max n bytes of str2        | strncpy(str1,str2,n) |
+| strncat  | concatenate str2 to str1, max n bytes of str2 | strncat(str1,str2,n) |
 
 One way to ensure that `n` is correct is to use `sizeof`, which returns a value in bytes.
 ```c++
@@ -105,6 +109,6 @@ The `strncat` function is more difficult to use correctly since it appends $n$ b
 
 In general, it is best to avoid fixed-size char variables as much as possible, because C++ (and C) does not check C-style array bounds. Similar problems can occur with numerical arrays, but in those cases the result is typical a segmentation fault. Buffer overflows in characters can result in insecure programs.
 
-Since we are programming in C++, not C, for most purposes it is better to use C++ strings (see [here](/courses/cpp-introduction/encodings_strings#strings)),
+Since we are programming in C++, not C, for most purposes it is better to use C++ strings (see [here](encodings_strings#strings)),
 which do not have these disadvantages.
 

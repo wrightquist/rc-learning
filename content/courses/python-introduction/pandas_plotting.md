@@ -18,7 +18,9 @@ df[x='Column2',y='Column4'].plot() #choose columns
 ```
 
 Example from the Python documentation:
-{{< code-download file="/courses/python-introduction/scripts/pandas_plot.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/pandas_plot.py)
+{{</ code >}}
  
 Other types of charts and graphs are available and can be accessed through the `kind` keyword to plot, or by `df.plot.kind()`
 
@@ -44,11 +46,15 @@ If multiple columns of a dataframe are compatible numerically, they can be speci
 
 This example is a modification of another one from Pandas documentation.
 
-{{< code-download file="/courses/python-introduction/scripts/multiplot.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/multiplot.py)
+{{</ code >}}
 
 Bar charts are similarly simple to create, with nice default labeling.
 
-{{< code-download file="/courses/python-introduction/scripts/barchart.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/barchart.py)
+{{</ code >}}
 
 ## Tables
 
@@ -57,7 +63,9 @@ A Dataframe is similar to a table, but printing it directly does not always prod
 **Example**
 This example is based on Pandas documentation, with some modifications, for the HTML output, with the `table` version based on online sources.
 
-{{< code-download file="/courses/python-introduction/scripts/plot_table.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/plot_table.py)
+{{</ code >}}
 
 To see the "pretty" version, paste the text into a Jupyter notebook. If using the "table" version, place that into a separate cell.
 
@@ -67,7 +75,7 @@ The Pandas visualization [documentation](https://pandas.pydata.org/pandas-docs/s
 
 **Exercise**
 
-Return to the [bodyfat.csv](/data/bodyfat.csv) file from a previous exercise.
+Return to the [bodyfat.csv](data/bodyfat.csv) file from a previous exercise.
 Use Pandas to read the data into a Dataframe.  Use your BMI function from a
 previous exercise to compute BMI for each row.  Add a new column for BMI.  Plot BMI versus body fat percentage.  Look up the documentation for `pandas.plot.scatter` for this plot.  Does one value seem out of place?
 
@@ -76,5 +84,7 @@ One way to remove outliers is to compute the 25% and 75% quantiles, take the dif
 Figure out a way to set the BMI values that are outside the cutoffs to `np.nan` using the `.loc` method.  Redo the scatter plot.  Pandas automatically removes missing data.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/bmi_pandas.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/bmi_pandas.py)
+{{</ code >}}
 {{< /spoiler >}}

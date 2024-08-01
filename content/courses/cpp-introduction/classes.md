@@ -128,6 +128,8 @@ Convert the Employee struct to a class.  Write a constructor for it. Incorporate
 current salary as a parameter?
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/employees.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/employees.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 

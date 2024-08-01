@@ -3,7 +3,6 @@ date: "2020-03-03"
 title: "Image Processing with MATLAB"
 summary: "Getting started with image processing using MATLAB&trade;"
 authors: [cag]
-tags : ["image-processing","matlab"]
 categories: ["Image Processing","MATLAB"]
 weight: 220
 url_dataset: data/matlab-image-processing.zip
@@ -11,7 +10,7 @@ url_dataset: data/matlab-image-processing.zip
 
 Please download the sample image dataset before you begin.
 
-{{< figure library="true" src="matlab-logo.png" width=30% height=30% >}}
+![](img/matlab-logo.png?200)
 
 As our microscopes, cameras, and medical scanners become more powerful, many of us are acquiring images faster than we can analyze them. MATLAB's Image Processing Toolbox provides interactive tools for performing common preprocessing techniques, as well as a suite of functions for automated batch processing and analysis.
 
@@ -88,7 +87,7 @@ imtool(I)
 
 ## Example 3: Removing Salt-and-Pepper Noise
 
-{{< figure src="intro-fiji-16.png" >}}
+![](img/intro-fiji-16.png)
 
 
 ### Mean Filter
@@ -116,7 +115,7 @@ imshowpair(I_mean, I_median, 'montage') % show images side-by-side
 
 ## Example 4: Removing Gaussian Noise
 
-{{< figure src="wiener-filter.png" >}}
+![](img/wiener-filter.png)
 
 ```
 clear; clf

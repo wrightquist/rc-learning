@@ -125,8 +125,8 @@ returns -1 on most systems, since it is outside the range of a 64-bit signed int
 integer, parameter :: ik=selected_int_kind(15)
 ```
 
-The value returned must be declared INTEGER, PARAMETER to be used in [variable declarations](/courses/fortran-introduction/declarations).
-An [intrinsic module](/courses/fortran-introduction/intrinsic_modules) can be used to obtain the KIND parameters.
+The value returned must be declared INTEGER, PARAMETER to be used in [variable declarations](declarations).
+An [intrinsic module](intrinsic_modules) can be used to obtain the KIND parameters.
 
 The KIND intrinsic can be used to return the KIND of a particular variable or literal.  This can also be used to set KIND parameters.
 ```

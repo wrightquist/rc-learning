@@ -98,11 +98,13 @@ with open('myfile','w') as f:
 
 **Exercise**
 
-Download the file [numbers.csv](/data/numbers.csv). Write a program to read it and extract the columns as x,y.  It has a one-line header.  What problem did you encounter?  Use an exception to exclude the line with the error.  
+Download the file [numbers.csv](data/numbers.csv). Write a program to read it and extract the columns as x,y.  It has a one-line header.  What problem did you encounter?  Use an exception to exclude the line with the error.  
 
 Optionally, add exception handling to the file operations (opening, reading, etc.)
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/exceptions_example.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/exceptions_example.py)
+{{</ code >}}
 {{< /spoiler >}}
 

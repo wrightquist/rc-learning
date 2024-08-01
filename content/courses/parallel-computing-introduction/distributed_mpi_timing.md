@@ -42,22 +42,28 @@ tick=MPI_Wtick()
 
 ## Scaling and Efficiency Studies
 
-In a previous [chapter](/courses/parallel-computing-introduction/performance_analysis) we learned about _scaling_ and _efficiency_.  Let us apply this to our [random_walk](/courses/parallel-computing-introduction/distributed_mpi_random_walk) program. 
+In a previous [chapter](performance_analysis) we learned about _scaling_ and _efficiency_.  Let us apply this to our [random_walk](distributed_mpi_random_walk) program. 
 
 Copy the code from that chapter in your language of choice for this exercise.  Add appropriate timing procedures. It is only necessary to print the result from rank 0. Run the timed random-walk code over 1, 2, 4, and 8 processes for some number of "steps" that will run at least several seconds. Use any plotting package you know to plot speedup versus number of processes/cores.  Add a curve for perfect speedup.  Plot the parallel efficiency versus core number.  (Recall that the theoretical maximum efficiency is 1.)
 
 The random-walk program is "embarrassingly parallel" since there is as yet no communication among processes.  We did not have to use MPI but could have run multiple tests and collected the results.  There is some small overhead in using MPI.
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 #### Strong Scaling
@@ -65,7 +71,7 @@ The random-walk program is "embarrassingly parallel" since there is as yet no co
 In strong scaling, a fixed amount of work is distributed over a varying number of processes. The timed random-walk code is written to implement weak scaling; the number of steps provided is the number each process will compute, so we must adjust the number of steps to keep the amount of work constant over different numbers of processes. The example solution used the Python version with $10^{7}$ steps for the serial code.  That was then divided by 2, 4, and 8 for subsequent runs.
 
 {{< spoiler text="Strong scaling example" >}}
-{{< figure src="/courses/parallel-computing-introduction/img/MPI_strong_scaling.png" caption="Graphs of speedup and efficiency for a strong-scaling example" >}}
+![](img/MPI_strong_scaling.png "Graphs of speedup and efficiency for a strong-scaling example")
 {{< /spoiler >}}
 
 #### Weak Scaling
@@ -73,5 +79,5 @@ In strong scaling, a fixed amount of work is distributed over a varying number o
 Recall that weak scaling increases the amount of work as the process number increases.  Ideally, the quantity of work per process is the same across all processes.  For weak scaling, we must compute the serial time for the _equivalent_ sized problem, so the serial code must be run for $8 \times 10^{7}$, $4 \times 10^{7}$, and $2 \times 10^{7}$ as well as for $10^{7}$ steps.  Plot the scaling compared to perfect scaling of $p$.  Compute and plot the parallel efficiency for these runs.  Was it similar to strong scaling?  Why might this be the case for this particular example?
 
 {{< spoiler text="Weak scaling example" >}}
-{{< figure src="/courses/parallel-computing-introduction/img/MPI_weak_scaling.png" caption="Graphs of speedup and efficiency for a weak-scaling example" >}}
+![](img/MPI_weak_scaling.png "Graphs of speedup and efficiency for a weak-scaling example")
 {{< /spoiler >}}

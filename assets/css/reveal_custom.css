@@ -1,11 +1,11 @@
 .slideheader {
   position: fixed;
-  left: 0%;
-  top: 0%;
+  left: 0;
+  top: 0;
   width: 100%;
   overflow: hidden;
   background:#2c3d57;
-  height: 45; 
+  height: 45px;
   z-index:100;
 }
 

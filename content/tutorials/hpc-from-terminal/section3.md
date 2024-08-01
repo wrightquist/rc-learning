@@ -95,7 +95,7 @@ Gedit/pluma is very similar to Notepad on Windows.
 
 #### 2. VS Code
 
-This is accessed by a [module](/tutorials/rivanna-command-line/modules).
+This is accessed by a [module](/content/tutorials/hpc-from-terminal/section5.md#the-modules-environment).
 ```bash
 $module load code-server
 ```
@@ -261,7 +261,7 @@ THE END
 
 ## Transferring Files Using the Command Line
 
-Files can be transferred by [graphical clients](https://www.rc.virginia.edu/userinfo/rivanna/logintools/graphical-sftp) such as MobaXterm and Filezilla, or through [Globus](/tutorials/globus-data-transfer).  If you are using a terminal from your local computer, you can also use some command-line tools.
+Files can be transferred by [graphical clients](https://www.rc.virginia.edu/userinfo/rivanna/logintools/graphical-sftp) such as MobaXterm and Filezilla, or through [Globus](/content/tutorials/globus-data-transfer).  If you are using a terminal from your local computer, you can also use some command-line tools.
 
 ### scp and sftp
 

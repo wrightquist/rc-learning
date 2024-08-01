@@ -8,7 +8,7 @@ weight: 30
 notes: slurm-from-cli
 ---
 
-{{< figure src="/tutorials/slurm-from-cli/img/slurm_logo.png" width=30% >}}
+![](img/slurm_logo.png?200)
 
 [Slurm](https://slurm.schedmd.com/) is a  __resource manager__ (RM), also known as a  _queueing system_.
 

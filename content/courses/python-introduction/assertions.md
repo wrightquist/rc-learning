@@ -11,7 +11,9 @@ We can write what is sometimes called a _test harness_ for the `DoW` function.  
 We can recast our tests for dow.py in a somewhat ad hoc manner.
 
 {{< spoiler text="Setting up tests for our DoW function." >}}
-{{< code-download file="/courses/python-introduction/scripts/dow_tests.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/dow_tests.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 We can easily add individual days to the list of scattered test cases, and could repeat the while block to test additional individual years.
@@ -34,13 +36,17 @@ The assert statement is intended for debugging only; use standard `try` and `exc
 **Example**
 Run the following code from the command line (or use !python in an iPython console, or open a terminal in JupyterLab), first with `python assert_it.py` and then with `python -O assert_it.py`.  What should you do instead of using `assert` in this code?
 
-{{< code-download file="/courses/python-introduction/scripts/assert_it.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/scripts/assert_it.py)
+{{</ code >}}
 
 **Exercise**
 Starting from the dow_buggy.py script, add assertions to test for bugs.
 
 {{< spoiler text="Setting up tests for our DoW function." >}}
-{< code-download file="/courses/python-introduction/scripts/dow_assert.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/dow_assert.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 Work through the bugs as you did before.  Hint: you may need to play with working through next, step in, continue, going in and out of debugging mode, etc.  Pay attention to the value of test_id.

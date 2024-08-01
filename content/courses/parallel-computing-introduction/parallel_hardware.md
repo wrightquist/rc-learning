@@ -48,7 +48,7 @@ called NUMA (non-uniform memory access), particularly servers with more than
 one CPU socket.  Graphical processing units (GPUs) are essentially shared-memory processors as well.  Shared-memory parallel programs rely on internal
 communication and coordination mechanisms, rather than external networks.  
 
-{{< figure src="/courses/parallel-computing-introduction/img/SMP.png" caption="Schematic of an SMP system." >}}
+![](img/SMP.png "Schematic of an SMP system.")
 
 ## Distributed-Memory Computing
 
@@ -60,7 +60,7 @@ the network from one node to another.  This is accomplished by a library
 that manages the communication, invoked through an interface to the 
 program. 
 
-{{< figure src="/courses/parallel-computing-introduction/img/DMP.png" caption="Schematic of a DMP system." >}}
+![](img/DMP.png "Schematic of a DMP system.")
 
 ## Hybrid Parallelism
 

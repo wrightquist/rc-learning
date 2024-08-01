@@ -16,7 +16,7 @@ x=1.0
 x=2.0
 ```
 
-All the types we have seen so far are _immutable_.  Compound types may be _mutable_; their elements can be changed in place.  Compound types may also be immutable.  [Strings](/courses/python-introduction/strings) are a compound type but they are immutable.
+All the types we have seen so far are _immutable_.  Compound types may be _mutable_; their elements can be changed in place.  Compound types may also be immutable.  [Strings](strings) are a compound type but they are immutable.
 
 ```python
 S1="Hello world"

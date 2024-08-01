@@ -113,9 +113,11 @@ We write to a file much like to a standard stream.  In this example, we assume t
 ## Reading from a File
 
 The extraction operator works on file objects as well as on cin:
-{{< code file="/courses/cpp-introduction/codes/simple_read.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/simple_read.cxx)
+{{</ code >}}
 
-Although this method works, it has a number of drawbacks.  As we learned for [console IO](/courses/cpp-introduction/console_io), the extraction operator assumes the separator is whitespace. It can be thrown off when attempting to convert a string into a numerical type.  It also is inflexible. We will discuss more advanced methods in the [next](/courses/cpp-introduction/advanced_io) chapter.
+Although this method works, it has a number of drawbacks.  As we learned for [console IO](console_io), the extraction operator assumes the separator is whitespace. It can be thrown off when attempting to convert a string into a numerical type.  It also is inflexible. We will discuss more advanced methods in the [next](advanced_io) chapter.
 
 **Exercise**
 
@@ -129,5 +131,7 @@ Write a program that creates a file mydata.txt containing four rows consisting o
 Either rewind or reopen the file and read the data back.  Write a loop to add 1 to each value and print each row to the console.  Note that if you choose to rewind, the file will have to be opened read/write.  If you close it and reopen it, it will have to be reopened in write mode.  You may use a statically-sized array for the data.  In the next chapter we will learn a more flexible method of reading lines of files.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/read_write_file.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/read_write_file.cxx)
+{{</ code >}}
 {{< /spoiler >}}

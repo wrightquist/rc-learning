@@ -48,15 +48,21 @@ u(i)=20.+(i-1)*rank Fortran (just so the answer is the same
 ```
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpi_send_array.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpi_send_array.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpi_send_array.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpi_send_array.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpi_send_array.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpi_send_array.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 

@@ -112,5 +112,7 @@ Create a fourth array `D` that sums `C` over the second axis.  Print the shape, 
 Print the first N-2 rows and M-3 columns of `B`. Be sure `B` is large enough. Use the shape of `B` to check that this is true.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/numpy_arrays.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/numpy_arrays.py)
+{{</ code >}}
 {{< /spoiler >}}

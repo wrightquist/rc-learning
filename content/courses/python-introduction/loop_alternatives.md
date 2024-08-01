@@ -74,7 +74,7 @@ print(float_vals)
 Map is said to _broadcast_ the function across the iterable.
 
 
-The `reduce` function takes a binary (two arguments) function and applies it pairwise to each element, working its way down the iterable, to produce a single result.  It was removed from core Python in Python 3 but can be imported from the `functools` [module](/courses/python-introduction/modules).
+The `reduce` function takes a binary (two arguments) function and applies it pairwise to each element, working its way down the iterable, to produce a single result.  It was removed from core Python in Python 3 but can be imported from the `functools` [module](modules).
 ```python
 from functools import reduce
 def adder(x,y):
@@ -91,9 +91,9 @@ evens=list(filter(is_even,range(21)))
 print(evens)
 ```
 
-Map, filter, and reduce are frequently used with [lambda functions](/courses/python-introduction/advanced_functions).
+Map, filter, and reduce are frequently used with [lambda functions](more_about_functions.md).
 
 ## NumPy
 
-Another way to avoid for loops is to use [NumPy](/courses/python-introduction/numpy_matplotlib_scipy).  The best speedups are usually achieved when it is possible to use NumPy built-in "vectorized" functions.  For more details, see our workshop on [High-Performance Python](/courses/python_high_performance/serial_optimization).
+Another way to avoid for loops is to use [NumPy](numpy_matplotlib_scipy).  The best speedups are usually achieved when it is possible to use NumPy built-in "vectorized" functions.  For more details, see our workshop on [High-Performance Python](/content/courses/python-high-performance/serial-optimization.md).
 

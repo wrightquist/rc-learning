@@ -8,7 +8,9 @@ We have learned that variables are "nicknames" for the contents of a specific lo
 
 Since an ordinary variable is also associated with memory, we can use the **reference operator** `&` to obtain the location in memory.  Inversely, given a location, we can use the **dereference operator** `*` to get the value stored there.
 
-{{< code file="/courses/cpp-introduction/codes/ref_deref.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/ref_deref.cxx)
+{{</ code >}}
 
 ## Pointer Variables
 
@@ -36,7 +38,9 @@ does _not_ declare pointers to int `p`,`i`, and `j` in C++.  Only `p` is a point
 The choice between `int* p` and `int *p` is largely a matter of taste and emphasis.  Some programmers believe that `int* p` is more appropriate for C++ whereas `int *p` is more "C like."  However, there is no rule.  As for curly braces, programmers should be consistent in notation.
 
 Example:
-{{< code-download file="/courses/cpp-introduction/codes/pointers.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/pointers.cxx)
+{{</ code >}}
 
 ### The NULL Pointer
 
@@ -67,7 +71,9 @@ These blocks are raw chunks of memory, but can be referenced as the C-style arra
 
 Malloc and the related routines `calloc` (contiguous allocation) and `realloc` (reallocate) are supported by C++.
 
-{{< code file="/courses/cpp-introduction/codes/malloc.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/malloc.cxx)
+{{</ code >}}
 
 The compiler is not required to initialize the memory returned by malloc, but at least some do, initializing it to zero.
 
@@ -75,7 +81,7 @@ If the block cannot be acquired, the return value of the pointer is NULL.
 
 ### New
 
-The older C-style allocation functions are prone to errors and are generally useful only for built-in types.  C++ defines the `new` operator to allocate memory for any type for which a _constructor_ exists.  The constructor is a function that tells the compiler how to set up a variable of a particular type.  Programmers write their own for [classes](/courses/cpp-introduction/classes) but the compiler provides constructors for built-in types.
+The older C-style allocation functions are prone to errors and are generally useful only for built-in types.  C++ defines the `new` operator to allocate memory for any type for which a _constructor_ exists.  The constructor is a function that tells the compiler how to set up a variable of a particular type.  Programmers write their own for [classes](classes) but the compiler provides constructors for built-in types.
 
 The syntax of `new` is
 ```c++
@@ -83,7 +89,9 @@ The syntax of `new` is
 ```
 where the angle brackets indicate an option and are not typed into the code.
 
-{{< code file="/courses/cpp-introduction/codes/new.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/new.cxx)
+{{</ code >}}
 
 This creates an array of `N` floating-point numbers.
 
@@ -94,7 +102,9 @@ There are several differences between `malloc` and `new`, the most important of 
 We will only illustrate 2d arrays here; the concept can be extended to higher-dimensional arrays.
 Two-dimensional arrays are 1-d arrays of pointers to a one-dimensional array.
 
-{{< code-download file="/courses/cpp-introduction/codes/twod.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/twod.cxx)
+{{</ code >}}
 
 A two-dimensional array can be declared with two asterisks, indicating that the variable is a "pointer to pointer."
 
@@ -102,15 +112,21 @@ A two-dimensional array can be declared with two asterisks, indicating that the 
 
 If memory is allocated, it must be released (deallocated) or the result may be a **memory leak**.  If new (or malloc) is called, a pointer is returned to a block of memory.  Another call to new can be made returning to the _same variable_; C++ will not stop this.  When the old pointer value is overwritten, access to its corresponding block of memory is lost, but the memory is still allocated and is not available for any other use.  
 
-{{< code-download file="/courses/cpp-introduction/codes/leaker.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/leaker.cxx)
+{{</ code >}}
 
 A memory leak can rapidly fill up memory.  In modern computer operating systems, running executables are restricted to a particular region of memory and an attempt to access memory outside that area may result in a **segmentation violation**.  If it runs long enough, a leaking executable will eventually encounter a segmentation violation or sometimes, at least on Linux, a **bus error** (a bus error occurs when an attempt is made to access a location in memory that does not exist).  Occasionally, however, leaking codes can still take down an entire system.   Therefore memory leaks must be avoided.
 
 To release memory allocated with `malloc` or similar, use `free`.  As a general rule, each `malloc` must be paired with one `free`.
-{{< code file="/courses/cpp-introduction/codes/better_malloc.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/better_malloc.cxx)
+{{</ code >}}
 
 For `new` use `delete`
-{{< code file="/courses/cpp-introduction/codes/better_new.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/better_new.cxx)
+{{</ code >}}
 As for `malloc` and `new`, `free` is a function while `delete` is an operator.
 
 If an array is created with `new` the correct form of delete places square brackets before the name of the pointer:
@@ -128,6 +144,8 @@ Otherwise use delete without square brackets.
 Correct the memory-leaking example.  Leave the multiple `new` statements (even though they have no consequences) and fix the code as is.  Is there a way to tell whether the fix was successful?
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/fixed_leaker.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/fixed_leaker.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 

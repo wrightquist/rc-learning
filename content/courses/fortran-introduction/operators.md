@@ -59,7 +59,9 @@ Points to note:
 `Mod` and `modulo` are defined for negative values and reals, as well as non-negative integers, but the results, while well-defined mathematically, are not generally what most programmers are expecting.  For this reason they should generally be avoided for arguments other than non-negative integers.
 
 **Example**
-{{< code-download file="/courses/fortran-introduction/codes/testmod.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/testmod.f90)
+{{</ code >}}
 
 ## Expressions
 
@@ -99,7 +101,7 @@ s=.3333300000
 Fortran, like most programming languages, also provides means for the programmer to specify when a type conversion should take place.
 Use this explicit casting to be clear, or in circumstances, such as argument lists, where the compiler will not do it.
 
-The new way to cast numbers is via [KIND](/courses/fortran-introduction/primitive_types).  Older conversion functions such as `dble` can still be used and will usually be present in older code.
+The new way to cast numbers is via [KIND](primitive_types).  Older conversion functions such as `dble` can still be used and will usually be present in older code.
 
 Logicals cannot be cast to anything, even though they are usually represented internally by integers.
 

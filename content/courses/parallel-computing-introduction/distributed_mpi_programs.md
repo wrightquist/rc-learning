@@ -12,11 +12,11 @@ MPI is written in C and ships with bindings for Fortran.  Bindings have been wri
 
 Guides to the most-commonly used MPI routines for the three languages this course supports can be downloaded.
 
-[C/C++](/courses/parallel-computing-introduction/MPI_Guide_C.pdf) 
+[C/C++](MPI_Guide_C.pdf) 
 
-[Fortran](/courses/parallel-computing-introduction/MPI_Guide_Fortran.pdf) 
+[Fortran](MPI_Guide_Fortran.pdf) 
 
-[Python](/courses/parallel-computing-introduction/MPI_Guide_mpi4py.pdf)
+[Python](MPI_Guide_mpi4py.pdf)
 
 ## Processes and Messages
 

@@ -106,7 +106,9 @@ sleep 30m
 as the command.  You won't need to request a specific amount of memory. Submit this script and monitor your job's status.  Once it starts, let it run for a few minutes, then cancel it.
 
 {{< spoiler text="Example script" >}}
-{{< code-download file="/tutorials/slurm-from-cli/scripts/slow.slurm" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/slurm-from-cli/scripts/slow.slurm)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Examining Your Utilization

@@ -466,9 +466,9 @@ where $A_{mk}, B_{kn}, C_{mn}$ are matrices and $\alpha, \beta$ are constants. F
 
 1. Select an appropriate base image. (Hint: You will be compiling C++ code.)
 
-1. Install `libopenblas-dev` via the package manager.
+2. Install `libopenblas-dev` via the package manager.
 
-1. Copy the code to the same directory as your Dockerfile.
+3. Copy the code to the same directory as your Dockerfile.
 
     ```
     #include <cblas.h>
@@ -494,19 +494,19 @@ where $A_{mk}, B_{kn}, C_{mn}$ are matrices and $\alpha, \beta$ are constants. F
     COPY cblas_dgemm.c ./
     ```
 
-1. Compile the code with this command:
+4. Compile the code with this command:
     ```
     gcc -o cblas_dgemm cblas_dgemm.c -lopenblas -lpthread
     ```
 
-1. Build the image and note the image size. You should get this output:
+5. Build the image and note the image size. You should get this output:
     ```
     11.000000 -9.000000 5.000000 -9.000000 21.000000 -1.000000 5.000000 -1.000000 3.000000
     ```
 
     (Optional) Read the Intel tutorial to figure out what the matrices $A, B, C$ are. Do the math and verify that you get the same result.
 
-1. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
+6. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
 
     <details><summary>Answer</summary>
 
@@ -548,7 +548,7 @@ where $A_{mk}, B_{kn}, C_{mn}$ are matrices and $\alpha, \beta$ are constants. F
     </details>
     <br>
 
-1. Re-compile the code with static linking by adding a `-static` flag. In the production stage simply copy the binary. Compare image sizes.
+7. Re-compile the code with static linking by adding a `-static` flag. In the production stage simply copy the binary. Compare image sizes.
 
     <details><summary>Answer</summary>
 
@@ -577,15 +577,15 @@ LibTorch is the C++ frontend of PyTorch. This exercise is based on the ["Writing
 
 1. Select an appropriate base image. (Hint: You will be compiling C++ code.)
 
-1. You will need these additional packages:
+2. You will need these additional packages:
     - Build tools: `build-essential cmake`
     - Download and decompress: `wget ca-certificates unzip`
 
-1. Find the download link for LibTorch under the "Install PyTorch" section at https://pytorch.org/. Select "None" for CUDA. Download the file to `/opt` in the image. Hints:
+3. Find the download link for LibTorch under the "Install PyTorch" section at https://pytorch.org/. Select "None" for CUDA. Download the file to `/opt` in the image. Hints:
     - In your `wget` command, you may want to rename the output file using `-O libtorch.zip`.
     - Remember to decompress.
 
-1. Copy these two files to the same directory as your Dockerfile.
+4. Copy these two files to the same directory as your Dockerfile.
     - `dcgan.cpp`
 
     ```
@@ -618,7 +618,7 @@ LibTorch is the C++ frontend of PyTorch. This exercise is based on the ["Writing
     COPY dcgan.cpp CMakeLists.txt ./
     ```
 
-1. Build the code. The typical procedure is:
+5. Build the code. The typical procedure is:
     ```
     mkdir build
     cd build
@@ -626,7 +626,7 @@ LibTorch is the C++ frontend of PyTorch. This exercise is based on the ["Writing
     make
     ```
 
-1. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
+6. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
 
     <details><summary>Answer</summary>
 
@@ -682,16 +682,16 @@ LibTorch is the C++ frontend of PyTorch. This exercise is based on the ["Writing
     </details>
     <br>
 
-1. Challenge: The above image cannot make use of GPU. Build an image for GPU. Hints:
+7. Challenge: The above image cannot make use of GPU. Build an image for GPU. Hints:
     - You do not need a physical GPU to build an image for GPU.
     - Pick a `nvidia/cuda` base image. Read their overview page on Docker Hub to decide which flavor to use.
     - Choose a CUDA version to get the download link for LibTorch on the PyTorch webpage.
 
     <br>
 
-1. Challenge: Can you build `dcgan` on Rivanna without using a container? Why (not)?
+8. Challenge: Can you build `dcgan` on Rivanna without using a container? Why (not)?
 
-1. Challenge: Can you build a static binary of `dcgan`? Why (not)?
+9. Challenge: Can you build a static binary of `dcgan`? Why (not)?
 
 ---
 

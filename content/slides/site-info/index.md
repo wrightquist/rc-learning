@@ -94,7 +94,7 @@ flowchart LR
 
 ## Mermaid
 
-View example [here](learning.rc.virginia.edu/courses/parallel_computing_introduction/parallel_hardware/)
+View example [here](https://learning.rc.virginia.edu/courses/parallel_computing_introduction/parallel_hardware/)
 
 ---
 
@@ -164,7 +164,7 @@ View example [here](learning.rc.virginia.edu/courses/parallel_computing_introduc
 - Can be in /static/images if used more than once
 - Can be local within course directory
 - Reference like
-  - {{< figure src="/courses/parallel_computing_introduction/img/SMP.png" caption="Schematic of an SMP system." >}}
+  - ![](/content/courses/parallel-computing-introduction/img/SMP.png "Schematic of an SMP system.")
   - figure shortcode is a Hugo built-in
 
 ---

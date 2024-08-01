@@ -26,11 +26,15 @@ This example illustrates the main parts of a Slurm script.
 
 In a bash script, any text beyond the `#` is ignored.
 
-{{< code-download file="/tutorials/slurm-from-cli/scripts/hello.slurm" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/slurm-from-cli/scripts/hello.slurm)
+{{</ code >}}
 
 This script runs the Python code
 
-{{< code-download file="/tutorials/slurm-from-cli/scripts/hello.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/tutorials/slurm-from-cli/scripts/hello.py)
+{{</ code >}}
 
 ## The Hello.slurm Script
 

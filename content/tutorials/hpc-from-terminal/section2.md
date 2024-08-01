@@ -64,19 +64,13 @@ graph TD
 
 The **home** directory is the usual name on Linux and similar Unix-based operating systems for the folder that holds user directories and files.  On macOS it is called User.  On both, the _separator_ between branches of the tree is the forward slash.
 
-{{< hl >}}
-/home/mst3k/myfile
-{{< /hl >}}
-<br>
-{{< hl >}}
-/Users/Misty Tea/Documents/Homework.pages
-{{< /hl >}}
+`/home/mst3k/myfile`
+
+`/Users/Misty Tea/Documents/Homework.pages`
 
 Windows files and folders also have paths.  In Windows, drive letters or _volumes_ are the top-level folders, and usually there is more than one.  User files are in Users, similar to macOS.
 
-{{< hl >}}
-C:\Users\Misty Tea\Documents\Homework.docx
-{{< /hl >}}
+`C:\Users\Misty Tea\Documents\Homework.docx`
 
 ## Absolute and Relative Paths
 

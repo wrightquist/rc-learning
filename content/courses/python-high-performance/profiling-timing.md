@@ -18,11 +18,13 @@ The results will be shown in the `Profiler` pane.
 **Exercise:** 
 
 Open the `fibonacci.py` file and execute it with the Spyder Profiler.  The code deliberately uses an inefficient algorithm.  Let's look at the output in the `Profiler` pane.  What function was called most frequently and has the largest cumulative run time?
-{{% code-download file="/courses/python-high-performance/codes/fibonacci.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/fibonacci.py)
+{{</ code >}}
 
-{{< figure src="/courses/python-high-performance/fibonacci-profiler.png" caption="Profiler output for the Fibonacci example" >}}
+![](img/fibonacci-profiler.png "Profiler output for the Fibonacci example")
 
-A more detailed description of the Profiler option for Spyder can be found <a href="http://docs.spyder-ide.org/profiler.html" target="_blank">here</a>.
+A more detailed description of the Profiler option for Spyder can be found [here](http://docs.spyder-ide.org/profiler.html).
 
 Another popular IDE (integrated development environment) for Python is _Pycharm_ by JetBrains.  The profiler option is only available in the Professional (paid) version, but some UVA departments have a license for this version.
 
@@ -44,7 +46,7 @@ Prun will print a plain-text summary similar to the Profile window of Spyder.
 
 #### Using the cProfile and pstats Modules in your script
 
-Python includes the `cProfile` and `profile` packages.  In Python 2, profile is a pure Python module with significant more overhead than the C extensions of cProfile (<a href="https://docs.python.org/2/library/profile.html" target="_blank">read the details</a>).  In Python 3, `profile` is `cProfile` by default.  These packages can be used from the command line or in your Python scripts.
+Python includes the `cProfile` and `profile` packages.  In Python 2, profile is a pure Python module with significant more overhead than the C extensions of cProfile ([read the details](https://docs.python.org/2/library/profile.html)).  In Python 3, `profile` is `cProfile` by default.  These packages can be used from the command line or in your Python scripts.
 
 You can use the `cProfile` and `pstats` modules in your script to profile specific functions and save the profiling results to a file. Let's assume that we have a module `MyModule` that defines a function `myFunc` to profile: 
 ```python

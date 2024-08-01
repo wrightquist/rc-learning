@@ -27,11 +27,13 @@ Global variables are "in scope" within the file where they are declared.  To mak
 ```c++
 extern float myglobal;
 ```
-As a general rule, globals over multiple files should be avoided.  Defining them in a [class](/courses/cpp-introduction/classes) would be preferable.  C++20 and up will add _modules_, which would be the most appropriate structure for this type of use.  Modules are familiar to Python and Fortran programmers, to name two languages that support them; they are a programming construct that isolates a unit of code, separating it into a separately compiled bundle, from which other program units can import its variables and functions.
+As a general rule, globals over multiple files should be avoided.  Defining them in a [class](classes) would be preferable.  C++20 and up will add _modules_, which would be the most appropriate structure for this type of use.  Modules are familiar to Python and Fortran programmers, to name two languages that support them; they are a programming construct that isolates a unit of code, separating it into a separately compiled bundle, from which other program units can import its variables and functions.
 
 Within a scoping unit, if a local variable is defined with the same name as a global variable, the local variable takes precedence.  The global variable can be accessed with the _scope resolution_ operator `::`.
 
-{{< code-download file="/courses/cpp-introduction/codes/scope.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/scope.cxx)
+{{</ code >}}
 
 Beware of changes in behavior in `for` loops.  Prior to the C++98 standard, declaring a loop variable within the parentheses left it in scope.  So code such as the following was legal:
 ```c++
@@ -81,10 +83,14 @@ namespace yellow {
 }
 ```
 Notice that we can have variables with the same names in different namespaces, because a namespace is a scoping unit.  We must reference the variables with their namespace name:
-{{< code-download file="/courses/cpp-introduction/codes/namespace.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/namespace.cxx)
+{{</ code >}}
 
 Namespaces can be nested:
-{{< code-download file="/courses/cpp-introduction/codes/nestednamespace.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/nestednamespace.cxx)
+{{</ code >}}
 
 ### The Using Directive
 
@@ -107,7 +113,9 @@ In this case, we declare that we are using namespace `std` at a global scope thr
 Another form of the directive limits the reference to one item only.
 The namespace must have been defined before we can do this.
 
-{{< code-download file="/courses/cpp-introduction/codes/namespacescope.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/namespacescope.cxx)
+{{</ code >}}
 
 #### Using in Header Files
 

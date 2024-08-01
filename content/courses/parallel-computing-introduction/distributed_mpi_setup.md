@@ -9,15 +9,21 @@ We are now ready to write our first MPI program.  Select your choice of language
 ## A Hello World example.
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/mpi1.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/codes/mpi1.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/mpi1.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/mpi1.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/mpi1.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/mpi1.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Preparing and Running MPI Codes
@@ -37,9 +43,9 @@ pip install --user mpi4py
 
 If you have access to a multicore computer, you can run MPI programs on it.
 
-If using a compiled language, before you can build MPI codes you must install a compiler, and possibly some kind of IDE.  See our guides for [C++](/courses/cpp_introduction/setting_up) or [Fortran](/courses/fortran_introduction/setting_up).
+If using a compiled language, before you can build MPI codes you must install a compiler, and possibly some kind of IDE.  See our guides for [C++](/content/courses/cpp-introduction/setting_up.md) or [Fortran](/content/courses/fortran-introduction/setting_up.md).
 
-For Python, on all operating systems install [mpi4py](https://mpi4py.readthedocs.io/en/stable/index.html). To install mpi4py you must have a working `mpicc` compiler.  For Anaconda this generally requires installing the `gcc_linux-64` package using `conda`. Instructions are [here](https://conda.io/projects/conda-build/en/latest/resources/compiler-tools.html) for Linux and command-line macOS. For Windows use the Anaconda [package manager](/courses/python-introduction/package_managers) interface and install `m2w64-gcc`. 
+For Python, on all operating systems install [mpi4py](https://mpi4py.readthedocs.io/en/stable/index.html). To install mpi4py you must have a working `mpicc` compiler.  For Anaconda this generally requires installing the `gcc_linux-64` package using `conda`. Instructions are [here](https://conda.io/projects/conda-build/en/latest/resources/compiler-tools.html) for Linux and command-line macOS. For Windows use the Anaconda [package manager](/content/courses/python-introduction/package_managers.md) interface and install `m2w64-gcc`. 
 
 The author of mpi4py [recommends](https://mpi4py.readthedocs.io/en/stable/install.html) using pip even with an Anaconda environment. This command will be similar on a local system to that used for installation on a multiuser system. 
 ```no-highlight

@@ -93,5 +93,5 @@ Continuing with the weather_data notebook, group the data by state and print the
 If you look closely, you will note there are some errors.  There are "states" DE and VA, which are the abbreviations for those states.  Correct those errors and obtain a new grouping by state.  Get the mean temperature, minimum temperature, and maximum temperature per state, using the `round` method to round to 2 digits. Determine the Python type of each of these results.  Look up how to concatenate them into a new dataframe.  Print this dataframe.  Sort the dataframe by mean average temperature, in descending order.
 
 {{< spoiler text="Example solution, zipped Jupyter notebook" >}}
-[pandas_weather_ex3.zip](/courses/python-introduction/exercises/pandas_weather_ex3.zip)
+[pandas_weather_ex3.zip](exercises/pandas_weather_ex3.zip)
 {{< /spoiler >}}

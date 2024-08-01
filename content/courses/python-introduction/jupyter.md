@@ -7,15 +7,14 @@ weight: 12
 We will begin with JupyterLab. Select the JupyterLab icon in the Anaconda Navigator.  Launching it will cause a tab to open in your Web browser. 
 When JupyterLab starts up, you will see a list of your files on the left and three icons to select the mode.  JupyterLab incorporates a Jupyter notebook server as well as a plain Python or iPython console and a simple text editor.  We want to start a Jupyter notebook so click on the top tile.
 
-{{< figure src="/courses/python-introduction/imgs/JupyterLabSetup.png" caption="Setting up JupyterLab" >}}
+![](imgs/JupyterLabSetup.png "Setting up JupyterLab")
 
 A browser tab will open with a text entry area.
-![JupyterLabInput](/courses/python-introduction/imgs/JupyterLabInput.png)
-{{< figure src="/courses/python-introduction/imgs/JupyterLabInput.png" >}}
+![JupyterLabInput](imgs/JupyterLabInput.png)
 
 Your notebook is untitled.  Open the File menu and click Rename.  Name your notebook `first_script.ipynb`, then click the Rename button.
 
-{{< figure src="/courses/python-introduction/imgs/JupyterLabRename.png" caption="Rename and save your notebook." >}}
+![](imgs/JupyterLabRename.png "Rename and save your notebook.")
 
 ## Cells
 

@@ -26,11 +26,15 @@ comm.Barrier()
 ```
 It is seldom needed in Python.  For examples in C++ and Fortran, please see 
 {{< spoiler text="scatter.cxx" >}}
-{{< code file="/courses/parallel-computing-introduction/codes/scatter.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/codes/scatter.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="scatter.f90" >}}
-{{< code file="/courses/parallel-computing-introduction/codes/scatter.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/scatter.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 In these examples, it is used in a loop to force the output from the processes to be separated distinctly and in rank order.  Upon entry into the loop, all processes synchronize before executing the loop body.  The process whose rank matches the loop variable writes its output, while the other processes skip back to the top of the loop.  However, they must wait there until the process doing the writing finishes and invokes MPI_Barrier.
@@ -42,15 +46,21 @@ Write a program that generates an array of values from 1 to 10 only on the root 
 Test it with four processes on the frontend or on your workstation.
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/bcast_ex.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/bcast_ex.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/bcast_ex.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/bcast_ex.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/bcast_ex.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/bcast_ex.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 
@@ -76,15 +86,21 @@ comm.Allreduce(sendarr, recvarr, operation)
 Modify the example reduction code in your language of choice to perform an Allreduce.
 
 {{< spoiler text="C++ Solution" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/allreduce.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/solns/allreduce.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran Solution" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/allreduce.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/allreduce.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python Solution" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/allreduce.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/allreduce.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Allgather/Allgatherv
@@ -118,36 +134,48 @@ comm.Allgather([data,MPI.TYPE],[all_data,MPI.TYPE])
 Modify the example gather code in your language of choice to perform an Allgather.
 
 {{< spoiler text="C++ Solution" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/allgather.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/solns/allgather.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran Solution" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/allgather.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/allgather.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python Solution" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/allgather.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/allgather.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Alltoall
 
 In MPI_Alltoall, each process sends data to every other process.  Let us consider the simplest case, when each process sends one item to every other process. Suppose there are three processes and rank 0 has an array containing the values \[0,1,2\], rank 1 has \[10,11,12\], and rank 2 has \[20,21,22\].  Rank 0 keeps (or sends to itself) the 0 value, sends 1 to rank 1, and 2 to rank 2.  Rank 1 sends 10 to rank 0, keeps 11, and sends 12 to rank 2.  Rank 2 sends 20 to rank 0, 21 to rank 1, and keeps 22.
 
-{{< figure src="/courses/parallel-computing-introduction/img/alltoall.png" caption="Alltoall.  Note that as depicted, the values in the columns are transposed to values as rows." >}}
+![](img/alltoall.png "Alltoall.  Note that as depicted, the values in the columns are transposed to values as rows.")
 
 ### C++
 {{< spoiler text="alltoall.cxx" >}}
-{{< code file="/courses/parallel-computing-introduction/codes/alltoall.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/codes/alltoall.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Fortran
 {{< spoiler text="alltoall.f90" >}}
-{{< code file="/courses/parallel-computing-introduction/codes/alltoall.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/alltoall.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Python
 {{< spoiler text="alltoall.py" >}}
-{{< code file="/courses/parallel-computing-introduction/codes/alltoall.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/alltoall.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 Two more general forms of alltoall exist; `MPI_Alltoallv`, which is similar to `MPI_Allgatherv` in that varying data sizes and displacements are allowed; and `MPI_Alltoallw`, which is even more general in that the 'chunks' of data on the processes can be of different datatypes.  These procedures are beyond our scope but the interested reader can consult the documentation.

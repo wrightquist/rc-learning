@@ -72,7 +72,7 @@ The statement
 ```fortran
 IMPLICIT NONE
 ```
-negates implicit typing.  It must be the first line after a unit declaration unless a [USE](/courses/fortran-introduction/modules) is present.
+negates implicit typing.  It must be the first line after a unit declaration unless a [USE](modules) is present.
 
 **Example**
 ```fortran

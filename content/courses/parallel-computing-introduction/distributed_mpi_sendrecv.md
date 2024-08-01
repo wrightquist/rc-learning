@@ -27,13 +27,19 @@ Python programmers should observe that the above syntax is taken from the `mpi4p
 We will rewrite the previous examples using MPI_Sendrecv. Each process will send its rank to its neighbor on the right and will receive that neighbor's rank.
 
 {{< spoiler text=C++ >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/mpi_sendrecv.cxx" lang=c++ >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/codes/mpi_sendrecv.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Fortran >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/mpi_sendrecv.f90" lang=fortran >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/mpi_sendrecv.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Python >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/mpi_sendrecv.py" lang=python >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/mpi_sendrecv.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 **Exercise**

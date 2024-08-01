@@ -4,7 +4,7 @@ title: "Project 3"
 weight: 56
 ---
 
-Using the [cpi.csv](/data/cpi.csv) data, write a program that will read from the command line the name of a file. Read this file into your program.  Request from the command line a year.  Optionally request on the command line an amount.
+Using the [cpi.csv](data/cpi.csv) data, write a program that will read from the command line the name of a file. Read this file into your program.  Request from the command line a year.  Optionally request on the command line an amount.
 Check that you have enough command line input. Stop with a message if you don’t have enough command line values. 
 
 Do not assume you know in advance how many lines the file contains. 
@@ -23,5 +23,7 @@ inflation(i)=(cpi(i+1)-cpi(i))/12.
 Compute the inflation rate for the data and print with the corresponding year to a comma-separated file.  Use any plotting package with which you are familiar (Excel, Matlab, Python, R, etc.) to plot the data.
 
 {{< spoiler text="Sample solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/inflation.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/inflation.f90)
+{{</ code >}}
 {{< /spoiler >}}

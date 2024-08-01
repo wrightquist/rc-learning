@@ -57,8 +57,8 @@ Inspect the runscript before running an image!
     The default cache directory is `~/.apptainer`. If you are an active container user it can quickly fill up your home. You can change it to scratch:
     {{< code-snippet >}}export APPTAINER_CACHEDIR=/scratch/$USER/.apptainer{{< /code-snippet >}}
     Otherwise, remember to clean up periodically.
-1. We have suppressed certain output from the `apptainer` command. To see the complete output, type `\apptainer`.
-1. Load the Apptainer module: `module load apptainer`
+2. We have suppressed certain output from the `apptainer` command. To see the complete output, type `\apptainer`.
+3. Load the Apptainer module: `module load apptainer`
 
 ## Definition File
 
@@ -345,14 +345,12 @@ $ ll -h lolcow*.sif
 ... 48M ... lolcow_2.sif
 ```
 
-<style scoped>table { font-size: 65%; }</style>
-
-| Version | Description | Reduction (MB) | % |
-|---|---|---:|---:|
-|0  |(Basis of comparison) | - | - |
-|1  |Clean up              |32 | 37 |
-|-  |Install only what's needed  |6 | 7 |
-|2  |Combination of previous two |38 | 44 |
+| Version | Description                 | Reduction (MB) |   % |
+|---------|-----------------------------|---------------:|----:|
+| 0       | (Basis of comparison)       |              - |   - |
+| 1       | Clean up                    |             32 |  37 |
+| -       | Install only what's needed  |              6 |   7 |
+| 2       | Combination of previous two |             38 |  44 |
 
 ## Sandbox
 
@@ -457,16 +455,16 @@ Check:
 ### GitHub Packages
 
 1. [Create a personal access token](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic)
-1. Login
+2. Login
     ```bash
     apptainer remote login --username myname docker://ghcr.io
     [paste your token]
     ```
-1. Push
+3. Push
     ```bash
     apptainer push lolcow_0.sif oras://ghcr.io/myname/lolcow
     ```
-1. Check `https://github.com/users/myname/packages/container/package/lolcow`
+4. Check `https://github.com/users/myname/packages/container/package/lolcow`
 
 ## Case Studies
 

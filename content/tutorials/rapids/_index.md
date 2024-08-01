@@ -7,6 +7,13 @@ categories: ["Python","GPU","HPC"]
 weight: 180
 ---
 
+```single line code block```
+
+```
+multiline
+multiline
+```
+
 Prerequisites: Python data science/machine learning experience (especially Pandas and Scikit-Learn).
 
 # What is RAPIDS?
@@ -112,4 +119,4 @@ Submit the job via `sbatch job.slurm`.
 # References and further reading
 
 - [Official documentation](https://docs.rapids.ai/)
-- [Workshop: High Performance Programming in Python](/workshops/python_high_perf/)
+- [Workshop: High Performance Programming in Python](/content/courses/python-high-performance)

@@ -30,19 +30,27 @@ Use whatever plotting package you know to make a contour plot of the result. If 
 When plotting, the top of an array (row 0) is the bottom of the plot.
 
 {{< spoiler text="Python script to contour output">}}
-{{< code-download file="/courses/parallel-computing-introduction/scripts/contour.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/scripts/contour.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ### Example solutions
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/heatedplate.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/heatedplate.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/heatedplate.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/heatedplate.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/heatedplate.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/heatedplate.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 8
@@ -64,7 +72,9 @@ filename = filename + str( rank )
 To plot the results you will have to stitch the files together appropriately. If you have no other preference you may use the `contour_ranks.py` code below. Add the `-f` command-line option for Fortran. The script must be given an argument that is the "base" of the filenames, and all the output files must be in the same folder and numbered appropriately.
 
 {{< spoiler text="Python script to merge output files and contour" >}}
-{{< code-download file="/courses/parallel-computing-introduction/scripts/contour_ranks.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/scripts/contour_ranks.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 Feel free to use the example solutions provided as your basis, but we recommend that you attempt to write your own serial version first.
@@ -78,13 +88,19 @@ _Hints_
 ### Example solutions
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpiheatedplate.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpiheatedplate.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpiheatedplate.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpiheatedplate.f90)
+{{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpiheatedplate.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpiheatedplate.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 9

@@ -11,10 +11,10 @@ MATLAB is an integrated technical computing environment from the MathWorks that 
 
 Participants must have a Mathworks account in order to access the links to the online tutorials in this document.
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=sched_leaf_spot" target="_blank">Matlab Academy: Fundamentals of Matlab</a>**
+**[Matlab Academy: Fundamentals of Matlab](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=sched_leaf_spot)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=sched_leaf_spot#chapter=1&lesson=1&section=1" target="_blank">Video: Fundamentals of  Matlab</a>**
+**[Video: Fundamentals of  Matlab](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=sched_leaf_spot#chapter=1&lesson=1&section=1)**
 
-**<a href="https://matlabacademy.mathworks.com/artifacts/quick-reference.html?course=mlbe&release=R2019a&language=en" target="_blank">Quick Reference Guide (used for presentation)</a>**
+**[Quick Reference Guide (used for presentation)](https://matlabacademy.mathworks.com/artifacts/quick-reference.html?course=mlbe&release=R2019a&language=en)**
 
 

@@ -3,7 +3,6 @@ date: "2021-10-25"
 title: "ACCORD Intro"
 summary: "An introduction to ACCORD."
 authors: []
-tags: []
 categories: []
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
@@ -46,7 +45,7 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
       </ul>
     <li>Invite co-investigators</li>
       <ul>
-      <li>To add researchers to your project, submit a request here: <a href="https://www.rc.virginia.edu/form/accord/">Add a researcher</a></li>
+      <li>To add researchers to your project, submit a request here: [Add a researcher](https://www.rc.virginia.edu/form/accord/)</li>
       </ul>
  </ul>
  </div>
@@ -67,7 +66,7 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
      <br>
        <li>Home directory of 50GB</li>
        <li>Project directory of 1TB</li>
-       <li>Additional storage can be purchased. Please submit a request <a href="https://www.rc.virginia.edu/form/accord/">here</a></li>
+       <li>Additional storage can be purchased. Please submit a request [here](https://www.rc.virginia.edu/form/accord/)</li>
      </ul>
  </ul>
  </div>
@@ -101,7 +100,7 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
  <div>
     <img src="img/ACCORD_Intro_2021102210.jpg">
     <br>
-    Questions about whether your data is suitable for ACCORD? Submit a support ticket <a href="https://www.rc.virginia.edu/form/accord/">here</a>
+    Questions about whether your data is suitable for ACCORD? Submit a support ticket [here](https://www.rc.virginia.edu/form/accord/)
  </div>
 
 ---
@@ -111,7 +110,7 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
 <img src="img/data.jpeg">
 
 - Data is stored on the system for 6 months.
-- To extend your project, please fill out a <a href="https://www.rc.virginia.edu/form/accord/">request</a>
+- To extend your project, please fill out a [request](https://www.rc.virginia.edu/form/accord/)
 
 ---
 
@@ -120,7 +119,7 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
 <img src="img/globus.png">
 
 - Data transfer is processed through Research Computing staff for the time being.
-- Please fill out a request <a href="https://www.rc.virginia.edu/form/accord/">here</a> for data transfer
+- Please fill out a request [here](https://www.rc.virginia.edu/form/accord/) for data transfer
 
 ---
 
@@ -249,6 +248,6 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
 
 * The ACCORD website has additional documentation, FAQs, and a user guide:
   * [https://www.rc.virginia.edu/userinfo/accord/overview/](https://www.rc.virginia.edu/userinfo/accord/overview/)
-* Have issues or questions? Fill out a support ticket <a href="https://www.rc.virginia.edu/form/accord/">here</a>
+* Have issues or questions? Fill out a support ticket [here](https://www.rc.virginia.edu/form/accord/)
 
 ![](img/ACCORD_Intro_2021102223.jpg)

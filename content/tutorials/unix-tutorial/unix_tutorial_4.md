@@ -38,7 +38,9 @@ In your unixstuff directory, type
 ```
 You will see that you now get lots of details about the contents of your directory, similar to the example below.
 
-{{< code file="/tutorials/unix-tutorial/snippets/ls-l.txt" lang="bash" >}}
+{{< code lang="bash" >}}
+    [](/content/tutorials/unix-tutorial/snippets/ls-l.txt)
+{{</ code >}}
 
 Each file (and directory) has associated access rights, which may be found by typing ls -l.
 
@@ -62,9 +64,9 @@ The symbols r, w, etc., have slightly different meanings depending on whether th
 So, in order to read a file, you must have execute permission on the directory containing that file, and hence on any directory containing that directory as a subdirectory, and so on, up the tree.
 
 ####  Some Examples
-| Permissions | Meaning |
-|---|---|
-| `-rwxrwxrwx` | a file that everyone can read, write and execute (and delete) |
+| Permissions  | Meaning                                                                                                                               |
+|--------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| `-rwxrwxrwx` | a file that everyone can read, write and execute (and delete)                                                                         |
 | `-rw-------` | a file that only the owner can read and write: no one else can read or write and no one has execution rights (e.g., yourmailbox file) |
 
 ## Changing Access Rights
@@ -73,17 +75,17 @@ So, in order to read a file, you must have execute permission on the directory c
 
 Only the owner of a file can use chmod to change the permissions of a file. The options of chmod are as follows:
 
-| Symbol | Meaning |
-|---|---|
-| `u` | user |
-| `g` | group |
-| `o` | other |
-| `a` | all |
-| `r` | read |
-| `w` | write (and delete) |
-| `x` | execute (and access directory) |
-| `+` | add permission |
-| `-` | take away permission |
+| Symbol | Meaning                        |
+|--------|--------------------------------|
+| `u`    | user                           |
+| `g`    | group                          |
+| `o`    | other                          |
+| `a`    | all                            |
+| `r`    | read                           |
+| `w`    | write (and delete)             |
+| `x`    | execute (and access directory) |
+| `+`    | add permission                 |
+| `-`    | take away permission           |
 For example, to remove read write and execute permissions on the file biglist for the group and others, type
 ```
 % chmod go-rwx biglist
@@ -102,8 +104,8 @@ Some multiuser systems, such as high-performance clusters, may not permit `chmod
 
 ### Summary
 
-| Command | Operation |
-|---|---|
-| * | match any number of characters |
-| ? | match one character |
-| chmod | change file or directory permissions |
+| Command | Operation                            |
+|---------|--------------------------------------|
+| *       | match any number of characters       |
+| ?       | match one character                  |
+| chmod   | change file or directory permissions |

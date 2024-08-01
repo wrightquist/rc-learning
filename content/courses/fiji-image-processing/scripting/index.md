@@ -5,8 +5,6 @@ weight: 100
 url_code: /scripts/fiji/fiji-example-scripts.zip
 ---
 
-{{< figure library="true" src="fiji.png" >}}
-
 {{< file-download file="/scripts/fiji/fiji-example-scripts.zip" text="Example Scripts" >}}
 
 This chapter is an introduction to the scripting interface of the [Fiji](https://fiji.sc) application, an open-source and enhanced version of the popular ImageJ program used for scientific image processing.  Here you will learn how to write scripts for automated execution of image processing pipelines and batch processing of multiple image files in Fiji.
@@ -14,24 +12,20 @@ This chapter is an introduction to the scripting interface of the [Fiji](https:/
 Step-by-step instructions are provided for developing scripts in Jython, an implementation of the popular Python language for Java platforms. Example scripts are provided for the Jython and BeanShell languages.
 
 
-## Introduction & Fiji Programming Tools {#intro-id}
+## Introduction & Fiji Programming Tools
 
-### Installation {#installation-id}
+### Installation
 Fiji is a stand-alone application that can be downloaded from the [Fiji website](https://fiji.sc/#download). It is available for Mac OSX, Windows, and Linux platforms.  
 
 + **macOS** The Fiji application should be installed in the user's home directory rather than the default `Applications` folder.
 + **Windows 7 & 10:** The Fiji application should be installed in the user's home directory rather than the default `C:\Program Files` directory.
 + **Linux:** The Fiji application should be installed in a directory where the user has read, execution, and write permissions, e.g. the user's `home` directory.
 
-### Download the Example Scripts
-
-Go to [this tutorials landing page](/tutorials/fiji-scripting/) and click on the `Code` button. 
-
-### The Application Programming Interface (API) {#api-id}
+### The Application Programming Interface (API)
 Fiji and ImageJ are written in Java. The application programming interface (API) defines the various Java packages, classes, methods, and constants that a programmer can use for development of custom Fiji & ImageJ scripts. The API is well documented on these public sites:
 
-+ ImageJ (https://imagej.nih.gov/ij/developer/api/)
-+ Fiji (https://javadoc.scijava.org/Fiji/)
++ [ImageJ](https://imagej.net/ij/developer/api/)
++ [Fiji](https://javadoc.scijava.org/Fiji/)
 
 Fiji provides convenient programming wrappers for these Java classes so you can write your scripts in:
 
@@ -47,10 +41,10 @@ Step-by-step instructions in this tutorial are provided for developing scripts i
 <br>
 
 
-### The Script Editor {#script-editor-id}
+### The Script Editor
 To start the script editor in Fiji go to menu `File` > `New` > `Script…`.
 
-{{< figure src="fiji-script-editor.png" >}}
+![](img/fiji-script-editor.png)
 
 * The top pane provides the editor. Multiple scripts can be open at the same time and will show up as separate tabs.
 * The bottom pane shows output (e.g. produced by print statements) and any errors encountered during script execution.
@@ -66,17 +60,17 @@ To start the script editor in Fiji go to menu `File` > `New` > `Script…`.
 
 <br>
 
-### The Macro Recorder {#macro-recorder-id}
+### The Macro Recorder
 In the Fiji menu, go to `Plugins` > `Macros…` > `Record`.
 
-{{< figure src="fiji-macro-recorder.png" >}}
+![](img/fiji-macro-recorder.png)
 
 + The Macro Recorder logs all commands entered through the Fiji graphical user interface (GUI). It is useful to convert these GUI actions into script commands.
 + In the `Record` drop-down menu, select `BeanShell`.
-+ Clicking the `Create` button copies the code to a new script in the [Script Editor](#script-editor-id).
++ Clicking the `Create` button copies the code to a new script in the [Script Editor](#the-script-editor).
 + **Keep the Recorder window open throughout this tutorial.**
 
-### The Console Window {#console-id}
+### The Console Window
 In the Fiji menu, go to `Window` > `Console`.
 
 + The Console window shows the output and logging information produced by running plugins and scripts.
@@ -84,7 +78,7 @@ In the Fiji menu, go to `Window` > `Console`.
 <br>
 
 
-## Jython {#jython-id}
+## Jython
 
 Jython is an implementation of the Python 2.7 programming language designed to run on the Java platform.
 
@@ -93,7 +87,7 @@ Jython is an implementation of the Python 2.7 programming language designed to r
 + Jython scripts can use ImageJ/Fiji packages and classes via specific `import` statements.
 + In Python many problems can be solved with less code than in other languages.  Still the code is easy to read. 
 
-### Variables {#variables-id}
+### Variables
 A variable is used to store values or references to other objects/functions in the computer's memory.
 
 * Values are assigned to variables in statements with an `=`.
@@ -118,7 +112,7 @@ my_list = [2,3,5,7,11]
 
 <br>
 
-### Conditionals: if Statements {#conditionals-id}
+### Conditionals: if Statements
 
 Often different blocks of code need to be executed depending on a specific condition.  This is achieved by using `if`, `elif`, `else` code blocks.
 
@@ -155,7 +149,7 @@ else:
 
 <br>
 
-### Code Loops {#loops-id}
+### Code Loops
 
 Like most languages, Python and Jython offer loop constructs to repeatedly execute the same code block.
 
@@ -210,7 +204,7 @@ else:
 * The `else` clause is optional and executed when the loop completes the iterator.
 * `break` and `continue` statements can be added inside the code loop to exit the loop early, or to skip to the next iteration, respectively.
 
-## Functions {#functions-id}
+## Functions
 A function is a code block that groups related statements that perform a specific task or job within a larger program.
 
 * With functions, we can break down a program into a series of well-defined tasks which are easier to write and debug.
@@ -239,7 +233,7 @@ print sum
 * In this example we are calling the function `add_values`, passing the numbers `2.3` and `4.0` as arguments.
 * The function performs the operation on the passed arguments and the result is stored in our custom variable `sum`.
 
-## Importing packages {#import-id}
+## Importing packages
 Just like Python, Jython provides an easy way to get access to classes and functions that are defined in external packages, outside your script.
 
 * The `import` statement specifies the names of external packages, classes and functions your script wants to use (the `namespace`).
@@ -253,7 +247,7 @@ from ij.process import ImageProcessor
 
 <br>
 
-## Script Example {#jython-scripts-id}
+## Script Example
 
 Jython scripts are simple text files that use specific syntax and structure. **Jython scripts (or scripts in any other programing language) should not be edited in word processing programs like Microsoft Word which add invisible formatting characters that mess with programming language syntax.**
 
@@ -281,17 +275,17 @@ print_info(imp)
 
 <br>
 
-# Fiji Scripts in Jython {#fiji-id}
+# Fiji Scripts in Jython
 
-## Images in Fiji: ImagePlus, ImageStack, ImageProcessor {#image-handling-id}
+## Images in Fiji: ImagePlus, ImageStack, ImageProcessor
 
-+ An [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) object contains an [ImageProcessor](https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageProcessor.html) (2D image) or an [ImageStack](https://imagej.nih.gov/ij/developer/api/ij/ImageStack.html) (3D, 4D or 5D image). It is used to show the image in a window and also includes metadata (e.g. spatial calibration, the directory/file where it was read from, acquisition info, etc.).
-+ The [ImageProcessor](https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageProcessor.html) contains the pixel data (8-bit, 16-bit, 32-bit float, or RGB) of the 2D image and some basic methods to manipulate it.
-+ An [ImageStack](https://imagej.nih.gov/ij/developer/api/ij/ImageStack.html) is a group of [ImageProcessors](https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageProcessor.html) of the same type and size. ImageStack allows the implementation of multi-dimensional images, e.g. with `x`, `y`, `z`, `time`, and `channel` axes.
++ An [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) object contains an [ImageProcessor](https://imagej.net/ij/developer/api/ij/ij/process/ImageProcessor.html) (2D image) or an [ImageStack](https://imagej.net/ij/developer/api/ij/ImageStack.html) (3D, 4D or 5D image). It is used to show the image in a window and also includes metadata (e.g. spatial calibration, the directory/file where it was read from, acquisition info, etc.).
++ The [ImageProcessor](https://imagej.net/ij/developer/api/ij/ij/process/ImageProcessor.html) contains the pixel data (8-bit, 16-bit, 32-bit float, or RGB) of the 2D image and some basic methods to manipulate it.
++ An [ImageStack](https://imagej.net/ij/developer/api/ij/ImageStack.html) is a group of [ImageProcessors](https://imagej.net/ij/developer/api/ij/ij/process/ImageProcessor.html) of the same type and size. ImageStack allows the implementation of multi-dimensional images, e.g. with `x`, `y`, `z`, `time`, and `channel` axes.
 
 <br>
 
-## Get Current Image {#current-image-id}
+## Get Current Image
 In **Fiji**, go to `File` > `Open Samples` > `Blobs`.
 
 ```
@@ -304,9 +298,9 @@ print "\nTitle:", imp.getTitle()        # output image title
 print "Width x Height:", imp.getWidth(), "x", imp.getHeight()
 ```
 
-* The IJ.getImage() command retrieves the image from the currently active image window in Fiji.  We assign the returned [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) object to the variable `imp`.
-* The [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) class provides numerous methods that can be accessed via the `imp` object instance, e.g. `imp.getTitle()`, `imp.getWidth()`, `imp.getHeight()`, etc.
-* The `print` statement outputs Strings and values in the [Script Editors](#script-editor-id) console pane.
+* The IJ.getImage() command retrieves the image from the currently active image window in Fiji.  We assign the returned [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) object to the variable `imp`.
+* The [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) class provides numerous methods that can be accessed via the `imp` object instance, e.g. `imp.getTitle()`, `imp.getWidth()`, `imp.getHeight()`, etc.
+* The `print` statement outputs Strings and values in the [Script Editors](#the-script-editor) console pane.
 
 **Create the script:**
 
@@ -328,11 +322,11 @@ Width x Height: 256 x 254
 
 <br>
 
-## Image Dimensions {#image-dimensions-id}
+## Image Dimensions
 
-Fiji and ImageJ can handle multidimensional images, e.g. volumetric images or time-lapse series, up to five dimensions. Each image ([ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) object) has at least two dimensions, i.e. width (x-axis) and height (y-axis). In addition, ImagePlus object can have multiple color channels, z-focal planes (called slices), and/or timepoints (called frames). Lastly, images can have different pixel encodings, e.g. 8-bit, 16-bit, 32-bit, RGB that define an image's dynamic range (e.g. number of distinct intensity values per pixel) and color representation.
+Fiji and ImageJ can handle multidimensional images, e.g. volumetric images or time-lapse series, up to five dimensions. Each image ([ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) object) has at least two dimensions, i.e. width (x-axis) and height (y-axis). In addition, ImagePlus object can have multiple color channels, z-focal planes (called slices), and/or timepoints (called frames). Lastly, images can have different pixel encodings, e.g. 8-bit, 16-bit, 32-bit, RGB that define an image's dynamic range (e.g. number of distinct intensity values per pixel) and color representation.
 
-The [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) class provides convenient methods to get this information.
+The [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) class provides convenient methods to get this information.
 
 ```
 from ij import IJ
@@ -350,11 +344,11 @@ bpp = imp.getBytesPerPixel()      # bytes per pixel (there are 8 bits in a byte)
 
 <br>
 
-## Image Calibration {#image-calibration-id}
+## Image Calibration
 
 Many image formats allow inclusion of image annotations (metadata) in addition to the pixel data. An important piece of information is the spatial pixel calibration, e.g. the definition of pixel size in real-world physical units. For example, a pixel may correspond to 200 nanometer in x-y dimension.
 
-Let's assume that we have a variable `imp` as reference to an [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) object. We can get and set an image's calibration with the following [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) class methods:
+Let's assume that we have a variable `imp` as reference to an [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) object. We can get and set an image's calibration with the following [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) class methods:
 
 **Get copy of image calibration**
 ```
@@ -368,16 +362,16 @@ new_imp.setCalibration(calibration)
 
 <br>
 
-## Creating a New Image {#new-image-id}
+## Creating a New Image
 
-New images can be created by initializing an [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) object with an [ImageProcessor](https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageProcessor.html) object instance.  The following ImageProcessor subclasses can be used, depending on bit-depth and color mode of the desired image.
+New images can be created by initializing an [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) object with an [ImageProcessor](https://imagej.net/ij/developer/api/ij/ij/process/ImageProcessor.html) object instance.  The following ImageProcessor subclasses can be used, depending on bit-depth and color mode of the desired image.
 
-| ImageProcessor subclass | Mode | bits/pixel |
-| --- | --- | --- |
-| [ByteProcessor][byteprocessor] | grayscale | 8-bit int |
-| [ShortProcessor][shortprocessor] | grayscale | 16-bit int |
-| [FloatProcessor][floatprocessor] | grayscale |32-bit float |
-| [ColorProcessor][colorprocessor] | color | 8-bit int per channel |
+| ImageProcessor subclass          | Mode      | bits/pixel            |
+|----------------------------------|-----------|-----------------------|
+| [ByteProcessor][byteprocessor]   | grayscale | 8-bit int             |
+| [ShortProcessor][shortprocessor] | grayscale | 16-bit int            |
+| [FloatProcessor][floatprocessor] | grayscale | 32-bit float          |
+| [ColorProcessor][colorprocessor] | color     | 8-bit int per channel |
 
 <br>
 
@@ -408,16 +402,16 @@ imp_cp.show()
 
 This script creates four new images, each with 200 x 100 pixels but with different pixel encodings. Take a look at each image window's header and note the differences.
 
-{{< figure src="fiji-newimages.png" >}}
+![](img/fiji-newimages.png)
 
 * Pixel encoding (8-bit, 16-bit, 32-bit, RGB).
 * Memory footprint in kilobytes (20K, 39K, 78K, 78K).
 
 <br>
 
-## Duplicating an Image {#image-duplication-id}
+## Duplicating an Image
 
-The [Duplicator](https://imagej.nih.gov/ij/developer/api/ij/ij/plugin/Duplicator.html) class provides a convenient way to create an exact copy of an existing [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) object.
+The [Duplicator](https://imagej.net/ij/developer/api/ij/ij/plugin/Duplicator.html) class provides a convenient way to create an exact copy of an existing [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) object.
 
 ```
 from ij import IJ
@@ -435,17 +429,17 @@ copied_imp.setTitle("Perfect copy")
 
 <br>
 
-## Opening and Saving Image Files {#image-io-id}
+## Opening and Saving Image Files
 
 **Open Images**
 
 Fiji can read many different image file formats. This versatility is now provided via the integrated [Bio-Formats plugin][bioformats].
 
-| Class/Method | Behavior |
-| --- | --- |
-| IJ.open() |	interactive dialog |
-| IJ.openImage() | non-interactive, using default image display |
-| loci.formats.ImageReader | non-interactive, configurable image display |
+| Class/Method             | Behavior                                     |
+|--------------------------|----------------------------------------------|
+| IJ.open()                | 	interactive dialog                          |
+| IJ.openImage()           | non-interactive, using default image display |
+| loci.formats.ImageReader | non-interactive, configurable image display  |
 
 <br>
 
@@ -453,11 +447,11 @@ Fiji can read many different image file formats. This versatility is now provide
 
 Fiji can also save image files in various common formats, including TIF, OME-TIF, BMP, PNG, JPEG, AVI, etc.).
 
-| Class/Method | Behavior |
-| --- | --- |
-| ij.io.FileSaver | interactive dialog |
-| IJ.saveAs () | non-interactive, simple image writer (TIF, JPEG, GIF, PNG, etc.) |
-| loci.formats.ImageWriter | non-interactive, advanced with many formats |
+| Class/Method             | Behavior                                                         |
+|--------------------------|------------------------------------------------------------------|
+| ij.io.FileSaver          | interactive dialog                                               |
+| IJ.saveAs ()             | non-interactive, simple image writer (TIF, JPEG, GIF, PNG, etc.) |
+| loci.formats.ImageWriter | non-interactive, advanced with many formats                      |
 
 <br>
 
@@ -483,13 +477,14 @@ fs.save()        # could also use fs.saveAsTiff(), fs.saveAsPng(), etc.
 <br>
 
 ### Non-interactive Image Opening and Saving (without Dialog)**
+
 ```
 from ij import IJ
 import os
 from os import path
 
 # Open file from URL or storage device (non-interactive)
-filesource = "http://imagej.nih.gov/ij/images/blobs.gif"
+filesource = "https://imagej.net/ij/images/blobs.gif"
 imp = IJ.openImage(filesource)
 imp.show()
 
@@ -517,21 +512,21 @@ Check the output in the console window. The image should have been saved to the 
 
 <br>
 
-## IJ.run {#ij-run-id}
+## IJ.run
 
 The `IJ.run` command can be used to execute many of the commands available through the Fiji graphical user interface.
 
 Basic syntax: `IJ.run(image, command, option)`
 
-* **image**	: reference to [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) object
+* **image**	: reference to [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) object
 * **command**	: String
 * **option** : String, in some cases just `""` (empty String)
 
-The [Macro Recorder](#macro-recorder-id) is an excellent tool to convert a function accessible via the Fiji menu into an `IJ.run` statement. Let's try it.
+The [Macro Recorder](#the-macro-recorder) is an excellent tool to convert a function accessible via the Fiji menu into an `IJ.run` statement. Let's try it.
 
 **Record**
 
-1. Ensure that the [Macro Recorder](#macro-recorder-id) window is open.  If not, go to `Plugins` > `Macro` > `Recorder`.
+1. Ensure that the [Macro Recorder](#the-macro-recorder) window is open.  If not, go to `Plugins` > `Macro` > `Recorder`.
 2. In the Recorder window’s `Record` drop-down menu, select `BeanShell`.
 3. In the Recorder window select and remove any code.
 4. In Fiji, go to `File` > `Open Samples` > `Boats`
@@ -540,20 +535,20 @@ The [Macro Recorder](#macro-recorder-id) is an excellent tool to convert a funct
     * Click `Ok`.
 6. Go to `File` > `Save As…` > `Tiff`.
 7. Browse to your `workshop/images` directory (if it does not exist yet, create it), use `blurry_boats.tif` as file name  and click `Save`.
-8. In the Recorder window, click `Create`. This should bring up the [Script Editor](#script-editor-id) window with a new script file containing the code copied from the Recorder. **If you see more than three lines of code, remove everything that starts before `imp = IJ.openImage(….`.**
+8. In the Recorder window, click `Create`. This should bring up the [Script Editor](#the-script-editor) window with a new script file containing the code copied from the Recorder. **If you see more than three lines of code, remove everything that starts before `imp = IJ.openImage(….`.**
 
 **Convert to Jython script**
 
-1. In the [Script Editor](#script-editor-id) , go to `Language`, and select `Python`.
+1. In the [Script Editor](#the-script-editor) , go to `Language`, and select `Python`.
 2. Insert an `from ij import IJ` statement at the top of the script.
 3. Remove semicolons (`;`) at the end of the last three lines so your script looks like this (ignore the file path; yours will be different):
-```
-from ij import IJ
-
-imp = IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif")
-IJ.run(imp, "Gaussian Blur...", "sigma=5")
-IJ.saveAs(imp, "Tiff", "/Users/mst3k/blurry_boats.tif")
-```
+   ```
+    from ij import IJ
+    
+    imp = IJ.openImage("https://imagej.net/ij/images/boats.gif")
+    IJ.run(imp, "Gaussian Blur...", "sigma=5")
+    IJ.saveAs(imp, "Tiff", "/Users/mst3k/blurry_boats.tif")
+   ```
 4. Save your script as `IJ_Run.py`. Close all image windows.
 5. Run the script.
 
@@ -561,7 +556,7 @@ Check your `workshop/images` directory for the `blurry_boats.tif` file.
 
 <br>
 
-## Working with ImageStack {#imagestack-id}
+## Working with ImageStack
 
 In Fiji, go to `File` > `Open Samples` > `Mitosis`. This image has the following dimensions:
 
@@ -569,14 +564,14 @@ In Fiji, go to `File` > `Open Samples` > `Mitosis`. This image has the following
 * 5 Focal Planes (Slices, Z)
 * 51 Timepoints (Frames)
 
-The multidimensional image (represented by an [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) object `imp`) contains an [ImageStack](https://imagej.nih.gov/ij/developer/api/ij/ij/ImageStack.html) object to manage the different image planes. An ImageStack contains a group of [ImageProcessors](https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageProcessor.html) of the same type and size.
+The multidimensional image (represented by an [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) object `imp`) contains an [ImageStack](https://imagej.net/ij/developer/api/ij/ij/ImageStack.html) object to manage the different image planes. An ImageStack contains a group of [ImageProcessors](https://imagej.net/ij/developer/api/ij/ij/process/ImageProcessor.html) of the same type and size.
 
 The ImageStack object of an ImagePlus object (`imp`) can be retrieved like so:
 ```
 stack = imp.getStack()
 ```
 
-The following code provides a reference to the [ImageProcessor](https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageProcessor.html) for a particular channel, slice, and frame in the `imp` [ImagePlus](https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html) object:
+The following code provides a reference to the [ImageProcessor](https://imagej.net/ij/developer/api/ij/ij/process/ImageProcessor.html) for a particular channel, slice, and frame in the `imp` [ImagePlus](https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html) object:
 ```
 index = imp.getStackIndex(channel_no, slice_no, frame_no)
 stack = imp.getStack()
@@ -592,9 +587,9 @@ stack.setProcessor(new_ip, index)     # provide new ImageProcessor object, and s
 
 <br>
 
-## Regions-of-Interest (ROIs) {#rois-id}
+## Regions-of-Interest (ROIs)
 
-[ROIs](https://imagej.nih.gov/ij/developer/api/ij/ij/gui/Roi.html) define groups of pixels in an image. An ROI can be used to:
+[ROIs](https://imagej.net/ij/developer/api/ij/ij/gui/Roi.html) define groups of pixels in an image. An ROI can be used to:
 
 * Measure pixel values
 * Change pixel values
@@ -610,9 +605,9 @@ ROI Types (classes):
 * TextRoi
 * ImageRoi
 
-ROIs can be managed directly or through the [RoiManager](#roi-manager-id) class.
+ROIs can be managed directly or through the [RoiManager](#roimanager) class.
 
-### ROI: Cropping an Image {#roi-crop-id}
+### ROI: Cropping an Image
 
 In Fiji, go to `File` > `Open` > `Samples` > `Clown`
 
@@ -640,9 +635,9 @@ cropped_imp.setTitle('Cropped')
 cropped_imp.show()
 ```
 
-Run the script in the [Script Editor](#script-editor-id).
+Run the script in the [Script Editor](#the-script-editor).
 
-### Fill ROI with a Given Value {#roi-fill-id}
+### Fill ROI with a Given Value
 
 ```
 from ij import IJ, ImagePlus  
@@ -675,9 +670,9 @@ fp.fill(oroi.getMask())  # Attention! Required for non-rectangular ROIs
 imp.show()
 ```
 
-### Changing ROI Properties {#roi-properties-id}
+### Changing ROI Properties
 
-The appearance of an [ROI](https://imagej.nih.gov/ij/developer/api/ij/ij/gui/Roi.html) object (`roi`) can be changed.
+The appearance of an [ROI](https://imagej.net/ij/developer/api/ij/ij/gui/Roi.html) object (`roi`) can be changed.
 
 **Border [Color][color]**
 ```
@@ -696,9 +691,9 @@ from java.awt import Color
 roi.setFillColor(Color.YELLOW)
 ```
 
-### Set ROI Position {#roi-set-id}
+### Set ROI Position
 
-The positioning of an ROI object (`roi`) can be set for a specific channel, slice, frame in a given image (`imp`) with multi-dimensional [ImageStack](https://imagej.nih.gov/ij/developer/api/ij/ij/ImageStack.html).
+The positioning of an ROI object (`roi`) can be set for a specific channel, slice, frame in a given image (`imp`) with multi-dimensional [ImageStack](https://imagej.net/ij/developer/api/ij/ij/ImageStack.html).
 
 ```
 index = imp.getStackIndex(channelNo, sliceNo, frameNo)
@@ -709,9 +704,9 @@ roi.setPosition(index)
 
 <br>
 
-## Particle Analysis {#particle-analysis-id}
+## Particle Analysis
 
-1. In the [Macro Recorder](#macro-recorder-id) window’s `Record` drop-down menu, select `BeanShell`. Remove any code.
+1. In the [Macro Recorder](#the-macro-recorder) window’s `Record` drop-down menu, select `BeanShell`. Remove any code.
 2. In Fiji, go to `File` > `Open Samples` > `Blobs`
 3. Go to `Process` > `Filters` > `Median…`
     * Set `Radius` : 2
@@ -731,19 +726,20 @@ roi.setPosition(index)
     * Select options as shown.
     * Click `Ok`.
 
-{{< figure src="fiji-particle-analysis.png" >}}
+![](img/fiji-particle-analysis.png)
 
-Convert the Macro recordings into a Python script, remember to do the following in the [Script Editor](#script-editor-id):
+Convert the Macro recordings into a Python script, remember to do the following in the [Script Editor](#the-script-editor):
 
 * In the Script Editor, go to `Language`, and select `Python`.
 * Insert an `import` statement at the top the script
 * Remove semicolons (`;`) at the end of the lines.
 
 The script should look like this:
+
 ```
 from ij import IJ
 
-imp = IJ.openImage("http://imagej.nih.gov/ij/images/blobs.gif")
+imp = IJ.openImage("https://imagej.net/ij/images/blobs.gif")
 IJ.run(imp, "Median...", "radius=2")
 IJ.run(imp, "Options...", "iterations=1 count=1 black")
 IJ.setAutoThreshold(imp, "Default")
@@ -758,14 +754,14 @@ Save the script as `Blob_Analysis.py`, and run the script.
 
 You should see the following results tables.
 
-{{< figure src="fiji-particle-analysis-results.png" >}}
+![](img/fiji-particle-analysis-results.png)
 
 <br>
 
 
-## RoiManager {#roi-manager-id}
+## RoiManager
 
-The [RoiManager](https://imagej.nih.gov/ij/developer/api/ij/ij/plugin/frame/RoiManager.html) class implements the `Analyze` > `Tools` > `ROI Manager` function. The Particle Analyzer can also use the Roi Manager to store ROIs identified during the analysis, see [Particle Analysis](#particle-analysis-id).
+The [RoiManager](https://imagej.net/ij/developer/api/ij/ij/plugin/frame/RoiManager.html) class implements the `Analyze` > `Tools` > `ROI Manager` function. The Particle Analyzer can also use the Roi Manager to store ROIs identified during the analysis, see [Particle Analysis](#particle-analysis).
 
 **Using the RoiManager class in scripts:**
 
@@ -808,9 +804,9 @@ rm.runCommand(command_string)
 
 <br>
 
-## ImageStatistics {#imagestats-id}
+## ImageStatistics
 
-The [ImageStatistics](https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageStatistics.html) class provides access to pixel-based statistics, including the histogram, of an entire image or ROI selection in an image.
+The [ImageStatistics](https://imagej.net/ij/developer/api/ij/ij/process/ImageStatistics.html) class provides access to pixel-based statistics, including the histogram, of an entire image or ROI selection in an image.
 
 **Common statements:**
 
@@ -840,9 +836,9 @@ histo_values = stats.getHistogram()
 
 <br>
 
-## ResultsTable {#resultstable-id}
+## ResultsTable
 
-The [ResultsTable](https://imagej.nih.gov/ij/developer/api/ij/ij/measure/ResultsTable.html) class is used for storing measurement results and strings as columns of values.
+The [ResultsTable](https://imagej.net/ij/developer/api/ij/ij/measure/ResultsTable.html) class is used for storing measurement results and strings as columns of values.
 
 **Common statements:**
 
@@ -890,28 +886,28 @@ rt.deleteRow(row_index)
 
 <br>
 
-## Custom Dialog Windows: Collecting User Input {#dialogs-id}
+## Custom Dialog Windows: Collecting User Input
 
 Custom language agnostic dialogs can be created using the [SciJava@Parameter][scijava-params] annotation.
 
-* Script parameters are a feature of ImageJ2; they will work in Fiji but will not work in plain ImageJ1.
+* Script parameters are a feature of ImageJ2; they will work in Fiji but will not work in plain ImageJ1.
 * Basic Syntax:
-    * Parameter declarations begin with `#@`.  Each such line contains a single parameter declaration or script directive and nothing else.
-    * `#@ Type variableName` will declare an input of the indicated type, assigned to the specified name. The use of a space between #@ and Type is encouraged, but not required.
-    * `#@output Type outputName` will declare the variable of the specified name as an output parameter with the given type. The Type parameter is optional, as the output will be treated as Object be default. (For the output directive and other script directives, no space is allowed between `#@` and the directive.)
+    * Parameter declarations begin with `#@`.  Each such line contains a single parameter declaration or script directive and nothing else.
+    * `#@ Type variableName` will declare an input of the indicated type, assigned to the specified name. The use of a space between #@ and Type is encouraged, but not required.
+    * `#@output Type outputName` will declare the variable of the specified name as an output parameter with the given type. The Type parameter is optional, as the output will be treated as Object be default. (For the output directive and other script directives, no space is allowed between `#@` and the directive.)
 
-| Data type	| Widget type	| Available styles |
-| --- | --- | --- |
-| boolean / Boolean	| checkbox | |
-| byte / short / int / long	| numeric field	| slider / spinner / scroll bar |
-| Byte / Short / Integer / Long	| numeric field	| slider / spinner / scroll bar |
-| Float	| numeric field	| slider / spinner / scroll bar |
-| BigInteger / BigDecimal	| numeric field	| slider / spinner / scroll bar |
-| char / Character / String	|text field	| text field / text area / password |
-| Dataset | ImagePlus | (>=2 images) triggers a dropdown list |
-| ColorRGB | color chooser | |
-| Date | date chooser | |
-| File | file chooser	| open / save / file / directory / extensions |
+| Data type	                     | Widget type	   | Available styles                            |
+|--------------------------------|----------------|---------------------------------------------|
+| boolean / Boolean	             | checkbox       |                                             |
+| byte / short / int / long	     | numeric field	 | slider / spinner / scroll bar               |
+| Byte / Short / Integer / Long	 | numeric field	 | slider / spinner / scroll bar               |
+| Float	                         | numeric field	 | slider / spinner / scroll bar               |
+| BigInteger / BigDecimal	       | numeric field	 | slider / spinner / scroll bar               |
+| char / Character / String	     | text field	    | text field / text area / password           |
+| Dataset                        | ImagePlus      | (>=2 images) triggers a dropdown list       |
+| ColorRGB                       | color chooser  |                                             |
+| Date                           | date chooser   |                                             |
+| File                           | file chooser	  | open / save / file / directory / extensions |
 
 Source: https://imagej.net/Script_Parameters
 
@@ -925,12 +921,11 @@ greeting = "Hello, " + name + "!"
 
 When you run the script, a dialog will pop up asking for your input. Type in a name (any character sequence) and click `OK`. The output message will be shown in a separate window.
 
-{{< figure src="fiji-greeting-script.png" >}}
+![](img/fiji-greeting-script.png)
 
 <br>
 
-## Batch Processing of Image Files {#batch-processing-id}
-
+## Batch Processing of Image Files
 Often we want to apply the same image processing method to a set of images.
 
 * It is convenient to organize such image files into a single directory or group of directories.
@@ -976,7 +971,7 @@ else:
 
 <br>
 
-# Installing Scripts as Plugins {#install-plugins-id}
+# Installing Scripts as Plugins
 
 Once you have completed script development, you can install the script in Fiji.  It will show up as a selectable entry in the `Plugins` menu.
 
@@ -997,37 +992,37 @@ Go to `File` > `Plugins` and verify that the script is available.  The `_` and f
 
 <br>
 
-# Exercises {#exercises-id}
+# Exercises
 
-## Beginner {#beginner-ex-id}
+## Beginner
 
-**Project 1:** Modify the [Get Current Image example script](#current-image-id) to print the number of channels, number of focal planes (z), and number of timepoints. Open images of your choice from `Fiji` > `Open Samples` and compare the output when running the script.
+**Project 1:** Modify the [Get Current Image example script](#get-current-image) to print the number of channels, number of focal planes (z), and number of timepoints. Open images of your choice from `Fiji` > `Open Samples` and compare the output when running the script.
 
-**Project 2:** Open the [Macro Recorder](#macro-recorder-id), delete any code in the recorder pane. Record the following steps and convert the macro recording into Jython script. [Hint: IJ.run](#ij-run-id)
+**Project 2:** Open the [Macro Recorder](#the-macro-recorder), delete any code in the recorder pane. Record the following steps and convert the macro recording into Jython script. [Hint: IJ.run](#ijrun)
 
 1. Go to `File` > `Open Samples` > `Fluorescent Cells`.
 2. Split the channels (Image > Color > Split Channels).
 3. Merge the channels again as `Composite` image, but swap the red and green channel.
 
-**Project 3:** Implement the [crop ROI example script](#roi-crop-id) with functions.
+**Project 3:** Implement the [crop ROI example script](#roi-cropping-an-image) with functions.
 
-**Project 4:** Modify the processing function in [Batch Processing example script](#batch-processing-id) to apply a different image filter. [Hint: IJ.run](#ij-run-id)
+**Project 4:** Modify the processing function in [Batch Processing example script](#batch-processing-of-image-files) to apply a different image filter. [Hint: IJ.run](#ijrun)
 
 <br>
 
-## Intermediate {#intermediate-ex-id}
+## Intermediate
 
-**Project 5:** Modify the [crop ROI example script](#roi-crop-id) to have it create multiple cropped images of various sizes in a code loop. [Hint: For loops](#loops-id)
+**Project 5:** Modify the [crop ROI example script](#roi-cropping-an-image) to have it create multiple cropped images of various sizes in a code loop. [Hint: For loops](#code-loops)
 
-**Project 6:** Modify the processing function in [Batch Processing example script](#batch-processing-id) to prompt user for `sigma` value to be used by the Gaussian filter. [Hint: Custom Dialog Windows](#dialogs-id). The custom sigma value should be passed from the main code block as an argument to the `process` function. [Hint: Functions](#functions-id)
+**Project 6:** Modify the processing function in [Batch Processing example script](#batch-processing-of-image-files) to prompt user for `sigma` value to be used by the Gaussian filter. [Hint: Custom Dialog Windows](#custom-dialog-windows-collecting-user-input). The custom sigma value should be passed from the main code block as an argument to the `process` function. [Hint: Functions](#functions)
 
-**Project 7:** Let's try to improve the [particle analysis](#particle-analysis-id) by implementing the following features:
+**Project 7:** Let's try to improve the [particle analysis](#particle-analysis) by implementing the following features:
 
-* Duplicate the original image: [Duplicator](https://imagej.nih.gov/ij/developer/api/ij/ij/plugin/Duplicator.html) class
-* Access to ROIs identified by Particle Analyzer: [RoiManager](https://imagej.nih.gov/ij/developer/api/ij/ij/plugin/frame/RoiManager.html) class
-* Measuring area, pixel intensities, etc. for each ROI: [ImageStatistics](https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageStatistics.html) class
-* Creating a customized results table and save it: [ResultsTable](https://imagej.nih.gov/ij/developer/api/ij/ij/measure/ResultsTable.html) class
-* Custom Dialog for User Input to specify particle size: [Custom User Dialogs](#dialogs-id)
+* Duplicate the original image: [Duplicator](https://imagej.net/ij/developer/api/ij/ij/plugin/Duplicator.html) class
+* Access to ROIs identified by Particle Analyzer: [RoiManager](https://imagej.net/ij/developer/api/ij/ij/plugin/frame/RoiManager.html) class
+* Measuring area, pixel intensities, etc. for each ROI: [ImageStatistics](https://imagej.net/ij/developer/api/ij/ij/process/ImageStatistics.html) class
+* Creating a customized results table and save it: [ResultsTable](https://imagej.net/ij/developer/api/ij/ij/measure/ResultsTable.html) class
+* Custom Dialog for User Input to specify particle size: [Custom User Dialogs](#custom-dialog-windows-collecting-user-input)
 
 <br>
 
@@ -1045,7 +1040,7 @@ from ij.process import ImageStatistics as IS
 from os import path
 
 # open image and create copy
-original = IJ.openImage("http://imagej.nih.gov/ij/images/blobs.gif")
+original = IJ.openImage("https://imagej.net/ij/images/blobs.gif")
 original.show()
 imp = Duplicator().run(original)
 imp.setTitle("Mask")                           # rename the copy			
@@ -1105,11 +1100,11 @@ if save_rois:
 
 <br>
 
-## Expert {#expert-ex-id}
+## Expert
 
-**Project 8:**  Modify the processing function in [Batch Processing example script](#batch-processing-id) to apply a median filter to a circular shaped ROI in the center of the image. The ROI diameter should be half of the width or height (whichever is smaller) of the image. The radius of the median filter should be requested from the user. [Hint: Setting ROI](#roi-set-id), [Hint: Recording filter functions](#ij-run-id), [Hint: Custom Dialog Windows](#dialogs-id)
+**Project 8:**  Modify the processing function in [Batch Processing example script](#batch-processing-of-image-files) to apply a median filter to a circular shaped ROI in the center of the image. The ROI diameter should be half of the width or height (whichever is smaller) of the image. The radius of the median filter should be requested from the user. [Hint: Setting ROI](#set-roi-position), [Hint: Recording filter functions](#ijrun), [Hint: Custom Dialog Windows](#custom-dialog-windows-collecting-user-input)
 
-**Project 9:** Let’s create a script that performs the following operations on a multidimensional [ImageStack](https://imagej.nih.gov/ij/developer/api/ij/ij/ImageStack.html):
+**Project 9:** Let’s create a script that performs the following operations on a multidimensional [ImageStack](https://imagej.net/ij/developer/api/ij/ij/ImageStack.html):
 
 * Extract the central focal image planes of the last channel for all timepoints.
 * Save each extracted image plane as a separate .tif image file in a designated directory.
@@ -1122,7 +1117,7 @@ from ij import ImagePlus
 import os
 from os import path
 
-imp = IJ.openImage("http://imagej.nih.gov/ij/images/Spindly-GFP.zip")
+imp = IJ.openImage("https://imagej.net/ij/images/Spindly-GFP.zip")
 channel_no = imp.getNChannels()             # last channel              
 slice_no = 1 + imp.getNSlices() // 2        # integer division to get center slice    
 stack = imp.getStack()                      # get ImageStack object
@@ -1157,35 +1152,35 @@ for frame_no in range(1, imp.getNFrames() + 1):
     * lets the user choose the filter mode ("Gaussian Blur..." or "Median...") and filter radius (sigma for Gaussian),
     * lets the user specify the downsampling fraction (0 < fraction <= 1.0). 1.0 would imply no downsampling. Hint: `Image` > `Adjust` > `Size`.
 
-# Resources {#resources-id}
+# Resources
 
 **Fiji Scripting**
 
-* Tutorial: https://syn.mrc-lmb.cam.ac.uk/acardona/fiji-tutorial/
-* Tips for Developers: https://imagej.net/Tips_for_developers
-* API: https://imagej.nih.gov/ij/developer/api/
-* SciJava: https://javadoc.scijava.org/Fiji/
-* Advanced: https://imagej.net/tutorials/imagej2-python
+* [Tutorial](https://syn.mrc-lmb.cam.ac.uk/acardona/fiji-tutorial/)
+* [Tips for Developers](https://imagej.net/Tips_for_developers)
+* [API](https://imagej.net/ij/developer/api/)
+* [SciJava](https://javadoc.scijava.org/Fiji/)
+* [Advanced](https://imagej.net/tutorials/imagej2-python)
 
 **General Scripting**
 
-* Python: https://learning.rc.virginia.edu/courses/programming_python_scientists_engineers/
+* [Python](/content/courses/python-introduction)
 
 
-[imageplus]: https://imagej.nih.gov/ij/developer/api/ij/ij/ImagePlus.html
-[imageprocessor]: https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageProcessor.html
-[imagestack]: https://imagej.nih.gov/ij/developer/api/ij/ij/ImageStack.html
-[byteprocessor]: https://imagej.nih.gov/ij/developer/api/ij/ij/process/ByteProcessor.html
-[shortprocessor]: https://imagej.nih.gov/ij/developer/api/ij/ij/process/ShortProcessor.html
-[floatprocessor]: https://imagej.nih.gov/ij/developer/api/ij/ij/process/FloatProcessor.html
-[colorprocessor]: https://imagej.nih.gov/ij/developer/api/ij/ij/process/ColorProcessor.html
+[imageplus]: https://imagej.net/ij/developer/api/ij/ij/ImagePlus.html
+[imageprocessor]: https://imagej.net/ij/developer/api/ij/ij/process/ImageProcessor.html
+[imagestack]: https://imagej.net/ij/developer/api/ij/ij/ImageStack.html
+[byteprocessor]: https://imagej.net/ij/developer/api/ij/ij/process/ByteProcessor.html
+[shortprocessor]: https://imagej.net/ij/developer/api/ij/ij/process/ShortProcessor.html
+[floatprocessor]: https://imagej.net/ij/developer/api/ij/ij/process/FloatProcessor.html
+[colorprocessor]: https://imagej.net/ij/developer/api/ij/ij/process/ColorProcessor.html
 [ospath]: https://docs.python.org/2/library/os.path.html
-[imagej-api]: https://imagej.nih.gov/ij/developer/api/index.html
+[imagej-api]: https://imagej.net/ij/developer/api/index.html
 [bioformats]: https://www.openmicroscopy.org/bio-formats/
-[roi]: https://imagej.nih.gov/ij/developer/api/ij/ij/gui/Roi.html
+[roi]: https://imagej.net/ij/developer/api/ij/ij/gui/Roi.html
 [color]: https://docs.oracle.com/javase/7/docs/api/java/awt/Color.html
-[roi-manager]: https://imagej.nih.gov/ij/developer/api/ij/ij/plugin/frame/RoiManager.html
-[imagestats]: https://imagej.nih.gov/ij/developer/api/ij/ij/process/ImageStatistics.html
-[resultstable]: https://imagej.nih.gov/ij/developer/api/ij/ij/measure/ResultsTable.html
-[duplicator]: https://imagej.nih.gov/ij/developer/api/ij/ij/plugin/Duplicator.html
+[roi-manager]: https://imagej.net/ij/developer/api/ij/ij/plugin/frame/RoiManager.html
+[imagestats]: https://imagej.net/ij/developer/api/ij/ij/process/ImageStatistics.html
+[resultstable]: https://imagej.net/ij/developer/api/ij/ij/measure/ResultsTable.html
+[duplicator]: https://imagej.net/ij/developer/api/ij/ij/plugin/Duplicator.html
 [scijava-params]: https://imagej.net/Script_Parameters

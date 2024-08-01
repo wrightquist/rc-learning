@@ -12,7 +12,7 @@ More generally, consider a grid of size (0,M+1) by (0,N+1). We will consider the
 
 When we split the array into four parts we now have grids of size (0,11) by (0,5).  Only the columns need to exchange data, since the values of the tops and bottoms are set by the model we are computing.
 
-{{< figure src="/courses/parallel-computing-introduction/img/halo_exchange.png" caption="The halos overlap the edges of their neighbors." >}}
+![](img/halo_exchange.png "The halos overlap the edges of their neighbors.")
 
 Rank 0 will send its "real" values in Column 4 to the "ghost" values on Rank 1 in Column 0.  Rank 1 sends its computed value in Column 1 to Column 5 in Rank 0, and receives the value of Rank 2, Column 0 into its Column 4. Similarly for Ranks 2 and 3.  Note that the boundaries of Column 0, Rank 0 and Column 5, Rank 3, as well as Rows 0 and 11 on all ranks, are set by the conditions of the model and are not indicated in the diagram.
 

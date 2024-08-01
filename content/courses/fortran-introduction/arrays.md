@@ -137,6 +137,8 @@ enddo
   * Add a WHERE to set elements to W equal to the corresponding elements of Z if the element of Z is less than 7.  Print W(2,4).
 
 {{< spoiler text="Example solution" >}}
-{{< code file="/courses/fortran-introduction/solns/arrays.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/arrays.f90)
+{{</ code >}}
 {{< /spoiler >}}
 

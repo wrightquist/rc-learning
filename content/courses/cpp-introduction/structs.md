@@ -120,13 +120,15 @@ jane->name="Jane Smith"
 Arrays may be declared of struct types.
 
 This example assumes a C++11 compiler for the initialization.  
-{{< code file="/courses/cpp-introduction/codes/employees.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/employees.cxx)
+{{</ code >}}
 
-Notice in the vector example, we create an element with `push_back` by invoking the _default constructor_.  In C++ a struct has many of the same properties as a _class_, but we will defer discussing this until we cover [classes](/courses/cpp-introduction/classes).
+Notice in the vector example, we create an element with `push_back` by invoking the _default constructor_.  In C++ a struct has many of the same properties as a _class_, but we will defer discussing this until we cover [classes](classes).
 
 **Exercise**
 
-Copy the [vabirds.csv](/data/vabirds.csv) file. Each line of this file consists of a string followed by a number of integers.  In the header (one line) the string is the word "Species" with the integers a sequence of years.  In subsequent lines, the string is the common name of the bird, and the integers are observations for the years indicated in the header.  Write a program that will
+Copy the [vabirds.csv](data/vabirds.csv) file. Each line of this file consists of a string followed by a number of integers.  In the header (one line) the string is the word "Species" with the integers a sequence of years.  In subsequent lines, the string is the common name of the bird, and the integers are observations for the years indicated in the header.  Write a program that will
 1. create a struct birdDat with members "species" and a vector for the observations.
 2. create a vector of the struct.
 3. Read the file name from the command line.
@@ -134,6 +136,8 @@ Copy the [vabirds.csv](/data/vabirds.csv) file. Each line of this file consists 
 5. Print the observations for AmericanCrow.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/read_bird_data.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/read_bird_data.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 

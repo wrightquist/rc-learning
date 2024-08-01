@@ -55,7 +55,7 @@ The private and public attributes may be added to the declaration, or they may b
 Private variables are not directly accessible by program units that use the module.  Only procedures in the same module can access them.
 Using PRIVATE or PUBLIC as a separate statement without a list sets or resets the default and may be done only once per module.  Public and private may only be set in the specification (interface) portion of the module, not in the procedure bodies.
 
-We will discuss PUBLIC and PRIVATE in more detail when we cover [classes](/courses/fortran-introduction/more_classes).
+We will discuss PUBLIC and PRIVATE in more detail when we cover [classes](more_classes).
 
 **Example**
 ```
@@ -77,7 +77,9 @@ All subprograms in a module have an __implicit interface__.  You should *not* wr
 
 **Example**
 
-{{< code file="/courses/fortran-introduction/codes/module.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/module.f90)
+{{</ code >}}
 
 ## Modules and Make
 
@@ -89,7 +91,7 @@ A module must be compiled _before_ any other file that uses it.  This can create
 Fortran allows the module and the file to have either the same or a different name, but the name of the module is the name that must appear in the use statement.
 2. Fill out the subroutine `mysub` to set b to 11., then set x to the sum of corresponding elements of a and b.  Hint: you can use x=a(:)+b(:size(a)) to avoid a loop.
 3. Write a main program `main.f90` that uses `mymod`, initializes `A` allocatable, allocates it to 1000, sets its values to `i+3` in a loop, then passes it to `mysub`.   Print the value of `x` that is returned.
-4. Create a Makefile.  If you wish you may copy the example Makefile from the earlier [chapter](/courses/fortran_introdution/make).  Make the appropriate changes to the program name, the names of the source files, and the names of the object files.  Make the dependency line at the end
+4. Create a Makefile.  If you wish you may copy the example Makefile from the earlier [chapter](make).  Make the appropriate changes to the program name, the names of the source files, and the names of the object files.  Make the dependency line at the end
 ```make
 main.o:main.o mymod.o
 ```

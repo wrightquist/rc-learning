@@ -101,7 +101,7 @@ Boolean operators operate on Boolean expressions.
 
 Comparison operators operate on other types but return Boolean values.  They are also called _conditional_ operators or relational operators.
 
-Comparison operators represent relationships between two or more variables.  They can be defined on any type, but arithmetic and [string](/courses/python-introduction/strings) comparisons are the most common.
+Comparison operators represent relationships between two or more variables.  They can be defined on any type, but arithmetic and [string](strings) comparisons are the most common.
 
 ### Arithmetic Comparison Operators
 

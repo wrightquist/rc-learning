@@ -125,9 +125,9 @@ apptainer run|shell|exec -B <host_path>[:<container_path>] <SIF>
 ## Exercises
 
 1. For each of the three executables `fortune`, `cowsay`, `lolcat`, run `which` both inside and outside the `lolcow` container. Which one exists on both the host and the container?
-1. a) Run `ls -l` for your home directory both inside and outside the container. Verify that you get the same result. b) To disable all bind mounting, use `run|shell|exec -c`. Verify that `$HOME` is now empty.
-1. View the content of `/etc/os-release` both inside and outside the container. Are they the same or different? Why?
-1. (Advanced) Let's see if we can run the host `gcc` inside the lolcow container. First load the module: `module load gcc`
+2. a) Run `ls -l` for your home directory both inside and outside the container. Verify that you get the same result. b) To disable all bind mounting, use `run|shell|exec -c`. Verify that `$HOME` is now empty.
+3. View the content of `/etc/os-release` both inside and outside the container. Are they the same or different? Why?
+4. (Advanced) Let's see if we can run the host `gcc` inside the lolcow container. First load the module: `module load gcc`
     - Verify that the path to `gcc` (hint: `which`) is equal to `$EBROOTGCC/bin`.
     - Verify that `$EBROOTGCC/bin` is in your `PATH`.
     - Now shell into the container (hint: `-B /apps`) and examine the environment variables `$EBROOTGCC` and `$PATH`. Are they the same as those on the host? Why (not)?
@@ -187,8 +187,8 @@ Currently Loaded Modules:
     module list
     module load tensorflow
     ```
-1. Check the versions of tensorflow via `module spider tensorflow`. How would you load a non-default version?
-1. What is the default command of the tensorflow container? Where was it pulled from?
+2. Check the versions of tensorflow via `module spider tensorflow`. How would you load a non-default version?
+3. What is the default command of the tensorflow container? Where was it pulled from?
 
 ---
 
@@ -265,38 +265,38 @@ Go to [TensorFlow's Docker Hub page](https://hub.docker.com/r/tensorflow/tensorf
 #### Manual
 1. Create kernel directory
 
-```bash
-DIR=~/.local/share/jupyter/kernels/tensorflow-2.11.0
-mkdir -p $DIR
-cd $DIR
-```
+    ```bash
+    DIR=~/.local/share/jupyter/kernels/tensorflow-2.11.0
+    mkdir -p $DIR
+    cd $DIR
+    ```
 
 2. Write `kernel.json`
 
-```
-{
- "argv": [
-  "/home/<user>/.local/share/jupyter/kernels/tensorflow-2.11.0/init.sh",
-  "-f",
-  "{connection_file}"
- ],
- "display_name": "Tensorflow 2.11",
- "language": "python"
-}
-```
+    ```
+    {
+     "argv": [
+      "/home/<user>/.local/share/jupyter/kernels/tensorflow-2.11.0/init.sh",
+      "-f",
+      "{connection_file}"
+     ],
+     "display_name": "Tensorflow 2.11",
+     "language": "python"
+    }
+    ```
 
 3. Write `init.sh`
 
-```bash
-#!/bin/bash
-module load apptainer
-apptainer exec --nv /path/to/sif python -m ipykernel $@
-```
+    ```bash
+    #!/bin/bash
+    module load apptainer
+    apptainer exec --nv /path/to/sif python -m ipykernel $@
+    ```
 
 4. Change `init.sh` into an executable
-```bash
-chmod +x init.sh
-```
+    ```bash
+    chmod +x init.sh
+    ```
 
 **Easy to automate!**
 

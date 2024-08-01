@@ -31,7 +31,7 @@ Relational databases operate on the concepts of tables, relations, schemas, data
 
 Take the example of an online store, where data revolves around the ideas of items, orders and customers. When a customer makes a purchase in our store, the data from the transaction is actually broken apart into tables of related data. Here’s one way of seeing that process:
 
-![](reldb.png)
+![](img/reldb.png)
 
 The database for such an online store might have a handful of related tables:
 
@@ -40,17 +40,12 @@ The database for such an online store might have a handful of related tables:
 3. **Credit Cards**
 4. **Items**
 
-Relational database tables use unique keys as a way to relate one table with another, and so the "orders" table
-might simply aggregate keys drawn from other tables for each order. This allows each table to have a clear definition
-of what data fields, and their data types, are expected with every transaction. Data coming in must be broken apart
-to conform to this data structure, and data going out must be drawn back together from across the tables.
+Relational database tables use unique keys as a way to relate one table with another, and so the "orders" table might simply aggregate keys drawn from other tables for each order. This allows each table to have a clear definition of what data fields, and their data types, are expected with every transaction. Data coming in must be broken apart to conform to this data structure, and data going out must be drawn back together from across the tables.
 
-But this “breaking apart” process is actually an intensive, time-consuming process. Data being sent off to
-any particular table has to be validated by data type (strings, integers, dates, decimals, binary, etc.), length,
-and NULL before it can be inserted into a particular data table. This happens across multiple tables at
-the same time, and ensures that the entire transaction completes successfully or is rolled back.
+But this “breaking apart” process is actually an intensive, time-consuming process. Data being sent off to any particular table has to be validated by data type (strings, integers, dates, decimals, binary, etc.), length, and NULL before it can be inserted into a particular data table. This happens across multiple tables at the same time, and ensures that the entire transaction completes successfully or is rolled back.
 
-<b>Impedance Mismatch</b> - a set of conceptual and technical difficulties that are often encountered when interacting with a relational database management system.
+Impedance Mismatch
+: a set of conceptual and technical difficulties that are often encountered when interacting with a relational database management system.
 
 SQL, "structured query language" is the language spoken by most relational databases. While there are slight variations
 in SQL syntax between RDBMS platforms (a semicolon here, a percent sign there), they all generally read the same to
@@ -145,8 +140,7 @@ Here is an example of an entry in JSON. Note that the entire entry (or “docume
 }
 ```
 
-Also consider that subsequent entries into this table may or may not contain a background image, or the same number of tags, or the precise data structure of this
-entry. NoSQL evolved out of the need to quickly collect varied data at very high rates and so it does not suffer from impedance mismatch. Rather, it suffers from
+Also consider that subsequent entries into this table may or may not contain a background image, or the same number of tags, or the precise data structure of this entry. NoSQL evolved out of the need to quickly collect varied data at very high rates and so it does not suffer from impedance mismatch. Rather, it suffers from
 its difficulty to aggregate or join.
 
 ## 2. Node-Arc / Graph Databases
@@ -158,7 +152,7 @@ Graph, or Node-arc databases are entirely different, in that they try to store a
 * Infinite
 
 
-![](graphdb-property.png)
+![](img/graphdb-property.png)
 
 ---
 

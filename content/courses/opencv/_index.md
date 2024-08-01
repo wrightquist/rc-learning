@@ -7,7 +7,7 @@ categories: ["Image Processing","Python"]
 weight: 1
 ---
 
-<img src="opencv_logo.png" style="width:60%;height:60%"></img>
+![](img/opencv_logo.png?500)
 
 # Introduction
 
@@ -17,7 +17,7 @@ From the [OpenCV project documentation](https://docs.opencv.org/master/d1/dfb/in
 
 This workshop assumes a working knowledge of the Python programming language and basic understanding of image processing concepts.
 
-Introductions to Python can be found [here](/courses/programming_python_scientists_engineers/python-interpreter/) and [here](/courses/python_introduction/).
+Introductions to Python can be found [here](/content/courses/python-introduction).
 
 ---
 
@@ -25,7 +25,7 @@ Introductions to Python can be found [here](/courses/programming_python_scientis
 
 **Python code examples**
 
-The Python scripts and data files for this workshop can be [downloaded from here](/tutorials/opencv/data/opencv-examples.zip). On your computer, unzip the downloaded folder and use it as working directory for this workshop.
+The Python scripts and data files for this workshop can be [downloaded from here](data/opencv-examples.zip). On your computer, unzip the downloaded folder and use it as working directory for this workshop.
 
 **Python programming environment**
 
@@ -45,7 +45,7 @@ If you have a Rivanna account, you can work through this tutorial using an [Open
 
 4. On the next screen, specify resources as shown in this screenshot: 
 
-    ![](ood-resources.png)
+    ![](img/ood-resources.png)
 
     >**Note:** Workshop participants may specify `rivanna-training` in the `Allocation (SUs)` field. Alternatively, you may use any other Rivanna allocation that you are a member of.  
 
@@ -70,7 +70,7 @@ Once you have installed Anaconda, start the Navigator application:
 
 You should see a workspace similar to the screenshot, with several options for working environments, some of which are not installed. We will use `Spyder` which should already be installed. If not, click the button to install the package.
 
-![AnacondaNavigator](/tutorials/biopython/anaconda-navigator.png)
+![AnacondaNavigator](/content/tutorials/biopython/img/anaconda-navigator.png)
 
 ## Spyder
 
@@ -79,7 +79,7 @@ Now we will switch to Spyder. Spyder is an Integrated Development Environment, o
 1. To start it, return to the `Anaconda Navigator` and click on the `Spyder` tile. It may take a while to open (watch the lower left of the Navigator). 
 2. Once it starts, you will see a layout with an editor pane on the left, an explorer pane at the top right, and an iPython console on the lower right. This arrangement can be customized but we will use the default for our examples. Type code into the editor. The explorer window can show files, variable values, and other useful information. The iPython console is a frontend to the Python interpreter itself. It is comparable to a cell in JupyterLab.
 
-![AnacondaNavigator](/tutorials/biopython/anaconda-spyder.png)
+![AnacondaNavigator](/content/tutorials/biopython/img/anaconda-spyder.png)
 
 ## Installation of OpenCV
 
@@ -122,7 +122,7 @@ If the package is installed correctly, the output will show the openCV version n
 
 ## Example scripts and images
 
-Download the example scripts and images from [this link](/tutorials/opencv/data/opencv-examples.zip). Unzip the downloaded file and start your Python IDE, e.g. Spyder.
+Download the example scripts and images from [this link](data/opencv-examples.zip). Unzip the downloaded file and start your Python IDE, e.g. Spyder.
 
 If you are on Rivanna, run the following command to copy the examples to your home directory:
 ```bash
@@ -135,7 +135,7 @@ cp -R /share/resources/tutorials/opencv-examples ~/
 
 ## Loading Images
 
-The `imread` function is used to read images from files. Images are represented as a multidimensional [NumPy](https://numpy.org) arrays. Learn more about NumPy arrays [here](/courses/python_introduction/numpy_ndarrays/). The multidimensional properties are stored in an image's `shape` attribute, e.g. number of rows (height) x number of columns (width) x number of channels (depth).
+The `imread` function is used to read images from files. Images are represented as a multidimensional [NumPy](https://numpy.org) arrays. Learn more about NumPy arrays [here](/content/courses/python-introduction/numpy_ndarrays.md). The multidimensional properties are stored in an image's `shape` attribute, e.g. number of rows (height) x number of columns (width) x number of channels (depth).
 
 
 ```python:
@@ -163,7 +163,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![](clown.png)
+![](img/clown.png)
 
 The `cv2.imshow()` method displays the image on our screen. The `cv2.waitKey()` function waits for a key to be pressed. This is important otherwise our image would display and immediately disappear before we even see the image. The call of `destroyAllWindows()` should be placed at the end of any script that uses the `imshow` function.
 
@@ -249,7 +249,7 @@ ax[1].axis('off')
 
 
 
-![](clown-resized.png)
+![](img/clown-resized.png)
 
 ## Splitting and Merging of Color Channels
 
@@ -277,7 +277,7 @@ axarr[1,1].axis('off')
 axarr[1,1].set_title('RGB')
 ```
 
-![](clown-split.png)
+![](img/clown-split.png)
 
 Let's take the blue and green channel only and merge them back into a new RGB image, effectively masking the red channel. For this we'll define a new numpy array with the same width and height as the original image and a depth of 1 (single channel), all pixels filled with zero values. Since the individual channels of an RGB image are 8-bit numpy arrays, we choose the numpy `uint8` data type.
 
@@ -294,7 +294,7 @@ ax.imshow(cv2.cvtColor(merged, cv2.COLOR_BGR2RGB))
 ax.axis('off')
 ```
 
-![](clown-merged.png)
+![](img/clown-merged.png)
 
 # Exercises
 
@@ -323,7 +323,7 @@ Common arguments are:
 
 Let's try this with a noisy version of the clown image. This is a color RGB image and so we'll try the `cv2.fastNlMeansDenoisingColored()` filter. Here is the noisy input image `clown-noisy.png`.
 
-![](clown-noisy.png)
+![](img/clown-noisy.png)
 
 The `denoising.py` script demonstrates how it works.
 
@@ -349,7 +349,7 @@ plt.subplot(122),plt.imshow(cv2.cvtColor(denoised, cv2.COLOR_BGR2RGB), interpola
 plt.show()
 ```
 
-![](clown-noisy-denoised.png)
+![](img/clown-noisy-denoised.png)
 
 Additional useful filters for smoothing images:
  * `GaussianBlur` - blurs an image using a Gaussian filter
@@ -393,9 +393,9 @@ ax[2].imshow(eroded, cmap='gray')
 ax[2].axis('off')
 ```
 
-|       Original       |        Dilation        |        Erosion        |
-|:--------------------:|:----------------------:|:---------------------:|
-| ![](morph-input.png) | ![](morph-dilated.png) | ![](morph-eroded.png) |
+|         Original         |          Dilation          |          Erosion          |
+|:------------------------:|:--------------------------:|:-------------------------:|
+| ![](img/morph-input.png) | ![](img/morph-dilated.png) | ![](img/morph-eroded.png) |
 
 > By increasing the kernel size or number of iterations we can dilate or erode more of the original object.
 
@@ -413,9 +413,9 @@ opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
 closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
 ```
 
-|       Original       |        Opening        |        Closing        |
-|:--------------------:|:---------------------:|:---------------------:|
-| ![](morph-input.png) | ![](morph-opened.png) | ![](morph-closed.png) |
+|         Original         |          Opening          |          Closing          |
+|:------------------------:|:-------------------------:|:-------------------------:|
+| ![](img/morph-input.png) | ![](img/morph-opened.png) | ![](img/morph-closed.png) |
 
 > Note how the opening operation removed the small dot in the top right corner.  In contrast the closing operation retained that small object and also filled in the black hole in the object on the left side of the input image.
 
@@ -426,9 +426,9 @@ kernel = np.ones((2,2),np.uint8)
 gradient = cv2.morphologyEx(image, cv2.MORPH_GRADIENT, kernel)
 ```
 
-|       Original       |    Gradient (edges)     |
-|:--------------------:|:-----------------------:|
-| ![](morph-input.png) | ![](morph-gradient.png) |
+|         Original         |      Gradient (edges)       |
+|:------------------------:|:---------------------------:|
+| ![](img/morph-input.png) | ![](img/morph-gradient.png) |
 
 # Exercises
 
@@ -451,7 +451,7 @@ Let's try to identify and measure the area of the nuclei in this image with fluo
 
 The complete code is in the `segmentation.py` script.
 
-![](fluorescent-cells.png)
+![](img/fluorescent-cells.png)
 
 ## Preprocessing
 
@@ -464,7 +464,7 @@ image = cv2.imread('fluorescent-cells.png')
 nuclei = image[:,:,0] # get blue channel
 ```
 
-![](nuclei.png)
+![](img/nuclei.png)
 
 To eliminate noise, we apply a Gaussian filter with 3x3 kernel, then apply the Otsu thresholding algorithm. The thresholding converts the grayscale intensity image into a black and white binary image. The function returns two values, we store them in `ret` (the applied threshold value) and `thresh` (the thresholded black & white binary image).  White pixels represent nuclei; black pixel represent background. 
 
@@ -490,7 +490,7 @@ opening = clear_border(opening)
 
 The resulting image looks like this.
 
-![](nuclei-opening.png)
+![](img/nuclei-opening.png)
 
 A tricky issue is that some of the nuclei masks are touching each other.  We need to find a way to break up these clumps. We do this in several steps. First, we will dilate the binary nuclei mask. The black areas in the resulting image represent pixels that certainly do not contain any nuclear components. We call it the `sure_bg`.
 
@@ -499,7 +499,7 @@ A tricky issue is that some of the nuclei masks are touching each other.  We nee
 sure_bg = cv2.dilate(opening,kernel,iterations=10)
 ```
 
-![](nuclei-sure_bg.png)
+![](img/nuclei-sure_bg.png)
 
 The nuclei are all fully contained inside the white pixel area. The next step is to find estimates for the center of each nucleus. Some of the white regions may contain more than one nucleus and we need to separate the joined ones. We calculate the distance transform to do this.
 
@@ -513,9 +513,9 @@ dist_transform = cv2.distanceTransform(opening,cv2.DIST_L2,5)
 ret, sure_fg = cv2.threshold(dist_transform,0.6*dist_transform.max(),255,0)
 ```
 
-|       Distance Transform       | Sure Foreground (nuclei seeds) |
-|:------------------------------:|:------------------------------:|
-| ![](nuclei-dist_transform.png) |    ![](nuclei-sure_fg.png)     |
+|         Distance Transform         | Sure Foreground (nuclei seeds) |
+|:----------------------------------:|:------------------------------:|
+| ![](img/nuclei-dist_transform.png) |  ![](img/nuclei-sure_fg.png)   |
 
 
 By subtracting the sure foreground regions from the sure background regions we can identify the regions of unknown association, i.e. the pixels that we have not assigned to be either nuclei or background.
@@ -526,9 +526,9 @@ sure_fg = np.uint8(sure_fg)
 unknown = cv2.subtract(sure_bg,sure_fg)
 ```
 
-|     Sure Background     | Sure Foreground (nuclei seeds) |         Unknown         |
-|:-----------------------:|:------------------------------:|:-----------------------:|
-| ![](nuclei-sure_bg.png) |    ![](nuclei-sure_fg.png)     | ![](nuclei-unknown.png) |
+|       Sure Background       | Sure Foreground (nuclei seeds) |           Unknown           |
+|:---------------------------:|:------------------------------:|:---------------------------:|
+| ![](img/nuclei-sure_bg.png) |  ![](img/nuclei-sure_fg.png)   | ![](img/nuclei-unknown.png) |
 
 
 ## Watershed
@@ -555,9 +555,9 @@ image[markers == -1] = [0,255,255]
 
 The resulting `markers` (pseudo-colored) and input images with segmentation overlay look like this:
 
-|         Markers         |       Segmentation       |
-|:-----------------------:|:------------------------:|
-| ![](nuclei-markers.png) | ![](image-segmented.png) |
+|           Markers           |         Segmentation         |
+|:---------------------------:|:----------------------------:|
+| ![](img/nuclei-markers.png) | ![](img/image-segmented.png) |
 
 
 ## Measure

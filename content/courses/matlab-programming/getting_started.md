@@ -103,86 +103,86 @@ weight: 111
 
 ### Accessing Multiple Elements
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=3&section=3" target="_blank">Exercise: Index with Vectors</a>**
+**[Exercise: Index with Vectors](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=3&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=3&section=4" target="_blank">Exercise: Modify Multiple Elements</a>**
+**[Exercise: Modify Multiple Elements](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=3&section=4)**
 
 
 ### Accessing Data in Matrices
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=2" target="_blank">Exercise: Row,Column Indexing</a>**
+**[Exercise: Row,Column Indexing](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=7" target="_blank">Exercise: Extract a Single Element</a>**
+**[Exercise: Extract a Single Element](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=7)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=8" target="_blank">Exercise: Matrix Indexing with Vectors</a>**
+**[Exercise: Matrix Indexing with Vectors](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=8)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=10" target="_blank">Exercise: Extract Multiple Elements</a>**
+**[Exercise: Extract Multiple Elements](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=10)**
 
 
 ## Mathematical and Statistical Operations with Arrays
 
 ### Performing Operations on Arrays
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=2&section=1" target="_blank">Exercise: Basic Array Arithmetic & Functions</a>**
+**[Exercise: Basic Array Arithmetic & Functions](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=2&section=1)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=2&section=3" target="_blank">Video: Element-wise vs. Matrix Operations</a>**
+**[Video: Element-wise vs. Matrix Operations](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=2&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=2&section=4" target="_blank">Exercise: Element-wise Arithmetic</a>**
+**[Exercise: Element-wise Arithmetic](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=2&section=4)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=2&section=9" target="_blank">Exercise: Operating on Compatibly-Sized Arrays</a>**
+**[Exercise: Operating on Compatibly-Sized Arrays](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=2&section=9)**
 
 ### Matrix Multiplication
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=3&section=3" target="_blank">Exercise: Matrix Operations</a>**
+**[Exercise: Matrix Operations](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=6&lesson=3&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=10" target="_blank">Exercise: Extract Multiple Elements</a>**
+**[Exercise: Extract Multiple Elements](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=10)**
 
 ### Calculating Statistics of Vectors
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=4&section=2" target="_blank">Exercise: Basic Statistics</a>**
+**[Exercise: Basic Statistics](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=4&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=4&section=5" target="_blank">Exercise: Average Gasoline Prices</a>**
+**[Exercise: Average Gasoline Prices](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=4&section=5)**
 
 ### Using Statistical Operations on Matrices
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=5&section=3" target="_blank">Exercise: Descriptive Statistics</a>**
+**[Exercise: Descriptive Statistics](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=5&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=5&section=6" target="_blank">Exercise: Statistics for Each Row</a>**
+**[Exercise: Statistics for Each Row](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=5&section=6)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=5&section=9" target="_blank">Exercise: Correlation</a>**
+**[Exercise: Correlation](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=6&lesson=5&section=9)**
 
 ## Visualizing Data in 2D and 3D
 
 ### Identifying Available Vector Plot Types
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=1&section=3" target="_blank">Exercise: stairs, stem, and area</a>**
+**[Exercise: stairs, stem, and area](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=1&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=1&section=4" target="_blank">Exercise: Gasoline Prices Scatter Plot</a>**
+**[Exercise: Gasoline Prices Scatter Plot](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=1&section=4)**
 
 
 ### Creating Arrays of Text
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=2&section=2" target="_blank">Exercise: Creating Character Arrays</a>**
+**[Exercise: Creating Character Arrays](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=2&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=2&section=3" target="_blank">Exercise: Creating Multiline Annotations</a>**
+**[Exercise: Creating Multiline Annotations](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=2&section=3)**
 
 ### Customizing Plot Properties
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=3&section=2" target="_blank">Exercise: Customizing Plot Properties</a>**
+**[Exercise: Customizing Plot Properties](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=3&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=3&section=6" target="_blank">Exercise: Specifying Color</a>**
+**[Exercise: Specifying Color](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=3&section=6)**
 
 ### Plotting Multiple Columns
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=4&section=2" target="_blank">Exercise: Plotting Matrix Columns</a>**
+**[Exercise: Plotting Matrix Columns](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=4&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=4&section=4" target="_blank">Exercise: Plotting Matrix Columns Against a Vector</a>**
+**[Exercise: Plotting Matrix Columns Against a Vector](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=4&section=4)**
 
 ### Visualizing Matrices
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=5&section=2" target="_blank">Exercise: Surface, Mesh, and Contour</a>**
+**[Exercise: Surface, Mesh, and Contour](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=5&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=5&section=4" target="_blank">Exercise: Visualize Electricity Data</a>**
+**[Exercise: Visualize Electricity Data](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=7&lesson=5&section=4)**
 
 
 
@@ -190,198 +190,198 @@ weight: 111
 
 ### Logical Operations and Variables
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=2&section=2" target="_blank">Exercise: Logical Operations</a>**
+**[Exercise: Logical Operations](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=2&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=2&section=3" target="_blank">Exercise: Logical Operations with Arrays</a>**
+**[Exercise: Logical Operations with Arrays](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=2&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=2&section=7" target="_blank">Exercise: Finding Winning Team Records</a>**
+**[Exercise: Finding Winning Team Records](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=2&section=7)**
 
 
 ### Counting Elements
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=3&section=2" target="_blank">Exercise: Count true Values in a Logical Vector</a>**
+**[Exercise: Count true Values in a Logical Vector](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=3&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=3&section=3" target="_blank">Exercise: Identify Locations of true Values</a>**
+**[Exercise: Identify Locations of true Values](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=3&section=3)**
 
 ### Logical Indexing
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=4&section=2" target="_blank">Video: Logical Indexing</a>**
+**[Video: Logical Indexing](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=4&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=4&section=3" target="_blank">Exercise: Logical Indexing</a>**
+**[Exercise: Logical Indexing](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=4&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=4&section=7" target="_blank">Exercise: Selecting Teams with Winning Home Record</a>**
+**[Exercise: Selecting Teams with Winning Home Record](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=8&lesson=4&section=7)**
 
 ## Tables of Data
 
 ### Storing Data in a Table
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=2&section=2" target="_blank">Exercise:  Import Table Data</a>**
+**[Exercise:  Import Table Data](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=2&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=2&section=4" target="_blank">Exercise: Create a Table from Workspace Variables</a>**
+**[Exercise: Create a Table from Workspace Variables](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=2&section=4)**
 
 ### Sorting Table Data
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=3&section=2" target="_blank">Exercise: Using sortrows</a>**
+**[Exercise: Using sortrows](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=3&section=2)**
 
 
 ### Extracting Portions of a Table
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=4&section=3" target="_blank">Exercise: Numeric Indexing</a>**
+**[Exercise: Numeric Indexing](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=4&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=4&section=4" target="_blank">Exercise: Variable Name Indexing</a>**
+**[Exercise: Variable Name Indexing](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=4&section=4)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=4&section=6" target="_blank">Exercise: Table Indexing</a>**
+**[Exercise: Table Indexing](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=4&section=6)**
 
 ### Extracting Data from a Table
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=5&section=3" target="_blank">Exercise: Indexing with Dot Notation</a>**
+**[Exercise: Indexing with Dot Notation](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=5&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=5&section=7" target="_blank">Exercise: Indexing with Curly Braces</a>**
+**[Exercise: Indexing with Curly Braces](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=5&section=7)**
 
 ### Exporting Tables
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=6&section=3" target="_blank">Exercise: Using writetable</a>**
+**[Exercise: Using writetable](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=10&lesson=6&section=3)**
 
 ## Organizing Data
 
 ### Combining Tables
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=2&section=2" target="_blank">Exercise: Concatenating Tables</a>**
+**[Exercise: Concatenating Tables](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=2&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=2&section=3" target="_blank">Exercise: Join Tables</a>**
+**[Exercise: Join Tables](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=2&section=3)**
 
 ### Table Properties
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=3&section=2" target="_blank">Exercise: Table Properties</a>**
+**[Exercise: Table Properties](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=3&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=3&section=3" target="_blank">Exercise: Accessing Table Properties</a>**
+**[Exercise: Accessing Table Properties](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=3&section=3)**
 
 ### Indexing into Cell Arrays
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=4&section=3" target="_blank">Exercise: Indexing Into Cell Arrays</a>**
+**[Exercise: Indexing Into Cell Arrays](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=4&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=10" target="_blank">Exercise: Extract Multiple Elements</a>**
+**[Exercise: Extract Multiple Elements](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe&s_tid=mlac_mlbe_bod#chapter=5&lesson=4&section=10)**
 
 ### Working with Dates and Times
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=5&section=2" target="_blank">Video: Data Types for Dates and Times</a>**
+**[Video: Data Types for Dates and Times](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=5&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=5&section=3" target="_blank">Exercise: Applying Functions to Datetimes</a>**
+**[Exercise: Applying Functions to Datetimes](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=5&section=3)**
 
 ### Operating on Dates and Times
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=6&section=2" target="_blank">Exercise: Operating on Dates and Times</a>**
+**[Exercise: Operating on Dates and Times](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=6&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=6&section=4" target="_blank">Exercise: Working with Durations</a>**
+**[Exercise: Working with Durations](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=6&section=4)**
 
 ### Representing Discrete Categories
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=7&section=3" target="_blank">Exercise: Converting to and Operating on Categoricals</a>**
+**[Exercise: Converting to and Operating on Categoricals](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=7&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=7&section=6" target="_blank">Exercise: Category Names and Ordinals</a>**
+**[Exercise: Category Names and Ordinals](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=11&lesson=7&section=6)**
 
 
 ## Preprocessing Data
 
 ### Normalizing Data
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=2&section=2" target="_blank">Exercise: Normalize Matrices</a>**
+**[Exercise: Normalize Matrices](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=2&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=2&section=3" target="_blank">Exercise: Calculate Average Daily Electricity Usage</a>**
+**[Exercise: Calculate Average Daily Electricity Usage](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=2&section=3)**
 
 ### Working with Missing Data
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=3&section=2" target="_blank">Exercise:  Ignoring NaNs in calculations</a>**
+**[Exercise:  Ignoring NaNs in calculations](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=3&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=3&section=4" target="_blank">Exercise: Locating Missing Data</a>**
+**[Exercise: Locating Missing Data](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=3&section=4)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=3&section=5" target="_blank">Exercise: Removing Rows with Missing Data</a>**
+**[Exercise: Removing Rows with Missing Data](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=3&section=5)**
 
 ### Interpolating Missing Data
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=4&section=2" target="_blank">Exercise: Filling Missing Values</a>**
+**[Exercise: Filling Missing Values](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=4&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=4&section=4" target="_blank">Exercise: Interpolating Irregularly-Spaced Data</a>**
+**[Exercise: Interpolating Irregularly-Spaced Data](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=12&lesson=4&section=4)**
 
 
 ## Common Data Analysis Techniques
 
 ### Moving Window Operations
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=2&section=3" target="_blank">Exercise: Moving Average</a>**
+**[Exercise: Moving Average](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=2&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=2&section=4" target="_blank">Exercise: Smoothing Electricity Data</a>**
+**[Exercise: Smoothing Electricity Data](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=2&section=4)**
 
 ### Linear Correlation
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=3&section=3" target="_blank">Exercise: Plotting Electricity Usage</a>**
+**[Exercise: Plotting Electricity Usage](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=3&section=3)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=3&section=8" target="_blank">Exercise: Correlations in Electricity Usage</a>**
+**[Exercise: Correlations in Electricity Usage](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=3&section=8)**
 
 ### Polynomial Fitting
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=4&section=4" target="_blank">Exercise: Fit a Line</a>**
+**[Exercise: Fit a Line](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=4&section=4)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=4&section=6" target="_blank">Exercise: Fit a Polynomial to Electricity Usage</a>**
+**[Exercise: Fit a Polynomial to Electricity Usage](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=13&lesson=4&section=6)**
 
 
 ## Programming Constructs
 
 ### User Interaction
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=14&lesson=2&section=2" target="_blank">Exercise: Gathering Input</a>**
+**[Exercise: Gathering Input](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=14&lesson=2&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=14&lesson=2&section=6" target="_blank">Exercise: Dialog Box Output</a>**
+**[Exercise: Dialog Box Output](https://matlabacademy.mathworks.com/R2019a/portal.html?course=mlbe#chapter=14&lesson=2&section=6)**
 
 ### Decision Branching
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=3&section=4" target="_blank">Exercise: Using if-else</a>**
+**[Exercise: Using if-else](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=3&section=4)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=3&section=6" target="_blank">Exercise: Using if-elseif-else</a>**
+**[Exercise: Using if-elseif-else](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=3&section=6)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=3&section=10" target="_blank">Exercise: Using switch-case</a>**
+**[Exercise: Using switch-case](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=3&section=10)**
 
 ### Determining Size
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=4&section=2" target="_blank">Exercise: Using size and numel</a>**
+**[Exercise: Using size and numel](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=4&section=2)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=4&section=3" target="_blank">Exercise: Using length</a>**
+**[Exercise: Using length](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=4&section=3)**
 
 ### For Loops
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=5&section=6" target="_blank">Exercise: Looping Through a Vector</a>**
+**[Exercise: Looping Through a Vector](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=5&section=6)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=5&section=7" target="_blank">Exercise: Finding the Fibonacci Sequence</a>**
+**[Exercise: Finding the Fibonacci Sequence](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=5&section=7)**
 
 ### While Loops
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=6&section=6" target="_blank">Exercise: Using a While Loop</a>**
+**[Exercise: Using a While Loop](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=6&section=6)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=6&section=7" target="_blank">Exercise: Finding eps</a>**
+**[Exercise: Finding eps](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=14&lesson=6&section=7)**
 
 
 ## Increasing Automation with Functions
 
 ### Creating and Calling Functions
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=2&section=4" target="_blank">Exercise: Create and Call a Function</a>**
+**[Exercise: Create and Call a Function](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=2&section=4)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=2&section=5" target="_blank">Exercise: Electricity Usage Analysis Function</a>**
+**[Exercise: Electricity Usage Analysis Function](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=2&section=5)**
 
 ### Function Files
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=3&section=5" target="_blank">Exercise: Compare Using a Tolerance</a>**
+**[Exercise: Compare Using a Tolerance](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=3&section=5)**
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=3&section=6" target="_blank">Exercise: Custom Statistics</a>**
+**[Exercise: Custom Statistics](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=3&section=6)**
 
 ### Function Workspaces
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=4&section=4" target="_blank">Quiz: Function workspaces</a>**
+**[Quiz: Function workspaces](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=4&section=4)**
 
 
 ### MATLAB Path and Calling Precedence
 
-**<a href="https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=5&section=7" target="_blank">Exercise: MATLAB Calling Precedence</a>**
+**[Exercise: MATLAB Calling Precedence](https://matlabacademy.mathworks.com/R2019b/portal.html?course=mlbe#chapter=15&lesson=5&section=7)**
 
 
 ## Troubleshooting Code

@@ -30,14 +30,16 @@ Matplotlib.  Add code to plot y as a function of x.
 f) Add a line to accept user input to specify the x start, x end, and stride values.  Your finished code should get these values from the user, print the values and x-coordinate of the max and min for y, and display a plot of y versus x. Upload the plot for input values of starting x=-2., ending x=2., stride=.01.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_3/numpy_basics.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_3/numpy_basics.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 11 
 
 You may use your choice of lists or NumPy arrays for this project.
 
-Download the file [cpi.csv](/data/cpi.csv)
+Download the file [cpi.csv](data/cpi.csv)
 This file is the value of $100 from a baseline in January 1913 (the oldest consistent data available) to January 2020, as computed by the US Bureau of Labor Statistics; this gives us the consumer price index. The ratio of any two years is an estimate of the change in cost of living from the one to the other. 
 
 a) Write a function that takes two years and returns this ratio.  Note that the order will matter.
@@ -65,11 +67,13 @@ e) (More advanced) Read about exceptions in the Files chapter and add them to yo
 f) (More advanced) Convert your file with the functions into a module.  Isolate the calls to input/output, including plotting, by using a main() function.  Add the `if __name__=="__main__"` so that it will not be invoked if you import your module.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_3/inflation.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_3/inflation.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 12
-Write a program that reads the file [bodyfat.csv](/data/bodyfat.csv).  
+Write a program that reads the file [bodyfat.csv](data/bodyfat.csv).  
 
 -  Extract the body fat percentage, weight, and height data from each row (the first, third, and fourth columns).  We do not need the age data for the current project.
 
@@ -86,11 +90,13 @@ You may use the `np.percentile(a,m)` function to compute the upper and lower qua
 Plot the corrected data.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_3/bmistats.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_3/bmistats.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 13
-Download [cville_2017_april.csv](/data/cville_2017_april.csv), which contains April 2017 weather data for Charlottesville, VA.
+Download [cville_2017_april.csv](data/cville_2017_april.csv), which contains April 2017 weather data for Charlottesville, VA.
 - Read the file into appropriate NumPy arrays
 - Make a line plot of average wind speed for each day
 - Add main titles, and label axes to be more descriptive
@@ -101,6 +107,8 @@ Download [cville_2017_april.csv](/data/cville_2017_april.csv), which contains Ap
 - Plot the number of each weather 'condition'. Plot sunny days, partly cloudy days, and rain days. There are several ways to do this.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_3/cville_2017_apr.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_3/cville_2017_apr.py)
+{{</ code >}}
 {{< /spoiler >}}
 

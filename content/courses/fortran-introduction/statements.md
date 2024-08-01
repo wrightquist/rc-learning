@@ -115,6 +115,8 @@ num_2=14
 ```
 
 {{< spoiler text="Example Solution" >}}
-{{< code file="courses/fortran-introduction/solns/statements.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/statements.f90)
+{{</ code >}}
 {{< /spoiler >}}
 

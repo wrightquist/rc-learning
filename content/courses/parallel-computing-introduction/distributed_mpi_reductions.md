@@ -38,7 +38,9 @@ int MPI_Reduce(void *operand, void *result, int count, MPI_Datatype type, MPI_Op
 ```
 
 {{< spoiler text="C++ Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/reduce.cxx" lang="cxx" >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/parallel-computing-introduction/codes/reduce.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 The special predefined types used for MPI_MAXLOC and MPI_MINLOC in C/C++ assume a struct has been defined, with the first member's type as indicated and the second an `int`.
@@ -59,7 +61,9 @@ MPI_REDUCE(sendbuf, recvbuf, count, datatype, op, root, comm, ierr)
 ```
 
 {{< spoiler text="Fortran Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/reduce.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/codes/reduce.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 For MPI_MAXLOC and MPI_MINLOC, Fortran derived types are not accommodated at this time, so an array with two elements of the same type must be used. The index (the second element) can be coerced to an integer if necessary.
@@ -79,7 +83,9 @@ comm.Reduce(sendarr, recvarr, operation, root=0)
 ```
 
 {{< spoiler text="Python Example" >}}
-{{< code-download file="/courses/parallel-computing-introduction/codes/reduce.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/codes/reduce.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 The special datatypes for MAXLOC and MINLOC in mpi4py are the same as for C, but with the underscore replaced by a period as usual (`MPI.FLOAT_INT`).
@@ -93,14 +99,20 @@ The purpose of parallelizing the random-walk code was to run a large number of t
 {{< /spoiler >}}
 
 {{< spoiler text="C++" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpirandom_walk_red.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_red.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpirandom_walk_red.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_red.f90)
+{{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
-{{< code-download file="/courses/parallel-computing-introduction/solns/mpirandom_walk_red.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_red.py)
+{{</ code >}}
 {{< /spoiler >}}
 

@@ -11,23 +11,29 @@ A. Write a program that obtains the sum of the numbers from 1 to some specified 
 Print the number, its sum as obtained from your work, and the correct answer from the Gauss formula sum(N)=N(N+1)/2.  Test your program with N=1, N=25, N=1000.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_2/sum_to_N.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_2/sum_to_N.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 B. Convert your code to sum from 1 to N into a function.  Write a main program that requests a number M from the user, then prints a table of the integers from 1 to M and their corresponding sums.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_2/sums_table.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_2/sums_table.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 7
 
-Download the file [us-state-capitals.csv](/data/us-state-capitals.csv).  Write a program that will read this file and create a dictionary with the state name as the key and the capital name as the value.  Using your dictionary, print the capitals of Arkansas, Virginia, and Wyoming.
+Download the file [us-state-capitals.csv](data/us-state-capitals.csv).  Write a program that will read this file and create a dictionary with the state name as the key and the capital name as the value.  Using your dictionary, print the capitals of Arkansas, Virginia, and Wyoming.
 
 Again using your dictionary, generate a list of all state capitals that begin with the letter 'A'.  Use the list to create a string consisting of these city names separated by a semicolon ;   Open a new file capitals-with-a.txt and write this string to it.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_2/state_capitals.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_2/state_capitals.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 8
@@ -38,12 +44,14 @@ The program should contain another function `printBaseComposition` which takes t
 -  T : 0.25
 -  C : 0.25
 -  G : 0.25
-Use the file [HIV.txt](/data/HIV.txt) to test your program.  You can look at the file in a text editor.  It consists of a label followed by a space followed by a sequence, for each sequence in the file.
+Use the file [HIV.txt](data/HIV.txt) to test your program.  You can look at the file in a text editor.  It consists of a label followed by a space followed by a sequence, for each sequence in the file.
 Hints: read each sequence as a line.  Split the line on whitespace (rstrip first) and throw out the 0th element.
 Copy the next element of the list into a string, and use substrings to extract each letter.  Build your dictionary as you step through the string.  Repeat for the next line until you have read all the lines.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_2/DNA.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_2/DNA.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Project 9
@@ -64,9 +72,11 @@ place.
 
 Look up the documentation for the random module to find some useful functions.  You can also import the string module to obtain a list of punctuation marks.
 
-- Hint: since you cannot overwrite strings you will need to convert them to a list and back again. Use [Example.txt](/data/Example.txt) as your sample input.
+- Hint: since you cannot overwrite strings you will need to convert them to a list and back again. Use [Example.txt](data/Example.txt) as your sample input.
 - FYI this is an “urban legend” because: firstly, no such research was ever conducted at any university, and secondly it is true only for very practiced readers of English and even then only for familiar words that are easy to recognize in context.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/solns/proj_set_2/scramble_text.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/solns/proj_set_2/scramble_text.py)
+{{</ code >}}
 {{< /spoiler >}}

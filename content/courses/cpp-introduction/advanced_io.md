@@ -27,7 +27,9 @@ To go the other direction we _write_ the number into an empty stringstream buffe
    std::string num_str=st.str();
 ```
 Putting this together gives us this example:
-{{< code file="/courses/cpp-introduction/codes/str_stream.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/str_stream.cxx)
+{{</ code >}}
 
 ## Reading from the Command Line
 
@@ -38,12 +40,16 @@ Command-line options are strings that follow the name of the executable.
 The command line is contained in a two-dimensional character array (one dimension for the characters, the other for multiple character groups).  It is called `argv`.  The element `argv[0]` is the name of the executable.  The integer `argc` is the length of `argv`.  These variables must be specified as arguments to `main` if you wish to read command-line arguments.
 
 We can read strings only.  You must convert if necessary to a numerical type using stringstreams.
-{{< code-download file="/courses/cpp-introduction/codes/cl.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/cl.cxx)
+{{</ code >}}
 
 ### Getline
 
 The `getline` function reads an entire line at once, as a single string.  This means that we will need to handle the input ourselves, converting as appropriate.
-{{< code file="/courses/cpp-introduction/codes/getline_read.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/getline_read.cxx)
+{{</ code >}}
 
 Getline's name is a little misleading.
 Getline actually reads to a _delimiter_.  The default delimiter is newline      `\n.`
@@ -64,23 +70,27 @@ Example:
 
 * We often need to read files where each line contains several fields separated by a comma or other delimiter.  For example: read four values from each line for 200 lines, ignoring the second column values.
 
-{{< code-download file="/courses/cpp-introduction/codes/read_csv.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/read_csv.cxx)
+{{</ code >}}
 
 Getline is used twice, once to read the line as a string and again to split the line on commas.  In this case we know that we have four fields in each line so we declare an array of strings.  More generally, we could use a vector and `push_back` after getline reads the next chunk to the delimiter.  To read the subunits of the line, we declare a stringstream and use that as the stream buffer, rather than a file descriptor.
 
 **Exercises**
 
-1. Download the file [cpi.csv](/data/cpi.csv).  Examine the file.  Write a program that will read the file.  Store the first column in a vector `year` and the second column in another vector `cpi`.  Be sure to skip the header line.  It is not necessary to read any data from the header.  
+1. Download the file [cpi.csv](data/cpi.csv).  Examine the file.  Write a program that will read the file.  Store the first column in a vector `year` and the second column in another vector `cpi`.  Be sure to skip the header line.  It is not necessary to read any data from the header.  
 
-As an alternative to converting with a stringstream, you can convert a C++ string to a C-style string with the `c_str()` method.
-```c++
-mystr.c_str()
-```
-You can then use the atoi and atof functions that operate on C strings to convert to integer and float respectively.
-
-{{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/read_cpi.cxx" lang="c++" >}}
-{{< /spoiler >}}
+    As an alternative to converting with a stringstream, you can convert a C++ string to a C-style string with the `c_str()` method.
+    ```c++
+    mystr.c_str()
+    ```
+    You can then use the atoi and atof functions that operate on C strings to convert to integer and float respectively.
+    
+    {{< spoiler text="Example Solution" >}}
+    {{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/read_cpi.cxx)
+{{</ code >}}
+    {{< /spoiler >}}
 
 2. Write a program that creates a file mydata.txt containing four rows consisting of
 ```
@@ -92,6 +102,8 @@ You can then use the atoi and atof functions that operate on C strings to conver
 Rewind the file and read the data back.  Write a loop to add 1 to each value and print each row to the console.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/read_write_csv.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/read_write_csv.cxx)
+{{</ code >}}
 {{< /spoiler >}}
 

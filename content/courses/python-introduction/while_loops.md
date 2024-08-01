@@ -29,9 +29,11 @@ print(x,y,z)
 
 **Exercise**
 
-Modify each for loop in the previous [section's](/courses/python-introduction/for_loops) exercise to use a while loop instead.
+Modify each for loop in the previous [section's](for_loops) exercise to use a while loop instead.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/sum_to_N_while.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/sum_to_N_while.py)
+{{</ code >}}
 {{< /spoiler >}}
 

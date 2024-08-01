@@ -5,7 +5,7 @@ weight: 120
 ---
 
 The SciPy library is part of the "SciPy ecosystem" that also includes NumPy, Sympy, and Pandas.  We will not discuss Sympy but it is a well-developed computer algebra system (CAS) that is also incorporated into several other packages such as SageMath.
-Its homepage at [www.scipy.org](www.scipy.org) has details and documentation.  
+Its homepage at [www.scipy.org](https://www.scipy.org) has details and documentation.  
 
 ### Importing SciPy Packages
 
@@ -40,13 +40,15 @@ Use the SciPy `ndimage` to tint a photograph.
 2. Extract the sample picture "face" (a raccoon).
 3. Use matplotlab function imshow to look at the picture.  You may still need to use plt.show().
 4. Use the NumPy array(img) function to get a numpy array. Specify dtype='float'.
-4. Get the shape of the image array.
-5. Tone down the blue by .9 and the red by .95.  The order of color channels in the image is RBG.
-6. The multiplication will use floats which are not permitted for an image (the pixel values must be integers between 0 and 255).  Store the tinted array into a new array with dtype='int'.  You can do this in one step if you think about it.
-7. Show the new image.  If you use plt.figure() and only one plt.show() you can view the images side by side.
+5. Get the shape of the image array.
+6. Tone down the blue by .9 and the red by .95.  The order of color channels in the image is RBG.
+7. The multiplication will use floats which are not permitted for an image (the pixel values must be integers between 0 and 255).  Store the tinted array into a new array with dtype='int'.  You can do this in one step if you think about it.
+8. Show the new image.  If you use plt.figure() and only one plt.show() you can view the images side by side.
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/python-introduction/exercises/scipy_img.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-introduction/exercises/scipy_img.py)
+{{</ code >}}
 {{< /spoiler >}}
 
 ## Resources

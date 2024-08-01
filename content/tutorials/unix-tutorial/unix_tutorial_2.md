@@ -12,7 +12,9 @@ weight: 30
 
 For our example we will create a file _science.txt_.  Click the down-arrow icon to download the file.  Use whatever method you know to place this file into your home directory.  
 
-{{< code-download file="/tutorials/unix-tutorial/snippets/science.txt" lang="no-highlight" >}}
+{{< code lang="no-highlight" >}}
+    [](/content/tutorials/unix-tutorial/snippets/science.txt)
+{{</ code >}}
 
 ```bash
 % cd ~/unixstuff

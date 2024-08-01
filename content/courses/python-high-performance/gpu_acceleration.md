@@ -39,7 +39,9 @@ module load cuda
 Methods invoked through the CuPy module will be carried out on the GPU.  Corresponding NumPy methods will be processed by the CPU as usual.  Data transfer happens through _streams_.  The null stream is the default.
 
 CuPy provides several packages.  In this example we show its FFT implementation.
-{{% code-download file="/courses/python-high-performance/codes/cupy_example.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/cupy_example.py)
+{{</ code >}}
 
 **Exercise**
 Providing enough work to fill the GPU's threads is critical to overcoming the overhead of copying data.  
@@ -67,9 +69,11 @@ export PATH=$CUDA_PATH/bin:$PATH
 **Example**
 
 This script is copied directly from PyCUDA's [examples](https://github.com/berlinguyinca/pycuda/tree/master/examples).
-{{% code-download file="/courses/python-high-performance/codes/pycuda_example.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/pycuda_example.py)
+{{</ code >}}
 
-Much as we saw when discussing using [compiled code](/courses/python-high-performance/compiled_code), we must define our function in C style.  This block of code to be executed on the device is called a _kernel_.  PyCUDA compiles the kernel, uses its interface with NumPy to allocate memory on the device, copy the Ndarrays, carry out the computation, then copy the result from the device to the `dest` array.
+Much as we saw when discussing using [compiled code](compiled_code), we must define our function in C style.  This block of code to be executed on the device is called a _kernel_.  PyCUDA compiles the kernel, uses its interface with NumPy to allocate memory on the device, copy the Ndarrays, carry out the computation, then copy the result from the device to the `dest` array.
 
 Notice that the Ndarrays are declared to be `dtype=float32`.  Very few GPUs support double-precision (`float` or `float64` in Python) hardware, so using doubles may be slow as the computations must be done in software on the device.
 
@@ -82,7 +86,9 @@ conda install cudatoolkit
 If you must use pip, you must also install the [NVIDIA CUDA SDK](https://numba.readthedocs.io/en/stable/user/installing.html).
 
 Numba can be used with PyCUDA so adding it to the PyCUDA environment, which should already contain cudatoolkit, might be advisable. This example is from the PyCUDA [tutorial](https://github.com/berlinguyinca/pycuda/blob/master/doc/source/tutorial.rst).
-{{% code-download file="/courses/python-high-performance/codes/pycuda_numba.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/pycuda_numba.py)
+{{</ code >}}
 
 ### Numba Vectorization
 
@@ -93,7 +99,9 @@ For best performance, the signature of the function arguments must be specified.
 **Example**
 
 From the Numba documentation:
-{{% code-download file="/courses/python-high-performance/codes/numba_vectorize.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/numba_vectorize.py)
+{{</ code >}}
 
 The run may emit a warning about under-utilization:
 ```no-highlight
@@ -104,7 +112,9 @@ This is because efficient use of a GPU requires that the device threads be as fi
 Another requirement for efficient GPU utilization is memory management.  Using NumPy arrays will result in copying from the host memory to the device memory.
 Calling a ufunc with NumPy arrays can result in a large amount of copying of data back and forth between host and device.
 We can instead declare arrays that will be set up in the GPU memory.  The `todevice` method will copy the host array to the device array.  We can also declare an output array on the device for the result.  When we are done with our calculations, we explicitly copy the result back to the host memory.
-{{% code-download file="/courses/python-high-performance/codes/numba_vectorize_todevice.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/numba_vectorize_todevice.py)
+{{</ code >}}
 
 If you time these two scripts, you may see a small speedup even for this relatively low-efficiency problem when copying is minimized.  Of course, we should aim for a large amount of work on the device arrays before we return the output to the host, and we should strive to make the problem large enough to fill the GPU's threads.
 
@@ -116,9 +126,11 @@ Numba has a `cuda.jit` decorator that can be used like the `jit` equivalent, but
 
 This example of a matrix-multiplication kernel is taken from the Numba CUDA [documentation](https://numba.readthedocs.io/en/stable/cuda/).
 
-{{% code-download file="/courses/python-high-performance/codes/numba_cuda_example.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/numba_cuda_example.py)
+{{</ code >}}
 
 ## RAPIDS
 
 RAPIDS is a set of libraries released by NVIDIA for its GPU architectures (Pascal or later).  It builds upon CuPY and introduces a GPU DataFrame `cuDF`, and a package `cuML` that mostly replicates `scikit-learn`.
-See our [RAPIDS workshop](/workshops/rapids) to learn more about using RAPIDS.
+See our [RAPIDS workshop](/content/tutorials/rapids) to learn more about using RAPIDS.

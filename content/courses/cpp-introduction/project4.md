@@ -4,7 +4,7 @@ title: "Project 4"
 weight: 75
 ---
 
-Download the file [bodyfat.csv](/data/bodyfat.csv).  This is a dataset of body fat, age, height, and weight for a set of participants in a study. BMI categories are as follows:
+Download the file [bodyfat.csv](data/bodyfat.csv).  This is a dataset of body fat, age, height, and weight for a set of participants in a study. BMI categories are as follows:
 
 |                      |                  |
 |----------------------|------------------|
@@ -44,8 +44,16 @@ Chauvenet’s criterion: It’s not the state of the art but works pretty well.
 5. The criterion is that we retain data with `prob>=1./(2*N_obs)` (number of observations).
 
 {{< spoiler text="Example solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/stats.cxx" lang="c++" >}}
-{{< code-download file="/courses/cpp-introduction/solns/bmistats.h" lang="c++" >}}
-{{< code-download file="/courses/cpp-introduction/solns/bmistats.cxx" lang="c++" >}}
-{{< code-download file="/courses/cpp-introduction/solns/bmi.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/stats.cxx)
+{{</ code >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/bmistats.h)
+{{</ code >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/bmistats.cxx)
+{{</ code >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/bmi.cxx)
+{{</ code >}}
 {{< /spoiler >}}

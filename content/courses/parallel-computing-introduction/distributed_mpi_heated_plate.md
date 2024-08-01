@@ -18,7 +18,7 @@ $$ \frac{\partial^{2}{u}}{\partial{x}^{2}} + \frac{\partial^{2}{u}}{\partial{y}^
 
 Here $u$ represents the temperature.
 
-To solve this equation numerically, we will first discretize $x$, $y$, and $u$ onto a two-dimensional grid such as we used to study [halo](/courses/parallel-computing-introduction/distributed_mpi_oned_division) exchanges. Grids are typically represented by some type of _array_ so we will denote the elements by indices $i$ and $j$. A point on the plate and its temperature will be represented in C++ as
+To solve this equation numerically, we will first discretize $x$, $y$, and $u$ onto a two-dimensional grid such as we used to study [halo](distributed_mpi_oned_division) exchanges. Grids are typically represented by some type of _array_ so we will denote the elements by indices $i$ and $j$. A point on the plate and its temperature will be represented in C++ as
 ```c++
 x[i],y[i],u[i][j]
 ```
@@ -33,5 +33,5 @@ x[i],y[i],u[i,j]
 
 The Laplace equation is an elliptical PDE.  The solution to elliptical PDEs is determined by the _boundary conditions_ and the forcing function, if one is present (it is zero for the Laplace equation).  We expect the solution to look something like this.
 
-{{< figure src="/courses/parallel-computing-introduction/img/heated_plate_steady_state.png" caption="Steady state of a heated plate with time-independent boundary conditions." >}}
+![](img/heated_plate_steady_state.png "Steady state of a heated plate with time-independent boundary conditions.")
 

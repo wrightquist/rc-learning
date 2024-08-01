@@ -38,7 +38,7 @@ We will illustrate with a simple (and very incomplete) example of code to work w
 
 **Example**
 
-Download the example Fortran code [fractions.f90](/courses/python-high-performance/codes/fractions.f90) to try this yourself.
+Download the example Fortran code [fractions.f90](codes/fractions.f90) to try this yourself.
 
 First create a Python _signature file_.
 ```
@@ -77,10 +77,12 @@ See the [documentation](https://cffi.readthedocs.io/en/latest/overview.html) for
 
 **Example**
 
-Download the [arith.c](/courses/python-high-performance/codes/arith.c) file and its corresponding [arith.h](/courses/python-high-performance/codes/arith.h) header file, which implements some trivial arithmetic functions.  
+Download the [arith.c](codes/arith.c) file and its corresponding [arith.h](codes/arith.h) header file, which implements some trivial arithmetic functions.  
 
 Now download the build_arith.py script
-{{< code-download file="/courses/python-high-performance/codes/build_arith.py" lang="python" >}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/build_arith.py)
+{{</ code >}}
 
 We must repeat the function prototypes in the `cdef` method. The `set_source` method takes several arguments, not all of which are shown in this example. The first is the name of the shared library that will be generated. Next is all preprocessor statements within triple-double quotes. The `sources` argument is a list of the source file or files.  Note that if the path is not in the current search path, it must be specified.  Our example shows a Unix-like path.  Finally, we invoke the compiler to create the library. CFFI will use the default system library.
 
@@ -114,11 +116,13 @@ One of the most popular packages that deals directly with C++ is [PyBind11](http
 One option is to use [CMake](), since it can be configured to generate the fairly complex Makefile required, and it also works on Windows.  A somewhat simpler method is to use the Python package `invoke`.  This can be installed through pip or through a manager such as a Linux operating system package manager.  The Python header file `Python.h` must also be accessible.
 
 **Example**
-We will wrap the [fractions.cxx](/courses/python-high-performance/codes/fractions.cxx) file.  It also requires the [fractions.h](/courses/python-high-performance/codes/fractions.h) header. These files implement a very incomplete Fractions class, similar to the Fortran example above.
+We will wrap the [fractions.cxx](codes/fractions.cxx) file.  It also requires the [fractions.h](codes/fractions.h) header. These files implement a very incomplete Fractions class, similar to the Fortran example above.
 
 1. Write the bindings wrap_fractions.cxx.
 
-{{% code-download file="/courses/python-high-performance/codes/wrap_fractions.cxx" lang="c++" %}}
+    {{< code lang="c++" >}}
+    [](/content/courses/python-high-performance/codes/wrap_fractions.cxx)
+{{</ code >}}
 
 2. Compile `fractions.cxx` into a shared library.  Invoke can be used for this, but a simple command line is also sufficient here.
 ```
@@ -133,7 +137,9 @@ in order to determine the include path.  On a particular system it returned
 -I/usr/include/python3.11 -I/usr/include/pybind11
 ```
 Take note of the include file paths, which will vary from one system to another.  Move into Python and run invoke
-{{% code-download file="/courses/python-high-performance/codes/tasks.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/tasks.py)
+{{</ code >}}
 
 This will create a module whose name begins with `py_fractions` (the rest of the name is specific to the platform on which it was created, and is ignored when importing).  Test that it works:
 ```python
@@ -148,15 +154,19 @@ Pybind11 requires C++ code that adheres to the C++11 standard or higher.  Anothe
 
 ## Cython
 
-Cython is a package that allows Python code to be compiled into C code.  Some rewriting is required because C requires statically-typed variables.  Cython defines two additional keywords to declare functions, `cdef` and `cpdef`. `cdef` is basically C and can produce the fastest code, but `cdef` declared functions are not visible to Python code that imports the module. `cpdef` is mix of C with dynamic bindings for passing of Python objects which makes it slower than `cdef` (<a href="https://notes-on-cython.readthedocs.io/en/latest/function_declarations.html" target="_blank">read the details</a>).
+Cython is a package that allows Python code to be compiled into C code.  Some rewriting is required because C requires statically-typed variables.  Cython defines two additional keywords to declare functions, `cdef` and `cpdef`. `cdef` is basically C and can produce the fastest code, but `cdef` declared functions are not visible to Python code that imports the module. `cpdef` is mix of C with dynamic bindings for passing of Python objects which makes it slower than `cdef` ([read the details](https://notes-on-cython.readthedocs.io/en/latest/function_declarations.html)).
 
 **Exercise:** `integrate.py` 
 
 Suppose we start with
-{{% code-download file="/courses/python-high-performance/codes/integrate_cyf.pyx" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/integrate_cyf.pyx)
+{{</ code >}}
 
 Save the above code as `integrate_cyf.pyx`.  Now create a `setup.py` file:
-{{% code-download file="/courses/python-high-performance/codes/setup.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/setup.py)
+{{</ code >}}
 
 On the command line run `python setup.py build_ext --inplace` to build the extension.
 
@@ -166,7 +176,7 @@ import integrate_cyf as icyf
 print(icyf.integrate_f(1.,51.,1000))
 ```
 
-More detailed information describing the use of Cython can be found <a href="https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html" target="_blank">here</a>.
+More detailed information describing the use of Cython can be found [here](https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html).
 
 ## Numba
 
@@ -176,7 +186,9 @@ Numba is available with the Anaconda Python distribution.   It compiles selected
 A well-known but slow way to compute pi is by a Monte Carlo method.  Given a circle of unit radius inside a square with side length 2, we can estimate the area inside and outside the circle by throwing “darts” (random locations).  Since the area of the circle is pi and the area of the square is 4, the ratio of hits inside the circle to the total thrown is pi/4.  
 
 Open the `MonteCarloPi.py` script.
-{{% code-download file="/courses/python-high-performance/codes/MonteCarloPi.py" lang="python" %}}
+{{< code lang="python" >}}
+    [](/content/courses/python-high-performance/codes/MonteCarloPi.py)
+{{</ code >}}
 
 Running with $10^9$ points takes 6 minutes and 21 seconds on one particular system.
 

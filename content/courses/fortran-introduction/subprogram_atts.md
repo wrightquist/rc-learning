@@ -93,7 +93,9 @@ $$ F_0 = 0 $$
 $$ F_1 = 1 $$
 $$ F_{N}=F_{N-1}+F_{N-2} $$
 
-{{< code-download file="/courses/fortran-introduction/codes/fibonnaci.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/fibonnaci.f90)
+{{</ code >}}
 
 **Exercise**
 
@@ -102,6 +104,8 @@ $$ F_{N}=F_{N-1}+F_{N-2} $$
 2. Write a program that computes the radian equivalent of 0 to 90 degrees in increments of 5 degrees.  Print the output.  Do it with a loop, and then by creating a one-dimensional array of angles and passing it to the function.
 
 {{< spoiler text="Example Solution" >}}
-{{< code-download file="/courses/fortran-introduction/solns/deg_rad.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/solns/deg_rad.f90)
+{{</ code >}}
 {{< /spoiler >}}
 

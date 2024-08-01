@@ -54,9 +54,9 @@ Installation on Windows is somewhat more complicated than on Unix variants.  Fir
 10. This will install to "C:\boost\include\boost-1_76_0" and "C:\boost\lib"
       You may remove temporary unpacking and build directories if you wish.  You may also move the header files up to C:\boost\include if you prefer.  Remember that `<boost/boostheader.hpp>` will use `-I` to start looking for that subdirectory.
 
-Using Boost is probably simplest with a Makefile.  The [example](/courses/cpp-introduction/codes/makefile.windows_boost) is for Windows with a particular choice of location for the boost header files and libraries.  Change the locations for `-I` and `-L` as appropriate if they are located elsewhere on your system.  Please refer to the earlier [chapter](/courses/cpp-introduction/make) for a review of setting up Makefiles.  This example goes with a standard Boost [example](/courses/cpp-introduction/codes/boost_example.cxx).
+Using Boost is probably simplest with a Makefile.  The [example](codes/makefile.windows_boost) is for Windows with a particular choice of location for the boost header files and libraries.  Change the locations for `-I` and `-L` as appropriate if they are located elsewhere on your system.  Please refer to the earlier [chapter](make) for a review of setting up Makefiles.  This example goes with a standard Boost [example](codes/boost_example.cxx).
 
-If you have installed Boost onto a Linux or macOS system to a system default search location such as `/usr` or `/usr/local` you will not need to specify the `-I` or `-L` paths at all.  The example [makefile](/courses/cpp-introduction/codes/makefile.linux_mac_boost) assumes installation in system paths in the compiler's default search paths.
+If you have installed Boost onto a Linux or macOS system to a system default search location such as `/usr` or `/usr/local` you will not need to specify the `-I` or `-L` paths at all.  The example [makefile](codes/makefile.linux_mac_boost) assumes installation in system paths in the compiler's default search paths.
 
 ## Boost MultiArrays
 
@@ -71,7 +71,9 @@ using namespace std;
 
 The Boost library provides a popular alternative, the MultiArray. This structure can be N-dimensional, its bounds (extents) can be checked, and it can be reshaped and resized.  The price is that it can be slow.
 
-{{< code-download file="/courses/cpp-introduction/codes/boost_array.cxx" lang="c++" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/codes/boost_array.cxx)
+{{</ code >}}
 
 **Exercise**
 

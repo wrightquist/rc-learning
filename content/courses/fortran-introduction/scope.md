@@ -44,7 +44,9 @@ The Fortran 2008 standard introduced the BLOCK construct.  A BLOCK is a scoping 
 
 IMPLICIT statements cannot appear in a block, but they do affect variables within the block.
 
-{{< code file="/courses/fortran-introduction/codes/blocker.f90" lang="fortran" >}}
+{{< code lang="fortran" >}}
+    [](/content/courses/fortran-introduction/codes/blocker.f90)
+{{</ code >}}
 
 ## CONTAINS and Nested Procedures
 
@@ -81,7 +83,7 @@ COMMON is a deprecated feature that is frequently seen in older code.  It is a m
 common /comname/ var1, var2, var3
 ```
 The variables in the common list will be available to _any_ program unit that includes the above line.  Variables in common between two program units should **not** be passed as subroutine parameters.
-Newer code should use [modules](/courses/fortran-introduction/modules) rather than COMMON.
+Newer code should use [modules](modules) rather than COMMON.
 
 ### Pitfalls with Common
 
@@ -94,6 +96,6 @@ where `file.h` can be any name; Fortran does not have a rule about file extensio
 COMMON is a frequent source of memory errors.
 COMMON makes interface control difficult to impossible.
 
-The recommended first step in updating [old code](/courses/fortran-introduction/updating_old_code) is to replace all COMMON with modules and then gradually to move the variables into the appropriate parameter lists. 
+The recommended first step in updating [old code](update_old_code.md) is to replace all COMMON with modules and then gradually to move the variables into the appropriate parameter lists. 
 
 COMMON is a vestige of the early computer era, when main memory was measuring in megabytes or even kilobytes, and every byte was precious.  With COMMON the global variables would occupy a single spot in memory, would not be copied, and could be reused.  In particularly old code it is not unusual for arrays in COMMON to be reshaped implicitly, since COMMON inherently represents a large linear block of memory.  Sometimes the EQUIVALENCE statement is still seen, by which types could be converted implicitly as long as they occupied the same number of bytes.

@@ -4,10 +4,16 @@ title: "Project 6"
 weight: 94
 ---
 
-Modify your `bird_data` struct from [Project 5](/courses/cpp-introduction/project5) to make it a class.  
+Modify your `bird_data` struct from [Project 5](project5) to make it a class.  
 
 {{< spoiler text="Sample solution" >}}
-{{< code-download file="/courses/cpp-introduction/solns/birdclass/birdData.h" lang="c++" >}}
-{{< code-download file="/courses/cpp-introduction/solns/birdclass/birdData.cxx" lang="c++" >}}
-{{< code-download file="/courses/cpp-introduction/solns/birdclass/birdstats.cxx" lang="cxx" >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/birdclass/birdData.h)
+{{</ code >}}
+{{< code lang="c++" >}}
+    [](/content/courses/cpp-introduction/solns/birdclass/birdData.cxx)
+{{</ code >}}
+{{< code lang="cxx" >}}
+    [](/content/courses/cpp-introduction/solns/birdclass/birdstats.cxx)
+{{</ code >}}
 {{< /spoiler >}}
