@@ -4,9 +4,10 @@
     {{ with .Content }}
     <div class="article-style">{{ . }}</div>
     {{ end }}
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <div class="filter" style="margin-bottom:2em;">
+    <div id="list-filter">
+        <p>
+        <input id="filter-search" placeholder="Search..." autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        </p>
         <p>
             <a href="#" data-filter="*" class="current"><button class="btn btn-info active">All</button></a>
             {{$section := .Section}}
@@ -33,26 +34,65 @@
         {{ end }}
     </div>
     <script type="text/javascript">
-         var $container = $('.page-list');
+        window.onload = () => {
+            const $container = $('.page-list');
+            const $search = $('#filter-search');
 
-            $('.filter a').click(function(){
-                $('.filter .current .btn').removeClass('active');
-                $('.filter .current').removeClass('current');
+            $container.isotope({
+                filter: null,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+
+            function filter(item, selector) {
+                const searchText = $search.val().toLowerCase();
+                let show = true;
+                if (selector) {
+                    show = item.hasClass(selector);
+                }
+                if (show && searchText.trim()) {
+                    show = (item.text() + "\n" + item.attr('class')).toLowerCase().includes(searchText);
+                }
+                return show;
+            }
+
+            $('.filter a').click(function () {
+                $('#list-filter .current .btn').removeClass('active');
+                $('#list-filter .current').removeClass('current');
                 $(this).addClass('current');
                 $('.btn', this).addClass('active');
-
-                var selector = $(this).attr('data-filter');
+                const selector = $(this).attr('data-filter');
                 $container.isotope({
-                    filter: selector,
-                    animationOptions: {
-                        duration: 750,
-                        easing: 'linear',
-                        queue: false
+                    filter: function () {
+                        return filter($(this), selector.slice(1))
                     }
                 });
                 return false;
             });
 
+            $search.on('input', function () {
+                const selector = $('#list-filter .current').attr('data-filter');
+                $container.isotope({
+                    filter: function () {
+                        return filter($(this), selector.slice(1))
+                    }
+                });
+            });
+        };
     </script>
+    <style>
+        #filter-search{
+            border: 1px solid #dedede;
+            border-radius: 1rem;
+            padding: 1rem;
+            width: 250px;
+            line-height: 1rem;
+            height: 1rem;
+            font-size: 0.8rem;
+        }
+    </style>
 </div>
 {{ end }}
