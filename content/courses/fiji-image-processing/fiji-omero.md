@@ -17,7 +17,7 @@ For more details, review the [OMERO tutorial](/content/tutorials/omero-hands-on)
 
 ## Installation of Fiji and the OMERO Plugin
 
-1. Install the Fiji application on your computer as described in this [chapter](/content/courses/fiji-image-processing/introduction).
+1. Install the Fiji application on your computer as described in this [chapter](introduction).
 
 2. Start Fiji and go to `Help` > `Update`. This starts the updater which looks for plugin updates online.
 
@@ -233,7 +233,7 @@ Fiji provides convenient programming wrappers for the Fiji/ImageJ and OMERO func
 * BeanShell: Syntax similar to Java, versatile
 * Several others…
 
-Fiji provides a richer programming environment than ImageJ and it is recommended to use Fiji instead of ImageJ for any script development.  Our [Fiji/ImageJ: Script development for Image Processing](/content/courses/fiji-image-processing/scripting) tutorial provides a more general introduction to this topic.
+Fiji provides a richer programming environment than ImageJ and it is recommended to use Fiji instead of ImageJ for any script development.  Our [Fiji/ImageJ: Script development for Image Processing](scripting) tutorial provides a more general introduction to this topic.
 
 ### Example Scripts
 To follow along, you can download the Jython scripts presented in this tutorial through **[this link](code/fiji-omero-scripts.zip)**.
@@ -319,7 +319,7 @@ OMERO organizes users in groups. Each user can be a member of multiple groups. I
 * the projects and datasets for a particular group (specified via unique group ID);
 * and a list of images, organized by project and dataset, that the user has access to in a particular group.
 
-The following script, `Omero_info.py` establishes a connection to the OMERO database and outputs your OMERO group memberships, as well as a list of all of your projects, datasets, and images. The code contains separate functions to connect to the database, retrieve information from the database, and parse the data into a set of tables.  If you're just starting with programming, you may find it helpful to work through our [Fiji Scripting](../scripting) and other tutorials on our [learning portal](/content/tutorials).
+The following script, `Omero_info.py` establishes a connection to the OMERO database and outputs your OMERO group memberships, as well as a list of all of your projects, datasets, and images. The code contains separate functions to connect to the database, retrieve information from the database, and parse the data into a set of tables.  If you're just starting with programming, you may find it helpful to work through our [Fiji Scripting](scripting) and other tutorials on our [learning portal](/content/tutorials).
 
 (Click on the black triangle next to **View** to take a look at the script.)
 
@@ -1041,7 +1041,7 @@ print "Done.\n"
  
 **Fiji Scripting**
 
-* RC tutorial [Fiji/ImageJ: Script development for Image Processing](../scripting)
+* RC tutorial [Fiji/ImageJ: Script development for Image Processing](scripting)
 * Tutorial: [](https://syn.mrc-lmb.cam.ac.uk/acardona/fiji-tutorial/)
 * Tips for Developers: [](https://imagej.net/Tips_for_developers)
 * API: [](https://imagej.nih.gov/ij/developer/api/)

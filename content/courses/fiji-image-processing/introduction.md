@@ -2,11 +2,12 @@
 date: 2023-05-30
 title: "Getting Started"
 weight: 15
-url_dataset: data/intro-fiji-images.zip
 ---
 
 ## Example Files
-{{< file-download file="/data/intro-fiji-images.zip" text="Example Data" >}}
+{{< file-download text="Example Data" >}}
+[](data/intro-fiji-images.zip)
+{{</ file-download >}}
 
 ## Fiji Installation
 

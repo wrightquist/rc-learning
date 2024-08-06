@@ -2,10 +2,11 @@
 date: 2021-10-14
 title: "Script development for Image Processing with Fiji"
 weight: 100
-url_code: /scripts/fiji/fiji-example-scripts.zip
 ---
 
-{{< file-download file="/scripts/fiji/fiji-example-scripts.zip" text="Example Scripts" >}}
+{{< file-download text="Example Scripts" >}}
+[](code/fiji-example-scripts.zip)
+{{</ file-download >}}
 
 This chapter is an introduction to the scripting interface of the [Fiji](https://fiji.sc) application, an open-source and enhanced version of the popular ImageJ program used for scientific image processing.  Here you will learn how to write scripts for automated execution of image processing pipelines and batch processing of multiple image files in Fiji.
 
