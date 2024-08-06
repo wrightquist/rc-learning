@@ -50,9 +50,7 @@ pip install --no-cache-dir ...
 QIIME 2 is a popular bioinformatics software. Can you suggest any potential improvement to the [Dockerfile](https://github.com/qiime2/vm-playbooks/blob/0fda9dce42802596756986e2f80c38437872c66e/docker/Dockerfile)? 
 
 {{< spoiler text="Answer" >}}
-
 With our [Dockerfile](https://github.com/uvarc/rivanna-docker/blob/master/qiime2/2020.8/Dockerfile), we managed to reduce the image size by half.
-
 {{</ spoiler >}}
 
 ---
@@ -105,98 +103,18 @@ LightGBM is a gradient boosting framework that uses tree based learning algorith
 1. Examine the [official Dockerfile](https://github.com/microsoft/LightGBM/blob/master/docker/gpu/dockerfile.gpu). Can you identify any problems?
 
     {{< spoiler text="Answer" >}}
-
-    - `nvidia/cuda:cudnn-devel` as [base image](https://hub.docker.com/r/nvidia/cuda/tags)  (>1 GB)
-    - Clean up in separate `RUN` statements
-
+        `nvidia/cuda:cudnn-devel` as [base image](https://hub.docker.com/r/nvidia/cuda/tags)  (>1 GB)  
+        Clean up in separate `RUN` statements
     {{</ spoiler >}}
-    <br>
 
 2. Let's try to build an image of the command line interface (CLI) alone. Copy the Dockerfile. Remove the Tini, Conda, Jupyter sections and everything related to python/conda. Build the image and note the image size.
 
     {{< spoiler text="Answer" >}}
-    
-    ```dockerfile
-    FROM nvidia/cuda:8.0-cudnn5-devel
-
-    #################################################################################################################
-    #           Global
-    #################################################################################################################
-    # apt-get to skip any interactive post-install configuration steps with DEBIAN_FRONTEND=noninteractive and apt-get install -y
-
-    ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-    ARG DEBIAN_FRONTEND=noninteractive
-
-    #################################################################################################################
-    #           Global Path Setting
-    #################################################################################################################
-
-    ENV CUDA_HOME /usr/local/cuda
-    ENV LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:${CUDA_HOME}/lib64
-    ENV LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/usr/local/lib
-
-    ENV OPENCL_LIBRARIES /usr/local/cuda/lib64
-    ENV OPENCL_INCLUDE_DIR /usr/local/cuda/include
-
-    #################################################################################################################
-    #           SYSTEM
-    #################################################################################################################
-    # update: downloads the package lists from the repositories and "updates" them to get information on the newest versions of packages and their
-    # dependencies. It will do this for all repositories and PPAs.
-
-    RUN apt-get update && \
-        apt-get install -y --no-install-recommends \
-        build-essential \
-        curl \
-        wget \
-        bzip2 \
-        ca-certificates \
-        libglib2.0-0 \
-        libxext6 \
-        libsm6 \
-        libxrender1 \
-        git \
-        vim \
-        mercurial \
-        subversion \
-        cmake \
-        libboost-dev \
-        libboost-system-dev \
-        libboost-filesystem-dev \
-        gcc \
-        g++
-
-    # Add OpenCL ICD files for LightGBM
-    RUN mkdir -p /etc/OpenCL/vendors && \
-        echo "libnvidia-opencl.so.1" > /etc/OpenCL/vendors/nvidia.icd
-
-    #################################################################################################################
-    #           LightGBM
-    #################################################################################################################
-
-    RUN cd /usr/local/src && mkdir lightgbm && cd lightgbm && \
-        git clone --recursive --branch stable --depth 1 https://github.com/microsoft/LightGBM && \
-        cd LightGBM && mkdir build && cd build && \
-        cmake -DUSE_GPU=1 -DOpenCL_LIBRARY=/usr/local/cuda/lib64/libOpenCL.so -DOpenCL_INCLUDE_DIR=/usr/local/cuda/include/ .. && \
-        make OPENCL_HEADERS=/usr/local/cuda-8.0/targets/x86_64-linux/include LIBOPENCL=/usr/local/cuda-8.0/targets/x86_64-linux/lib
-
-    ENV PATH /usr/local/src/lightgbm/LightGBM:${PATH}
-
-    #################################################################################################################
-    #           System CleanUp
-    #################################################################################################################
-    # apt-get autoremove: used to remove packages that were automatically installed to satisfy dependencies for some package and that are no more needed.
-    # apt-get clean: removes the aptitude cache in /var/cache/apt/archives. You'd be amazed how much is in there! the only drawback is that the packages
-    # have to be downloaded again if you reinstall them.
-
-    RUN apt-get autoremove -y && apt-get clean && \
-        rm -rf /var/lib/apt/lists/*
-    ```
-
+    {{< code lang="dockerfile" >}}
+    [](code/example1.dockerfile)
+    {{</ code >}}
     2.24 GB
-
     {{</ spoiler >}}
-    <br>
 
 3. Rewrite the Dockerfile using a multi-stage build based on [OpenCL](https://hub.docker.com/r/nvidia/cuda/tags).
     - Use `nvidia/opencl:devel` as the build stage
@@ -218,54 +136,11 @@ LightGBM is a gradient boosting framework that uses tree based learning algorith
     - Build the image and compare the image size with step 2.
 
     {{< spoiler text="Answer" >}}
-
-    ```dockerfile
-    FROM nvidia/opencl:devel AS build
-    
-    ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-        OPENCL_LIBRARIES=/usr/lib/x86_64-linux-gnu
-        OPENCL_INCLUDE_DIR=/usr/include/CL
-    ARG DEBIAN_FRONTEND=noninteractive
-
-    RUN apt-get update && \
-        apt-get install -y --no-install-recommends \
-        build-essential \
-        wget \
-        ca-certificates \
-        libglib2.0-0 \
-        libxext6 \
-        libsm6 \
-        libxrender1 \
-        git \
-        cmake \
-        libboost-dev \
-        libboost-system-dev \
-        libboost-filesystem-dev \
-        gcc \
-        g++ && \
-        rm -rf /var/lib/apt/lists/*
-
-    WORKDIR /usr/local/src/lightgbm
-    RUN git clone --recursive --branch stable --depth 1 https://github.com/microsoft/LightGBM && \
-        cd LightGBM && mkdir build && cd build && \
-        cmake -DUSE_GPU=1 -DOpenCL_LIBRARY=${OPENCL_LIBRARIES}/libOpenCL.so -DOpenCL_INCLUDE_DIR=${OPENCL_INCLUDE_DIR} .. && \
-        make OPENCL_HEADERS=${OPENCL_INCLUDE_DIR} LIBOPENCL=${OPENCL_LIBRARIES}
-
-    FROM nvidia/opencl:runtime
-    RUN apt-get update && \
-        apt-get install -y --no-install-recommends \
-        libxext6 libsm6 libxrender1 libboost-system-dev libboost-filesystem-dev gcc g++ && \
-        rm -rf /var/lib/apt/lists/*
-        
-    COPY --from=build /usr/local/src/lightgbm/LightGBM/lightgbm /lightgbm
-
-    ENTRYPOINT ["/lightgbm"]
-    ```
-
+    {{< code lang="dockerfile" >}}
+    [](code/example2.dockerfile)
+    {{</ code >}}
     374 MB (84% reduction)
-
     {{</ spoiler >}}
-    <br>
 
 4. Challenge: Verify that the two containers have the same performance on Rivanna's GPU node. Follow the [tutorial example](https://lightgbm.readthedocs.io/en/latest/GPU-Tutorial.html#dataset-preparation). Run the same job without using GPU. How much faster is it with GPU?
 
@@ -320,42 +195,16 @@ This exercise illustrates how we can cherry-pick files from the package manager 
     - `docker run --rm -it --entrypoint=bash <img>`
     - `ldd /usr/games/fortune`
 
-    <br>
-
     For your reference, the content of the packages can be found here:
     - fortune-mod [package list](https://packages.ubuntu.com/xenial/all/fortune-mod/filelist)
     - fortunes-min [package list](https://packages.ubuntu.com/xenial/all/fortunes-min/filelist)
 
-    <br>
-
 3. Having identified the necessary files to copy, add a second stage `FROM scratch` to your Dockerfile. Only `COPY` what's necessary. Build and compare image sizes.
 
     {{< spoiler text="Answer" >}}
-
-    ```dockerfile
-    FROM ubuntu:16.04 AS build
-
-    RUN apt-get update && apt-get install -y --no-install-recommends \
-            fortune fortunes-min && \
-        rm -rf /var/lib/apt/lists/*
-
-    FROM scratch
-
-    # fortune
-    COPY --from=build /usr/games/fortune /usr/games/fortune
-    COPY --from=build /usr/lib/x86_64-linux-gnu/librecode.so.0 /usr/lib/x86_64-linux-gnu/librecode.so.0
-    COPY --from=build /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
-    COPY --from=build /lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2
-
-    # fortunes-min
-    COPY --from=build /usr/share/doc/fortunes-min/ /usr/share/doc/fortunes-min/
-    COPY --from=build /usr/share/games/fortunes/ /usr/share/games/fortunes/
-
-    ENV PATH=/usr/games:${PATH}
-
-    ENTRYPOINT ["fortune"]
-    ```
-
+    {{< code lang="dockerfile" >}}
+    [](code/example3.dockerfile)
+    {{</ code >}}
     The image size comparison is 130 MB vs 4 MB, a 97% reduction.
     {{</ spoiler >}}
 
@@ -373,67 +222,10 @@ COPY --from=build /etc/OpenCL/vendors/nvidia.icd /etc/OpenCL/vendors/nvidia.icd
 Build the image and compare image sizes.
 
 {{< spoiler text="Answer" >}}
-
-```dockerfile
-FROM nvidia/opencl:devel AS build
-
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-    OPENCL_LIBRARIES=/usr/lib/x86_64-linux-gnu
-    OPENCL_INCLUDE_DIR=/usr/include/CL
-ARG DEBIAN_FRONTEND=noninteractive
-
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    build-essential \
-    wget \
-    ca-certificates \
-    libglib2.0-0 \
-    libxext6 \
-    libsm6 \
-    libxrender1 \
-    git \
-    cmake \
-    libboost-dev \
-    libboost-system-dev \
-    libboost-filesystem-dev \
-    gcc \
-    g++ && \
-    rm -rf /var/lib/apt/lists/*
-
-WORKDIR /usr/local/src/lightgbm
-RUN git clone --recursive --branch stable --depth 1 https://github.com/microsoft/LightGBM && \
-    cd LightGBM && mkdir build && cd build && \
-    cmake -DUSE_GPU=1 -DOpenCL_LIBRARY=${OPENCL_LIBRARIES}/libOpenCL.so -DOpenCL_INCLUDE_DIR=${OPENCL_INCLUDE_DIR} .. && \
-    make OPENCL_HEADERS=${OPENCL_INCLUDE_DIR} LIBOPENCL=${OPENCL_LIBRARIES}
-
-FROM scratch
-
-COPY --from=build /usr/local/src/lightgbm/LightGBM/lightgbm /lightgbm
-COPY --from=build \
-    /lib/x86_64-linux-gnu/libc.so.6 \
-    /lib/x86_64-linux-gnu/libdl.so.2 \
-    /lib/x86_64-linux-gnu/libgcc_s.so.1 \
-    /lib/x86_64-linux-gnu/libm.so.6 \
-    /lib/x86_64-linux-gnu/libpthread.so.0 \
-    /lib/x86_64-linux-gnu/
-
-COPY --from=build \
-    /usr/lib/x86_64-linux-gnu/libOpenCL.so.1 \
-    /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.65.1 \
-    /usr/lib/x86_64-linux-gnu/libboost_system.so.1.65.1 \
-    /usr/lib/x86_64-linux-gnu/libgomp.so.1 \
-    /usr/lib/x86_64-linux-gnu/libstdc++.so.6 \
-    /usr/lib/x86_64-linux-gnu/
-
-COPY --from=build /lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2
-
-COPY --from=build /etc/OpenCL/vendors/nvidia.icd /etc/OpenCL/vendors/nvidia.icd
-
-ENTRYPOINT ["/lightgbm"]
-```
-
+{{< code lang="dockerfile" >}}
+[](code/example4.dockerfile)
+{{</ code >}}
 The image size is merely **10.7 MB**, 99.5% smaller than what we started with. There is no loss in functionality or performance.
-
 {{</ spoiler >}}
 
 We submitted a [pull request](https://github.com/microsoft/LightGBM/pull/3408) that has been [merged](https://github.com/microsoft/LightGBM/tree/master/docker/gpu).
@@ -454,7 +246,7 @@ The TF 2.3 container that you used in the previous workshop is actually based on
 
 ## Dynamic vs Static Linking
 
-The above procedure, while impressive, may be tedious for the average user. All the examples so far are based on [dynamic linking](https://en.wikipedia.org/wiki/Dynamic_linker), where the shared libraries of an executable are stored separately. If you are compiling code from source, you may choose to build a static binary (e.g. `-static` in GCC) so that all the necessary libraries are built into the binary.
+The above procedure, while impressive, may be tedious for the average user. All the examples so far are based on [dynamic linking](https://en.wikipedia.org/wiki/Dynamic_linker), where the shared libraries of an executable are stored separately. If you are compiling code from source, you may choose to build a static binary (e.g. `-static` in GCC) so that all the necessary libraries are built into the binary.
 
 ## Exercise: Linking against OpenBLAS
 
@@ -509,49 +301,15 @@ where $A_{mk}, B_{kn}, C_{mn}$ are matrices and $\alpha, \beta$ are constants. F
 6. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
 
     {{< spoiler text="Answer" >}}
-
-    ```dockerfile
-    FROM gcc:10.2 AS build
-    RUN apt-get update && apt-get install -y --no-install-recommends libopenblas-dev && \
-        rm -rf /var/lib/apt/lists/*
-
-    WORKDIR /opt
-    COPY cblas_dgemm.c ./
-    RUN gcc -o cblas_dgemm cblas_dgemm.c -lopenblas -lpthread
-
-    FROM scratch
-    COPY --from=build /opt/cblas_dgemm /cblas_dgemm
-
-    COPY --from=build \
-        /lib/x86_64-linux-gnu/libc.so.6 \
-        /lib/x86_64-linux-gnu/libm.so.6 \
-        /lib/x86_64-linux-gnu/libpthread.so.0 \
-        /lib/x86_64-linux-gnu/
-
-    COPY --from=build /usr/lib/x86_64-linux-gnu/libopenblas.so.0 /usr/lib/x86_64-linux-gnu/libopenblas.so.0
-
-    COPY --from=build \
-        /usr/local/lib64/libgcc_s.so.1 \
-        /usr/local/lib64/libquadmath.so.0 \
-        /usr/local/lib64/libgfortran.so.5 \
-        /usr/local/lib64/
-
-    COPY --from=build /lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2
-
-    ENV LD_LIBRARY_PATH=/usr/local/lib64:$LD_LIBRARY_PATH
-
-    ENTRYPOINT ["/cblas_dgemm"]
-    ```
-
+    {{< code lang="dockerfile" >}}
+    [](code/example5.dockerfile)
+    {{</ code >}}
     1.29 GB vs 42.9 MB (97% reduction).
-
     {{</ spoiler >}}
-    <br>
 
 7. Re-compile the code with static linking by adding a `-static` flag. In the production stage simply copy the binary. Compare image sizes.
 
     {{< spoiler text="Answer" >}}
-
     ```dockerfile
     FROM gcc:10.2 AS build
     RUN apt-get update && apt-get install -y --no-install-recommends libopenblas-dev && \
@@ -565,9 +323,7 @@ where $A_{mk}, B_{kn}, C_{mn}$ are matrices and $\alpha, \beta$ are constants. F
     COPY --from=build /opt/cblas_dgemm /cblas_dgemm
     ENTRYPOINT [ "/cblas_dgemm" ]
     ```
-
     26.6 MB (98% reduction).
-
     {{</ spoiler >}}
 
 This exercise illustrates that it is easier to build a minimal container of a static binary.
@@ -629,65 +385,16 @@ LibTorch is the C++ frontend of PyTorch. This exercise is based on the ["Writing
 6. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
 
     {{< spoiler text="Answer" >}}
-
-    ```dockerfile
-    FROM gcc:10.2 AS build
-
-    RUN apt-get update && apt-get install -y --no-install-recommends \
-            build-essential cmake \
-            wget ca-certificates unzip && \
-        rm -rf /var/lib/apt/lists/*
-
-    WORKDIR /opt
-
-    RUN wget -q https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-1.7.1%2Bcpu.zip -O libtorch.zip && \
-        unzip libtorch.zip && rm libtorch.zip
-
-    WORKDIR /opt/dcgan
-    COPY dcgan.cpp CMakeLists.txt ./
-
-    RUN mkdir build && cd build && cmake .. && make
-
-    FROM scratch
-    COPY --from=build /opt/dcgan/build/dcgan /dcgan
-
-    COPY --from=build \
-        /lib/x86_64-linux-gnu/libc.so.6 \
-        /lib/x86_64-linux-gnu/libdl.so.2 \
-        /lib/x86_64-linux-gnu/libm.so.6 \
-        /lib/x86_64-linux-gnu/libpthread.so.0 \
-        /lib/x86_64-linux-gnu/librt.so.1 \
-        /lib/x86_64-linux-gnu/
-
-    COPY --from=build \
-        /opt/libtorch/lib/libc10.so \
-        /opt/libtorch/lib/libgomp-75eea7e8.so.1 \
-        /opt/libtorch/lib/libtorch.so \
-        /opt/libtorch/lib/libtorch_cpu.so \
-        /opt/libtorch/lib/
-
-    COPY --from=build \
-        /usr/local/lib64/libgcc_s.so.1 \
-        /usr/local/lib64/libstdc++.so.6 \
-        /usr/local/lib64/
-
-    COPY --from=build /lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2
-
-    ENV LD_LIBRARY_PATH=/usr/local/lib64:$LD_LIBRARY_PATH
-    ENTRYPOINT ["/dcgan"]
-    ```
-
+    {{< code lang="dockerfile" >}}
+    [](code/example6.dockerfile)
+    {{</ code >}}
     1.98 GB for build stage vs 314 MB for production stage (85% reduction).
-
     {{</ spoiler >}}
-    <br>
 
 7. Challenge: The above image cannot make use of GPU. Build an image for GPU. Hints:
     - You do not need a physical GPU to build an image for GPU.
     - Pick a `nvidia/cuda` base image. Read their overview page on Docker Hub to decide which flavor to use.
     - Choose a CUDA version to get the download link for LibTorch on the PyTorch webpage.
-
-    <br>
 
 8. Challenge: Can you build `dcgan` on Rivanna without using a container? Why (not)?
 
