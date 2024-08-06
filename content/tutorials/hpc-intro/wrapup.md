@@ -13,4 +13,4 @@ Thursdays:  10 am – noon
 
 For specific help you can [submit a ticket]( https://www.rc.virginia.edu/support/) (this may open Netbadge).
 
-![](img/rc_logo.png)
+![](/static/img/RC_logo.svg)

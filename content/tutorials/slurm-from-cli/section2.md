@@ -27,13 +27,13 @@ This example illustrates the main parts of a Slurm script.
 In a bash script, any text beyond the `#` is ignored.
 
 {{< code lang="bash" >}}
-    [](/content/tutorials/slurm-from-cli/scripts/hello.slurm)
+    [](/content/tutorials/slurm-from-cli/code/hello.slurm)
 {{</ code >}}
 
 This script runs the Python code
 
 {{< code lang="python" >}}
-    [](/content/tutorials/slurm-from-cli/scripts/hello.py)
+    [](/content/tutorials/slurm-from-cli/code/hello.py)
 {{</ code >}}
 
 ## The Hello.slurm Script
@@ -183,7 +183,7 @@ Use the File Manager to create, rename, or move your folders.
 
 #### Command Line
 
-If you are familiar with the command line, you can use that. If you wish to learn it, you can go through our [Unix Tutorials for Beginners](https://learning.rc.virginia.edu/tutorials/unix-tutorial/), especially Tutorials 1--3.  You can also go through our [HPC from the Terminal](https://learning.rc.virginia.edu/tutorials/rivanna-command-line/) tutorial if you have not already done so.
+If you are familiar with the command line, you can use that. If you wish to learn it, you can go through our [Unix Tutorials for Beginners](/content/tutorials/unix-tutorial), especially Tutorials 1--3.  You can also go through our [HPC from the Terminal](/content/tutorials/hpc-from-terminal) tutorial if you have not already done so.
 
 #### Changing into a Directory
 

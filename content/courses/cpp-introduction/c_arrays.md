@@ -49,7 +49,7 @@ Curly braces are required.
 Example:
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/simple_array.cxx)
+[](code/simple_array.cxx)
 {{</ code >}}
 
 Elements not explicitly initialized will be set to 0.
@@ -107,7 +107,7 @@ Declare a real array of rank 2 (two dimensions) and allocate it with new.  Alloc
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/c_arrays.cxx)
+[](solns/c_arrays.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 

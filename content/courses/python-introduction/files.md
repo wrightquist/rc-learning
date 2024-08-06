@@ -87,7 +87,7 @@ for file in os.listdir():
 
 If we do not need a list of the files but only an iterator, we can use `scandir`.  Scandir returns an object, not a string, so we must extract the parts we need.  The advantage to scandir is that it can be faster if we need to test any attributes of the file.  The `with` statement is intended to handle any [exceptions](exceptions).
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/scandir.py)
+    [](/content/courses/python-introduction/code/scripts/scandir.py)
 {{</ code >}}
 
 ### Copying and Moving Files
@@ -142,6 +142,6 @@ All three major operating systems have a Documents directory by default in their
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/file_fiddling.py)
+    [](/content/courses/python-introduction/code/exercises/file_fiddling.py)
 {{</ code >}}
 {{< /spoiler >}}

@@ -33,7 +33,7 @@ Modify each for loop in the previous [section's](for_loops) exercise to use a wh
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/sum_to_N_while.py)
+    [](/content/courses/python-introduction/code/exercises/sum_to_N_while.py)
 {{</ code >}}
 {{< /spoiler >}}
 

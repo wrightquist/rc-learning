@@ -72,7 +72,7 @@ the corresponding code will be executed and then the flow will proceed beyond th
 **Exercise**
 Experiment with various truth values for bool1 and bool2.
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/if_demo.f90)
+    [](/content/courses/fortran-introduction/code/if_demo.f90)
 {{</ code >}}
 
 ## SELECT CASE
@@ -103,7 +103,7 @@ Ranges are only applicable for numeric or character expressions.
 
 **Example**
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/selectcase.f90)
+    [](/content/courses/fortran-introduction/code/selectcase.f90)
 {{</ code >}}
 
 Exercise:

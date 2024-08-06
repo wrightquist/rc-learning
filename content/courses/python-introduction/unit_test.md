@@ -20,7 +20,7 @@ PyTest is easy to install and simple to use.  To implement our tests, we write f
 This is a very simple example from the PyTest [documentation](https://docs.pytest.org/en/7.1.x/getting-started.html)
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/test_example.py)
+    [](/content/courses/python-introduction/code/scripts/test_example.py)
 {{</ code >}}
 
 #### PyTest in Spyder or other IDEs, or Command-Line
@@ -42,7 +42,7 @@ pytest /Users/myid/Python/scripts/test_example.py
 Pytest allows, but does not require, the programmer to set up  multiple testing functions in a class. Another example from their documentation:
  
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/test_class.py)
+    [](/content/courses/python-introduction/code/scripts/test_class.py)
 {{</ code >}}
 
 The name of the class must begin with `Test`.  The tests are run by specifying the module name at the command line.
@@ -77,7 +77,7 @@ def func2(x,y):
 We have two functions we wish to test.  Testbook will require us to use the PyTest _fixtures_ feature mentioned above, so that we can access both functions through the `tb` object set up by PyTest. 
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/testnb.py)
+    [](/content/courses/python-introduction/code/scripts/testnb.py)
 {{</ code >}}
 
 We would run this as for other PyTest files with
@@ -105,7 +105,7 @@ Use this to write a unit test for the DoW function. You will need to parameteriz
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/test_dow.py)
+    [](/content/courses/python-introduction/code/exercises/test_dow.py)
 {{</ code >}}
 {{< /spoiler >}}
 

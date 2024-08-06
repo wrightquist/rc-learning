@@ -45,7 +45,7 @@ The names of the actual arguments when the function is invoked need not be the s
 A "subroutine" would be declared `void` (so it has no return value).  If it is a utility routine, such as to print a message, it does not require an argument list.  In C++ (but _not_ C) an empty argument list in the declaration is equivalent to a single `void` argument.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/printme.cxx)
+[](code/printme.cxx)
 {{</ code >}}
 
 ## Default (Optional) Arguments
@@ -67,7 +67,7 @@ Since they are not required, default arguments are also said to be _optional_.  
 
 Default arguments may be set in either the declaration (prototype) or the definition of the function, but not both.  The values are set at compile time.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/default_args.cxx)
+[](code/default_args.cxx)
 {{</ code >}}
 
 C++ does not support what other languages call "keyword" arguments. Optional arguments must be kept in position and may not be rearranged or skipped.
@@ -78,8 +78,8 @@ C++ does not support what other languages call "keyword" arguments. Optional arg
 
     {{< spoiler text="Example Solution" >}}
     {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/function1.cxx)
-{{</ code >}}
+    [](solns/function1.cxx)
+    {{</ code >}}
     {{< /spoiler >}}
     
     Print the values and the corresponding function evaluation to a comma-separated-values (CSV) file.  Use software such as Excel, Python, Matlab, or anything else you know to plot the result.
@@ -88,9 +88,9 @@ C++ does not support what other languages call "keyword" arguments. Optional arg
     
     {{< spoiler text="Example Solution" >}}
     {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/function2.h)
-{{</ code >}}
+    [](solns/function2.h)
+    {{</ code >}}
     {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/function2.cxx)
-{{</ code >}}
+    [](solns/function2.cxx)
+    {{</ code >}}
     {{< /spoiler >}}

@@ -15,13 +15,13 @@ For a compiler, _binding_ is the process of associating the calls to a function 
 Compile-time polymorphism is not limited to user-defined classes.  Functions may be **overloaded** by defining different functions with the same name but different return types and/or different argument lists, in number and/or type of arguments.  The compiler internally generates a "mangled" function name that creates a unique function for each case.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/overload.cxx)
+[](code/overload.cxx)
 {{</ code >}}
 
 Templating is a form of overloading.  We can convert our `sum` function into a template, and it will work for any type for which the `+` operator is defined.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/sum_template.cxx)
+[](code/sum_template.cxx)
 {{</ code >}}
 
 The `class` variable name (`typename` may also be used) is arbitrary, but `T` is customary.
@@ -36,7 +36,7 @@ vector<float> v;
 Even more generally, inherited class methods can be **overridden** by derived classes, modifying them to be more appropriate to the derived class. 
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/override.cxx)
+[](code/override.cxx)
 {{</ code >}}
 
 ## Runtime Polymorphism
@@ -44,7 +44,7 @@ Even more generally, inherited class methods can be **overridden** by derived cl
 Runtime polymorphism, or late binding, is achieved in C++ through _virtual functions_.  The virtual function is declared in the base class and is referenced through pointers or references in the derived classes.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/virtual.cxx)
+[](code/virtual.cxx)
 {{</ code >}}
 
 In this example we attach instances of each type to a _reference_ to the appropriate type.
@@ -52,7 +52,7 @@ In this example we attach instances of each type to a _reference_ to the appropr
 Among other things, virtual functions enable behaviors to occur when an instance of a class is passed (as a pointer or reference) to a function.  The function can bind the class method dynamically when it is invoked.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/late_binding.cxx)
+[](code/late_binding.cxx)
 {{</ code >}}
 
 Without `virtual` each derived class would need its own version of `printme`.

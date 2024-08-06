@@ -93,7 +93,7 @@ If your input files will always be of known length this isn’t necessary (or ef
 **Example**
 
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/fileio.f90)
+    [](/content/courses/fortran-introduction/code/fileio.f90)
 {{</ code >}}
 
 QUIZ

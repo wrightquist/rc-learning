@@ -25,7 +25,7 @@ weight: 150
     
     {{< spoiler text="Example solution" >}}
     {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/fractions.cxx)
-{{</ code >}}
+    [](solns/fractions.cxx)
+    {{</ code >}}
     {{< /spoiler >}}
 

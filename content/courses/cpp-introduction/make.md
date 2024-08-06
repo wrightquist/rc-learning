@@ -61,7 +61,7 @@ The pattern for creating the .o:
 
 Example:
 {{< code lang="make" >}}
-    [](/content/courses/cpp-introduction/codes/Makefile)
+[](code/Makefile)
 {{</ code >}}
 
 In this example, notice that the suffix rule applies the global compiler flags and explicitly includes the `-c` option.  If a particular file does not fit this pattern, a rule can be written for it and it will override the suffix rule.  The link rule includes the loader flags and the `-o` flag.  The compilation suffix rule uses the special symbol for the prequisite; the link rule applies to the current target.
@@ -74,7 +74,7 @@ For further reading about `make`, see the [gmake documentation](https://www.gnu.
 
 Makemake is a Perl script first developed by Michael Wester soon after the introduction of Fortran 90, in order to construct correct makefiles for modern Fortran code.  The version supplied here has been extended to work for C and C++ codes as well.  It is freely licensed but if you use it, please do not remove the credits at the top.
 
-[makemake](codes/makemake)
+[makemake](code/makemake)
 
 This version works reasonably well for Fortran, C, and C++.  It will generate stubs for all languages. You may remove any you are not using.  Also note that the output is a skeleton `Makefile`.  You must at minimum name your executable, and you must fill in any other options and flags you wish to use.  The `makemake` script blindly adds any files ending in the specified suffixes it finds in the current working directory whether they are independently compilable or not, so keep your files organized, and be sure to edit your Makefile if you have files you need but cannot be compiled individually.
 
@@ -84,19 +84,19 @@ Several other build tools, some called `makemake`, are available and may be newe
 
 Several IDEs will manage multiple files as a "project" and will generate a Makefile automatically.  They do not always pick up dependencies correctly, however, so the programmer may need to write a custom Makefile.  A script like one of the `makemake` examples can help.
 
-We will use the NetCDF library as an example.  This is a popular library for self-describing data files.  The example code is taken from their standard examples.  The file are [simple_xy_wr.cpp](netcdf_example/simple_xy_wr.cpp).
+We will use the NetCDF library as an example.  This is a popular library for self-describing data files.  The example code is taken from their standard examples.  The file are [simple_xy_wr.cpp](code/netcdf_example/simple_xy_wr.cpp).
 
 On our test Linux system, the library is not installed in a standard location, so we must add flags for the headers and library paths.  Our example assumes the programmer added the environment variable `$NETCDF_ROOT` to the shell.
 First we run makemake to obtain a skeleton Makefile.
 
-{{< code lang="'make'" >}}
-    [](/content/courses/cpp-introduction/netcdf_example/Makefile.sample)
+{{< code lang="make" >}}
+[](code/netcdf_example/Makefile.sample)
 {{</ code >}}
 
 We edit it to add the addition information required and to remove unneeded lines.
 
 {{< code lang="make" >}}
-    [](/content/courses/cpp-introduction/netcdf_example/Makefile)
+[](code/netcdf_example/Makefile)
 {{</ code >}}
 
 #### Make with MinGW/MSYS2 on Windows
@@ -104,7 +104,7 @@ We edit it to add the addition information required and to remove unneeded lines
 The MinGW64/MSYS2 system provides two versions of `make`.  In newer releases, on newer Windows, either should work.  If you do not wish to add an additional path to your PATH [environment variable](setting_up.md#environment-variables-in-windows) use `mingw32-make`.  You can change the Geany build commands through its [build tools](setting_up.md#build-commands-in-geany) menu.  The mingw32-make tool may not support as many features as the full-fledged Gnu `make` provided by MSYS2. You can use Gnu make by adding the folder `C:\msys64\usr\bin` to your PATH variable.  This would not require changing the build tool on Geany.  To build a `make` project with Geany, be sure the main program tab is selected, then from the Build menu select Make.
 
 Exercise 1:
-If you have not already done so, download or copy the [example.cxx](compiler_example/example.cxx) and its required [adder.cxx](compiler_example/adder.cxx) and header [adder.h](compiler_example/adder.h).  Place them into a separate folder.  Run `makemake`.  Edit the Makefile appropriately.  Build the project using Geany or your choice of IDE.
+If you have not already done so, download or copy the [example.cxx](code/compiler_example/example.cxx) and its required [adder.cxx](code/compiler_example/adder.cxx) and header [adder.h](code/compiler_example/adder.h).  Place them into a separate folder.  Run `makemake`.  Edit the Makefile appropriately.  Build the project using Geany or your choice of IDE.
 
 Exercise 2:
 If you are working on a system with NetCDF available, download the two files and the completed Makefile into their own folder.  Open Geany and browse to the location of the files.  Open the two source files.  Either select `Make` from the `Build` menu, or from the dropdown arrow next to the brick icon choose `Make All`.

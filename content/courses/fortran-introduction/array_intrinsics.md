@@ -91,7 +91,7 @@ A has shape(4,5,6). Then
 
 Pay attention to how sum and product work when a dimension is specified.  It can be unintuitive.
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/arraysum.f90)
+    [](/content/courses/fortran-introduction/code/arraysum.f90)
 {{</ code >}}
 
 ## Masking Array Intrinsics

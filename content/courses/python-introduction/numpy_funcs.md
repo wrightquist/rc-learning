@@ -142,7 +142,7 @@ Download the [bodyfat.csv](data/bodyfat.csv) file.  The weight is the third colu
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/bmi_code.py)
+    [](/content/courses/python-introduction/code/exercises/bmi_code.py)
 {{</ code >}}
 {{< /spoiler >}}
 

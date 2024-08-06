@@ -38,7 +38,7 @@ We will illustrate with a simple (and very incomplete) example of code to work w
 
 **Example**
 
-Download the example Fortran code [fractions.f90](codes/fractions.f90) to try this yourself.
+Download the example Fortran code [fractions.f90](code/fractions.f90) to try this yourself.
 
 First create a Python _signature file_.
 ```
@@ -77,11 +77,11 @@ See the [documentation](https://cffi.readthedocs.io/en/latest/overview.html) for
 
 **Example**
 
-Download the [arith.c](codes/arith.c) file and its corresponding [arith.h](codes/arith.h) header file, which implements some trivial arithmetic functions.  
+Download the [arith.c](code/arith.c) file and its corresponding [arith.h](code/arith.h) header file, which implements some trivial arithmetic functions.  
 
 Now download the build_arith.py script
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/build_arith.py)
+    [](/content/courses/python-high-performance/code/build_arith.py)
 {{</ code >}}
 
 We must repeat the function prototypes in the `cdef` method. The `set_source` method takes several arguments, not all of which are shown in this example. The first is the name of the shared library that will be generated. Next is all preprocessor statements within triple-double quotes. The `sources` argument is a list of the source file or files.  Note that if the path is not in the current search path, it must be specified.  Our example shows a Unix-like path.  Finally, we invoke the compiler to create the library. CFFI will use the default system library.
@@ -116,12 +116,12 @@ One of the most popular packages that deals directly with C++ is [PyBind11](http
 One option is to use [CMake](), since it can be configured to generate the fairly complex Makefile required, and it also works on Windows.  A somewhat simpler method is to use the Python package `invoke`.  This can be installed through pip or through a manager such as a Linux operating system package manager.  The Python header file `Python.h` must also be accessible.
 
 **Example**
-We will wrap the [fractions.cxx](codes/fractions.cxx) file.  It also requires the [fractions.h](codes/fractions.h) header. These files implement a very incomplete Fractions class, similar to the Fortran example above.
+We will wrap the [fractions.cxx](code/fractions.cxx) file.  It also requires the [fractions.h](code/fractions.h) header. These files implement a very incomplete Fractions class, similar to the Fortran example above.
 
 1. Write the bindings wrap_fractions.cxx.
 
     {{< code lang="c++" >}}
-    [](/content/courses/python-high-performance/codes/wrap_fractions.cxx)
+    [](/content/courses/python-high-performance/code/wrap_fractions.cxx)
 {{</ code >}}
 
 2. Compile `fractions.cxx` into a shared library.  Invoke can be used for this, but a simple command line is also sufficient here.
@@ -138,7 +138,7 @@ in order to determine the include path.  On a particular system it returned
 ```
 Take note of the include file paths, which will vary from one system to another.  Move into Python and run invoke
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/tasks.py)
+    [](/content/courses/python-high-performance/code/tasks.py)
 {{</ code >}}
 
 This will create a module whose name begins with `py_fractions` (the rest of the name is specific to the platform on which it was created, and is ignored when importing).  Test that it works:
@@ -160,12 +160,12 @@ Cython is a package that allows Python code to be compiled into C code.  Some re
 
 Suppose we start with
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/integrate_cyf.pyx)
+    [](/content/courses/python-high-performance/code/integrate_cyf.pyx)
 {{</ code >}}
 
 Save the above code as `integrate_cyf.pyx`.  Now create a `setup.py` file:
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/setup.py)
+    [](/content/courses/python-high-performance/code/setup.py)
 {{</ code >}}
 
 On the command line run `python setup.py build_ext --inplace` to build the extension.
@@ -187,7 +187,7 @@ A well-known but slow way to compute pi is by a Monte Carlo method.  Given a cir
 
 Open the `MonteCarloPi.py` script.
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/MonteCarloPi.py)
+    [](/content/courses/python-high-performance/code/MonteCarloPi.py)
 {{</ code >}}
 
 Running with $10^9$ points takes 6 minutes and 21 seconds on one particular system.

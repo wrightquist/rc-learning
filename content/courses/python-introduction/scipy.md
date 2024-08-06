@@ -47,7 +47,7 @@ Use the SciPy `ndimage` to tint a photograph.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/scipy_img.py)
+    [](/content/courses/python-introduction/code/exercises/scipy_img.py)
 {{</ code >}}
 {{< /spoiler >}}
 

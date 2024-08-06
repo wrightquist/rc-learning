@@ -104,7 +104,7 @@ Optionally, add exception handling to the file operations (opening, reading, etc
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/exceptions_example.py)
+    [](/content/courses/python-introduction/code/exercises/exceptions_example.py)
 {{</ code >}}
 {{< /spoiler >}}
 

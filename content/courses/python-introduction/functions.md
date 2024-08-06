@@ -88,7 +88,7 @@ Write another function that takes a BMI value and returns the category (Underwei
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/user_bmi_function.py)
+    [](/content/courses/python-introduction/code/exercises/user_bmi_function.py)
 {{</ code >}}
 {{< /spoiler >}}
 

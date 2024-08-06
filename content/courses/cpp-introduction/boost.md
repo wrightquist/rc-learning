@@ -14,24 +14,24 @@ In all cases, installing Boost requires some familiarity with using a command li
 #### Unix and macOS
 
 On a Linux system, the simplest way to install Boost is to utilize the package manager of the distribution.  For example on Ubuntu the command is
-```no-highlight
+```bash
 sudo apt install libboost-all-dev
 ```
 or on Fedora (or Centos 8 and beyond)
-```no-highlight
+```bash
 sudo dnf install boost
 sudo dnf install boost-devel
 ```
 If you do not have superuser (sudo) permission, or you wish to install Boost somewhere other than the main system libraries, follow the general [instructions](
 https://www.boost.org/doc/libs/1_76_0/more/getting_started/unix-variants.html).
 The default prefix for installation from `b2 install` is `/usr/local`.  This is true for both Linux and macOS.  If you wish to install to `/usr/local`, which is normally in the system search paths, you will need to run the installation command with sudo
-```no-highlight
+```bash
 cd path/to/boost/source
 ./bootstrap.sh
 sudo ./b2 install
 ```
 If you do not have sudo privileges or you wish to install it someplace else, keep in mind that this will affect how you reference the headers and libraries with `-I` and `-L`.  You must provide the prefix to the installation directory to the `bootstrap.sh` script to install someplace other than the default location.
-```no-highlight
+```bash
 ./bootstrap.sh --prefix=/home/mst3k/boost
 ./b2 install
 ```
@@ -42,10 +42,12 @@ Installation on Windows is somewhat more complicated than on Unix variants.  Fir
 1. Start a command window. If you wish to install Boost in a standard search path, you will need to run it as administrator.
 2. Unzip the .zip file into a folder of your choice `C:\yourpath`.  It will unpack to a folder with a version number, which may vary from our example `C:\yourpath\boost_1_76_0`
 3. Create some folders, e.g.
-      mkdir C:\boost-build
-      mkdir C:\yourpath\boost_1_76_0\boost-build
-      mkdir C:\boost
-4. From the command prompt, `cd C:\yourpath\boost_1_76_0\tools\build
+    ```bash
+    mkdir C:\boost-build
+    mkdir C:\yourpath\boost_1_76_0\boost-build
+    mkdir C:\boost
+   ```
+4. From the command prompt, `cd C:\yourpath\boost_1_76_0\tools\build`
 5. Run `boostrap.bat gcc`
 6. Install the build system with `b2 --prefix="C:\boost-build" install`
 7. Modify your session PATH with `set PATH=%PATH%;C:\boost-build\bin`
@@ -54,9 +56,9 @@ Installation on Windows is somewhat more complicated than on Unix variants.  Fir
 10. This will install to "C:\boost\include\boost-1_76_0" and "C:\boost\lib"
       You may remove temporary unpacking and build directories if you wish.  You may also move the header files up to C:\boost\include if you prefer.  Remember that `<boost/boostheader.hpp>` will use `-I` to start looking for that subdirectory.
 
-Using Boost is probably simplest with a Makefile.  The [example](codes/makefile.windows_boost) is for Windows with a particular choice of location for the boost header files and libraries.  Change the locations for `-I` and `-L` as appropriate if they are located elsewhere on your system.  Please refer to the earlier [chapter](make) for a review of setting up Makefiles.  This example goes with a standard Boost [example](codes/boost_example.cxx).
+Using Boost is probably simplest with a Makefile.  The [example](code/makefile.windows_boost) is for Windows with a particular choice of location for the boost header files and libraries.  Change the locations for `-I` and `-L` as appropriate if they are located elsewhere on your system.  Please refer to the earlier [chapter](make) for a review of setting up Makefiles.  This example goes with a standard Boost [example](code/boost_example.cxx).
 
-If you have installed Boost onto a Linux or macOS system to a system default search location such as `/usr` or `/usr/local` you will not need to specify the `-I` or `-L` paths at all.  The example [makefile](codes/makefile.linux_mac_boost) assumes installation in system paths in the compiler's default search paths.
+If you have installed Boost onto a Linux or macOS system to a system default search location such as `/usr` or `/usr/local` you will not need to specify the `-I` or `-L` paths at all.  The example [makefile](code/makefile.linux_mac_boost) assumes installation in system paths in the compiler's default search paths.
 
 ## Boost MultiArrays
 
@@ -72,9 +74,9 @@ using namespace std;
 The Boost library provides a popular alternative, the MultiArray. This structure can be N-dimensional, its bounds (extents) can be checked, and it can be reshaped and resized.  The price is that it can be slow.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/boost_array.cxx)
+[](code/boost_array.cxx)
 {{</ code >}}
 
 **Exercise**
 
-If you have succeeded in installing Boost, or you have access to a system where it has been installed, download and run the above boost_array.cxx program.
+If you have succeeded in installing Boost, or you have access to a system where it has been installed, download and run the above [boost_array.cxx](code/boost_array.cxx) program.

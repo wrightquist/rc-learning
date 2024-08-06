@@ -45,15 +45,15 @@ Chauvenet’s criterion: It’s not the state of the art but works pretty well.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/stats.cxx)
+[](solns/stats.cxx)
 {{</ code >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/bmistats.h)
+[](solns/bmistats.h)
 {{</ code >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/bmistats.cxx)
+[](solns/bmistats.cxx)
 {{</ code >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/bmi.cxx)
+[](solns/bmi.cxx)
 {{</ code >}}
 {{< /spoiler >}}

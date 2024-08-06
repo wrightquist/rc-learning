@@ -5,9 +5,7 @@ summary: "This hands-on workshop provides an overview of neural networks with a 
 authors: [as,jmh]
 categories: ["GPU","Machine Learning","Python","Deep Learning"]
 weight: 300
-#notes: matlab-deep-learning
-url_slides: slides/deep-learning-with-gpu/DL_with_GPU.pptx
-#url_code: scripts/deep-learning-with-gpu/somefile.zip
+url_slides: /slides/deep-learning-with-gpu/DL_with_GPU.pptx
 ---
 
 This workshop will briefly discuss differences between CPUs and GPUs. It will provide an overview of neural networks and discuss methods to use single and multiple GPUs effectively to train deep learning models. Example codes will also be provided. Prior experience with python programming language and some familiarity with machine learning concepts are helpful for this workshop.

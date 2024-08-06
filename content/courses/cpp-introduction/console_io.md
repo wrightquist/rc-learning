@@ -51,7 +51,7 @@ The special symbol "\n" represents the "newline" character.  This terminates the
 
 C++ also supports the C `printf` function.  The `<cstdio>` header provides it.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/out_printf.cxx)
+[](code/out_printf.cxx)
 {{</ code >}}
 More details are available at references such as [this](https://www.cplusplus.com/reference/cstdio/printf/).
 
@@ -71,7 +71,7 @@ It will wait indefinitely until all variables specified are entered.  If the inp
 
 Try different input values for this code.  Try entering floats or words.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/read_cin.cxx)
+[](code/read_cin.cxx)
 {{</ code >}}
 
 ## Formatted Input/Output
@@ -110,7 +110,7 @@ These manipulators stay in effect in a given output stream until cancelled.
 
 **Example**
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/out_manip.cxx)
+[](code/out_manip.cxx)
 {{</ code >}}
 
 A more complete list of manipulators is [here](https://www.cplusplus.com/reference/library/manipulators/).
@@ -125,20 +125,20 @@ A more complete list of manipulators is [here](https://www.cplusplus.com/referen
 
    {{< spoiler text="Example Solution" >}}
    {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/print_pi.cxx)
-{{</ code >}}
+   [](solns/print_pi.cxx)
+   {{</ code >}}
    {{< /spoiler >}}
 
 2. In an “infinite” while loop:
 
-Request an integer from the user without advancing to a new line, e.g.
-
-“Please enter an integer:” <then read integer>
-
-If the integer is 1, print “zebra”.  If it is 2, print “kangaroo”.  If it is anything else except for zero, print “not found”.  If it is 0, exit the loop.
-
-{{< spoiler text="Example Solution" >}}
-{{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/kangaroo.cxx)
-{{</ code >}}
-{{< /spoiler >}}
+    Request an integer from the user without advancing to a new line, e.g.
+    
+    “Please enter an integer:” <then read integer>
+    
+    If the integer is 1, print “zebra”.  If it is 2, print “kangaroo”.  If it is anything else except for zero, print “not found”.  If it is 0, exit the loop.
+    
+    {{< spoiler text="Example Solution" >}}
+    {{< code lang="c++" >}}
+    [](solns/kangaroo.cxx)
+    {{</ code >}}
+    {{< /spoiler >}}

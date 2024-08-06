@@ -27,13 +27,13 @@ comm.Barrier()
 It is seldom needed in Python.  For examples in C++ and Fortran, please see 
 {{< spoiler text="scatter.cxx" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/codes/scatter.cxx)
+    [](/content/courses/parallel-computing-introduction/code/scatter.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="scatter.f90" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/scatter.f90)
+    [](/content/courses/parallel-computing-introduction/code/scatter.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -160,21 +160,21 @@ In MPI_Alltoall, each process sends data to every other process.  Let us conside
 ### C++
 {{< spoiler text="alltoall.cxx" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/codes/alltoall.cxx)
+    [](/content/courses/parallel-computing-introduction/code/alltoall.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 ### Fortran
 {{< spoiler text="alltoall.f90" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/alltoall.f90)
+    [](/content/courses/parallel-computing-introduction/code/alltoall.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 ### Python
 {{< spoiler text="alltoall.py" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/alltoall.py)
+    [](/content/courses/parallel-computing-introduction/code/alltoall.py)
 {{</ code >}}
 {{< /spoiler >}}
 

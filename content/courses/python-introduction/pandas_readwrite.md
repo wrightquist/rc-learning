@@ -113,6 +113,6 @@ Read the data into a dataframe.  Summarize the data.  Look at the first 20 lines
 "Data.Temperature.Max Temp" and "Data.Temperature.Min Temp" to "Data.AvgTemp", "Data.MaxTemp", and "Data.MinTemp" respectively.  Print the mean of the average temperature.
 
 {{< spoiler text="Example Solution, zipped Jupyter notebook" >}}
-[pandas_weather_ex1.zip](exercises/pandas_weather_ex1.zip)
+[pandas_weather_ex1.zip](code/exercises/pandas_weather_ex1.zip)
 {{< /spoiler >}}
 

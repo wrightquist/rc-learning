@@ -21,6 +21,6 @@ Compute the inflation rate for the data and print with the corresponding year to
 
 {{< spoiler text="Sample solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/inflation.cxx)
+[](solns/inflation.cxx)
 {{</ code >}}
 {{< /spoiler >}}

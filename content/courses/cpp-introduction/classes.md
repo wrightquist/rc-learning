@@ -129,7 +129,7 @@ current salary as a parameter?
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/employees.cxx)
+[](solns/employees.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 

@@ -72,7 +72,7 @@ Shared-memory programs can use multiple cores but they must be physically locate
 
 Example Slurm script for a threaded program:
 {{< code lang="bash" >}}
-    [](/content/tutorials/slurm-from-cli/scripts/multicore.slurm)
+    [](/content/tutorials/slurm-from-cli/code/multicore.slurm)
 {{</ code >}}
 
 ### Multinode (MPI)
@@ -80,14 +80,14 @@ Example Slurm script for a threaded program:
 In this type of parallelism, each process runs independently and communicates with others through a library, the most widely-used of which is MPI.  Distributed memory programs can run on single or multiple nodes and often can run on hundreds or even thousands of cores.  For distributed-memory programs you can use the `-N` option to request a number of nodes, along with `ntasks-per-node` to schedule a number of processes on each of those nodes.
 
 {{< code lang="bash" >}}
-    [](/content/tutorials/slurm-from-cli/scripts/multinode.slurm)
+    [](/content/tutorials/slurm-from-cli/code/multinode.slurm)
 {{</ code >}}
 
 ### Hybrid MPI plus Threading
 Some codes can run with distributed-memory processes, each of which can run in threaded mode.  For this, request `--ntasks-per-node=NT` and `cpus-per-task=NC`, keeping in mind that the total number of cores requested on each node is then $NT \times NC$.
 
 {{< code lang="bash" >}}
-    [](/content/tutorials/slurm-from-cli/scripts/hybrid.slurm)
+    [](/content/tutorials/slurm-from-cli/code/hybrid.slurm)
 {{</ code >}}
 
 ## Job Arrays
@@ -138,7 +138,7 @@ The script should be prepared to request resources for _one_ instance of your pr
 
 Complete example array job script:
 {{< code lang="bash" >}}
-    [](/content/tutorials/slurm-from-cli/scripts/array.slurm)
+    [](/content/tutorials/slurm-from-cli/code/array.slurm)
 {{</ code >}}
 
 To cancel an entire array, cancel the global ID

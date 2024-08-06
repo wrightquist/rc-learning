@@ -20,17 +20,17 @@ We might first think all processes should be in the Receive state, then Send the
 
 {{< spoiler text=C++ >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/codes/exchange_deadlock.cxx)
+    [](/content/courses/parallel-computing-introduction/code/exchange_deadlock.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Fortran >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/exchange_deadlock.f90)
+    [](/content/courses/parallel-computing-introduction/code/exchange_deadlock.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Python >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/exchange_deadlock.py)
+    [](/content/courses/parallel-computing-introduction/code/exchange_deadlock.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -42,17 +42,17 @@ Perhaps we can swap the MPI_Send and MPI_Recv. The Send will pack up the message
 
 {{< spoiler text=C++ >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/codes/exchange_unsafe.cxx)
+    [](/content/courses/parallel-computing-introduction/code/exchange_unsafe.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Fortran >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/exchange_unsafe.f90)
+    [](/content/courses/parallel-computing-introduction/code/exchange_unsafe.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Python >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/exchange_unsafe.py)
+    [](/content/courses/parallel-computing-introduction/code/exchange_unsafe.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -64,17 +64,17 @@ For a safe exchange, we split the ranks by even and odd.  One set sends first, w
 
 {{< spoiler text=C++ >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/codes/exchange_safe.cxx)
+    [](/content/courses/parallel-computing-introduction/code/exchange_safe.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Fortran >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/exchange_safe.f90)
+    [](/content/courses/parallel-computing-introduction/code/exchange_safe.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Python >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/exchange_safe.py)
+    [](/content/courses/parallel-computing-introduction/code/exchange_safe.py)
 {{</ code >}}
 {{< /spoiler >}}
 

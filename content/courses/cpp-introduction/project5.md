@@ -22,23 +22,23 @@ For example, if after the sort the permutation vector is (17,3,55,11,23, and so 
 Using online resources, figure out how to do this.  Hint: you will need to use a "custom comparitor."
 
 Test the user input portion for 
-<br>
+
 TurkeyVulture
-<br>
+
 TuftedTitmouse 
-<br>
+
 ElegantTrogon
 
 For this project you can require an exact match of the species name.  (Note that no spaces are allowed and words are separated by capitalization; we would have to do more sophisticated string handling if we were to allow spaces and variations in capitalization.)
 
 {{< spoiler text="Sample solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/birdstruct/birdData.h)
+[](solns/birdstruct/birdData.h)
 {{</ code >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/birdstruct/birdData.cxx)
+[](solns/birdstruct/birdData.cxx)
 {{</ code >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/birdstruct/birdstats.cxx)
+[](solns/birdstruct/birdstats.cxx)
 {{</ code >}}
 {{< /spoiler >}}

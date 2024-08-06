@@ -5,6 +5,6 @@ summary: "This tutorial is an introduction to using several popular bioinformati
 authors: [gka]
 categories: ["HPC","Bioinformatics"]
 weight: 500
-url_slides: slides/bioinfo-tools-riv
+url_slides: /slides/bioinfo-tools-riv
 ---
 

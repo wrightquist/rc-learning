@@ -8,7 +8,7 @@ weight: 50
 url_video: /videos/globus-data-transfer.mp4
 ---
 
-![](imgs/globus.png)
+![](img/globus.png)
 
 This tutorial will cover data transfer to and from UVA Research Computing storage systems using Globus software. Topics include: installing Globus, transferring files, monitoring large transfers, and sharing data with collaborators.
 
@@ -31,7 +31,7 @@ Globus now has the add functionality of:
 
 Globus provides a secure, unified interface to your research data. Use Globus to "fire and forget" high-performance data transfers between systems within and across organizations.
 
-![](imgs/globus_advantages.png?300)
+![](img/globus_advantages.png?300)
 
 There are many advantages to using Globus:
 
@@ -85,11 +85,11 @@ Most activities with globus will require logging in at their Website.
 
 Start from the Globus home page:
 
-![](imgs/globus_homepage.png?500)
+![](img/globus_homepage.png?500)
 
 Log in with your organization login (Netbadge)
 
-![](imgs/globus_login.png?500)
+![](img/globus_login.png?500)
 
 # Installing Globus on Your Computer
 
@@ -113,11 +113,11 @@ The screenshots and set of instructions below show how to navigate to the instal
 
 Download the software for your operating system:
 
-![](imgs/globus_download_personal_connector.png?700 "Find the link to download for your operating system")
+![](img/globus_download_personal_connector.png?700 "Find the link to download for your operating system")
 
 Install the software:
 
-![](imgs/globus_install_personal_connector.png?700 "Download the application")
+![](img/globus_install_personal_connector.png?700 "Download the application")
 
 ## Setting Up Globus on Your Computer
 
@@ -131,7 +131,7 @@ Set up Globus once it is installed on your computer.
 4. **Do NOT click the High Assurance checkbox!** The UVA Ivy Data Transfer Node (UVA IVY-DTN) is already configured for sensitive data transfer. Checking the box is redundant conflicts with the default configuration.  The checkbox is not required at all for the Standard Security Storage collection.
 5. Click "Save" then "Exit Setup".
 
-![](imgs/globus_setup_personal_connector.png?700 "Setting up the Globus Personal Connector")
+![](img/globus_setup_personal_connector.png?700 "Setting up the Globus Personal Connector")
 
 ## Adding Folders to the Globus Path
 
@@ -146,9 +146,9 @@ When you first set up Globus, it only has access to certain folders of your loca
 5. Select the drive location and click “Open”
 6. Navigate to the drive in the File Manager
 
-![](imgs/globus_connect_options.png "Select Options or Preferences from the Globus Connect menu.")
+![](img/globus_connect_options.png "Select Options or Preferences from the Globus Connect menu.")
 
-![](imgs/globus_connect_add_location.png "After clicking the +, navigate to the folder you wish to add.")
+![](img/globus_connect_add_location.png "After clicking the +, navigate to the folder you wish to add.")
 
 **Tips for Navigating to Mapped Drives**
 
@@ -181,15 +181,15 @@ These **instructions** summarize the steps to set up and start a transfer.
 
 First we must assign the source and destination collections.
 
-![](imgs/globus_search_for_collection.png?500 "Searching for collections")
+![](img/globus_search_for_collection.png?500 "Searching for collections")
 
 Start typing into the Collection textbox. A search bar will appear. Type until you find your personal collection name in the dropdown.  A green icon to the left of the name indicates an active collection.  Red icons show inactive collections.
 
-![](imgs/globus_finding_collection.png?500 "Finding your collection")
+![](img/globus_finding_collection.png?500 "Finding your collection")
 
 Do the same thing for the UVA collection you are targeting. Check again for the green "stack" icon for an active collection. In this case we also see a green "columns" icon.  This indicates the collection is _managed_.
 
-![](imgs/globus_uva_standard_security_collection.png?500 "Find the managed collection")
+![](img/globus_uva_standard_security_collection.png?500 "Find the managed collection")
 
 ## Getting Ready to Transfer
 
@@ -203,7 +203,7 @@ We are now ready to initialize our transfer.
 
 Navigate to the folder or files to be transferred on the source (here the personal collection).  Chose the files or folders you wish to transfer.
 
-![](imgs/globus_select_folder.png?500 "Select files or folders to transfer")
+![](img/globus_select_folder.png?500 "Select files or folders to transfer")
 
 Navigate to the target folder on the destination (here the UVA Standard Security Collection).  You may need to move through several levels to find your target folder.
 
@@ -212,12 +212,12 @@ Navigate to the target folder on the destination (here the UVA Standard Security
 You can optionally click the transfer options box to set specific parameters for your transfer.
 
 - By default, transfers on UVA DTNs are synced (option 1) and encrypted (option 5) – no need to select them.
-    ![](imgs/globus_transfer_options.png?500)
+    ![](img/globus_transfer_options.png?500)
 - Files with errors will cause the entire transfer to fail – skip files with errors instead (option 6).
-    ![](imgs/globus_transfer_option_skip_files_with_errors.png?500)
+    ![](img/globus_transfer_option_skip_files_with_errors.png?500)
 - You can schedule one-time and regular transfers with Timer.
 - When ready, click the blue <span style=color:blue>Start</span> button that points in the appropriate direction. When complete, the new folder will appear in the destination pane.
-    ![](imgs/globus_completed_transfer.png?500)
+    ![](img/globus_completed_transfer.png?500)
 
 ## Monitoring Your Data Transfer
 
@@ -229,7 +229,7 @@ Globus users are able to share data with anyone with a Globus account. All UVA R
 
 External collaborators don’t need to be affiliated with an institution using Globus in order for you to share data with them. Anyone can create a personal Globus account using @globusid.org
 
-![](imgs/globus_collab.png?500)
+![](img/globus_collab.png?500)
 
 The instructions below show how to create a **shared endpoint**, a folder in which collaborators can upload and download data. Shared endpoints may be public (visible to the world!) or accessible only to users with permission.
 
@@ -246,7 +246,7 @@ The instructions below show how to create a **shared endpoint**, a folder in whi
 
 Optional: Add write permissions so the user can upload data. Enter an email message to the recipient if you wish.
 
-![](imgs/globus_setup_guest_collection.png?500)
+![](img/globus_setup_guest_collection.png?500)
 
 ## Troubleshooting
 
@@ -259,4 +259,4 @@ Some problems occur frequently. Here are a few tips to solve them:
 | Globus is transferring folders but they’re all empty.                                            | There is probably a file with bad permissions or characters in the filename. Choose “Skip files with errors” in the Transfer options |
 | I can’t connect to UVA Standard Security Storage.                                                | When leaving UVA, your Eservices account can expire before your email – meaning no Globus access.                                    |
 
-![](imgs/globus_transfer_option_skip_files_with_errors.png?500)
+![](img/globus_transfer_option_skip_files_with_errors.png?500)

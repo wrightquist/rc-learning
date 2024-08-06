@@ -32,7 +32,7 @@ As a general rule, globals over multiple files should be avoided.  Defining them
 Within a scoping unit, if a local variable is defined with the same name as a global variable, the local variable takes precedence.  The global variable can be accessed with the _scope resolution_ operator `::`.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/scope.cxx)
+[](code/scope.cxx)
 {{</ code >}}
 
 Beware of changes in behavior in `for` loops.  Prior to the C++98 standard, declaring a loop variable within the parentheses left it in scope.  So code such as the following was legal:
@@ -84,12 +84,12 @@ namespace yellow {
 ```
 Notice that we can have variables with the same names in different namespaces, because a namespace is a scoping unit.  We must reference the variables with their namespace name:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/namespace.cxx)
+    [](code/namespace.cxx)
 {{</ code >}}
 
 Namespaces can be nested:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/nestednamespace.cxx)
+    [](code/nestednamespace.cxx)
 {{</ code >}}
 
 ### The Using Directive
@@ -114,7 +114,7 @@ Another form of the directive limits the reference to one item only.
 The namespace must have been defined before we can do this.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/namespacescope.cxx)
+[](code/namespacescope.cxx)
 {{</ code >}}
 
 #### Using in Header Files

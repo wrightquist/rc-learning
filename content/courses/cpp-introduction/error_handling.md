@@ -90,7 +90,7 @@ Assemble the example snippets into a working program.
 
 {{< spoiler text="Example" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/exceptions.cxx)
+[](solns/exceptions.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -142,6 +142,6 @@ Run the following code as is on your platform. Change the number of bits to make
 
 {{< spoiler text="Example" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/static_assert.cxx)
+[](code/static_assert.cxx)
 {{</ code >}}
 {{< /spoiler >}}

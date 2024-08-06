@@ -6,7 +6,9 @@ weight: 255
 
 Suppose you have some data in a file and you wish to plot it. The file is 
 
-{{< file-download file="/courses/python-introduction/data/VaGoldfinch.txt" text="VaGoldfinch.txt" >}}
+{{< file-download text="VaGoldfinch.txt" >}}
+[](data/VaGoldfinch.txt)
+{{</ file-download >}}
 
 Please download this file and follow along in Jupyter or another environment of your choice.
 

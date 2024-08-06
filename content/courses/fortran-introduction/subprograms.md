@@ -82,7 +82,7 @@ Subroutines have no return type and cannot be declared.
 
 **Example**
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/subprogs.f90)
+    [](/content/courses/fortran-introduction/code/subprogs.f90)
 {{</ code >}}
 
 #### Renaming Function Results 

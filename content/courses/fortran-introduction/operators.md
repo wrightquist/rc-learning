@@ -60,7 +60,7 @@ Points to note:
 
 **Example**
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/testmod.f90)
+    [](/content/courses/fortran-introduction/code/testmod.f90)
 {{</ code >}}
 
 ## Expressions

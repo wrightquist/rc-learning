@@ -97,7 +97,7 @@ integer                 :: day
 Pulling the array indexing capabilities all together we have a complete program:
 
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/arrayinds.f90)
+    [](/content/courses/fortran-introduction/code/arrayinds.f90)
 {{</ code >}}
 
 This code contains some features, such as string concatenation, that we will study later.

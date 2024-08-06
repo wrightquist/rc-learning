@@ -19,33 +19,33 @@ plt.plot(x,y)
 plt.show()
 ```
 This results in
-![](imgs/SimplePlot.png "A simple Matplotlib plot.")
+![](img/SimplePlot.png "A simple Matplotlib plot.")
 
 Let us write a more sophisticated example.  This is a scatter plot with points randomly placed according to a normal distribution.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/scatter_plot.py)
+    [](/content/courses/python-introduction/code/scripts/scatter_plot.py)
 {{</ code >}}
 
-![](imgs/ScatterPlot.png "Scatter plot.")
+![](img/ScatterPlot.png "Scatter plot.")
 
 We can place more sophisticated labeling or multiple plots on a graph with `subplot`
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/subplots.py)
+    [](/content/courses/python-introduction/code/scripts/subplots.py)
 {{</ code >}}
 
-![](imgs/SubPlot.png "Scatter plot.")
+![](img/SubPlot.png "Scatter plot.")
 
 Many other options are available for annotations, legends, and so forth.
 
 More advanced plots are provided.  The following demonstrates streamlines for vector fields, such as fluid flows.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/streamlines.py)
+    [](/content/courses/python-introduction/code/scripts/streamlines.py)
 {{</ code >}}
 
-![](imgs/StreamPlots.png "Streamlines plot.")
+![](img/StreamPlots.png "Streamlines plot.")
 
 Matplotlib can also make histograms, pie charts, and so forth.  These are commonly used with Pandas, and Pandas can access them directly, as we will see.
 
@@ -55,7 +55,7 @@ For higher-dimensional plots we can use `contour`, `contourf`, `surface`, and ot
 
 Contour plot example:
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/contour.py)
+    [](/content/courses/python-introduction/code/scripts/contour.py)
 {{</ code >}}
 
 The `meshgrid` function takes two rank-1 arrays and returns two rank-2 arrays, with each point labeled with both `x` and `y` values.  Notice how NumPy array operations are used to compute the function values from the meshgrid arrays.
@@ -63,7 +63,7 @@ The `meshgrid` function takes two rank-1 arrays and returns two rank-2 arrays, w
 Surface plots require the `mplot3d` package and some additional commands to set views and sometimes lighting.  
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/surface.py)
+    [](/content/courses/python-introduction/code/scripts/surface.py)
 {{</ code >}}
 
 Recent versions of Matplotlib can apply _style sheets_ to change the overall appearance of plots.  For example, NumPy has modified its default style, but the older one (shown in some of our illustrations) is available as "classic."  Matplotlib can also be styled to imitate the R package `ggplot`.  See the [gallery](https://matplotlib.org/gallery/style_sheets/style_sheets_reference.html#sphx-glr-gallery-style-sheets-style-sheets-reference-py)
@@ -82,18 +82,18 @@ for the possibilities.
 Seaborn 0.9 or later is needed for the "relationship" plot example below. This example uses a built-in demo dataset.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/seaborn_demo.py)
+    [](/content/courses/python-introduction/code/scripts/seaborn_demo.py)
 {{</ code >}}
 
-![](imgs/SeabornDemo1.png "Seaborn line plots with error bounds.")
+![](img/SeabornDemo1.png "Seaborn line plots with error bounds.")
 
 Many other statistical plots are available including boxplots, violin plots, distribution plots, and so forth.  The next example is a heatmap.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/seaborn_demo2.py)
+    [](/content/courses/python-introduction/code/scripts/seaborn_demo2.py)
 {{</ code >}}
 
-![](imgs/SeabornDemo2.png "Seaborn heatmap.")
+![](img/SeabornDemo2.png "Seaborn heatmap.")
 
 The call to `sns.set()` imposes the default Seaborn theme to all Matplotlib plots as well as those using Seaborn.  Seaborn provides a number of methods to modify the appearance of its plots as well as Matplotlib plots created while the settings are in scope.  For many examples see their [tutorial](https://seaborn.pydata.org/tutorial/aesthetics.html#aesthetics-tutorial) on styling plots.
 

@@ -90,6 +90,6 @@ The upper-case version works _only_ with buffered objects, usually NumPy Ndarray
 The mpi4py package supports the C datatypes, in the format `MPI.Dtype` rather than `MPI_Dtype`, but they are seldom required as an argument to the MPI functions.  It is strongly recommended that the type of each NumPy array be explicitly declared with the `dtype` option, to ensure that the types match in both send and receive buffers.  
 
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/mpi4py_ex.py)
+    [](/content/courses/parallel-computing-introduction/code/mpi4py_ex.py)
 {{</ code >}}
 

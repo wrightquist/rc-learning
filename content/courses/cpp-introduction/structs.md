@@ -121,7 +121,7 @@ Arrays may be declared of struct types.
 
 This example assumes a C++11 compiler for the initialization.  
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/employees.cxx)
+[](code/employees.cxx)
 {{</ code >}}
 
 Notice in the vector example, we create an element with `push_back` by invoking the _default constructor_.  In C++ a struct has many of the same properties as a _class_, but we will defer discussing this until we cover [classes](classes).
@@ -137,7 +137,7 @@ Copy the [vabirds.csv](data/vabirds.csv) file. Each line of this file consists o
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/read_bird_data.cxx)
+[](solns/read_bird_data.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 

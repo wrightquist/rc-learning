@@ -42,7 +42,7 @@ In this error, `forrtl` indicates it is a message from the Fortran runtime libra
 Our discussion of building your code has assumed the use of a command line on Unix.  An IDE can simplify the process even on that platform.
 We will use Geany for our example; more sophisticated IDEs have more capabilities, but Geany illustrates the basic functions.
 
-We have two files in our project, [example.f90](compiler_example/example.f90) and [adder.f90](compiler_example/adder.f90).  The main program is `example.f90`.  It needs `adder.f90` to create the executable.  We must open the two files in Geany.  Then we must compile (not build) each one separately.  Once we have successfully compiled both files, we open a terminal window (cmd.exe on Windows).  We navigate to the folder where the files are located and type
+We have two files in our project, [example.f90](code/compiler_example/example.f90) and [adder.f90](code/compiler_example/adder.f90).  The main program is `example.f90`.  It needs `adder.f90` to create the executable.  We must open the two files in Geany.  Then we must compile (not build) each one separately.  Once we have successfully compiled both files, we open a terminal window (cmd.exe on Windows).  We navigate to the folder where the files are located and type
 ```
 gfortran -o example example.o adder.o
 ```

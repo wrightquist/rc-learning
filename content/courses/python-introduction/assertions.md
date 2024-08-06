@@ -12,7 +12,7 @@ We can recast our tests for dow.py in a somewhat ad hoc manner.
 
 {{< spoiler text="Setting up tests for our DoW function." >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/dow_tests.py)
+    [](/content/courses/python-introduction/code/scripts/dow_tests.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -37,7 +37,7 @@ The assert statement is intended for debugging only; use standard `try` and `exc
 Run the following code from the command line (or use !python in an iPython console, or open a terminal in JupyterLab), first with `python assert_it.py` and then with `python -O assert_it.py`.  What should you do instead of using `assert` in this code?
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/assert_it.py)
+    [](/content/courses/python-introduction/code/scripts/assert_it.py)
 {{</ code >}}
 
 **Exercise**
@@ -45,7 +45,7 @@ Starting from the dow_buggy.py script, add assertions to test for bugs.
 
 {{< spoiler text="Setting up tests for our DoW function." >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/dow_assert.py)
+    [](/content/courses/python-introduction/code/exercises/dow_assert.py)
 {{</ code >}}
 {{< /spoiler >}}
 

@@ -10,7 +10,7 @@ The first time you open Spyder it will offer a tour of its features. We recommen
 
 Type code into the editor.  The explorer window can show files, variable values, and other useful information.  The iPython console is a frontend to the Python interpreter itself.  It is comparable to a cell in JupyterLab.
 
-![](imgs/Spyder.png "Default layout for Spyder with a dark-on-light theme.")
+![](img/Spyder.png "Default layout for Spyder with a dark-on-light theme.")
 
 Spyder automatically inserts a few lines at the top of the editor pane for each new script.  The first line, starting with the hash mark (`#`) is a _comment_ and is ignored by the interpreter. After that are some lines that start and end with triple double quotes (`"" "" ""`).  This is a special kind of string called a documentation string or _docstring_.  We will discuss comments and docstrings [later](expressions_statements). Start any of your scripting lines below the docstring.
 
@@ -92,7 +92,7 @@ You must save a file before you can run it.  Go the File menu, Save As, and name
 
 When we run this code, we see the plot appear in the Plots tab of the upper-right pane.  We can right-click on the image to bring up a menu that allows us to save the plot.
 
-![](imgs/SpyderSine.png "A simple plot in Spyder.")
+![](img/SpyderSine.png "A simple plot in Spyder.")
 
 #### The Variable Explorer
 

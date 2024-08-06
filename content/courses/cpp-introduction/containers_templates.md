@@ -47,7 +47,7 @@ Several templated containers are available in the standard library.
 The array container "wraps" C-style fixed-size arrays.  Unlike a bare array, the container carries metadata, including the array size and other descriptive elements.  It also does not "decay" to a pointer when passed to a function, meaning that it doesn't "forget" the metadata within the function.
 
 {{< code lang="cxx" >}}
-    [](/content/courses/cpp-introduction/codes/std_array.cxx)
+[](code/std_array.cxx)
 {{</ code >}}
 
 A standard array is a sequence and we can use a range-based `for` loop with it.  Note also the peculiar declaration of the loop variable in the three-element loop; this is required because the array container defines its size and index variables to be of an _unsigned_ int of type `size_type`. Strictly speaking, it should always be used for loop variables for standard containers, since they are defined internally that way.  The intention was to allow for very large array sizes without overflowing a loop variable.  A standard `int` or `long` will nearly always work, and the compiler will not complain, but best practice is to make the loop variable match the internal definition.  The `size_type` depends on the vector template so would have to be declared `std::vector<float>::size_type`; a shortcut that is safe, yet less wordy, is to use `std::size_t`.
@@ -67,7 +67,7 @@ But unlike arrays, vectors are dynamic.  It's possible to enlarge and shrink the
 
 Initializing vectors:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/std_vector.cxx)
+[](code/std_vector.cxx)
 {{</ code >}}
 
 Many operations are defined for a vector.  These are some of the most commonly used:
@@ -102,7 +102,7 @@ You may use an integer for appropriate loop variables, but remember that `size_t
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/vector.cxx)
+[](solns/vector.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 

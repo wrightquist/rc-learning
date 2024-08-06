@@ -110,11 +110,11 @@ Be careful with the period ("dot") notation for column names, since if one happe
 Without an assignment, the `columns` attribute holds the names of the columns.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/weather_df.py)
+    [](/content/courses/python-introduction/code/scripts/weather_df.py)
 {{</ code >}}
 
 {{< code lang="no-highlight" >}}
-    [](/content/courses/python-introduction/scripts/weather_df.out)
+    [](/content/courses/python-introduction/code/scripts/weather_df.out)
 {{</ code >}}
 
 This range syntax for the row range is _not_ inclusive, as is usual for Python.
@@ -148,7 +148,7 @@ Describe the dataset. Print the column names. Iterate through the indexes and pr
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/iris.py)
+    [](/content/courses/python-introduction/code/exercises/iris.py)
 {{</ code >}}
 {{< /spoiler >}}
 

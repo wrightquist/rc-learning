@@ -13,14 +13,14 @@ Internally, the contents of the variables in the argument list must be passed to
 Pass by reference uses the operator `&` to pass a reference to the memory location of the variable.  If a referenced variable is changed in the function, its contents outside will also be changed.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/subroutine.cxx)
+[](code/subroutine.cxx)
 {{</ code >}}
 
 Changing the value of an argument within a function is often called a _side effect_ of the function.
 
 C++ can also pass by _pointer_, which is very similar to passing by reference but has a few subtle distinctions.  A pointer is an actual variable whose value is the memory address to which it points; a reference is an object that holds the memory address of the variable it references.  A pointer can have the value NULL; a reference cannot.  Arithmetic can be carried out with pointers but not with references.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/pointer_pass.cxx)
+[](code/pointer_pass.cxx)
 {{</ code >}}
 
 ## Passing Arrays to Subprograms
@@ -136,7 +136,7 @@ where f is a function.
 
 {{< spoiler text="Full example of passing a subprogram as a dummy variable" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/trap.cxx)
+[](code/trap.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 

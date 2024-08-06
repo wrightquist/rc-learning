@@ -79,11 +79,11 @@ To visualize the task graph for a given Dask object, be sure that _graphviz_ is 
 
 **Example** 
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/dask_viz.py)
+    [](/content/courses/python-high-performance/code/dask_viz.py)
 {{</ code >}}
 
 {{< spoiler text="Expected result" >}}
-![](codes/da_mean.png?300)
+![](img/da_mean.png?300)
 {{< /spoiler >}}
 
 ### Dask Dataframes
@@ -148,7 +148,7 @@ When creating a Dataframe, Dask does attempt to assign a type to each column.  I
 **Example**
 
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/dask_df_example.py)
+    [](/content/courses/python-high-performance/code/dask_df_example.py)
 {{</ code >}}
 
 ### Dask Delayed
@@ -158,7 +158,7 @@ Another example of _lazy evaluation_ by Dask is delayed evaluation. Sometimes fu
 **Example** 
 
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/dask_delayed.py)
+    [](/content/courses/python-high-performance/code/dask_delayed.py)
 {{</ code >}}
 
 It is also possible to invoke delayed through a decorator.

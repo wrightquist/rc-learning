@@ -21,17 +21,17 @@ Try to write the serial code before peeking at the examples.
 #### Serial Codes
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/codes/montecarlo_pi.cxx)
+    [](/content/courses/parallel-computing-introduction/code/montecarlo_pi.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/montecarlo_pi.f90)
+    [](/content/courses/parallel-computing-introduction/code/montecarlo_pi.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/montecarlo_pi.py)
+    [](/content/courses/parallel-computing-introduction/code/montecarlo_pi.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -75,17 +75,17 @@ C++ and Fortran programmers: if you are not familiar with passing subprogram nam
 #### Serial Codes
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/codes/trap.cxx)
+    [](/content/courses/parallel-computing-introduction/code/trap.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/trap.f90)
+    [](/content/courses/parallel-computing-introduction/code/trap.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/trap.py)
+    [](/content/courses/parallel-computing-introduction/code/trap.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -128,17 +128,17 @@ Generate a list of N random values for each of x and y over the above range. For
 #### Serial Codes
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/codes/find_max.cxx)
+    [](/content/courses/parallel-computing-introduction/code/find_max.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/find_max.f90)
+    [](/content/courses/parallel-computing-introduction/code/find_max.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/find_max.py)
+    [](/content/courses/parallel-computing-introduction/code/find_max.py)
 {{</ code >}}
 {{< /spoiler >}}
 

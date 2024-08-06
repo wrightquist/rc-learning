@@ -171,7 +171,7 @@ Non-advancing IO _must_ be formatted
 
     {{< spoiler text="A variety of formatting examples" >}}
     {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/formats.f90)
+    [](/content/courses/fortran-introduction/code/formats.f90)
 {{</ code >}}
     {{< /spoiler >}}
     

@@ -6,7 +6,6 @@ categories: ["Programming","Git"]
 authors: [uvarc]
 categories: ["Programming","Git"]
 weight: 100
-#url_slides: slides/git-intro/git-slides.html
 ---
 
 ## Introduction

@@ -1,6 +1,10 @@
-{{ $file := .Get "file" }}
 {{ $text := .Get "text" }}
-<a href="{{ $file }}" class="btn btn-outline-primary" download>
+{{ $file := .Inner | plainify }}
+{{ $file = replaceRE "(\\s)" "" $file }}
+{{ $file = substr $file 3 -1 }}
+{{ with partial "util_resolve_url" (dict "page" .Page "src" $file) }}
+<a href="/{{ . }}" class="btn btn-outline-primary" download>
     {{ ( print $text | markdownify ) }}
     <i class="fa fa-download" aria-hidden="true"></i>
 </a>
+{{ end }}

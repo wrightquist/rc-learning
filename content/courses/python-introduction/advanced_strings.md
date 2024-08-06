@@ -120,7 +120,7 @@ string.whitespace    #space, tab, linefeed, return, formfeed, and vertical tab.
 Assign the string "1,ninety,23.8,4,two" to a variable. Split the string on the commas. Go through the resulting list and find the items that consist of alphabetical characters, collecting them into another list.  Join them into a new string using `-` as the delimiter.
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/string_functions.py)
+    [](/content/courses/python-introduction/code/exercises/string_functions.py)
 {{</ code >}}
 {{< /spoiler >}}
 

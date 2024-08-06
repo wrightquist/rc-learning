@@ -98,7 +98,7 @@ We will show Geany and VSCode on Windows.  Both look similar on the other platfo
 
 Open Geany (or VSCode).  Type in the following
 {{< code lang="no-highlight" >}}
-    [](/content/courses/cpp-introduction/codes/hello.cxx)
+[](code/hello.cxx)
 {{</ code >}}
 
 ![](img/Geany1.png?500)

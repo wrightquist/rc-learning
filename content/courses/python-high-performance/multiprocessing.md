@@ -91,7 +91,7 @@ if __name__ == "__main__":
 The map method accommodates only one argument to the function.  For Python 3.3 and later, `starmap` is available for multiple arguments.  An efficient way to generate the required iterator of tuples is to use the [zip()](https://docs.python.org/3/library/functions.html?highlight=zip%20function#zip) function.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/mpstarmap.py)
+    [](/content/courses/python-high-performance/code/mpstarmap.py)
 {{</ code >}}
 
 Another set of functions is `apply` and `apply_async`.  The difference between the apply group and map/map_async is that apply returns the result from only one element of the pool.  Like `starmap`, apply supports multiple arguments, but there is no starmap_async so if we need a nonblocking routine equivalent, we should use apply_async.  We will need to collect the results ourselves.
@@ -117,7 +117,7 @@ Map requires an iterator for its second argument. We will manually divide the to
 We also do not hard-code the number of processes, but will set an environment variable `NUM_PROCS` outside to select the core count. 
 
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/MonteCarloPiMC.py)
+    [](/content/courses/python-high-performance/code/MonteCarloPiMC.py)
 {{</ code >}}
 
 #### Running on a Local Computer
@@ -155,7 +155,7 @@ For those who have access to a high-performance computing cluster such as UVA's 
 In order to execute our program on designated compute node(s), we need to write a simple bash script that defines the compute resources we need.  We call this our job script.  For our example, the job script `pimc.sh` looks like this:
 
 {{< code lang="bash" >}}
-    [](/content/courses/python-high-performance/codes/pimc.sh)
+    [](/content/courses/python-high-performance/code/pimc.sh)
 {{</ code >}}
 
 You can view this script in a text editor on an HPC frontend.  If you are connected through a FastX Mate session, go to the menu **Applications** -> **Accessories** --> **Pluma Text Editor**.

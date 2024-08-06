@@ -28,7 +28,7 @@ To go the other direction we _write_ the number into an empty stringstream buffe
 ```
 Putting this together gives us this example:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/str_stream.cxx)
+[](code/str_stream.cxx)
 {{</ code >}}
 
 ## Reading from the Command Line
@@ -41,14 +41,14 @@ The command line is contained in a two-dimensional character array (one dimensio
 
 We can read strings only.  You must convert if necessary to a numerical type using stringstreams.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/cl.cxx)
+[](code/cl.cxx)
 {{</ code >}}
 
 ### Getline
 
 The `getline` function reads an entire line at once, as a single string.  This means that we will need to handle the input ourselves, converting as appropriate.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/getline_read.cxx)
+[](code/getline_read.cxx)
 {{</ code >}}
 
 Getline's name is a little misleading.
@@ -71,7 +71,7 @@ Example:
 * We often need to read files where each line contains several fields separated by a comma or other delimiter.  For example: read four values from each line for 200 lines, ignoring the second column values.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/read_csv.cxx)
+[](code/read_csv.cxx)
 {{</ code >}}
 
 Getline is used twice, once to read the line as a string and again to split the line on commas.  In this case we know that we have four fields in each line so we declare an array of strings.  More generally, we could use a vector and `push_back` after getline reads the next chunk to the delimiter.  To read the subunits of the line, we declare a stringstream and use that as the stream buffer, rather than a file descriptor.
@@ -88,9 +88,9 @@ Getline is used twice, once to read the line as a string and again to split the 
     
     {{< spoiler text="Example Solution" >}}
     {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/read_cpi.cxx)
-{{</ code >}}
-    {{< /spoiler >}}
+    [](solns/read_cpi.cxx)
+    {{</ code >}}
+    {{</ spoiler >}}
 
 2. Write a program that creates a file mydata.txt containing four rows consisting of
 ```
@@ -103,7 +103,7 @@ Rewind the file and read the data back.  Write a loop to add 1 to each value and
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/read_write_csv.cxx)
+[](solns/read_write_csv.cxx)
 {{</ code >}}
-{{< /spoiler >}}
+{{</ spoiler >}}
 

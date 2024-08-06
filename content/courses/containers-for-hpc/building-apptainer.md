@@ -396,7 +396,7 @@ Let's try to build a lolcow container in Alpine via a sandbox.
 ```bash
 $ apptainer build --sandbox alpine docker://alpine:3.17
 $ apptainer shell -w alpine
-Apptainer> echo "@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+Apptainer> echo "@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 Apptainer> apk add fortune cowsay@testing lolcat@testing
 Apptainer> rm /var/cache/apk/*
 Apptainer> exit

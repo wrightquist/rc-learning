@@ -107,7 +107,7 @@ as the command.  You won't need to request a specific amount of memory. Submit t
 
 {{< spoiler text="Example script" >}}
 {{< code lang="bash" >}}
-    [](/content/tutorials/slurm-from-cli/scripts/slow.slurm)
+    [](/content/tutorials/slurm-from-cli/code/slow.slurm)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -188,7 +188,7 @@ If your memory utilization is low and you have requested a specified amount, use
 
 ## Stream Output in Slurm
 
-When running a program interactively, any output to the Unix [standard streams](https://learning.rc.virginia.edu/tutorials/unix-tutorial/unix_tutorial_3/) will be printed directly to the user's console window.  However, programs running under the control of Slurm will not have a console attached. 
+When running a program interactively, any output to the Unix [standard streams](/content/tutorials/unix-tutorial/unix_tutorial_3.md) will be printed directly to the user's console window.  However, programs running under the control of Slurm will not have a console attached. 
 
 By default, SLURM redirects both standard output and standard error to a file called `slurm-<jobid>.out`.
 

@@ -66,7 +66,7 @@ Write a loop that will sum the first N integers.  Hint: you will need a variable
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/sum_to_N.py)
+    [](/content/courses/python-introduction/code/exercises/sum_to_N.py)
 {{</ code >}}
 {{< /spoiler >}}
 

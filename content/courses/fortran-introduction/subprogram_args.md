@@ -142,7 +142,7 @@ end interface
 
 {{< spoiler text="Full example of passing a subprogram as a dummy variable" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/trap.f90)
+    [](/content/courses/fortran-introduction/code/trap.f90)
 {{</ code >}}
 {{< /spoiler >}}
 

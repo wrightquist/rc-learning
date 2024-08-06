@@ -58,7 +58,7 @@ df2 = pd.DataFrame({'ID #': [1,2,3,4,5,6,7,8,9,10],
 
 ## Project 16
 
-Download the file [pandas_demo.ipynb](scripts/pandas_demo_blank.zip) and the data files [eighthr.data](data/eighthr.data) and [eightr.names](data/eighthr.names). If you are using Windows, check that it does not append ".txt" to the data files.  You may need to open File Explorer, go to View, and check "File name extensions."  Open the notebook in JupyterLab or Jupyter.  Go through the exercises in each cell.
+Download the file [pandas_demo.ipynb](code/scripts/pandas_demo_blank.zip) and the data files [eighthr.data](data/eighthr.data) and [eightr.names](data/eighthr.names). If you are using Windows, check that it does not append ".txt" to the data files.  You may need to open File Explorer, go to View, and check "File name extensions."  Open the notebook in JupyterLab or Jupyter.  Go through the exercises in each cell.
 
 {{< spoiler text="Example solution, zipped Jupyter notebook" >}}
 [pandas_demo.zip](solns/proj_set_4/pandas_demo.zip)

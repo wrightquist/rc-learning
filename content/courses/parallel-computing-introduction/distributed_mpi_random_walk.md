@@ -25,19 +25,19 @@ Download the serial code for your language of choice.  Compile it (if appropriat
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/codes/random_walk.cxx)
+    [](/content/courses/parallel-computing-introduction/code/random_walk.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/random_walk.f90)
+    [](/content/courses/parallel-computing-introduction/code/random_walk.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/random_walk.py)
+    [](/content/courses/parallel-computing-introduction/code/random_walk.py)
 {{</ code >}}
 {{< /spoiler >}}
 

@@ -41,7 +41,7 @@ As for modules, any variables defined outside of and above the methods are _glob
 Example:  
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/mymodule.py)
+    [](/content/courses/python-introduction/code/scripts/mymodule.py)
 {{</ code >}}
 
 The first line defines the class name.  The next line is the docstring.  After that we define and initialize a variable that is global to the class.  The first method is the constructor.  The ultimate class constructor is always named `__init__` (two underscores).  The first argument to init, and to all methods in Python, is the _instance variable_.  The next two arguments to the constructor are actually passed from the caller.  They are used to initialize the two attributes `x` and `y`.  Notice that `self.x` and `x` are completely different variables; similarly for `self.y` and `y`.

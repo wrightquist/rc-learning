@@ -5,7 +5,7 @@ summary: "Getting started with image processing using MATLAB&trade;"
 authors: [cag]
 categories: ["Image Processing","MATLAB"]
 weight: 220
-url_dataset: data/matlab-image-processing.zip
+url_dataset: /tutorials/matlab-image-processing/data/matlab-image-processing.zip
 ---
 
 Please download the sample image dataset before you begin.

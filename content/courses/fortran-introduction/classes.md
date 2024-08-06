@@ -51,7 +51,7 @@ If it does not need to be passed at all (for the equivalent of a _class method_ 
 
 Filling out the procedures gives us
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/class_module.f90)
+    [](/content/courses/fortran-introduction/code/class_module.f90)
 {{</ code >}}
 
 There is no reserved word in Fortran for the class instance variable.  Some authors use "self" as is conventional in Python.  Others use "this" to imitate C++ and Java.  Others prefer their own conventions.

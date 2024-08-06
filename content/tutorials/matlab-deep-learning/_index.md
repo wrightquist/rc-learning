@@ -6,8 +6,8 @@ authors: [cag]
 categories: ["MATLAB","Machine Learning","Deep Learning"]
 weight: 350
 notes: matlab-deep-learning
-url_slides: slides/matlab-deep-learning/DeepLearning_Matlab.pptx
-url_code: scripts/matlab-deep-learning/DeepLearning_Matlab.zip
+url_slides: /slides/matlab-deep-learning/DeepLearning_Matlab.pptx
+url_code: /tutorials/matlab-deep-learning/code/DeepLearning_Matlab.zip
 ---
 
 ![](img/matlab-logo.png?200)

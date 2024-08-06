@@ -69,7 +69,7 @@ color paint == color::red;
 
 An enum is a _type_ and therefore converting its values to another type generally requires a cast.  Unscoped enums can be cast to int implicitly, but a scoped enum must use an explicit cast.  
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/enum.cxx)
+[](code/enum.cxx)
 {{</ code >}}
 
 The `static_cast` is a cast that occurs at compile time.  For native types it is essentially the same thing as the ordinary cast.  It can also be used for user-defined types, as we have illustrated for the enum in the above example.  It takes a templated type in angle brackets as the indicator to which it should cast its argument. 

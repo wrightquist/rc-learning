@@ -39,7 +39,7 @@ int MPI_Reduce(void *operand, void *result, int count, MPI_Datatype type, MPI_Op
 
 {{< spoiler text="C++ Example" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/codes/reduce.cxx)
+    [](/content/courses/parallel-computing-introduction/code/reduce.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -62,7 +62,7 @@ MPI_REDUCE(sendbuf, recvbuf, count, datatype, op, root, comm, ierr)
 
 {{< spoiler text="Fortran Example" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/reduce.f90)
+    [](/content/courses/parallel-computing-introduction/code/reduce.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -84,7 +84,7 @@ comm.Reduce(sendarr, recvarr, operation, root=0)
 
 {{< spoiler text="Python Example" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/reduce.py)
+    [](/content/courses/parallel-computing-introduction/code/reduce.py)
 {{</ code >}}
 {{< /spoiler >}}
 

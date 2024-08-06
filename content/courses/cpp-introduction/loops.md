@@ -49,7 +49,7 @@ for (int i=0;i<10;i++) {
 In the first case, `i` is in _scope_ within and beyond the loop.  In the second case, `i` is in scope only within the loop.  Try the example:
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/loop_scope.cxx)
+[](code/loop_scope.cxx)
 {{</ code >}}
 
 Uncomment the line to print `j` after the second loop and try it again.  What happened?  To the compiler, the variable `j` literally does not exist outside the loop.
@@ -61,7 +61,7 @@ We will discuss scope in more detail [later](scope).
 The C++11 standard has introduced a new version of the `for` loop that may be familiar to programmers of Python and similar languages.  This loop steps through an _iterator_.  An iterator is a sequence that can be traversed in a unique order.  The only iterator we have encountered so far is the string.  For example, we can loop over a string and extract each character:
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/iter_for.cxx)
+[](code/iter_for.cxx)
 {{</ code >}}
 
 ## While Loops
@@ -77,7 +77,7 @@ while (boolean expression) {
 
 Example:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/while_demo.cxx)
+[](code/while_demo.cxx)
 {{</ code >}}
 
 ## Do While
@@ -96,7 +96,7 @@ do {
 A standard `while` loop may not be entered if the condition is initially false, whereas a do-while will always be executed at least once.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/do_while.cxx)
+[](code/do_while.cxx)
 {{</ code >}}
 
 ## Exiting Early and Skipping Statements
@@ -132,7 +132,7 @@ while (x>0.0) {
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/loops.cxx)
+[](solns/loops.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 

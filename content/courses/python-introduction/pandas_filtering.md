@@ -126,5 +126,5 @@ Print the overall mean temperature and the means of the minimum and maximum to t
 Print the number of days with a minimum below freezing. Hint: "False" is 0 and True is 1.
 
 {{< spoiler text="Example solution, zipped Jupyter notebook" >}}
-[pandas_weather_ex2.zip](exercises/pandas_weather_ex2.zip)
+[pandas_weather_ex2.zip](code/exercises/pandas_weather_ex2.zip)
 {{< /spoiler >}}

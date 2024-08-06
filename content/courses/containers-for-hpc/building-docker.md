@@ -31,7 +31,7 @@ Starting from a simple Dockerfile, we will adopt best practices sequentially and
 - Singularity
     - Users cannot build on Rivanna (needs `sudo` privilege)
     - Singularity Library/Hub (more limitations)
-    - Refer to [workshop](https://learning.rc.virginia.edu/workshops/singularity/) in Spring 2020
+    - Refer to [workshop](building-apptainer.md) in Spring 2020
 
 ## Intro to Dockerfile: lolcow
 
@@ -244,7 +244,7 @@ Look for `slim` variants (e.g. `debian:buster-slim`) of a base image, if any.
 ```dockerfile
 FROM alpine:3.17
 
-RUN echo "@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+RUN echo "@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk add --no-cache fortune cowsay@testing lolcat@testing
 
 ENTRYPOINT fortune | cowsay | lolcat
@@ -342,7 +342,7 @@ Hints:
 - If you encounter a Docker statement that you have not used before, first check the official documentation for best practices.
 - A comprehensive list of dependencies may be lacking. Some developers may not specify any at all. You will have to rely on a combination of experience, error message, and web search. (Most likely all of the above.)
 - Especially for Python packages, versions may be too permissive or too restrictive such that, in either case, future installation of the application will fail. (I have encountered both.) Tweak the versions until it works.
-- The next step is "multi-stage build" which is covered in the [Minimal Containers](/content/courses/containers-for-hpc/minimal.md) workshop. There you will learn how to distinguish between buildtime versus runtime dependencies and separate them out.
+- The next step is "multi-stage build" which is covered in the [Minimal Containers](minimal.md) workshop. There you will learn how to distinguish between buildtime versus runtime dependencies and separate them out.
 
 ## Clean Up
 

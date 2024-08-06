@@ -47,7 +47,7 @@ MPI consists of dozens of functions, though most programmers need only a fractio
 MPI requires more advanced programming skills so we will just show an example here.  Our Monte Carlo pi program is well suited to MPI so we can use that. For much more information about programming with MPI in Python, as well as C++ and Fortran, please see our [short course](/content/courses/parallel-computing-introduction).
 
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/MonteCarloPiMPI.py)
+    [](/content/courses/python-high-performance/code/MonteCarloPiMPI.py)
 {{</ code >}}
 
 The first invocation of MPI is the call to Get_rank.  This returns the rank of the process that calls it.  Remember that each MPI process runs as a separate executable; the only way their behaviors can be controlled individually is through the rank.  This call also initializes MPI; a separate MPI.Init is not required. The next line allows us to find out how many processes are in COMM_WORLD.  The number of processes for MPI programs is always set outside the program, and should never be hardcoded into the source code.
@@ -71,7 +71,7 @@ srun python MonteCarloPiMPI.py 1000000000
 **Note: you cannot launch the MPI program with `srun` on the login nodes.**  In order to execute our program on designated compute node(s), we need to write a simple bash script that defines the compute resources we need.  We call this our job script.  For our example, the job script `pimpi.sh` looks like this:
 
 {{< code lang="bash" >}}
-    [](/content/courses/python-high-performance/codes/pympi.slurm)
+    [](/content/courses/python-high-performance/code/pympi.slurm)
 {{</ code >}}
 
 The `#SBATCH` directives define the compute resources (`-N`, `--ntasks-per-node`, `-p`), compute wall time (`-t`), and the allocation account (`--account`) to be used. `-N 1` specifies that all MPI tasks should run on a single node.  We are limiting the number of nodes for this workshop so that everyone gets a chance to run their code on the shared resources. Be sure to edit the script to activate your environment by its correct name.
@@ -123,13 +123,13 @@ We will discuss here only the batch interface for Dask MPI.  Dask-MPI provides a
 Convert the "timeseries" example to Dask MPI.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-high-performance/codes/dask_df_mpi.py)
+    [](/content/courses/python-high-performance/code/dask_df_mpi.py)
 {{</ code >}}
 
 Run this simple example with
 
 {{< code lang="bash" >}}
-    [](/content/courses/python-high-performance/codes/run_dask_mpi.slurm)
+    [](/content/courses/python-high-performance/code/run_dask_mpi.slurm)
 {{</ code >}}
 
 The OMPI_MCA environment variable suppresses a warning message that is seldom relevant.

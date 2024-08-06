@@ -19,7 +19,7 @@ df[x='Column2',y='Column4'].plot() #choose columns
 
 Example from the Python documentation:
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/pandas_plot.py)
+    [](/content/courses/python-introduction/code/scripts/pandas_plot.py)
 {{</ code >}}
  
 Other types of charts and graphs are available and can be accessed through the `kind` keyword to plot, or by `df.plot.kind()`
@@ -47,13 +47,13 @@ If multiple columns of a dataframe are compatible numerically, they can be speci
 This example is a modification of another one from Pandas documentation.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/multiplot.py)
+    [](/content/courses/python-introduction/code/scripts/multiplot.py)
 {{</ code >}}
 
 Bar charts are similarly simple to create, with nice default labeling.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/barchart.py)
+    [](/content/courses/python-introduction/code/scripts/barchart.py)
 {{</ code >}}
 
 ## Tables
@@ -64,7 +64,7 @@ A Dataframe is similar to a table, but printing it directly does not always prod
 This example is based on Pandas documentation, with some modifications, for the HTML output, with the `table` version based on online sources.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/plot_table.py)
+    [](/content/courses/python-introduction/code/scripts/plot_table.py)
 {{</ code >}}
 
 To see the "pretty" version, paste the text into a Jupyter notebook. If using the "table" version, place that into a separate cell.
@@ -85,6 +85,6 @@ Figure out a way to set the BMI values that are outside the cutoffs to `np.nan` 
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/bmi_pandas.py)
+    [](/content/courses/python-introduction/code/exercises/bmi_pandas.py)
 {{</ code >}}
 {{< /spoiler >}}

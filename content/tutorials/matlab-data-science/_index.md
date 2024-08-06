@@ -5,7 +5,7 @@ summary: "This hands-on workshop provides links to the MathWorks online courses 
 authors: [teh]
 categories: ["MATLAB","Machine Learning","Data Analytics","Deep Learning"]
 weight: 240
-url_video: /videos/matlab-data-science/workshop-intro.mp4
+url_video: /videos/matlab-data-science
 ---
 
 The hands-on courses in this workshop cover the use of Matlab for data science applications.

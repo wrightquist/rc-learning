@@ -5,7 +5,6 @@ weight: 3
 ---
 
 Log on to our HPC cluster
-
 - SSH client or FastX Web
 - Run `hdquota`
     - Make sure you have a few GBs of free space
@@ -125,7 +124,9 @@ apptainer run|shell|exec -B <host_path>[:<container_path>] <SIF>
 ## Exercises
 
 1. For each of the three executables `fortune`, `cowsay`, `lolcat`, run `which` both inside and outside the `lolcow` container. Which one exists on both the host and the container?
-2. a) Run `ls -l` for your home directory both inside and outside the container. Verify that you get the same result. b) To disable all bind mounting, use `run|shell|exec -c`. Verify that `$HOME` is now empty.
+2.   
+   - Run `ls -l` for your home directory both inside and outside the container. Verify that you get the same result.  
+   - To disable all bind mounting, use `run|shell|exec -c`. Verify that `$HOME` is now empty.
 3. View the content of `/etc/os-release` both inside and outside the container. Are they the same or different? Why?
 4. (Advanced) Let's see if we can run the host `gcc` inside the lolcow container. First load the module: `module load gcc`
     - Verify that the path to `gcc` (hint: `which`) is equal to `$EBROOTGCC/bin`.

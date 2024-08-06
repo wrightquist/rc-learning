@@ -39,7 +39,7 @@ The attributes `var1` and `var2` are private by default.
 Example:
 Download and run the following code.  The exact error will depend on the compiler, but it should detect an illegal attempt to access a private variable directly.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/illegal_access.cxx)
+[](code/illegal_access.cxx)
 {{</ code >}}
 
 ### Benefits of Data Hiding
@@ -73,7 +73,7 @@ A friend may be a function or a class.
 A friend function is a function that is not part of the class.  It must be declared `friend`.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/testfriendfunc.cxx)
+[](code/testfriendfunc.cxx)
 {{</ code >}}
 
 Here `color` is a function that we might use elsewhere; it does not belong in the class, but we would like the class to be able to invoke it directly with its private attributes.
@@ -82,7 +82,7 @@ Here `color` is a function that we might use elsewhere; it does not belong in th
 
 Classes may also be friends with other classes.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/testfriend.cxx)
+[](code/testfriend.cxx)
 {{</ code >}}
 
 Here we have an empty class declaration (a "prototype" of sorts) because ClassB contains a method that uses an instance of the class so the compiler needs to be aware of its existence.  We must define ClassA after ClassB, however, because ClassB is a friend so ClassA must know its definition.  
@@ -97,21 +97,21 @@ Classes may use instance of other classes.  This is called "composition" and we 
 
     {{< spoiler text="Example solution" >}}
     {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/access_demo.cxx)
-{{</ code >}}
+    [](solns/access_demo.cxx)
+    {{</ code >}}
     {{< /spoiler >}}
 
 2. Modify your Employee class to use appropriate access levels for attributes and methods.  Add any "setters" and "getters" that you may need.  Place the interface into a `.h` file and the implementation into a corresponding `.cxx` file.
 
     {{< spoiler text="Example Solution" >}}
     {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/class_struct_example/Employee.h)
-{{</ code >}}
+    [](solns/class_struct_example/Employee.h)
+    {{</ code >}}
     {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/class_struct_example/Employee.cxx)
-{{</ code >}}
+    [](solns/class_struct_example/Employee.cxx)
+    {{</ code >}}
     {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/class_struct_example/employees.cxx)
-{{</ code >}}
+    [](solns/class_struct_example/employees.cxx)
+    {{</ code >}}
     {{< /spoiler >}}
 

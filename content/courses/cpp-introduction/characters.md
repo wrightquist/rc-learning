@@ -59,7 +59,7 @@ Individual characters may be addressed using bracket notation.  Each character i
 
 Example:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/cstr.cxx)
+[](code/cstr.cxx)
 {{</ code >}}
 
 In the above code, pay attention to the lines
@@ -86,7 +86,7 @@ The result is a _buffer overflow_.
 
 To see what can happen, compile and run the following code
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/buffer_oflow.cxx)
+[](code/buffer_oflow.cxx)
 {{</ code >}}
 
 Type in a short username (any string), then type `Eleventy` as your password. It should work as expected.  Now try typing a username that is longer than 10 characters and see what happens.
@@ -111,4 +111,3 @@ In general, it is best to avoid fixed-size char variables as much as possible, b
 
 Since we are programming in C++, not C, for most purposes it is better to use C++ strings (see [here](encodings_strings#strings)),
 which do not have these disadvantages.
-

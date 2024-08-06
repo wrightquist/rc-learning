@@ -17,6 +17,6 @@ Print the result in Python format,
 
 {{< spoiler text="Sample solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/splitter.cxx)
+[](solns/splitter.cxx)
 {{</ code >}}
 {{< /spoiler >}}

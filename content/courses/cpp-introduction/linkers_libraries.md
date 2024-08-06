@@ -85,7 +85,7 @@ Our discussion of building your code has assumed the use of a command line on Un
 We will use Geany for our example; more sophisticated IDEs have more capabilities, but Geany illustrates the basic functions.
 Using Microsoft tools such as Visual Studio or VSCode on Windows may be desirable if you will need to link to Microsoft or other vendor-provided libraries.
 
-We have three files in our project, [example.cxx](compiler_example/example.cxx), [adder.cxx](compiler_example/adder.cxx) and [adder.h](compiler_example/adder.h).  The main program is `example.cxx`.  It needs `adder.cxx` to create the executable.  We must open the two files in Geany.  Then we must compile (not build) each one separately.  Once we have successfully compiled both files, we open a terminal window (cmd.exe on Windows).  We navigate to the folder where the files are located and type 
+We have three files in our project, [example.cxx](code/compiler_example/example.cxx), [adder.cxx](code/compiler_example/adder.cxx) and [adder.h](code/compiler_example/adder.h).  The main program is `example.cxx`.  It needs `adder.cxx` to create the executable.  We must open the two files in Geany.  Then we must compile (not build) each one separately.  Once we have successfully compiled both files, we open a terminal window (cmd.exe on Windows).  We navigate to the folder where the files are located and type 
 ```
 g++ -o example example.o adder.o
 ```

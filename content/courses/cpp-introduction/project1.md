@@ -35,6 +35,6 @@ Try to write and test your own program before peeking at the sample solution.
 
 {{< spoiler text="Sample solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/day_of_week.cxx)
+[](solns/day_of_week.cxx)
 {{</ code >}}
 {{< /spoiler >}}

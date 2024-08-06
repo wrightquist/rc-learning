@@ -114,7 +114,7 @@ We write to a file much like to a standard stream.  In this example, we assume t
 
 The extraction operator works on file objects as well as on cin:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/simple_read.cxx)
+[](code/simple_read.cxx)
 {{</ code >}}
 
 Although this method works, it has a number of drawbacks.  As we learned for [console IO](console_io), the extraction operator assumes the separator is whitespace. It can be thrown off when attempting to convert a string into a numerical type.  It also is inflexible. We will discuss more advanced methods in the [next](advanced_io) chapter.
@@ -132,6 +132,6 @@ Either rewind or reopen the file and read the data back.  Write a loop to add 1 
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/read_write_file.cxx)
+[](solns/read_write_file.cxx)
 {{</ code >}}
 {{< /spoiler >}}

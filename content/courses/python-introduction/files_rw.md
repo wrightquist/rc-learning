@@ -75,14 +75,14 @@ x,y
 Make sure there is no blank line at the beginning of the data file.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/read_file_ex.py)
+    [](/content/courses/python-introduction/code/scripts/read_file_ex.py)
 {{</ code >}}
 
 Use readlines rather than a loop to read the data file.  Eliminate the header appropriately.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/readlines_demo.py)
+    [](/content/courses/python-introduction/code/exercises/readlines_demo.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -140,7 +140,7 @@ Print the results for each n you have.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/polynomial.py)
+    [](/content/courses/python-introduction/code/exercises/polynomial.py)
 {{</ code >}}
 {{< /spoiler >}}
 

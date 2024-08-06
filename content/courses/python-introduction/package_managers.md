@@ -10,7 +10,7 @@ The Anaconda Navigator interface can be used to install, remove, and update pack
 
 To install new packages from the Navigator, go to the Environments tab, change the "Installed" dropdown to "Not installed" and wait for the package list to be populated.  Find the package you want, in this illustration one called `dill`, select it (and any other packages you find you might need), then click the green Apply button.
 
-![](imgs/AnacondaPackageManager.png "Anaconda Package Manager")
+![](img/AnacondaPackageManager.png "Anaconda Package Manager")
 
 Conda can be also used from the command line.  In Linux and macOS, the terminal can be used for this.  In Windows, use the Anaconda Command Prompt, which can be accessed through the Apps menu in the Anaconda folder, should be opened for these commands, since it has the correct paths preset.
 
@@ -26,7 +26,7 @@ conda install newpackage
 ```
 Many more options are available.  
 
-![](imgs/Conda.png "Conda from a command line.")
+![](img/Conda.png "Conda from a command line.")
 
 ## Conda Environments
 

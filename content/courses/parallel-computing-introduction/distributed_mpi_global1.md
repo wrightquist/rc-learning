@@ -24,7 +24,7 @@ In this prototype, `buffer` is the variable holding the data, `ncount` is the nu
 
 {{< spoiler text="C++ Example" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/codes/bcast.cxx)
+    [](/content/courses/parallel-computing-introduction/code/bcast.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -40,7 +40,7 @@ The argument `vals` can be of any primitive type that corresponds to a supported
 
 {{< spoiler text="Fortran Example" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/bcast.f90)
+    [](/content/courses/parallel-computing-introduction/code/bcast.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -54,7 +54,7 @@ The pickled version does not use `MPI.TYPE` because a pickled object is a binary
 
 {{< spoiler text="Python Example" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/bcast.py)
+    [](/content/courses/parallel-computing-introduction/code/bcast.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -74,7 +74,7 @@ int MPI_Scatter(void *sendbuffer, int ncount, MPI_Datatype datatype, void *recvb
 
 {{< spoiler text="C++ Example" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/codes/scatter.cxx)
+    [](/content/courses/parallel-computing-introduction/code/scatter.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -86,7 +86,7 @@ call MPI_Scatter(vals,ncount,MPI_TYPE,rvals,ncount,MPI_TYPE,root,MPI_COMM_WORLD,
 
 {{< spoiler text="Fortran Example" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/scatter.f90)
+    [](/content/courses/parallel-computing-introduction/code/scatter.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -99,7 +99,7 @@ comm.Scatter([sendvals,MPI.DOUBLE],[recvals,MPI.DOUBLE,root=0)
 
 {{< spoiler text="Python Example" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/scatter.py)
+    [](/content/courses/parallel-computing-introduction/code/scatter.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -116,7 +116,7 @@ int MPI_Scatterv(void *sendbuf, int *sendcounts, int *displs, MPI_Datatype sendt
 
 {{< spoiler text="C++ Example" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/codes/scatterv.cxx)
+    [](/content/courses/parallel-computing-introduction/code/scatterv.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -127,7 +127,7 @@ call MPI_SCATTERV(sendbuf, sendcounts, displs, sendtype, recvbuf, recvcounts, re
 
 {{< spoiler text="Fortran Example" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/scatterv.f90)
+    [](/content/courses/parallel-computing-introduction/code/scatterv.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -139,7 +139,7 @@ Unlike many other mpi4py procedures, the MPI.TYPE may often be required for corr
 
 {{< spoiler text="Python Example" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/scatter.py)
+    [](/content/courses/parallel-computing-introduction/code/scatter.py)
 {{</ code >}}
 {{< /spoiler >}}
 

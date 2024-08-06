@@ -85,7 +85,7 @@ We will show Geany and VSCode on Windows.  Both look similar on the other platfo
 
 Open Geany (or VSCode).  Type in the following
 {{< code lang="no-highlight" >}}
-    [](/content/courses/fortran-introduction/codes/hello.f90)
+    [](/content/courses/fortran-introduction/code/hello.f90)
 {{</ code >}}
 
 ![](img/Geany1.png?500)

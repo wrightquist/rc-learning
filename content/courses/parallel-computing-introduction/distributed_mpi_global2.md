@@ -21,7 +21,7 @@ int MPI_Gather(void *sendbuffer,int ncount,MPI_Datatype datatype,void *recvbuffe
 
 {{< spoiler text="C++ Example" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/codes/gather.cxx)
+    [](/content/courses/parallel-computing-introduction/code/gather.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -37,7 +37,7 @@ call MPI_Gather(vars, ncount, MPI_TYPE, all_vars, ncount, MPI_TYPE, root, MPI_CO
 
 {{< spoiler text="Fortran Example" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/gather.f90)
+    [](/content/courses/parallel-computing-introduction/code/gather.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -51,7 +51,7 @@ comm.Gather([data,MPI.TYPE],[all_data,MPI.TYPE], root=0)
 
 {{< spoiler text="Python Example" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/gather.py)
+    [](/content/courses/parallel-computing-introduction/code/gather.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -67,7 +67,7 @@ int MPI_Gatherv(void *sendbuf, int sendcount, MPI_Datatype sendtype, void *recvb
 
 {{< spoiler text="C++ Example" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/codes/gatherv.cxx)
+    [](/content/courses/parallel-computing-introduction/code/gatherv.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -78,7 +78,7 @@ call MPI_GATHERV(sendbuf, sendcount, sendtype, recvbuf, recvcounts, displs, recv
 
 {{< spoiler text="Fortran Example" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/gatherv.f90)
+    [](/content/courses/parallel-computing-introduction/code/gatherv.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -91,6 +91,6 @@ As for comm.Scatterv, the MPI.TYPE is generally required.
 
 {{< spoiler text="Python Example" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/gatherv.py)
+    [](/content/courses/parallel-computing-introduction/code/gatherv.py)
 {{</ code >}}
 {{< /spoiler >}}

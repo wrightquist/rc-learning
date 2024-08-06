@@ -61,7 +61,7 @@ END DO
 
 **Example**
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/while_demo.f90)
+    [](/content/courses/fortran-introduction/code/while_demo.f90)
 {{</ code >}}
 
 ## Exiting Early and Skipping Statements

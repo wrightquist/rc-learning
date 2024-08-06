@@ -94,7 +94,7 @@ $$ F_1 = 1 $$
 $$ F_{N}=F_{N-1}+F_{N-2} $$
 
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/fibonnaci.f90)
+    [](/content/courses/fortran-introduction/code/fibonnaci.f90)
 {{</ code >}}
 
 **Exercise**

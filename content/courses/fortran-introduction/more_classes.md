@@ -17,7 +17,7 @@ We will modify the example to accomplish this.
 ### Modified Example
 
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/private_class_module.f90)
+    [](/content/courses/fortran-introduction/code/private_class_module.f90)
 {{</ code >}}
 
 In the caller:
@@ -66,7 +66,7 @@ But billy%my_int does not refer back to the parent, since that variable occurs o
 
 When a class is extended, not only the components but the procedures are inherited.
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/clinherit.f90)
+    [](/content/courses/fortran-introduction/code/clinherit.f90)
 {{</ code >}}
 
 **Exercise**

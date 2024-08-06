@@ -93,7 +93,7 @@ if __name__=="__main__:"
 Example
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/rooter.py)
+    [](/content/courses/python-introduction/code/scripts/rooter.py)
 {{</ code >}}
 
 **Exercise**

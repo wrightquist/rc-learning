@@ -68,12 +68,12 @@ Starting from the stub for your language, complete the send and receive calls.
 #### Starting Codes
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/codes/manager_worker_stub.cxx)
+    [](/content/courses/parallel-computing-introduction/code/manager_worker_stub.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/manager_worker_stub.f90)
+    [](/content/courses/parallel-computing-introduction/code/manager_worker_stub.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}

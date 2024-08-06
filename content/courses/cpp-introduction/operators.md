@@ -43,7 +43,7 @@ It is mathematically well-defined for negative integers, but the results for suc
 
 Example:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/testmod.cxx)
+[](code/testmod.cxx)
 {{</ code >}}
 
 ## Assignment Operators
@@ -77,7 +77,7 @@ i--;
 ```
 Beware when assigning the result of an increment or decrement to another variable.  The "prefix" increment/decrement operators shown here first add or subtract, then change the value of the variable.  They are exactly equivalent to `i+=1` and `i-=1` respectively. The "post" operators `i++` and `i--` do not change the value of the variable before incrementing or decrementing.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/incdec.cxx)
+[](code/incdec.cxx)
 {{</ code >}}
 ```no-highlight
  i is: 3
@@ -89,7 +89,7 @@ Beware when assigning the result of an increment or decrement to another variabl
 **Exercise**
 Run the following program.  Modify the values of the different variables and see what happens.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/expressions.cxx)
+[](code/expressions.cxx)
 {{</ code >}}
 
 ## Conditional Operators
@@ -144,7 +144,7 @@ Like arithmetic operators, conditional operators have a precedence ordering.
 **Exercise**
 Experiment with different values for the variables in this code.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/conditional_operators.cxx)
+[](code/conditional_operators.cxx)
 {{</ code >}}
 
 ## Bitwise Operators

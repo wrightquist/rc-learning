@@ -18,7 +18,7 @@ Series objects are one-dimensional and can contain any type.  The indices are tr
 This simple example loads a Series with normally-distributed random numbers, then prints some of them, prints the basic statistics, and creates a line plot.
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/pandas_series.py)
+    [](/content/courses/python-introduction/code/scripts/pandas_series.py)
 {{</ code >}}
 
 Series are conceptually like a single column of a spreadsheet, with any headers omitted.  Values are similar to a NumPy Ndarray and most NumPy methods can be applied to the Series data, provided they are defined on the data type.  Missing data, represented by `np.nan` by default, will be omitted from the data used by these methods.
@@ -152,6 +152,6 @@ Run `describe`.  Print the mean values.  Extract the minimum temperature and the
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/fake_weather_data.py)
+    [](/content/courses/python-introduction/code/exercises/fake_weather_data.py)
 {{</ code >}}
 {{< /spoiler >}}

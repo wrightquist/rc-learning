@@ -5,9 +5,9 @@ summary: "In this hands-on workshop, you will be introduced to parallel and dist
 authors: [teh]
 categories: [ "HPC", "Parallel Computing", "MATLAB" ]
 weight: 280
-url_slides: slides/matlab-parallel/Parallel_Computing_with_MATLAB.pptx
-url_code: scripts/matlab-parallel/Parallel-Computing-Workshop.zip 
-url_video: videos/matlab-parallel
+url_slides: /slides/matlab-parallel/Parallel_Computing_with_MATLAB.pptx
+url_code: /tutorials/matlab-parallel/code/Parallel-Computing-Workshop.zip
+url_video: /videos/matlab-parallel
 ---
 
 By working through common scenarios and workflows, you will gain an understanding of the parallel constructs in MATLAB, their capabilities, and some of the typical issues that arise when using them.

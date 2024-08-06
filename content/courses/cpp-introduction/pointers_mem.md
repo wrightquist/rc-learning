@@ -9,7 +9,7 @@ We have learned that variables are "nicknames" for the contents of a specific lo
 Since an ordinary variable is also associated with memory, we can use the **reference operator** `&` to obtain the location in memory.  Inversely, given a location, we can use the **dereference operator** `*` to get the value stored there.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/ref_deref.cxx)
+[](code/ref_deref.cxx)
 {{</ code >}}
 
 ## Pointer Variables
@@ -39,7 +39,7 @@ The choice between `int* p` and `int *p` is largely a matter of taste and emphas
 
 Example:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/pointers.cxx)
+[](code/pointers.cxx)
 {{</ code >}}
 
 ### The NULL Pointer
@@ -72,7 +72,7 @@ These blocks are raw chunks of memory, but can be referenced as the C-style arra
 Malloc and the related routines `calloc` (contiguous allocation) and `realloc` (reallocate) are supported by C++.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/malloc.cxx)
+[](code/malloc.cxx)
 {{</ code >}}
 
 The compiler is not required to initialize the memory returned by malloc, but at least some do, initializing it to zero.
@@ -90,7 +90,7 @@ The syntax of `new` is
 where the angle brackets indicate an option and are not typed into the code.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/new.cxx)
+[](code/new.cxx)
 {{</ code >}}
 
 This creates an array of `N` floating-point numbers.
@@ -103,7 +103,7 @@ We will only illustrate 2d arrays here; the concept can be extended to higher-di
 Two-dimensional arrays are 1-d arrays of pointers to a one-dimensional array.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/twod.cxx)
+[](code/twod.cxx)
 {{</ code >}}
 
 A two-dimensional array can be declared with two asterisks, indicating that the variable is a "pointer to pointer."
@@ -113,19 +113,19 @@ A two-dimensional array can be declared with two asterisks, indicating that the 
 If memory is allocated, it must be released (deallocated) or the result may be a **memory leak**.  If new (or malloc) is called, a pointer is returned to a block of memory.  Another call to new can be made returning to the _same variable_; C++ will not stop this.  When the old pointer value is overwritten, access to its corresponding block of memory is lost, but the memory is still allocated and is not available for any other use.  
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/leaker.cxx)
+[](code/leaker.cxx)
 {{</ code >}}
 
 A memory leak can rapidly fill up memory.  In modern computer operating systems, running executables are restricted to a particular region of memory and an attempt to access memory outside that area may result in a **segmentation violation**.  If it runs long enough, a leaking executable will eventually encounter a segmentation violation or sometimes, at least on Linux, a **bus error** (a bus error occurs when an attempt is made to access a location in memory that does not exist).  Occasionally, however, leaking codes can still take down an entire system.   Therefore memory leaks must be avoided.
 
 To release memory allocated with `malloc` or similar, use `free`.  As a general rule, each `malloc` must be paired with one `free`.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/better_malloc.cxx)
+[](code/better_malloc.cxx)
 {{</ code >}}
 
 For `new` use `delete`
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/better_new.cxx)
+[](code/better_new.cxx)
 {{</ code >}}
 As for `malloc` and `new`, `free` is a function while `delete` is an operator.
 
@@ -145,7 +145,7 @@ Correct the memory-leaking example.  Leave the multiple `new` statements (even t
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/fixed_leaker.cxx)
+[](solns/fixed_leaker.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 

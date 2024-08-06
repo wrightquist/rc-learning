@@ -58,7 +58,7 @@ Print the user's BMI value and category.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/exercises/user_input_bmi.py)
+    [](/content/courses/python-introduction/code/exercises/user_input_bmi.py)
 {{</ code >}}
 {{< /spoiler >}}
 

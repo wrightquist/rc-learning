@@ -6,8 +6,9 @@ authors: [cag]
 categories: ["Image Processing","Omero"]
 draft: true
 weight: 450
-url_dataset: data/omero-workshop-images.zip
+url_dataset: /tutorials/omero-hands-on/data/omero-workshop-images.zip
 url_code: https://github.com/ksiller/omero
+url_slides: /slides/omero-hands-on
 ---
 
 ![](img/ome-main-nav.svg)
@@ -18,8 +19,6 @@ OMERO is image management software that allows you to organize, view, annotate, 
 
 Download the sample dataset and scripts so you can follow along with the
 examples.
-
-{{< slideshow folder="slides/omero-hands-on" ext="png" >}}
 
 # Import Images
 
@@ -197,7 +196,7 @@ in image processing. The examples below show how you can use OMERO with Fiji and
 
 Fiji/ImageJ is open-source software for scientific image processing. OMERO can be installed as a plugin for easy image import and export.
 
-Examples of using OMERO with Fiji can be found in the online tutorial for [Image Processing with Fiji and Omero](/content/courses/fiji-image-processing/fiji-omero).
+Examples of using OMERO with Fiji can be found in the online tutorial for [Image Processing with Fiji and Omero](/content/courses/fiji-image-processing/fiji-omero.md).
 
 
 ## MATLAB

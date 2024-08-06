@@ -58,7 +58,7 @@ def myvarfunc(arg1, arg2, *args, **kwargs):
 **Example**
 
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/scripts/args_kwargs.py)
+    [](/content/courses/python-introduction/code/scripts/args_kwargs.py)
 {{</ code >}}
 
 In this context, the asterisk (`*`) is called the _unpacking operator_. Python reads the `args` into a tuple and any `kwargs` into a dictionary.

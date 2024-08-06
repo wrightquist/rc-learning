@@ -35,13 +35,13 @@ int   j=2;
 
 Start Geany or your preferred editor or IDE.  Type
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/variables.cxx)
+[](code/variables.cxx)
 {{</ code >}}
 
 Variables can be declared and initialized anywhere in the body of the code as long as they are declared before they are used.  There are some implications for variable _scope_, which we will discuss [later](scope.md).  
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/vardecls.cxx)
+[](code/vardecls.cxx)
 {{</ code >}}
 
 ### Auto
@@ -63,7 +63,7 @@ error: declaration of ‘auto z’ has no initializer
 If initializing an `auto` variable with a literal, be sure the type of the literal is what you intend.  Keep in mind that `3` and `3.0` are _distinct_ types to the compiler.  The `typeid` built-in will return the type.
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/autos.cxx)
+    [](code/autos.cxx)
 {{</ code >}}
 
 On Unix with g++ this results in
@@ -109,4 +109,4 @@ A _volatile_ variable is one that the compiler may not change and that may be be
 
 ```c++
 volatile float voltage;
-``` 
+```

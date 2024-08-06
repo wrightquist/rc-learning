@@ -78,7 +78,7 @@ All subprograms in a module have an __implicit interface__.  You should *not* wr
 **Example**
 
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/codes/module.f90)
+    [](/content/courses/fortran-introduction/code/module.f90)
 {{</ code >}}
 
 ## Modules and Make

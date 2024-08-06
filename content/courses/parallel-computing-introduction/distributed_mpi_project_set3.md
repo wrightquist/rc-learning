@@ -31,7 +31,7 @@ When plotting, the top of an array (row 0) is the bottom of the plot.
 
 {{< spoiler text="Python script to contour output">}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/scripts/contour.py)
+    [](/content/courses/parallel-computing-introduction/code/contour.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -73,7 +73,7 @@ To plot the results you will have to stitch the files together appropriately. If
 
 {{< spoiler text="Python script to merge output files and contour" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/scripts/contour_ranks.py)
+    [](/content/courses/parallel-computing-introduction/code/contour_ranks.py)
 {{</ code >}}
 {{< /spoiler >}}
 

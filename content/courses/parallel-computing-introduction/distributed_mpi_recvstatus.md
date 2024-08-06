@@ -61,18 +61,18 @@ Although the status data structure can also return the item count, if the receiv
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/codes/send_recv_stat.cxx)
+    [](/content/courses/parallel-computing-introduction/code/send_recv_stat.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/codes/send_recv_stat.f90)
+    [](/content/courses/parallel-computing-introduction/code/send_recv_stat.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/codes/send_recv_stat.py)
+    [](/content/courses/parallel-computing-introduction/code/send_recv_stat.py)
 {{</ code >}}
 {{< /spoiler >}}

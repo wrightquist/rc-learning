@@ -23,7 +23,7 @@ This can result in loss of precision or even seemingly-bizarre results, such as 
 
 To illustrate:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/conversions.cxx)
+[](code/conversions.cxx)
 {{</ code >}}
 
 The result on a Unix system with g++ is
@@ -56,7 +56,7 @@ d=(double) f;
 The same phenomena apply as for implicit conversions when one numeric type is converted to another. 
 
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/casts.cxx)
+[](code/casts.cxx)
 {{</ code >}}
 
 The result on a Unix system with g++ is

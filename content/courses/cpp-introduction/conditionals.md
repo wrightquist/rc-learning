@@ -28,7 +28,7 @@ Only one branch will be executed.  Once any Boolean is determined to be true, th
 **Exercise**
 Experiment with various truth values for bool1 and bool2.
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/if_demo.cxx)
+[](code/if_demo.cxx)
 {{</ code >}}
 
 ## The ? Operator
@@ -80,7 +80,7 @@ switch (expression) {
 
 Example:
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/codes/switch.cxx)
+[](code/switch.cxx)
 {{</ code >}}
 
 Exercise:
@@ -104,6 +104,6 @@ Hint: a loss or tie is not a win.
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/cpp-introduction/solns/nfc.cxx)
+[](solns/nfc.cxx)
 {{</ code >}}
 {{< /spoiler >}}
