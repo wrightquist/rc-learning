@@ -4,21 +4,14 @@ title: "ACCORD Intro"
 summary: "An introduction to ACCORD."
 authors: []
 categories: []
-slides:
-  # Choose a theme from https://github.com/hakimel/reveal.js#theming
-  theme: white
-  # Choose a code highlighting style (if highlighting enabled in `params.toml`)
-  #   Light style: github. Dark style: dracula (default).
-  highlight_style: github
+draft: true
 ---
 
-<img src="img/ACCORD_Intro_202110222.jpg">
-<br>
-<br>
+![](img/ACCORD_Intro_202110222.jpg)
 
 # Intro to ACCORD
 
-<img src="img/ACCORD_Intro_202110220.png">
+![](img/ACCORD_Intro_202110220.png)
 
 ---
 
@@ -32,82 +25,51 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
 
 ### ACCORD projects
 
-<div class=twocolumn>
- <div>
- <ul>
-    <li>ACCORD is project-based:</li>
-      <ul>
-      <li>Investigators can have multiple projects</li>
-        <ul>
-          <li>Example: kidney research and an RNA-seq study</li>
-        </ul>
-      <li>Projects are isolated, you cannot transfer or access data between them</li>
-      </ul>
-    <li>Invite co-investigators</li>
-      <ul>
-      <li>To add researchers to your project, submit a request here: [Add a researcher](https://www.rc.virginia.edu/form/accord/)</li>
-      </ul>
- </ul>
- </div>
- <div>
-    <img src="img/project.jpeg">
- </div>
+ACCORD is project-based:
+* Investigators can have multiple projects 
+  - Example: kidney research and an RNA-seq study
+* Projects are isolated, you cannot transfer or access data between them
+* Invite co-investigators</li>
+  -To add researchers to your project, submit a request here: [Add a researcher](https://www.rc.virginia.edu/form/accord/)
+
+![](img/project.jpeg)
 
 ---
 
 ### Storage on ACCORD
 
-<div class=twocolumn>
- <div>
- <ul>
- <br>
-   <li>ACCORD projects come with:</li>
-     <ul>
-     <br>
-       <li>Home directory of 50GB</li>
-       <li>Project directory of 1TB</li>
-       <li>Additional storage can be purchased. Please submit a request [here](https://www.rc.virginia.edu/form/accord/)</li>
-     </ul>
- </ul>
- </div>
- <div>
-    <img src="img/ACCORD_Intro_202110229.jpg">
- </div>
+ACCORD projects come with:
+* Home directory of 50GB
+* Project directory of 1TB
+* Additional storage can be purchased. Please submit a request [here](https://www.rc.virginia.edu/form/accord/)
+
+ ![](img/ACCORD_Intro_202110229.jpg)
 
 ---
 
 ### Data on ACCORD
 
-<div class=twocolumn>
- <div>
- <ul>
-   <li>ACCORD supports:</li>
-     <ul>
-       <li>De-identified PII</li>
-       <li>FERPA</li>
-       <li>Business Confidential</li>
-       <li>Other types of sensitive data</li>
-     </ul>
-     <br>
-   <li>ACCORD <b>does not</b> support:</li>
-     <ul>
-       <li>Identifiable HIPAA</li>
-       <li>CUI</li>
-       <li>FISMA</li>
-       <li>PCI</li>
-     </ul>
- </div>
- <div>
-    <img src="img/ACCORD_Intro_2021102210.jpg">
-    <br>
-    Questions about whether your data is suitable for ACCORD? Submit a support ticket [here](https://www.rc.virginia.edu/form/accord/)
- </div>
+ACCORD supports:
+* De-identified PII
+* >FERPA
+* Business Confidential
+* Other types of sensitive data
+
+ACCORD **does not** support:
+* Identifiable HIPAA
+* CUI
+* FISMA
+* PCI
+
+![](img/ACCORD_Intro_2021102210.jpg)
+
+Questions about whether your data is suitable for ACCORD? Submit a support ticket [here](https://www.rc.virginia.edu/form/accord/)
 
 ---
 
 ### Data retention
 
-<img src="img/data.jpeg">
+![](img/data.jpeg)
 
 - Data is stored on the system for 6 months.
 - To extend your project, please fill out a [request](https://www.rc.virginia.edu/form/accord/)
@@ -115,8 +77,8 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
 ---
 
 ### Globus data transfer
-
-<img src="img/globus.png">
+ 
+![](img/globus.png)
 
 - Data transfer is processed through Research Computing staff for the time being.
 - Please fill out a request [here](https://www.rc.virginia.edu/form/accord/) for data transfer
@@ -137,10 +99,7 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
 
 ### ACCORD Portal
 
-<br>
-
   * ACCORD can be accessed via:[https://accord.uvarc.io/](https://accord.uvarc.io/)
-<br>
   * The ACCORD website has a User Guide, FAQ, and additional documentation:[https://www.rc.virginia.edu/userinfo/accord/overview/](https://www.rc.virginia.edu/userinfo/accord/overview)
 
 ![](img/ACCORD_Intro_202110222.jpg)
@@ -149,33 +108,19 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
 
 ### Logging into ACCORD
 
-<div class=twocolumn>
- <div>
-    <img src="img/ACCORD_Intro_2021102213.png">
- </div>
- <div>
-    <ul>
-      <li>To access ACCORD, you need to log in through InCommon</li>
-<br>
-      <li>Select your home institution from the dropdown menu (or UVA if you have a sponsored account)</li>
-    </ul>
- </div>
+![](img/ACCORD_Intro_2021102213.png)
+
+* To access ACCORD, you need to log in through InCommon
+* Select your home institution from the dropdown menu (or UVA if you have a sponsored account)
 
 ---
 
 ### Logging into ACCORD
 
-<div class=twocolumn>
- <div>
-    <img src="img/ACCORD_Intro_2021102214.png">
- </div>
- <div>
-    <ul>
-      <li>Login using your home institution’s credentials</li>
-<br>
-      <li>In this example, UVA will ask you to login using NetBadge. If you're from another institution, this will be different</li>
-    </ul>
- </div>
+![](img/ACCORD_Intro_2021102214.png)
+
+Log in using your home institution’s credentials
+* In this example, UVA will ask you to login using NetBadge. If you're from another institution, this will be different
 
 ---
 
@@ -244,7 +189,6 @@ ACCORD is a web-accessible secure platform which allows researchers from Virgini
 ---
 
 ### Want to learn more?
-<br>
 
 * The ACCORD website has additional documentation, FAQs, and a user guide:
   * [https://www.rc.virginia.edu/userinfo/accord/overview/](https://www.rc.virginia.edu/userinfo/accord/overview/)
