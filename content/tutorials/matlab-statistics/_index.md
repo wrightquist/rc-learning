@@ -5,7 +5,6 @@ summary: "Using statistical methods with MATLAB&trade;"
 authors: [uvarc]
 categories: ["Matlab", "Data Analytics"]
 weight: 230
-notes: matlab-statistics
 ---
 
 This workshop provides hands-on experience for performing statistical data analysis with MATLAB® and the Statistics and Machine Learning Toolbox™. Examples and exercises demonstrate the use of appropriate MATLAB and Statistics and Machine Learning Toolbox functionality throughout the analysis process; from exploratory analysis, to confirmatory analysis and simulation. Topics include:
