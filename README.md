@@ -11,11 +11,14 @@
 - [Creating New Content](#creating-new-content)
     * [Methods for creating content](#methods-for-creating-content)
     * [Suggestions for creating content](#suggestions-for-creating-content)
+    * [Theme](#theme)
     * [Directory Structure](#directory-structure)
     * [Front matter](#front-matter)
     * [Images](#images)
     * [Links](#links)
     * [Shortcodes](#shortcodes)
+    * [Math](#math)
+    * [Diagrams](#diagrams)
     * [Delete content](#delete-content)
     * [Categories](#categories)
 - [Building and Publishing](#building-and-publishing)
@@ -52,6 +55,12 @@ The `TL;DR` version:
   * The "content type" of a page is usually determined by what folder it is in. Different content types are displayed in slightly different ways, i.e. the sidebar or layout.
   * Reference: [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
   * Follow guidelines from https://gohugo.io/content/organization/.
+
+### Theme
+
+The site theme is [Wowchemy](https://wowchemy.com/) (Formerly called Academic).  So you can use any shortcodes/functionality included in the theme.  
+
+If you want to edit the theme/layouts, edit/add files in the `/layout` directory and NOT the `/themes/academic/layouts` folder.  That way we can replace the theme later if need be.
 
 ### Directory Structure
 
@@ -126,6 +135,22 @@ Image alt text and title is not required.
 
 ### Links
 
+For links to pages within a course/tutorial, you can reference the page with just its filename: 
+
+    [text for the link](overview.md)
+
+or `[text for the link](/)` to link to the _index.md page
+
+For links to pages to other courses/tutorials, links should be relative to the `/content` directory like this:
+
+    [text for the link](/content/tutorials/some-other-tutorial/overview.md)
+
+or `[text for the link](/content/tutorials/some-other-tutorial)` to link to the `_index.md` page
+
+External links should look like this:
+
+    [text for the link](https://en.wikipedia.org/wiki/Apple)
+
 ### Shortcodes
 
 Hugo's [shortcodes](https://gohugo.io/content-management/shortcodes/) are small template snippets that you can use in your markdown files.  Feel free to add/improve/extend any new shortcodes you think would be useful.  We encourage you to use the following shortcodes when creating new markdowns:
@@ -188,6 +213,46 @@ Hugo's [shortcodes](https://gohugo.io/content-management/shortcodes/) are small 
 * slide images should be in a single folder and the images should be named Slide1.png, Slide2.png, etc in order of how they should be displayed
 * the link to the slides folder should be relative to the file the shortcode is used in, and should be located somewhere in /content
 * `ext` is the extension of the images files (ex. "png", "JPG", etc)
+
+
+### Math
+
+In-line math: `$x + y = z$`
+
+Block math:
+```
+$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$
+```
+
+### Diagrams
+  
+The [theme](#theme) allows you to create documents with [mermaid](https://mermaid-js.github.io/mermaid/#/)
+
+Example:
+
+```
+{{< diagram >}}
+flowchart LR
+subgraph Users
+A(User) --> F((Internet))
+B(User) --> F
+C(User) --> F
+end
+subgraph Cluster
+F --> G(Frontend)
+G --> H{{Interconnection Network}}
+H --> K(Node)
+H --> L(Node)
+H --> M(Node)
+H --> N(Node)
+H --> S[(Storage)]
+end
+{{< /diagram >}}
+```
+
+a live example [here](https://learning.rc.virginia.edu/courses/parallel_computing_introduction/parallel_hardware/)
 
 ### Delete content
 * Delete the .md object(s) you no longer want in the site, then commit and push.
