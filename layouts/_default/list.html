@@ -6,13 +6,13 @@
     {{ end }}
     <div id="list-filter">
         <p>
-        <input id="filter-search" placeholder="Search..." autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        <input id="filter-search" placeholder="Search..." class="form-control mr-sm-2" aria-label="Search" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" type="search">
         </p>
         <p>
-            <a href="#" data-filter="*" class="current"><button class="btn btn-info active">All</button></a>
+            <a data-filter="*" class="current"><button class="btn btn-info active">All</button></a>
             {{$section := .Section}}
             {{ range where .Site.Taxonomies.categories ".Page.Section" $section }}
-            <a href="#" data-filter=".{{ anchorize .Page.Title }}"><button class="btn btn-info">{{ .Page.Title }}</button></a>
+            <a data-filter=".{{ anchorize .Page.Title }}"><button class="btn btn-info">{{ .Page.Title }}</button></a>
             {{ end }}
         </p>
     </div>
@@ -59,7 +59,8 @@
                 return show;
             }
 
-            $('.filter a').click(function () {
+            $('#list-filter a').click(function () {
+                console.log("clicked");
                 $('#list-filter .current .btn').removeClass('active');
                 $('#list-filter .current').removeClass('current');
                 $(this).addClass('current');
@@ -83,16 +84,5 @@
             });
         };
     </script>
-    <style>
-        #filter-search{
-            border: 1px solid #dedede;
-            border-radius: 1rem;
-            padding: 1rem;
-            width: 250px;
-            line-height: 1rem;
-            height: 1rem;
-            font-size: 0.8rem;
-        }
-    </style>
 </div>
 {{ end }}
