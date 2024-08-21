@@ -105,7 +105,7 @@ $$ F_{N}=F_{N-1}+F_{N-2} $$
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/deg_rad.f90)
+[](/content/courses/fortran-introduction/solns/deg_rad.f90)
 {{</ code >}}
 {{< /spoiler >}}
 

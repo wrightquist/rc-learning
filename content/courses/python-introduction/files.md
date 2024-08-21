@@ -142,6 +142,6 @@ All three major operating systems have a Documents directory by default in their
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/file_fiddling.py)
+[](/content/courses/python-introduction/code/exercises/file_fiddling.py)
 {{</ code >}}
 {{< /spoiler >}}

@@ -105,7 +105,7 @@ Use this to write a unit test for the DoW function. You will need to parameteriz
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/test_dow.py)
+[](/content/courses/python-introduction/code/exercises/test_dow.py)
 {{</ code >}}
 {{< /spoiler >}}
 

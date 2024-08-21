@@ -76,6 +76,6 @@ It's easy to find day of the week calculators online, but test against two of th
 
 {{< spoiler text="Corrected dow.py" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/dow.py)
+[](/content/courses/python-introduction/code/exercises/dow.py)
 {{</ code >}}
 {{< /spoiler >}}

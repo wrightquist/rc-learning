@@ -103,17 +103,17 @@ LightGBM is a gradient boosting framework that uses tree based learning algorith
 1. Examine the [official Dockerfile](https://github.com/microsoft/LightGBM/blob/master/docker/gpu/dockerfile.gpu). Can you identify any problems?
 
     {{< spoiler text="Answer" >}}
-        `nvidia/cuda:cudnn-devel` as [base image](https://hub.docker.com/r/nvidia/cuda/tags)  (>1 GB)  
-        Clean up in separate `RUN` statements
+`nvidia/cuda:cudnn-devel` as [base image](https://hub.docker.com/r/nvidia/cuda/tags)  (>1 GB)  
+Clean up in separate `RUN` statements
     {{</ spoiler >}}
 
 2. Let's try to build an image of the command line interface (CLI) alone. Copy the Dockerfile. Remove the Tini, Conda, Jupyter sections and everything related to python/conda. Build the image and note the image size.
 
     {{< spoiler text="Answer" >}}
-    {{< code lang="dockerfile" >}}
-    [](code/example1.dockerfile)
-    {{</ code >}}
-    2.24 GB
+{{< code lang="dockerfile" >}}
+[](code/example1.dockerfile)
+{{</ code >}}
+2.24 GB
     {{</ spoiler >}}
 
 3. Rewrite the Dockerfile using a multi-stage build based on [OpenCL](https://hub.docker.com/r/nvidia/cuda/tags).
@@ -136,10 +136,10 @@ LightGBM is a gradient boosting framework that uses tree based learning algorith
     - Build the image and compare the image size with step 2.
 
     {{< spoiler text="Answer" >}}
-    {{< code lang="dockerfile" >}}
-    [](code/example2.dockerfile)
-    {{</ code >}}
-    374 MB (84% reduction)
+{{< code lang="dockerfile" >}}
+[](code/example2.dockerfile)
+{{</ code >}}
+374 MB (84% reduction)
     {{</ spoiler >}}
 
 4. Challenge: Verify that the two containers have the same performance on Rivanna's GPU node. Follow the [tutorial example](https://lightgbm.readthedocs.io/en/latest/GPU-Tutorial.html#dataset-preparation). Run the same job without using GPU. How much faster is it with GPU?
@@ -202,10 +202,10 @@ This exercise illustrates how we can cherry-pick files from the package manager 
 3. Having identified the necessary files to copy, add a second stage `FROM scratch` to your Dockerfile. Only `COPY` what's necessary. Build and compare image sizes.
 
     {{< spoiler text="Answer" >}}
-    {{< code lang="dockerfile" >}}
-    [](code/example3.dockerfile)
-    {{</ code >}}
-    The image size comparison is 130 MB vs 4 MB, a 97% reduction.
+{{< code lang="dockerfile" >}}
+[](code/example3.dockerfile)
+{{</ code >}}
+The image size comparison is 130 MB vs 4 MB, a 97% reduction.
     {{</ spoiler >}}
 
 ## Exercise: (Trick) Question
@@ -301,10 +301,10 @@ where $A_{mk}, B_{kn}, C_{mn}$ are matrices and $\alpha, \beta$ are constants. F
 6. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
 
     {{< spoiler text="Answer" >}}
-    {{< code lang="dockerfile" >}}
-    [](code/example5.dockerfile)
-    {{</ code >}}
-    1.29 GB vs 42.9 MB (97% reduction).
+{{< code lang="dockerfile" >}}
+[](code/example5.dockerfile)
+{{</ code >}}
+1.29 GB vs 42.9 MB (97% reduction).
     {{</ spoiler >}}
 
 7. Re-compile the code with static linking by adding a `-static` flag. In the production stage simply copy the binary. Compare image sizes.
@@ -385,10 +385,10 @@ LibTorch is the C++ frontend of PyTorch. This exercise is based on the ["Writing
 6. Find the necessary libraries and add a second stage from scratch. Compare the image size between the two stages.
 
     {{< spoiler text="Answer" >}}
-    {{< code lang="dockerfile" >}}
-    [](code/example6.dockerfile)
-    {{</ code >}}
-    1.98 GB for build stage vs 314 MB for production stage (85% reduction).
+{{< code lang="dockerfile" >}}
+[](code/example6.dockerfile)
+{{</ code >}}
+1.98 GB for build stage vs 314 MB for production stage (85% reduction).
     {{</ spoiler >}}
 
 7. Challenge: The above image cannot make use of GPU. Build an image for GPU. Hints:

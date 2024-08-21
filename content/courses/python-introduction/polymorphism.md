@@ -65,7 +65,7 @@ We could similarly define subtraction with `__sub__`.
 Implement subtraction for points using the rule $x_1-x_2$, $y_1-y_2$, $z_1-z_2).
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/points.py)
+[](/content/courses/python-introduction/code/exercises/points.py)
 {{</ code >}}
 {{< /spoiler >}}
 

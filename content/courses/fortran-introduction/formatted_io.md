@@ -170,8 +170,8 @@ Non-advancing IO _must_ be formatted
 1. Examine this example code:
 
     {{< spoiler text="A variety of formatting examples" >}}
-    {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/code/formats.f90)
+{{< code lang="fortran" >}}
+[](/content/courses/fortran-introduction/code/formats.f90)
 {{</ code >}}
     {{< /spoiler >}}
     
@@ -188,8 +188,8 @@ Non-advancing IO _must_ be formatted
     Repeat for double precision.
     
     {{< spoiler text="Solution with variable strings." >}}
-    {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/print_pi.f90)
+{{< code lang="fortran" >}}
+[](/content/courses/fortran-introduction/solns/print_pi.f90)
 {{</ code >}}
     {{< /spoiler >}}
 
@@ -202,7 +202,7 @@ If the integer is 1, print "zebra".  If it is 2, print "kangaroo".  If it is any
 
 {{< spoiler text="Solution with variable strings." >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/non_advance.f90)
+[](/content/courses/fortran-introduction/solns/non_advance.f90)
 {{</ code >}}
 {{< /spoiler >}}
 

@@ -12,7 +12,7 @@ Print the number, its sum as obtained from your work, and the correct answer fro
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_2/sum_to_N.py)
+[](/content/courses/python-introduction/solns/proj_set_2/sum_to_N.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -20,7 +20,7 @@ B. Convert your code to sum from 1 to N into a function.  Write a main program t
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_2/sums_table.py)
+[](/content/courses/python-introduction/solns/proj_set_2/sums_table.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -32,7 +32,7 @@ Again using your dictionary, generate a list of all state capitals that begin wi
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_2/state_capitals.py)
+[](/content/courses/python-introduction/solns/proj_set_2/state_capitals.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -50,7 +50,7 @@ Copy the next element of the list into a string, and use substrings to extract e
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_2/DNA.py)
+[](/content/courses/python-introduction/solns/proj_set_2/DNA.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -77,6 +77,6 @@ Look up the documentation for the random module to find some useful functions.  
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_2/scramble_text.py)
+[](/content/courses/python-introduction/solns/proj_set_2/scramble_text.py)
 {{</ code >}}
 {{< /spoiler >}}

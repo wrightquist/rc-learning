@@ -46,12 +46,12 @@ Chauvenet’s criterion: It’s not the state of the art but works pretty well.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/stats.f90)
+[](/content/courses/fortran-introduction/solns/stats.f90)
 {{</ code >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/bmi_calculator.f90)
+[](/content/courses/fortran-introduction/solns/bmi_calculator.f90)
 {{</ code >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/bmi_data.f90)
+[](/content/courses/fortran-introduction/solns/bmi_data.f90)
 {{</ code >}}
 {{< /spoiler >}}

@@ -24,6 +24,6 @@ Compute the inflation rate for the data and print with the corresponding year to
 
 {{< spoiler text="Sample solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/inflation.f90)
+[](/content/courses/fortran-introduction/solns/inflation.f90)
 {{</ code >}}
 {{< /spoiler >}}

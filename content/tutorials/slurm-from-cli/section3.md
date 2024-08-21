@@ -107,7 +107,7 @@ as the command.  You won't need to request a specific amount of memory. Submit t
 
 {{< spoiler text="Example script" >}}
 {{< code lang="bash" >}}
-    [](/content/tutorials/slurm-from-cli/code/slow.slurm)
+[](/content/tutorials/slurm-from-cli/code/slow.slurm)
 {{</ code >}}
 {{< /spoiler >}}
 

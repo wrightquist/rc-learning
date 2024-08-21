@@ -21,34 +21,34 @@ Try to write the serial code before peeking at the examples.
 #### Serial Codes
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/code/montecarlo_pi.cxx)
+[](/content/courses/parallel-computing-introduction/code/montecarlo_pi.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/code/montecarlo_pi.f90)
+[](/content/courses/parallel-computing-introduction/code/montecarlo_pi.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/montecarlo_pi.py)
+[](/content/courses/parallel-computing-introduction/code/montecarlo_pi.py)
 {{</ code >}}
 {{< /spoiler >}}
 
 #### Example Solutions
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.cxx)
+[](/content/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.f90)
+[](/content/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.py)
+[](/content/courses/parallel-computing-introduction/solns/mpimontecarlo_pi.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -75,34 +75,34 @@ C++ and Fortran programmers: if you are not familiar with passing subprogram nam
 #### Serial Codes
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/code/trap.cxx)
+[](/content/courses/parallel-computing-introduction/code/trap.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/code/trap.f90)
+[](/content/courses/parallel-computing-introduction/code/trap.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/trap.py)
+[](/content/courses/parallel-computing-introduction/code/trap.py)
 {{</ code >}}
 {{< /spoiler >}}
 
 #### Example Solutions
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpitrap.cxx)
+[](/content/courses/parallel-computing-introduction/solns/mpitrap.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpitrap.f90)
+[](/content/courses/parallel-computing-introduction/solns/mpitrap.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpitrap.py)
+[](/content/courses/parallel-computing-introduction/solns/mpitrap.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -128,33 +128,33 @@ Generate a list of N random values for each of x and y over the above range. For
 #### Serial Codes
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/code/find_max.cxx)
+[](/content/courses/parallel-computing-introduction/code/find_max.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/code/find_max.f90)
+[](/content/courses/parallel-computing-introduction/code/find_max.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/find_max.py)
+[](/content/courses/parallel-computing-introduction/code/find_max.py)
 {{</ code >}}
 {{< /spoiler >}}
 
 #### Example Solutions
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpifind_max.cxx)
+[](/content/courses/parallel-computing-introduction/solns/mpifind_max.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpifind_max.f90)
+[](/content/courses/parallel-computing-introduction/solns/mpifind_max.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpifind_max.py)
+[](/content/courses/parallel-computing-introduction/solns/mpifind_max.py)
 {{</ code >}}
 {{< /spoiler >}}

@@ -27,13 +27,13 @@ comm.Barrier()
 It is seldom needed in Python.  For examples in C++ and Fortran, please see 
 {{< spoiler text="scatter.cxx" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/code/scatter.cxx)
+[](/content/courses/parallel-computing-introduction/code/scatter.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="scatter.f90" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/code/scatter.f90)
+[](/content/courses/parallel-computing-introduction/code/scatter.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -47,19 +47,19 @@ Test it with four processes on the frontend or on your workstation.
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/solns/bcast_ex.cxx)
+[](/content/courses/parallel-computing-introduction/solns/bcast_ex.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/bcast_ex.f90)
+[](/content/courses/parallel-computing-introduction/solns/bcast_ex.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/bcast_ex.py)
+[](/content/courses/parallel-computing-introduction/solns/bcast_ex.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -87,19 +87,19 @@ Modify the example reduction code in your language of choice to perform an Allre
 
 {{< spoiler text="C++ Solution" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/solns/allreduce.cxx)
+[](/content/courses/parallel-computing-introduction/solns/allreduce.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/allreduce.f90)
+[](/content/courses/parallel-computing-introduction/solns/allreduce.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python Solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/allreduce.py)
+[](/content/courses/parallel-computing-introduction/solns/allreduce.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -135,19 +135,19 @@ Modify the example gather code in your language of choice to perform an Allgathe
 
 {{< spoiler text="C++ Solution" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/solns/allgather.cxx)
+[](/content/courses/parallel-computing-introduction/solns/allgather.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/allgather.f90)
+[](/content/courses/parallel-computing-introduction/solns/allgather.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python Solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/allgather.py)
+[](/content/courses/parallel-computing-introduction/solns/allgather.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -160,21 +160,21 @@ In MPI_Alltoall, each process sends data to every other process.  Let us conside
 ### C++
 {{< spoiler text="alltoall.cxx" >}}
 {{< code lang="cxx" >}}
-    [](/content/courses/parallel-computing-introduction/code/alltoall.cxx)
+[](/content/courses/parallel-computing-introduction/code/alltoall.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 ### Fortran
 {{< spoiler text="alltoall.f90" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/code/alltoall.f90)
+[](/content/courses/parallel-computing-introduction/code/alltoall.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 ### Python
 {{< spoiler text="alltoall.py" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/alltoall.py)
+[](/content/courses/parallel-computing-introduction/code/alltoall.py)
 {{</ code >}}
 {{< /spoiler >}}
 

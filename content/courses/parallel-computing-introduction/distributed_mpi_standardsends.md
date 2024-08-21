@@ -46,18 +46,18 @@ Our first program will run on two processes and exchange some data between them.
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/code/send_recv.cxx)
+[](/content/courses/parallel-computing-introduction/code/send_recv.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/code/send_recv.f90)
+[](/content/courses/parallel-computing-introduction/code/send_recv.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/send_recv.py)
+[](/content/courses/parallel-computing-introduction/code/send_recv.py)
 {{</ code >}}
 {{< /spoiler >}}

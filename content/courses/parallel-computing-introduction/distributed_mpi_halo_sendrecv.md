@@ -61,19 +61,19 @@ Set up the neighbors for each rank ("up" and "down" or "left" and "right") befor
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpi_halo_exchange.cxx)
+[](/content/courses/parallel-computing-introduction/solns/mpi_halo_exchange.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpi_halo_exchange.f90)
+[](/content/courses/parallel-computing-introduction/solns/mpi_halo_exchange.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpi_halo_exchange.py)
+[](/content/courses/parallel-computing-introduction/solns/mpi_halo_exchange.py)
 {{</ code >}}
 {{< /spoiler >}}
 

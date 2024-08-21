@@ -138,7 +138,7 @@ enddo
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/arrays.f90)
+[](/content/courses/fortran-introduction/solns/arrays.f90)
 {{</ code >}}
 {{< /spoiler >}}
 

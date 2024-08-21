@@ -84,9 +84,9 @@ The Parent constructor cannot be used to set the new member `age`, so a mutator 
 1. Add a new class Mammal as sketched above.  Derive Antelope from that. Add an attribute `scaleColor` to the Reptile class.
 
     {{< spoiler text="Example solution" >}}
-    {{< code lang="c++" >}}
-    [](solns/inherit_chain.cxx)
-    {{</ code >}}
+{{< code lang="c++" >}}
+[](solns/inherit_chain.cxx)
+{{</ code >}}
     {{</ spoiler >}}
 
 2. Create a constructor for Animal that sets the name, food, foodQuantity, and vocalization.  Pass it through to the descendant classes and in each one, add the attributes new to that class.  Remove functions made unnecessary by the constructor.  Optionally implement the `using` syntax in the Antelope class.  Depending on your compiler version, you may need to add a flag `-std=c++11` or equivalent.

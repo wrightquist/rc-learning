@@ -121,6 +121,6 @@ print *,full_title(2:4)
 
 {{< spoiler text="Solution with variable strings." >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/var_strings.f90)
+[](/content/courses/fortran-introduction/solns/var_strings.f90)
 {{</ code >}}
 {{< /spoiler >}}

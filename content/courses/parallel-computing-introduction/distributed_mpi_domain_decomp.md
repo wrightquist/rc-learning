@@ -41,17 +41,17 @@ You can now compute the starting and ending $x$ and $y$ values for each rank.
 #### Example Solutions
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpifind_max_dd.cxx)
+[](/content/courses/parallel-computing-introduction/solns/mpifind_max_dd.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpifind_max_dd.f90)
+[](/content/courses/parallel-computing-introduction/solns/mpifind_max_dd.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpifind_max_dd.py)
+[](/content/courses/parallel-computing-introduction/solns/mpifind_max_dd.py)
 {{</ code >}}
 {{< /spoiler >}}
 

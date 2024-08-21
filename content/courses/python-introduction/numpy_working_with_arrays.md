@@ -113,6 +113,6 @@ Print the first N-2 rows and M-3 columns of `B`. Be sure `B` is large enough. Us
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/numpy_arrays.py)
+[](/content/courses/python-introduction/code/exercises/numpy_arrays.py)
 {{</ code >}}
 {{< /spoiler >}}

@@ -152,6 +152,6 @@ Run `describe`.  Print the mean values.  Extract the minimum temperature and the
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/fake_weather_data.py)
+[](/content/courses/python-introduction/code/exercises/fake_weather_data.py)
 {{</ code >}}
 {{< /spoiler >}}

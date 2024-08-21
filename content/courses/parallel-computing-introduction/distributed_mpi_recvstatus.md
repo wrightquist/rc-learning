@@ -8,39 +8,39 @@ The _status_ variable contains information about the message.
 
 * MPI_SOURCE
     The source rank of the message. This is a field of the status structure.
-    * C++
-        status.MPI_SOURCE
-    * Fortran
-        status(MPI_SOURCE)
-    * Python
-        status.Get_Source()
+    * C++  
+        ```status.MPI_SOURCE```
+    * Fortran  
+        ```status(MPI_SOURCE)```
+    * Python  
+        ```status.Get_Source()```
         
 * MPI_TAG
     The tag. This is another field of the structure (or element of the array).
-    * C++
-        status.MPI_TAG
-    * Fortran
-        status(MPI_TAG)
-    * Python
-        status.Get_tag()
+    * C++  
+        ```status.MPI_TAG```
+    * Fortran  
+        ```status(MPI_TAG)```
+    * Python  
+        ```status.Get_tag()```
 
 * MPI_Get_count(MPI_Status\* status, MPI_Datatype datatype, int\* count)
     The length (item count) of the message.  
-    * C++
-        MPI_Get_count(&status,MPI_TYPE,&item_count);
-    * Fortran
-        MPI_Get_count(status,MPI_TYPE,item_count,ierr)
-    * Python 
-        status.Get_count(MPI.TYPE)
+    * C++  
+        ```MPI_Get_count(&status,MPI_TYPE,&item_count);```
+    * Fortran  
+        ```MPI_Get_count(status,MPI_TYPE,item_count,ierr)```
+    * Python   
+        ```status.Get_count(MPI.TYPE)```
 
 * MPI_Error
     The error number.  Not often needed.
     * C++
-        status.MPI_ERROR
+        ```status.MPI_ERROR```
     * Fortran
-        status(MPI_ERROR)
+        ```status(MPI_ERROR)```
     * Python
-        status.Get_error()
+        ```status.Get_error()```
 
 The MPI_SOURCE and MPI_TAG items may be especially useful for the special dummy variables defined for source and tag.
 
@@ -61,18 +61,18 @@ Although the status data structure can also return the item count, if the receiv
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/code/send_recv_stat.cxx)
+[](/content/courses/parallel-computing-introduction/code/send_recv_stat.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/code/send_recv_stat.f90)
+[](/content/courses/parallel-computing-introduction/code/send_recv_stat.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/send_recv_stat.py)
+[](/content/courses/parallel-computing-introduction/code/send_recv_stat.py)
 {{</ code >}}
 {{< /spoiler >}}

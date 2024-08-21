@@ -24,8 +24,8 @@ weight: 150
     ```
     
     {{< spoiler text="Example solution" >}}
-    {{< code lang="c++" >}}
-    [](solns/fractions.cxx)
-    {{</ code >}}
+{{< code lang="c++" >}}
+[](solns/fractions.cxx)
+{{</ code >}}
     {{< /spoiler >}}
 

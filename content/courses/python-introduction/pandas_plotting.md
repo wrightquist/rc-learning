@@ -85,6 +85,6 @@ Figure out a way to set the BMI values that are outside the cutoffs to `np.nan` 
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/bmi_pandas.py)
+[](/content/courses/python-introduction/code/exercises/bmi_pandas.py)
 {{</ code >}}
 {{< /spoiler >}}

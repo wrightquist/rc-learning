@@ -83,7 +83,7 @@ F=list(filter(lambda x:x>0, V))
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/functionals.py)
+[](/content/courses/python-introduction/code/exercises/functionals.py)
 {{</ code >}}
 {{< /spoiler >}}
 

@@ -87,9 +87,9 @@ Getline is used twice, once to read the line as a string and again to split the 
     You can then use the atoi and atof functions that operate on C strings to convert to integer and float respectively.
     
     {{< spoiler text="Example Solution" >}}
-    {{< code lang="c++" >}}
-    [](solns/read_cpi.cxx)
-    {{</ code >}}
+{{< code lang="c++" >}}
+[](solns/read_cpi.cxx)
+{{</ code >}}
     {{</ spoiler >}}
 
 2. Write a program that creates a file mydata.txt containing four rows consisting of

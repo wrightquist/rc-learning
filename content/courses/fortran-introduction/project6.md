@@ -12,9 +12,9 @@ You may find that you need to declare your allocatable bird_list array to be of 
 
 {{< spoiler text="Sample solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/bird_class.f90)
+[](/content/courses/fortran-introduction/solns/bird_class.f90)
 {{</ code >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/bird_obs_class.f90)
+[](/content/courses/fortran-introduction/solns/bird_obs_class.f90)
 {{</ code >}}
 {{< /spoiler >}}

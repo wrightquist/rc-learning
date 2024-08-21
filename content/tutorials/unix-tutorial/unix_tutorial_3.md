@@ -98,7 +98,7 @@ Using pipes, print all lines of list1 and list2 containing the letter 'p', sort 
 
 {{< spoiler text="Solution" >}}
 {{< code lang="bash" >}}
-    [](/content/tutorials/unix-tutorial/snippets/ex3b.txt)
+[](/content/tutorials/unix-tutorial/snippets/ex3b.txt)
 {{</ code >}}
 {{< /spoiler >}}
 

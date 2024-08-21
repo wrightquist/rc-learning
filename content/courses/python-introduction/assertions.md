@@ -12,7 +12,7 @@ We can recast our tests for dow.py in a somewhat ad hoc manner.
 
 {{< spoiler text="Setting up tests for our DoW function." >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/scripts/dow_tests.py)
+[](/content/courses/python-introduction/code/scripts/dow_tests.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -45,7 +45,7 @@ Starting from the dow_buggy.py script, add assertions to test for bugs.
 
 {{< spoiler text="Setting up tests for our DoW function." >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/dow_assert.py)
+[](/content/courses/python-introduction/code/exercises/dow_assert.py)
 {{</ code >}}
 {{< /spoiler >}}
 

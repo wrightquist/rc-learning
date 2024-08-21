@@ -50,19 +50,19 @@ The random-walk program is "embarrassingly parallel" since there is as yet no co
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.cxx)
+[](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.f90)
+[](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.py)
+[](/content/courses/parallel-computing-introduction/solns/mpirandom_walk_timed.py)
 {{</ code >}}
 {{< /spoiler >}}
 

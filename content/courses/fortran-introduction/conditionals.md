@@ -127,6 +127,6 @@ Hint: a loss or tie is not a win.
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/nfc.f90)
+[](/content/courses/fortran-introduction/solns/nfc.f90)
 {{</ code >}}
 {{< /spoiler >}}

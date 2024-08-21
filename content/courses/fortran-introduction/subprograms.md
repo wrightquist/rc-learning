@@ -120,7 +120,7 @@ Print the values and the corresponding function evaluation to a comma-separated-
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/func.f90)
+[](/content/courses/fortran-introduction/solns/func.f90)
 {{</ code >}}
 {{< /spoiler >}}
 

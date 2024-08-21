@@ -28,7 +28,7 @@ Create a new dataframe using the following table:
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_4/basketball_data.py)
+[](/content/courses/python-introduction/solns/proj_set_4/basketball_data.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -52,7 +52,7 @@ df2 = pd.DataFrame({'ID #': [1,2,3,4,5,6,7,8,9,10],
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_4/pivot_table_example.py)
+[](/content/courses/python-introduction/solns/proj_set_4/pivot_table_example.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -72,7 +72,7 @@ Download the file [cigarette-smoking-behaviour-2018-census.csv](data/cigarette-s
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_4/cigarette_smoking_nz.py)
+[](/content/courses/python-introduction/solns/proj_set_4/cigarette_smoking_nz.py)
 {{</ code >}}
 {{< /spoiler >}}
  
@@ -91,6 +91,6 @@ Download [cville_2017_april.xlsx](data/cville_2017_april.xlsx), which contains A
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_4/cville_2017_apr_pandas.py)
+[](/content/courses/python-introduction/solns/proj_set_4/cville_2017_apr_pandas.py)
 {{</ code >}}
 {{< /spoiler >}}

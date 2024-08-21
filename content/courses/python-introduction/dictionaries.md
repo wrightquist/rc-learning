@@ -112,7 +112,7 @@ mascots=["Celtics","Nets","Knicks","76ers","Raptors","Golden State Warriors",
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/create_dictionary.py)
+[](/content/courses/python-introduction/code/exercises/create_dictionary.py)
 {{</ code >}}
 {{< /spoiler >}}
 

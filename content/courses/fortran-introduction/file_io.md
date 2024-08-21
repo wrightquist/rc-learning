@@ -105,15 +105,15 @@ x0=0.0
     Close the file, then open it again.  Read the data back.  Write a loop to add 1 to each value and print each row to the console.
     
     {{< spoiler text="Example Solution" >}}
-    {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/reopen.f90)
+{{< code lang="fortran" >}}
+[](/content/courses/fortran-introduction/solns/reopen.f90)
 {{</ code >}}
     {{< /spoiler >}}
 
 2. Write a program that reads the `params` namelist and prints the variables to the console.  Create the paramlist.txt file and test your program.
 
     {{< spoiler text="Example Solution" >}}
-    {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/nlist.f90)
+{{< code lang="fortran" >}}
+[](/content/courses/fortran-introduction/solns/nlist.f90)
 {{</ code >}}
     {{< /spoiler >}}

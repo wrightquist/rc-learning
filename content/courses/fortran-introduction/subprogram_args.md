@@ -142,7 +142,7 @@ end interface
 
 {{< spoiler text="Full example of passing a subprogram as a dummy variable" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/code/trap.f90)
+[](/content/courses/fortran-introduction/code/trap.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -156,6 +156,6 @@ You may use arrays to represent the points.
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/euclid.f90)
+[](/content/courses/fortran-introduction/solns/euclid.f90)
 {{</ code >}}
 {{< /spoiler >}}

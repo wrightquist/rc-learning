@@ -124,9 +124,9 @@ A more complete list of manipulators is [here](https://www.cplusplus.com/referen
        * Scientific notation with 8 decimal places
 
    {{< spoiler text="Example Solution" >}}
-   {{< code lang="c++" >}}
-   [](solns/print_pi.cxx)
-   {{</ code >}}
+{{< code lang="c++" >}}
+[](solns/print_pi.cxx)
+{{</ code >}}
    {{< /spoiler >}}
 
 2. In an “infinite” while loop:
@@ -138,7 +138,7 @@ A more complete list of manipulators is [here](https://www.cplusplus.com/referen
     If the integer is 1, print “zebra”.  If it is 2, print “kangaroo”.  If it is anything else except for zero, print “not found”.  If it is 0, exit the loop.
     
     {{< spoiler text="Example Solution" >}}
-    {{< code lang="c++" >}}
-    [](solns/kangaroo.cxx)
-    {{</ code >}}
+{{< code lang="c++" >}}
+[](solns/kangaroo.cxx)
+{{</ code >}}
     {{< /spoiler >}}

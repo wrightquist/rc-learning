@@ -77,9 +77,9 @@ C++ does not support what other languages call "keyword" arguments. Optional arg
 1. Write a program that evaluates the function $$f(x)=\frac{1}{\pi (1+x^2)}$$ for 401 values of x equally spaced between -4.0 and 4.0 inclusive. Put the values into an array or vector variable `x`.  Use variables for the starting and ending values of x and the number of values. Write a function to evaluate f(x) for any given real (scalar) value of x and call it each time through your loop.
 
     {{< spoiler text="Example Solution" >}}
-    {{< code lang="c++" >}}
-    [](solns/function1.cxx)
-    {{</ code >}}
+{{< code lang="c++" >}}
+[](solns/function1.cxx)
+{{</ code >}}
     {{< /spoiler >}}
     
     Print the values and the corresponding function evaluation to a comma-separated-values (CSV) file.  Use software such as Excel, Python, Matlab, or anything else you know to plot the result.
@@ -87,10 +87,10 @@ C++ does not support what other languages call "keyword" arguments. Optional arg
 2. Modify your program from Exercise 1 to use a prototype in a header file ending in `.h`, with the implementation in a `.cpp` or `.cxx` file.  Refer to the chapter on [linking](linkers_libraries) if you need a refresher on building with multiple files.  This simple example probably does not require a Makefile.
     
     {{< spoiler text="Example Solution" >}}
-    {{< code lang="c++" >}}
-    [](solns/function2.h)
-    {{</ code >}}
-    {{< code lang="c++" >}}
-    [](solns/function2.cxx)
-    {{</ code >}}
+{{< code lang="c++" >}}
+[](solns/function2.h)
+{{</ code >}}
+{{< code lang="c++" >}}
+[](solns/function2.cxx)
+{{</ code >}}
     {{< /spoiler >}}

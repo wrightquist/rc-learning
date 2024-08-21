@@ -130,7 +130,7 @@ Use this file to test your program.
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/bird_reader.f90)
+[](/content/courses/fortran-introduction/solns/bird_reader.f90)
 {{</ code >}}
 {{< /spoiler >}}
 

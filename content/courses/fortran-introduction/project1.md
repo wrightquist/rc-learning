@@ -35,6 +35,6 @@ Try to write and test your own program before peeking at the sample solution.
 
 {{< spoiler text="Sample solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/day_of_week.f90)
+[](/content/courses/fortran-introduction/solns/day_of_week.f90)
 {{</ code >}}
 {{< /spoiler >}}

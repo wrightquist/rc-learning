@@ -95,6 +95,6 @@ Using whichever unit system you prefer, write some code to assign the weight and
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/simple_bmi.py)
+[](/content/courses/python-introduction/code/exercises/simple_bmi.py)
 {{</ code >}}
 {{< /spoiler >}}

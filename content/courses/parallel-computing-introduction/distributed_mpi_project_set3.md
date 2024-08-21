@@ -31,7 +31,7 @@ When plotting, the top of an array (row 0) is the bottom of the plot.
 
 {{< spoiler text="Python script to contour output">}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/contour.py)
+[](/content/courses/parallel-computing-introduction/code/contour.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -39,17 +39,17 @@ When plotting, the top of an array (row 0) is the bottom of the plot.
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/solns/heatedplate.cxx)
+[](/content/courses/parallel-computing-introduction/solns/heatedplate.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/heatedplate.f90)
+[](/content/courses/parallel-computing-introduction/solns/heatedplate.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/heatedplate.py)
+[](/content/courses/parallel-computing-introduction/solns/heatedplate.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -73,7 +73,7 @@ To plot the results you will have to stitch the files together appropriately. If
 
 {{< spoiler text="Python script to merge output files and contour" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/contour_ranks.py)
+[](/content/courses/parallel-computing-introduction/code/contour_ranks.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -89,17 +89,17 @@ _Hints_
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpiheatedplate.cxx)
+[](/content/courses/parallel-computing-introduction/solns/mpiheatedplate.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpiheatedplate.f90)
+[](/content/courses/parallel-computing-introduction/solns/mpiheatedplate.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/solns/mpiheatedplate.py)
+[](/content/courses/parallel-computing-introduction/solns/mpiheatedplate.py)
 {{</ code >}}
 {{< /spoiler >}}
 

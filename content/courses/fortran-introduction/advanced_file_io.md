@@ -111,6 +111,6 @@ Read the mydata.txt file but don't assume you know how long it is.  Inquire whet
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/rewind.f90)
+[](/content/courses/fortran-introduction/solns/rewind.f90)
 {{</ code >}}
 {{< /spoiler >}}

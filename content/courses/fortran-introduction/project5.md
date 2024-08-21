@@ -40,9 +40,9 @@ In addition to the sorters.f90 module mentioned above, the sample solution uses 
 
 {{< spoiler text="Sample solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/bird_dat.f90)
+[](/content/courses/fortran-introduction/solns/bird_dat.f90)
 {{</ code >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/bird_obs.f90)
+[](/content/courses/fortran-introduction/solns/bird_obs.f90)
 {{</ code >}}
 {{< /spoiler >}}

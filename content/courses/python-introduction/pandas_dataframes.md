@@ -148,7 +148,7 @@ Describe the dataset. Print the column names. Iterate through the indexes and pr
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/code/exercises/iris.py)
+[](/content/courses/python-introduction/code/exercises/iris.py)
 {{</ code >}}
 {{< /spoiler >}}
 

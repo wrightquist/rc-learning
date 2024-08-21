@@ -110,6 +110,6 @@ This code contains some features, such as string concatenation, that we will stu
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/arrayinds.f90)
+[](/content/courses/fortran-introduction/solns/arrayinds.f90)
 {{</ code >}}
 {{< /spoiler >}}

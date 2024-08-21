@@ -31,7 +31,7 @@ f) Add a line to accept user input to specify the x start, x end, and stride val
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_3/numpy_basics.py)
+[](/content/courses/python-introduction/solns/proj_set_3/numpy_basics.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -68,7 +68,7 @@ f) (More advanced) Convert your file with the functions into a module.  Isolate 
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_3/inflation.py)
+[](/content/courses/python-introduction/solns/proj_set_3/inflation.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -91,7 +91,7 @@ Plot the corrected data.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_3/bmistats.py)
+[](/content/courses/python-introduction/solns/proj_set_3/bmistats.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -108,7 +108,7 @@ Download [cville_2017_april.csv](data/cville_2017_april.csv), which contains Apr
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_3/cville_2017_apr.py)
+[](/content/courses/python-introduction/solns/proj_set_3/cville_2017_apr.py)
 {{</ code >}}
 {{< /spoiler >}}
 

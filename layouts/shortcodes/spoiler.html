@@ -1,4 +1,4 @@
 <details class="spoiler">
-  <summary>{{ .Get "text" | markdownify | emojify }}</summary>
-  <p>{{ .Inner | .Page.RenderString }}</p>
+<summary>{{ .Get "text" | .Page.RenderString }}</summary>
+{{ .Inner | .Page.RenderString }}
 </details>

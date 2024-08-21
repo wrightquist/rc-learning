@@ -17,7 +17,7 @@ Print the result in Python format,
 
 {{< spoiler text="Sample solution" >}}
 {{< code lang="f90" >}}
-    [](/content/courses/fortran-introduction/solns/splitter.f90)
+[](/content/courses/fortran-introduction/solns/splitter.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -31,6 +31,6 @@ _Hints_.  You do not need to use a variable-length string, but if not, be sure t
 '(#es12.4,#i2,#f15.7,#i4)'.  Suggestion: use an allocatable array for the coefficients (both numerical and character).  Use array size to make sure they match.    
 {{< spoiler text="Sample solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/formatter.f90)
+[](/content/courses/fortran-introduction/solns/formatter.f90)
 {{</ code >}}
 {{< /spoiler >}}

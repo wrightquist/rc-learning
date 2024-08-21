@@ -17,8 +17,8 @@ weight: 220
 4. Write a driver to test all your procedures.
 
     {{< spoiler text="Example solution" >}}
-    {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/fractions.f90)
+{{< code lang="fortran" >}}
+[](/content/courses/fortran-introduction/solns/fractions.f90)
 {{</ code >}}
     {{< /spoiler >}}
 

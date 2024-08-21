@@ -116,7 +116,7 @@ num_2=14
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/statements.f90)
+[](/content/courses/fortran-introduction/solns/statements.f90)
 {{</ code >}}
 {{< /spoiler >}}
 

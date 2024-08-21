@@ -20,7 +20,7 @@ Fahrenheit, printing each value in degrees C and F.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_1/temperature_list.py)
+[](/content/courses/python-introduction/solns/proj_set_1/temperature_list.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -37,7 +37,7 @@ on the same line, but does it by indexing into the two lists.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_1/temperature_loop.py)
+[](/content/courses/python-introduction/solns/proj_set_1/temperature_loop.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -51,7 +51,7 @@ Write a program that:
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_1/temperature_cond_loop.py)
+[](/content/courses/python-introduction/solns/proj_set_1/temperature_cond_loop.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -71,7 +71,7 @@ Test your program for N=30 and N=50.
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_1/collatz.py)
+[](/content/courses/python-introduction/solns/proj_set_1/collatz.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -92,6 +92,6 @@ The only widely used base greater than 10 is hexadecimal (base 16). Print a tabl
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_1/base_convert.py)
+[](/content/courses/python-introduction/solns/proj_set_1/base_convert.py)
 {{</ code >}}
 {{< /spoiler >}}

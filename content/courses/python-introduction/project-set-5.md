@@ -23,7 +23,7 @@ e) Read the name of a bird from the command line or from user input (your choice
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_5/birds.py)
+[](/content/courses/python-introduction/solns/proj_set_5/birds.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -60,7 +60,7 @@ Be sure to use appropriate functions rather than monolithic code throughout this
 
 {{< spoiler text="Example solution" >}}
 {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_5/movies.py)
+[](/content/courses/python-introduction/solns/proj_set_5/movies.py)
 {{</ code >}}
 {{< /spoiler >}}
 
@@ -77,8 +77,8 @@ Be sure to use appropriate functions rather than monolithic code throughout this
 3. Use `NaN` to represent division by zero and `isnan` to check for it.
 
     {{< spoiler text="Example solution" >}}
-    {{< code lang="python" >}}
-    [](/content/courses/python-introduction/solns/proj_set_5/fractions.py)
+{{< code lang="python" >}}
+[](/content/courses/python-introduction/solns/proj_set_5/fractions.py)
 {{</ code >}}
     {{< /spoiler >}}
 

@@ -96,22 +96,22 @@ Classes may use instance of other classes.  This is called "composition" and we 
 1. Correct `illegal_access.cxx` by adding an accessor and mutator for the private variable.
 
     {{< spoiler text="Example solution" >}}
-    {{< code lang="c++" >}}
-    [](solns/access_demo.cxx)
-    {{</ code >}}
+{{< code lang="c++" >}}
+[](solns/access_demo.cxx)
+{{</ code >}}
     {{< /spoiler >}}
 
 2. Modify your Employee class to use appropriate access levels for attributes and methods.  Add any "setters" and "getters" that you may need.  Place the interface into a `.h` file and the implementation into a corresponding `.cxx` file.
 
     {{< spoiler text="Example Solution" >}}
-    {{< code lang="c++" >}}
-    [](solns/class_struct_example/Employee.h)
-    {{</ code >}}
-    {{< code lang="c++" >}}
-    [](solns/class_struct_example/Employee.cxx)
-    {{</ code >}}
-    {{< code lang="c++" >}}
-    [](solns/class_struct_example/employees.cxx)
-    {{</ code >}}
+{{< code lang="c++" >}}
+[](solns/class_struct_example/Employee.h)
+{{</ code >}}
+{{< code lang="c++" >}}
+[](solns/class_struct_example/Employee.cxx)
+{{</ code >}}
+{{< code lang="c++" >}}
+[](solns/class_struct_example/employees.cxx)
+{{</ code >}}
     {{< /spoiler >}}
 

@@ -10,19 +10,19 @@ We are now ready to write our first MPI program.  Select your choice of language
 
 {{< spoiler text="C++" >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/code/mpi1.cxx)
+[](/content/courses/parallel-computing-introduction/code/mpi1.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Fortran" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/code/mpi1.f90)
+[](/content/courses/parallel-computing-introduction/code/mpi1.f90)
 {{</ code >}}
 {{< /spoiler >}}
 
 {{< spoiler text="Python" >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/mpi1.py)
+[](/content/courses/parallel-computing-introduction/code/mpi1.py)
 {{</ code >}}
 {{< /spoiler >}}
 

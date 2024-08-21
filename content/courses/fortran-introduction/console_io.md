@@ -95,15 +95,15 @@ Request an integer from the user with non-advancing input/output, e.g.
 If the integer is 1, print “zebra”.  If it is 2, print “kangaroo”.  If it is anything else except for zero, print “not found”.  If it is 0, exit the loop.
 
     {{< spoiler text="Example Solution" >}}
-    {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/console_io.f90)
+{{< code lang="fortran" >}}
+[](/content/courses/fortran-introduction/solns/console_io.f90)
 {{</ code >}}
     {{< /spoiler >}}
 
 2. Write a program that takes a string as the command-line argument.  Print the string to standard output.  Use `trim` or any other string operators or function s to make the output neat.  If you read a string from the command line you do not have to do any conversion of the variable.
 
     {{< spoiler text="Example Solution" >}}
-    {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/command_line.f90)
+{{< code lang="fortran" >}}
+[](/content/courses/fortran-introduction/solns/command_line.f90)
 {{</ code >}}
     {{< /spoiler >}}

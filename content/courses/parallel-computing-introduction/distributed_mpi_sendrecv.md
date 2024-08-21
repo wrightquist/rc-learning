@@ -28,17 +28,17 @@ We will rewrite the previous examples using MPI_Sendrecv. Each process will send
 
 {{< spoiler text=C++ >}}
 {{< code lang="c++" >}}
-    [](/content/courses/parallel-computing-introduction/code/mpi_sendrecv.cxx)
+[](/content/courses/parallel-computing-introduction/code/mpi_sendrecv.cxx)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Fortran >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/parallel-computing-introduction/code/mpi_sendrecv.f90)
+[](/content/courses/parallel-computing-introduction/code/mpi_sendrecv.f90)
 {{</ code >}}
 {{< /spoiler >}}
 {{< spoiler text=Python >}}
 {{< code lang="python" >}}
-    [](/content/courses/parallel-computing-introduction/code/mpi_sendrecv.py)
+[](/content/courses/parallel-computing-introduction/code/mpi_sendrecv.py)
 {{</ code >}}
 {{< /spoiler >}}
 

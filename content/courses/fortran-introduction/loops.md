@@ -125,6 +125,6 @@ Reading a file of unknown length.  This is _not_ how we usually read a file, sin
 
 {{< spoiler text="Example Solution" >}}
 {{< code lang="fortran" >}}
-    [](/content/courses/fortran-introduction/solns/loops.f90)
+[](/content/courses/fortran-introduction/solns/loops.f90)
 {{</ code >}}
 {{< /spoiler >}}
